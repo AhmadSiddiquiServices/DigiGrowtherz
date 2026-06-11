@@ -5,6 +5,11 @@
 @theme {
   --breakpoint-3xl: 1800px;
   --breakpoint-4xl: 2000px;
+
+  --font-inter: var(--font-inter);
+  --font-space: var(--font-space-grotesk);
+  --font-jetbrains: var(--font-jetbrains);
+  --font-nimbus: var(--font-nimbus);
 }
 
 /* Hide scrollbar but keep scroll */
