@@ -57,14 +57,12 @@ export default function Home() {
                 {/* Yellow Glow */}
                 <div className="absolute z-0 h-16 w-16 rounded-xl bg-[#FFED0030] blur-[40px]" />
 
-                <h2 className="relative z-10 font-['Space_Grotesk'] text-[clamp(2.75rem,5vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
-                  Everyone is talking
-                  <br />
+                <h2 className="relative z-10 font-['Space_Grotesk'] text-[clamp(2.5rem,5vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
+                  Everyone is talking <br className="hidden md:block" />
                   about AI.
                   <span className="text-[#A0D14F]">
                     {" "}
-                    Few are
-                    <br />
+                    Few are <br className="hidden md:block" />
                     delivering results.
                   </span>
                 </h2>

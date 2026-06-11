@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="mb-6 inline-flex items-center gap-2 rounded-xl border border-[#FFFFFF1A] bg-[#FFFFFF0D] px-3 py-1">
             <span className="h-2 w-2 rounded-full bg-[#A0D14F]" />
 
-            <span className="font-jetbrains text-[12px] leading-3 font-medium tracking-[1.2px] text-[#DFE2ED99] uppercase">
+            <span className="font-jetbrains text-[clamp(10px,2vw,12px)] leading-3 font-medium tracking-[1.2px] text-[#DFE2ED99] uppercase">
               Named #1 AI Services Company by Clutch
             </span>
           </div>
