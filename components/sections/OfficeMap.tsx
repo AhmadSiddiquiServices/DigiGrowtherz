@@ -67,12 +67,13 @@ export default function OfficeMap() {
               height: "650px",
             }}
           >
-            {/* Dark Theme */}
+            {/* Map */}
             <TileLayer
-              attribution="&copy; OpenStreetMap contributors"
-              url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-            />
-
+              attribution="&copy; OpenStreetMap contributors &copy; CARTO"
+              url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+              subdomains={["a", "b", "c", "d"]}
+            />{" "}
+            <div className="absolute inset-0 z-[400] bg-[#070B12]/45 mix-blend-multiply" />
             <Marker position={officeLocation} icon={customIcon}>
               <Popup>
                 <div className="font-sans">
