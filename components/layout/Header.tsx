@@ -25,7 +25,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-[60] bg-[#070B12]">
+    <header className="sticky top-0 z-[60] border-b border-[#FFFFFF1A] bg-[#070B12]">
       <div className="mx-auto flex items-center justify-between px-[clamp(1rem,4vw,5rem)] py-6">
         {/* Logo */}
         <Link href="/">
