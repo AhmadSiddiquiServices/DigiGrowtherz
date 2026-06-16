@@ -10,7 +10,7 @@ export default function ContactPage() {
   });
   return (
     <>
-      <section className="relative overflow-hidden bg-[#070B12] px-[clamp(1rem,4vw,5rem)] pt-20 lg:pt-28">
+      <section className="relative overflow-hidden bg-[#070B12] px-[clamp(1rem,4vw,5rem)] pt-10 lg:pt-28">
         {/* Background Glow */}
         <div
           className="pointer-events-none absolute top-0 right-0 h-full w-[45%]"

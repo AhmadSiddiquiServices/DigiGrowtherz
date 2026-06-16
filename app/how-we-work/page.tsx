@@ -85,7 +85,7 @@ export default function HowWeWorkPage() {
   return (
     <>
       {/* How it Works - Hero Section */}
-      <section className="bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-20 lg:py-28">
+      <section className="bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-10 lg:py-28">
         <div className="mx-auto grid items-center gap-12 lg:grid-cols-[minmax(0,800px)_minmax(0,650px)] lg:justify-between">
           {/* Left Content */}
           <div>
@@ -95,7 +95,7 @@ export default function HowWeWorkPage() {
             </p>
 
             {/* Heading */}
-            <h2 className="mt-6 font-['Space_Grotesk'] text-[clamp(3rem,5vw,60px)] leading-[0.95] font-bold tracking-[-2.88px] text-[#DFE2ED]">
+            <h2 className="mt-6 font-['Space_Grotesk'] text-[clamp(2.8rem,5vw,60px)] leading-[0.95] font-bold tracking-[-2.88px] text-[#DFE2ED]">
               The AI-Native
               <br />
               <span className="text-[#A0D14F]">Operating Model.</span>
@@ -209,9 +209,10 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
+      {/* Methodology */}
       <section className="bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-20">
         <div className="mx-auto max-w-[1400px]">
-          <div className="relative overflow-hidden rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-12 backdrop-blur-[12px]">
+          <div className="relative overflow-hidden rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] px-4 py-6 backdrop-blur-[12px] md:p-12">
             {/* Green glow */}
             <div className="absolute top-0 right-0 h-96 w-96 rounded-[12px] bg-[#A0D14F]/5 blur-[120px]" />
 
@@ -227,12 +228,12 @@ export default function HowWeWorkPage() {
 
                   <div className="h-px flex-1 bg-white/20" />
                 </div>
-                <h2 className="mt-8 font-['Space_Grotesk'] text-[48px] leading-[57.6px] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
+                <h2 className="mt-8 font-['Space_Grotesk'] text-[30px] leading-[40px] font-semibold tracking-[-0.96px] text-[#DFE2ED] lg:text-[48px] lg:leading-[57.6px]">
                   Generative-Driven
                   <br />
                   Development™
                 </h2>
-                <p className="mt-8 max-w-[700px] font-['Inter'] text-[18px] leading-[28.8px] text-[#DFE2ED]/70">
+                <p className="mt-8 max-w-[700px] font-['Inter'] leading-[28.8px] text-[#DFE2ED]/70 md:text-[18px]">
                   Unlike traditional SDLC, GenDD uses AI to build AI. It's an
                   AI-native operating model that blends generative engineering
                   with agentic automation to ship production software 3x faster
@@ -299,11 +300,12 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="bg-[#070B12] px-[clamp(1rem,4vw,5rem)] pb-10">
         <div className="mx-auto rounded-[8px] bg-[#A0D14F] px-6 py-12 sm:px-12">
           <div className="mx-auto flex max-w-[850px] flex-col items-center">
             {/* Heading */}
-            <h2 className="text-center font-['Space_Grotesk'] text-[clamp(2.5rem,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-black">
+            <h2 className="text-center font-['Space_Grotesk'] text-[clamp(2.2rem,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-black">
               Ready to scale your intelligence?
             </h2>
 
@@ -316,7 +318,7 @@ export default function HowWeWorkPage() {
             {/* CTA */}
             <button
               type="button"
-              className="mt-[40px] flex h-16 min-w-[349px] cursor-pointer items-center justify-center bg-[#070B12] px-10 transition-all duration-300 hover:brightness-110 active:scale-[0.98]"
+              className="mt-[40px] flex h-16 cursor-pointer items-center justify-center bg-[#070B12] px-10 transition-all duration-300 hover:brightness-110 active:scale-[0.98] md:min-w-[349px]"
             >
               <span className="font-['Inter'] text-[16px] leading-6 font-bold tracking-[1.6px] text-[#A0D14F] uppercase">
                 Book Strategy Workshop

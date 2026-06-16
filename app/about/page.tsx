@@ -61,7 +61,7 @@ export default function AboutPage() {
   return (
     <>
       {/* About Hero */}
-      <section className="relative overflow-hidden bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-6 lg:py-8">
+      <section className="relative overflow-hidden bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-10 lg:py-8">
         {/* Background Glow */}
         <div className="absolute top-0 right-0 h-[700px] w-[700px] rounded-full bg-[#A0D14F]/10 blur-[180px]" />
 

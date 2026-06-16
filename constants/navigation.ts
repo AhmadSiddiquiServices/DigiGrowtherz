@@ -17,12 +17,12 @@ export const NAV_LINKS = [
   },
   {
     label: "PORTFOLIO",
-    href: "/portfolio",
+    href: "/case-studies",
   },
-  {
-    label: "BLOG",
-    href: "/blog",
-  },
+  // {
+  //   label: "BLOG",
+  //   href: "/blog",
+  // },
   {
     label: "CONTACT",
     href: "/contact",
