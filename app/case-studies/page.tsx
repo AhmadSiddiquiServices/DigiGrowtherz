@@ -411,7 +411,7 @@ export default function CaseStudiesPage() {
             {/* Primary Button */}
             <button
               type="button"
-              className="flex h-[46px] w-full cursor-pointer items-center justify-center bg-[#A0D14F] px-12 transition-all duration-300 hover:brightness-105 active:scale-[0.98] md:min-w-[256px]"
+              className="flex h-[46px] w-full cursor-pointer items-center justify-center bg-[#A0D14F] px-8 transition-all duration-300 hover:brightness-105 active:scale-[0.98] md:min-w-[256px]"
             >
               <span className="font-['Inter'] text-[12px] leading-3 font-semibold tracking-[1.2px] text-[#070B12] uppercase">
                 Talk to an AI Expert
@@ -421,7 +421,7 @@ export default function CaseStudiesPage() {
             {/* Secondary Button */}
             <button
               type="button"
-              className="flex h-[46px] w-full cursor-pointer items-center justify-center border border-[#0057FF] px-12 transition-all duration-300 hover:bg-[#0057FF]/10 active:scale-[0.98] md:min-w-[248px]"
+              className="flex h-[46px] w-full cursor-pointer items-center justify-center border border-[#0057FF] px-8 transition-all duration-300 hover:bg-[#0057FF]/10 active:scale-[0.98] md:min-w-[248px]"
             >
               <span className="font-['Inter'] text-[12px] leading-3 font-semibold tracking-[1.2px] text-[#0057FF] uppercase">
                 Browse More Work
