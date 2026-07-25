@@ -4,20 +4,20 @@ export const NAV_LINKS = [
     href: "/",
   },
   {
-    label: "ABOUT",
-    href: "/about",
-  },
-  {
-    label: "HOW WE WORK",
-    href: "/how-we-work",
-  },
-  {
     label: "SERVICES",
     href: "/services",
   },
   {
     label: "PORTFOLIO",
     href: "/case-studies",
+  },
+  {
+    label: "HOW WE WORK",
+    href: "/how-we-work",
+  },
+  {
+    label: "ABOUT",
+    href: "/about",
   },
   // {
   //   label: "BLOG",

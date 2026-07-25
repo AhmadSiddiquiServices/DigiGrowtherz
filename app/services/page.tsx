@@ -7,20 +7,20 @@ export default function ServicesPage() {
   const metrics = [
     {
       icon: "/images/ser-stat-1.webp",
-      title: "300% Velocity",
-      description: "Improvement for COX",
+      title: "AI Automation",
+      description: "Intelligent Workflow Solutions",
       color: "#A0D14F",
     },
     {
       icon: "/images/ser-stat-2.webp",
-      title: "20 Days to 5",
-      description: "Workload Reduction",
+      title: "Website Development",
+      description: "WordPress • Shopify • Custom",
       color: "#FFED00",
     },
     {
       icon: "/images/ser-stat-3.webp",
-      title: "99% Faster",
-      description: "Client Onboarding",
+      title: "Digital Growth",
+      description: "Marketing • SEO • eCommerce",
       color: "#0057FF",
     },
   ];
@@ -29,49 +29,77 @@ export default function ServicesPage() {
     {
       icon: "/images/ser-1.webp",
       bgIcon: "/images/ser-bg-1.webp",
-      title: "AI Strategy & Roadmap",
+      title: "AI Automation",
       features: [
-        "AI Transformation Strategy",
-        "MLOps & AI Governance",
-        "ROI Workshop & Planning",
+        "Workflow Automation",
+        "AI Chatbots & Assistants",
+        "Business Process Optimization",
       ],
-      cta: "Define Strategy",
+      cta: "EXPLORE AI",
       color: "#A0D14F",
     },
     {
       icon: "/images/ser-2.webp",
       bgIcon: "/images/ser-bg-2.webp",
-      title: "AI-Powered Development",
+      title: "Website Development",
       features: [
-        "AI-Native Product UX",
-        "Agentic Application Modernization",
-        "Generative Driven Dev™",
+        "WordPress Development",
+        "Shopify Stores",
+        "Custom Web Applications",
       ],
-      cta: "Explore Development",
+      cta: "Explore Web Development",
       color: "#0057FF",
     },
     {
       icon: "/images/ser-3.webp",
       bgIcon: "/images/ser-bg-3.webp",
-      title: "Data Engineering",
+      title: "Mobile Development",
       features: [
-        "Data Readiness Assessment",
-        "Databricks Implementation",
-        "RAG Architecture & Pipeline",
+        "Android Applications",
+        "iOS Applications",
+        "Cross-Platform Solutions",
       ],
-      cta: "Modernize Data",
+      cta: "Explore Mobile Development",
       color: "#FFED00",
     },
     {
       icon: "/images/ser-4.webp",
       bgIcon: "/images/ser-bg-4.webp",
-      title: "AI Engineering Teams",
+      title: "Digital Marketing",
       features: [
-        "Elite AI Talent Scaling",
-        "US & Nearshore Synergy",
-        "Agile Team Integration",
+        "Facebook Marketing",
+        "Instagram Marketing",
+        "Google Ads Campaigns",
       ],
-      cta: "Hire AI Talent",
+      cta: "Explore Digital Marketing",
+      color: "#A0D14F",
+    },
+    {
+      icon: "/images/ser-4.webp",
+      bgIcon: "/images/ser-bg-4.webp",
+      title: "SEO Services",
+      features: ["Technical SEO", "On-Page Optimization", "Local SEO Strategy"],
+      cta: "Explore SEO Services",
+      color: "#A0D14F",
+    },
+    {
+      icon: "/images/ser-4.webp",
+      bgIcon: "/images/ser-bg-4.webp",
+      title: "Branding & Design",
+      features: [
+        "Company Branding",
+        "Print-on-Demand Design",
+        "Marketing Creatives",
+      ],
+      cta: "Explore Branding",
+      color: "#A0D14F",
+    },
+    {
+      icon: "/images/ser-4.webp",
+      bgIcon: "/images/ser-bg-4.webp",
+      title: "eCommerce Solutions",
+      features: ["Amazon Marketplace", "eBay & Etsy", "Walmart & Alibaba"],
+      cta: "Explore eCommerce Services",
       color: "#A0D14F",
     },
   ];
@@ -87,37 +115,40 @@ export default function ServicesPage() {
                 <div className="h-2 w-2 rounded-full bg-[#A0D14F]" />
 
                 <span className="font-['JetBrains_Mono'] text-[12px] leading-3 font-medium tracking-[1.2px] text-[#A0D14F] uppercase">
-                  Enterprise AI Solutions
+                  DIGITAL SOLUTIONS & AI AUTOMATION
                 </span>
               </div>
-              <h1 className="mt-8 font-['Space_Grotesk'] text-[clamp(3.5rem,6vw,72px)] leading-[1.1] font-bold tracking-[-2.88px] text-[#DFE2ED]">
-                Less AI Hype.
-                <br />
-                <span className="text-[#A0D14F]">More Results.</span>
+              <h1 className="mt-8 font-['Space_Grotesk'] text-[clamp(3rem,6vw,64px)] leading-[1.1] font-bold tracking-[-2.88px] text-[#DFE2ED]">
+                Technology That Solves <br className="hidden md:block" />
+                <span className="text-[#A0D14F]">Business Problems.</span>
               </h1>
               <p className="mt-8 max-w-[720px] font-['Inter'] text-[18px] leading-[28.8px] text-[#DFE2ED]/80">
-                We help enterprises turn AI into ROI by automating high-impact
-                work and building AI native products grounded in your data.
+                From AI automation and custom software to websites, mobile
+                applications, digital marketing, branding, and eCommerce, we
+                build scalable solutions that help businesses operate smarter
+                and grow faster.
               </p>
               <div className="mt-12 flex flex-col gap-4 sm:flex-row">
-                <button
-                  type="button"
+                <Link
+                  href="/how-we-work"
+                  // type="button"
                   className="flex h-12 min-w-[245px] cursor-pointer items-center justify-center gap-3 bg-[#A0D14F] px-8 transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                 >
                   <span className="font-['Inter'] text-[12px] leading-4 font-bold tracking-[1.2px] text-[#070B12] uppercase">
-                    Talk To An AI Expert
+                    How We Work
                   </span>
 
                   <span className="text-[#070B12]">→</span>
-                </button>
-                <button
-                  type="button"
-                  className="flex h-[52px] min-w-[208px] cursor-pointer items-center justify-center border border-[#0057FF] px-8 transition-all duration-300 hover:bg-[#0057FF]/10 active:scale-[0.98]"
+                </Link>
+                <Link
+                  href="/contact"
+                  // type="button"
+                  className="flex h-12 min-w-[208px] cursor-pointer items-center justify-center border border-[#0057FF] px-8 transition-all duration-300 hover:bg-[#0057FF]/10 active:scale-[0.98]"
                 >
                   <span className="font-['Inter'] text-[12px] leading-4 font-bold tracking-[1.2px] text-[#0057FF] uppercase">
-                    Our Methodology
+                    GET IN TOUCH
                   </span>
-                </button>
+                </Link>
               </div>
             </div>
             {/* Right */}
@@ -170,12 +201,12 @@ export default function ServicesPage() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <h2 className="font-['Space_Grotesk'] text-[clamp(2.5rem,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
-                Core AI Services
+                Our Core Services
               </h2>
 
               <p className="mt-6 max-w-[580px] font-['Inter'] text-[16px] leading-6 text-[#DFE2ED99]">
-                End-to-end expertise to design, build, and scale your AI
-                transformation journey.
+                Comprehensive digital solutions designed to automate workflows,
+                strengthen your online presence, and accelerate business growth.
               </p>
             </div>
 
@@ -266,7 +297,7 @@ export default function ServicesPage() {
         <div className="mx-auto">
           {/* Heading */}
           <h2 className="text-center font-['Space_Grotesk'] text-[clamp(2.5rem,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
-            Proprietary AI Accelerators
+            Why Businesses Choose DigiGrowtherz
           </h2>
 
           {/* Cards */}
@@ -292,37 +323,58 @@ export default function ServicesPage() {
 
                 {/* Heading */}
                 <h3 className="mt-10 font-['Space_Grotesk'] text-[clamp(2rem,4vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
-                  Generative-Driven
-                  <br />
-                  Development™
+                  AI-First Approach
+                  {/* <br />
+                  Approach */}
                 </h3>
 
                 {/* Description */}
-                <p className="mt-8 max-w-[620px] font-['Inter'] text-[16px] leading-6 text-[#DFE2EDB2]">
-                  Our proprietary operating model for building software in the
-                  AI era. We blend AI agents and elite engineering to ship
-                  products 3x faster with near-zero defects.
+                <p className="mt-8 max-w-[720px] font-['Inter'] text-[16px] leading-6 text-[#DFE2EDB2]">
+                  We combine intelligent automation with modern software
+                  engineering to build digital solutions that improve
+                  efficiency, reduce manual work, and support long-term business
+                  growth.
                 </p>
 
                 {/* Stats */}
-                <div className="mt-12 grid max-w-[520px] grid-cols-2 gap-8">
+                <div className="mt-12 grid gap-8 md:grid-cols-4">
                   <div>
                     <h4 className="font-['Space_Grotesk'] text-[36px] leading-10 font-bold text-[#A0D14F]">
-                      47%
+                      AI
                     </h4>
 
                     <p className="mt-2 font-['JetBrains_Mono'] text-[12px] leading-4 text-[#DFE2ED]">
-                      Avg. Velocity Boost
+                      Automation Ready
                     </p>
                   </div>
 
                   <div>
                     <h4 className="font-['Space_Grotesk'] text-[36px] leading-10 font-bold text-[#FFED00]">
-                      -60%
+                      Web
                     </h4>
 
                     <p className="mt-2 font-['JetBrains_Mono'] text-[12px] leading-4 text-[#DFE2ED]">
-                      Reduced Maintenance
+                      Modern Platforms
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-['Space_Grotesk'] text-[36px] leading-10 font-bold text-[#A0D14F]">
+                      Mobile
+                    </h4>
+
+                    <p className="mt-2 font-['JetBrains_Mono'] text-[12px] leading-4 text-[#DFE2ED]">
+                      Cross-Platform Apps
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-['Space_Grotesk'] text-[36px] leading-10 font-bold text-[#FFED00]">
+                      Growth
+                    </h4>
+
+                    <p className="mt-2 font-['JetBrains_Mono'] text-[12px] leading-4 text-[#DFE2ED]">
+                      ROI Focused
                     </p>
                   </div>
                 </div>
@@ -347,20 +399,20 @@ export default function ServicesPage() {
                 {/* Label */}
                 <div className="inline-flex w-fit rounded-[2px] bg-[#FFED0033] px-3 py-1">
                   <span className="font-['JetBrains_Mono'] text-[12px] leading-4 text-[#FFED00] uppercase">
-                    Data Engine
+                    Delivery
                   </span>
                 </div>
 
                 {/* Heading */}
                 <h3 className="mt-12 font-['Space_Grotesk'] text-[24px] leading-8 font-normal text-[#DFE2ED]">
-                  GenIQ
+                  End-to-End Delivery
                 </h3>
 
                 {/* Description */}
                 <p className="mt-8 font-['Inter'] text-[14px] leading-5 text-[#DFE2ED99]">
-                  The first AI-driven process intelligence platform that
-                  monitors and optimizes software development lifecycles in
-                  real-time.
+                  From strategy and design to development, deployment, and
+                  ongoing support, we provide everything your business needs to
+                  grow digitally.
                 </p>
 
                 {/* Divider */}
@@ -369,10 +421,10 @@ export default function ServicesPage() {
                 {/* Link */}
                 <div className="mt-auto pt-8">
                   <Link
-                    href="/contact"
+                    href="/how-we-work"
                     className="font-['JetBrains_Mono'] text-[12px] leading-4 tracking-[1.2px] text-[#FFED00] uppercase transition-opacity hover:opacity-80"
                   >
-                    View Demo
+                    OUR PROCESS
                   </Link>
                 </div>
               </div>
@@ -386,30 +438,30 @@ export default function ServicesPage() {
                 {/* Label */}
                 <div className="inline-flex w-fit rounded-[2px] bg-[#0057FF33] px-3 py-1">
                   <span className="font-['JetBrains_Mono'] text-[12px] leading-4 text-[#0057FF] uppercase">
-                    Architecture
+                    Case-Studies
                   </span>
                 </div>
 
                 {/* Heading */}
                 <h3 className="mt-12 font-['Space_Grotesk'] text-[24px] leading-8 font-normal text-[#DFE2ED]">
-                  RAG Framework
+                  Website Development
                 </h3>
 
                 {/* Description */}
                 <p className="mt-8 font-['Inter'] text-[14px] leading-5 text-[#DFE2ED99]">
-                  Connect your proprietary data safely to LLMs. Our RAG
-                  accelerator ensures accuracy, security, and context-aware
-                  responses.
+                  Fast, secure, and scalable websites built with WordPress,
+                  Shopify, and modern custom technologies.
                 </p>
 
                 {/* Divider */}
                 <div className="mt-auto border-t border-white/[0.05] pt-6">
-                  <button
+                  <Link
+                    href="/case-studies"
                     type="button"
                     className="cursor-pointer font-['JetBrains_Mono'] text-[12px] leading-4 tracking-[1.2px] text-[#0057FF] uppercase transition-opacity hover:opacity-80"
                   >
-                    Get Blueprint
-                  </button>
+                    VIEW WEBSITES
+                  </Link>
                 </div>
               </div>
             </div>
@@ -420,22 +472,24 @@ export default function ServicesPage() {
                 {/* Content */}
                 <div className="max-w-[460px]">
                   <h3 className="font-['Space_Grotesk'] text-[24px] leading-8 font-normal text-[#DFE2ED]">
-                    AI Readiness Assessment
+                    Business Growth Strategy
                   </h3>
 
                   <p className="mt-8 font-['Inter'] text-[14px] leading-5 text-[#DFE2ED99]">
-                    Discover gaps, identify ROI-positive opportunities, and get
-                    a clear path to prepare your data architecture for AI scale.
+                    Whether you're launching a startup or scaling an established
+                    company, we combine AI, marketing, SEO, and digital strategy
+                    to help you achieve measurable growth.
                   </p>
 
-                  <button
-                    type="button"
+                  <Link
+                    href="/contact"
+                    // type="button"
                     className="mt-10 inline-flex h-[34px] cursor-pointer items-center justify-center border border-[#A0D14F4D] px-6"
                   >
                     <span className="font-['JetBrains_Mono'] text-[12px] leading-4 text-[#A0D14F] uppercase">
-                      Start Assessment
+                      START YOUR PROJECT
                     </span>
-                  </button>
+                  </Link>
                 </div>
 
                 {/* Decorative Image */}
@@ -464,37 +518,41 @@ export default function ServicesPage() {
             <div className="mx-auto max-w-[860px] text-center">
               {/* Heading */}
               <h2 className="font-['Space_Grotesk'] text-[clamp(2.5rem,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
-                Ready to turn AI into{" "}
-                <span className="text-[#A0D14F]">ROI?</span>
+                Ready to Grow with AI & <br className="hidden md:block" />
+                <span className="text-[#A0D14F]">Digital Innovation?</span>
               </h2>
 
               {/* Description */}
               <p className="mx-auto mt-8 max-w-[760px] font-['Inter'] text-[18px] leading-[28.8px] font-normal text-[#DFE2EDB2]">
-                We know what works in AI and what doesn't. Let's talk about
-                what's possible for your business.
+                Whether you're looking to automate business processes, launch a
+                custom website, develop a mobile application, or expand your
+                digital presence, DigiGrowtherz is ready to help you achieve
+                measurable results.
               </p>
 
               {/* Buttons */}
               <div className="mt-14 flex flex-col items-center justify-center gap-5 sm:flex-row">
                 {/* Primary Button */}
-                <button
-                  type="button"
+                <Link
+                  href="/case-studies"
+                  // type="button"
                   className="flex h-[62px] w-full cursor-pointer items-center justify-center bg-[#A0D14F] px-8 transition-all duration-300 hover:brightness-105 active:scale-[0.98] md:max-w-[213px]"
                 >
                   <span className="font-['Inter'] text-[14px] leading-5 font-bold tracking-[1.4px] text-[#070B12] uppercase">
-                    Get In Touch
+                    Our Portfolio
                   </span>
-                </button>
+                </Link>
 
                 {/* Secondary Button */}
-                <button
-                  type="button"
-                  className="flex h-[62px] w-full cursor-pointer items-center justify-center border border-white/20 px-8 transition-all duration-300 hover:border-white/40 hover:bg-white/5 active:scale-[0.98] md:max-w-[254px]"
+                <Link
+                  href="/contact"
+                  // type="button"
+                  className="flex h-[62px] w-full cursor-pointer items-center justify-center border border-white/20 px-8 transition-all duration-300 hover:border-white/40 hover:bg-white/5 active:scale-[0.98] md:max-w-[270px]"
                 >
                   <span className="font-['Inter'] text-[14px] leading-5 font-bold tracking-[1.4px] text-white uppercase">
-                    Schedule A Demo
+                    BOOK A CONSULTATION
                   </span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
