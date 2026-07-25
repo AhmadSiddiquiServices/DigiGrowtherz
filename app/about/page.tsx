@@ -70,20 +70,23 @@ export default function AboutPage() {
           <div className="max-w-[620px]">
             {/* Label */}
             <span className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal tracking-[3.2px] text-[#A0D14F] uppercase">
-              Mission Critical
+              WHO WE ARE
             </span>
 
             {/* Heading */}
-            <h1 className="mt-6 font-['Space_Grotesk'] text-[clamp(36px,7vw,72px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
-              TURNING AI INTO <br className="hidden md:block" />
-              <span className="text-[#A0D14F]">ROI</span>.
+            <h1 className="mt-6 font-['Space_Grotesk'] text-[clamp(36px,7vw,60px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
+              BUILDING THE FUTURE OF BUSINESS WITH{" "}
+              {/* <br className="hidden md:block" /> */}
+              <span className="text-[#A0D14F]">AI</span>.
             </h1>
 
             {/* Description */}
-            <p className="mt-8 max-w-[560px] font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-              We transcend the hype. DigiGrowtherz is a global engineering
-              powerhouse dedicated to operationalizing artificial intelligence
-              for high-velocity enterprise growth.
+            <p className="mt-8 font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
+              DigiGrowtherz helps businesses unlock growth through AI
+              automation, intelligent software, and modern digital solutions. We
+              combine strategy, technology, and innovation to simplify
+              operations, accelerate productivity, and create scalable digital
+              experiences.
             </p>
 
             {/* Buttons */}

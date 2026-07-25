@@ -27,15 +27,16 @@ export default function CoreServices() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="mb-[clamp(48px,5vw,64px)] max-w-[560px]"
+          className="mb-[clamp(48px,5vw,64px)] max-w-[800px]"
         >
           <h2 className="font-['Space_Grotesk'] text-[clamp(2rem,3vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
             Core Services
           </h2>
 
           <p className="mt-4 font-sans text-[clamp(1rem,1.3vw,1.125rem)] leading-[1.8] font-normal text-[#DFE2ED99]">
-            Put AI to work in your business with our specialized expertise
-            across the intelligence lifecycle.
+            Transform your business with AI-powered solutions, modern digital
+            experiences, and growth-focused services designed to help you scale
+            faster.
           </p>
         </motion.div>
 
@@ -64,14 +65,14 @@ export default function CoreServices() {
                 />
 
                 <h3 className="font-['Space_Grotesk'] text-[clamp(1.75rem,2.5vw,2rem)] leading-[1.3] font-medium text-[#DFE2ED]">
-                  AI Strategy & Roadmap
+                  AI Automation
                 </h3>
 
                 <ul className="mt-8 space-y-6">
                   {[
-                    "AI Transformation Strategy",
-                    "AI Empowerment Training",
-                    "MLOps & AI Governance",
+                    "Intelligent Workflow Automation",
+                    "AI Chatbots & Virtual Assistants",
+                    "Business Process Optimization",
                   ].map((item) => (
                     <li
                       key={item}
@@ -94,7 +95,7 @@ export default function CoreServices() {
                   href="#"
                   className="mt-20 inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#A0D14F] uppercase md:mt-auto"
                 >
-                  Define Your Roadmap
+                  EXPLORE AI
                   <Image
                     src="/images/green-arrow.webp"
                     alt=""
@@ -138,21 +139,19 @@ export default function CoreServices() {
             />
 
             <h3 className="font-['Space_Grotesk'] text-[clamp(1.75rem,2vw,2rem)] leading-[1.3] font-medium text-[#DFE2ED]">
-              AI Engineering
-              <br />
-              Teams
+              Website Development
             </h3>
 
             <p className="mt-6 text-[16px] leading-[1.8] text-[#DFE2EDB2]">
-              Accelerate your AI roadmap with the top talent across the US and
-              Latin America — all in your timezone.
+              Build high-performance WordPress, Shopify, and custom websites
+              designed for speed, scalability, and business growth.
             </p>
 
             <a
               href="#"
               className="mt-auto inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#005EFF] uppercase"
             >
-              Scale Now
+              VIEW Web Development
               <Image
                 src="/images/blue-arrow.webp"
                 alt="Arrow Blue"
@@ -171,7 +170,7 @@ export default function CoreServices() {
             transition={{
               duration: 0.25,
             }}
-            className="relative flex min-h-[400px] flex-col overflow-hidden rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-[clamp(24px,3vw,40px)] backdrop-blur-[20px]"
+            className="relative flex min-h-[400px] flex-col overflow-hidden rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-[clamp(24px,3vw,25px)] backdrop-blur-[20px]"
           >
             {/* Background Image */}
             <div className="absolute inset-x-0 top-0 h-[180px] overflow-hidden">
@@ -189,20 +188,20 @@ export default function CoreServices() {
                 className="mb-8"
               />
 
-              <h3 className="font-['Space_Grotesk'] text-[clamp(2rem,2.5vw,3rem)] leading-[1.3] font-medium text-[#DFE2ED]">
-                Data Engineering
+              <h3 className="font-['Space_Grotesk'] text-[clamp(2rem,2.5vw,2.5rem)] leading-[1.3] font-medium text-[#DFE2ED]">
+                Mobile Development
               </h3>
 
-              <p className="mt-6 text-[18px] leading-[1.8] text-[#DFE2EDB2]">
-                Data readiness, modernization, and business intelligence. We
-                make your data AI-ready.
+              <p className="mt-16 text-[18px] leading-[1.8] text-[#DFE2EDB2]">
+                Create powerful Android and iOS applications with seamless user
+                experiences and enterprise-grade performance.
               </p>
 
               <a
                 href="#"
                 className="mt-auto inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#E6D40D] uppercase"
               >
-                Prepare Data
+                View Mobile Development
                 <Image
                   src="/images/yellow-arrow.webp"
                   alt=""
@@ -233,12 +232,13 @@ export default function CoreServices() {
             />
 
             <h3 className="font-['Space_Grotesk'] text-[clamp(2rem,2.5vw,2.25rem)] leading-[1.3] font-medium text-[#DFE2ED]">
-              AI-Powered Development
+              Digital Growth Solutions
             </h3>
 
-            <p className="mt-6 max-w-[620px] text-[16px] leading-[1.8] text-[#DFE2EDB2]">
-              From AI-native product experiences to agentic application
-              modernization, we build software that thinks.
+            <p className="mt-6 max-w-[700px] text-[16px] leading-[1.8] text-[#DFE2EDB2]">
+              Accelerate your brand with digital marketing, SEO, company
+              branding, and multi-channel eCommerce solutions that drive
+              measurable results.
             </p>
 
             {/* Bottom Image */}

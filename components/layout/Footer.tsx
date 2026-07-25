@@ -37,12 +37,13 @@ function FooterColumn({ title, links }: FooterColumnProps) {
 export default function Footer() {
   return (
     <footer className="bg-[#070B12]">
-      <div className="container-wrapper px-[clamp(1rem,4vw,5rem)] py-[clamp(4rem,6vw,5rem)]">
+      <div className="container-wrapper px-[clamp(1rem,4vw,5rem)] pt-[clamp(4rem,6vw,5rem)] pb-[clamp(2rem,6vw,2rem)]">
         {/* Desktop Footer */}
         <div className="hidden md:block">
-          <div className="flex flex-col gap-16 lg:flex-row lg:justify-between">
-            {/* Left Content */}
-            <div className="shrink-0">
+          {/* <div className="flex flex-col gap-16 lg:flex-row lg:justify-between"> */}
+          {/* Left Content */}
+          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-5 lg:gap-x-[clamp(5rem,10vw,12rem)]">
+            <div className="col-span-2">
               <Image
                 src="/images/logo.webp"
                 alt="DigiGrowtherz"
@@ -52,20 +53,20 @@ export default function Footer() {
               />
 
               <p className="font-inter text-[14px] leading-[22.75px] text-[#DFE2ED99]">
-                Named #1 AI Services Company by Clutch. We build the
-                intelligence layer your business runs on.
+                We empower businesses with AI automation and innovative digital
+                solutions that streamline operations, enhance customer
+                experiences, and drive sustainable growth.
               </p>
             </div>
 
             {/* Footer Links */}
-            <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-[clamp(5rem,10vw,12rem)]">
-              <FooterColumn title="Services" links={FOOTER_LINKS.services} />
+            <FooterColumn title="Services" links={FOOTER_LINKS.services} />
 
-              <FooterColumn title="Resources" links={FOOTER_LINKS.resources} />
+            <FooterColumn title="Resources" links={FOOTER_LINKS.resources} />
 
-              <FooterColumn title="Company" links={FOOTER_LINKS.company} />
-            </div>
+            <FooterColumn title="Company" links={FOOTER_LINKS.company} />
           </div>
+          {/* </div> */}
 
           {/* Divider */}
           <div className="mt-16 border-t border-[#FFFFFF0D]" />
@@ -88,7 +89,7 @@ export default function Footer() {
               ))}
             </div>
 
-            <button
+            {/* <button
               className="hidden h-8 w-8 items-center justify-center rounded-xl border border-[#FFFFFF1A] transition-all duration-300 hover:border-[#A0D14F] md:flex"
               aria-label="Share"
             >
@@ -110,7 +111,7 @@ export default function Footer() {
                 <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
                 <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
               </svg>
-            </button>
+            </button> */}
           </div>
         </div>
         {/* Mobile Footer */}

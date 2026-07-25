@@ -34,24 +34,24 @@ export default function Hero() {
             <span className="h-2 w-2 rounded-full bg-[#A0D14F]" />
 
             <span className="font-jetbrains text-[clamp(10px,2vw,12px)] leading-3 font-medium tracking-[1.2px] text-[#DFE2ED99] uppercase">
-              Named #1 AI Services Company by Clutch
+              AI AUTOMATION & DIGITAL SOLUTIONS
             </span>
           </div>
 
           {/* Heading */}
-          <h1 className="font-space text-[clamp(3rem,7vw,4.5rem)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
-            Less AI Hype.
+          <h1 className="font-space text-[clamp(2rem,7vw,3.2rem)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
+            Smarter Automation.
             <br />
-            <span className="text-[#A0D14F]">More Results.</span>
+            <span className="text-[#A0D14F]">Faster Business Growth.</span>
           </h1>
 
           {/* Description */}
           <p className="font-inter mt-8 max-w-[640px] text-[clamp(1rem,2vw,1.125rem)] leading-[29.25px] text-[#DFE2EDB2]">
-            We help enterprises turn AI into ROI by{" "}
-            <span className="font-semibold text-[#A0D14F]">
-              automating high-impact work
-            </span>{" "}
-            and building AI native products grounded in your data.
+            We help businesses streamline operations with{" "}
+            <span className="font-semibold text-[#A0D14F]">AI automation</span>{" "}
+            while delivering high-performance websites, mobile apps, digital
+            marketing, branding, SEO, and eCommerce solutions that drive
+            measurable growth.
           </p>
 
           {/* Buttons */}

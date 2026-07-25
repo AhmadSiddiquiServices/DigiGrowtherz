@@ -6,11 +6,11 @@ import Image from "next/image";
 
 export default function Home() {
   const TRUSTED_COMPANIES = [
-    "Anthropic",
-    "Databricks",
-    "Google Cloud",
-    "COX",
-    "Aero Star",
+    "AI Automation",
+    "Custom Development",
+    "Mobile Apps",
+    "Digital Marketing",
+    "eCommerce",
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="container-wrapper py-[clamp(4rem,6vw,5rem)]">
           {/* Heading */}
           <p className="font-jetbrains text-center text-[12px] leading-3 font-medium tracking-[1.2px] text-[#DFE2ED66] uppercase">
-            Trusted by industry leaders
+            AI & Digital Solutions We Deliver
           </p>
 
           {/* Companies */}
@@ -57,21 +57,22 @@ export default function Home() {
                 {/* Yellow Glow */}
                 <div className="absolute z-0 h-16 w-16 rounded-xl bg-[#FFED0030] blur-[40px]" />
 
-                <h2 className="relative z-10 font-['Space_Grotesk'] text-[clamp(2.5rem,5vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
-                  Everyone is talking <br className="hidden md:block" />
-                  about AI.
+                <h2 className="relative z-10 font-['Space_Grotesk'] text-[clamp(2.3rem,5vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
+                  Many promise digital transformation.
+                  {/* <br className="block md:hidden" /> */}
                   <span className="text-[#A0D14F]">
                     {" "}
-                    Few are <br className="hidden md:block" />
-                    delivering results.
+                    We deliver measurable growth{" "}
+                    {/* <br className="hidden md:block" /> */}
                   </span>
                 </h2>
               </div>
 
               {/* Description */}
               <p className="mt-10 font-sans text-[clamp(1rem,1.3vw,1.125rem)] leading-[1.8] font-normal text-[#DFE2EDB2]">
-                Most organizations get stuck in pilots, demos, and disconnected
-                initiatives, burning budget without moving the needle.
+                From AI automation to custom digital solutions, we help
+                businesses streamline operations, improve customer experiences,
+                and achieve real business results.
               </p>
 
               {/* Feature Points */}
@@ -89,13 +90,13 @@ export default function Home() {
 
                   <div>
                     <h3 className="font-['Space_Grotesk'] text-[20px] leading-7 font-normal text-[#DFE2ED]">
-                      AI Is All We Do
+                      AI-First Solutions
                     </h3>
 
-                    <p className="mt-3 max-w-[430px] font-sans text-[16px] leading-6 font-normal text-[#DFE2ED99]">
-                      When AI is your entire business, you build deeper
-                      expertise and eliminate the learning curve your team would
-                      pay for elsewhere.
+                    <p className="mt-3 max-w-[520px] font-sans text-[16px] leading-6 font-normal text-[#DFE2ED99]">
+                      We combine intelligent automation with modern web, mobile,
+                      and business solutions to help organizations work smarter,
+                      faster, and more efficiently.
                     </p>
                   </div>
                 </div>
@@ -113,12 +114,14 @@ export default function Home() {
 
                   <div>
                     <h3 className="font-['Space_Grotesk'] text-[20px] leading-7 font-normal text-[#DFE2ED]">
-                      Outcome-Driven by Design
+                      Results That Matter
                     </h3>
 
-                    <p className="mt-3 max-w-[430px] font-sans text-[16px] leading-6 font-normal text-[#DFE2ED99]">
-                      We measure success in business impact—with accountability
-                      for ROI, not just technical deliverables.
+                    <p className="mt-3 max-w-[520px] font-sans text-[16px] leading-6 font-normal text-[#DFE2ED99]">
+                      Every solution is built with your business goals in
+                      mind—focusing on measurable growth, operational
+                      efficiency, and long-term success instead of just
+                      delivering another project.
                     </p>
                   </div>
                 </div>
@@ -151,13 +154,14 @@ export default function Home() {
         <div className="mx-auto flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-center">
           {/* Content */}
           <div className="max-w-[760px]">
-            <h2 className="font-['Space_Grotesk'] text-[clamp(36px,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#070B12]">
-              Talk to an AI expert
+            <h2 className="font-['Space_Grotesk'] text-[clamp(36px,5vw,40px)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#070B12]">
+              Let's Build Something Smarter Together
             </h2>
 
             <p className="mt-8 max-w-[760px] font-['Inter'] text-[18px] leading-[1.6] font-normal text-[rgba(7,11,18,0.8)]">
-              We know what works in AI and what doesn't. Let's talk about what's
-              possible for your business. No fluff, just technical strategy.
+              Whether you're exploring AI automation, a custom website, a mobile
+              app, or digital growth strategies, our experts are ready to help
+              you find the right solution for your business.
             </p>
           </div>
 
