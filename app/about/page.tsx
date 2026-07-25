@@ -6,34 +6,34 @@ import Link from "next/link";
 export default function AboutPage() {
   const stats = [
     {
-      label: "LATENCY",
-      value: "-40%",
-      description: "DEV-CYCLE COMPRESSION",
+      label: "EFFICIENCY",
+      value: "40%+",
+      description: "PROCESS OPTIMIZATION",
       color: "#0057FF",
     },
     {
-      label: "ACCURACY",
-      value: "100%",
-      description: "DETERMINISTIC OUTPUTS",
+      label: "INNOVATION",
+      value: "AI-FIRST",
+      description: "DIGITAL TRANSFORMATION",
       color: "#A0D14F",
     },
     {
       label: "SCALABILITY",
-      value: "INF",
-      description: "GLOBAL INFRASTRUCTURE",
+      value: "GLOBAL",
+      description: "BUSINESS SOLUTIONS",
       color: "#FFED00",
     },
   ];
 
   const locations = [
     {
-      title: "NORTH AMERICA HQ",
-      cities: ["SAN FRANCISCO", "AUSTIN", "NEW YORK"],
+      title: "AI Automation",
+      cities: ["Workflow Automation", "AI Assistants", "Process Optimization"],
       borderColor: "#A0D14F",
     },
     {
-      title: "LATAM HUB",
-      cities: ["SÃO PAULO", "MEDELLÍN", "MEXICO CITY"],
+      title: "Digital Solutions",
+      cities: ["Web Development", "Mobile Apps", "Growth Marketing"],
       borderColor: "#FFED00",
     },
   ];
@@ -41,21 +41,21 @@ export default function AboutPage() {
   const protocols = [
     {
       icon: "/images/protocol-1.webp",
-      title: "PRIVACY FIRST",
+      title: "Innovation First",
       description:
-        "Every GenDD instance is sandboxed. We prioritize zero-trust architecture to ensure your proprietary data never leaks into public models.",
+        "We embrace emerging technologies and AI-driven thinking to help businesses stay ahead in an evolving digital landscape.",
     },
     {
       icon: "/images/protocol-2.webp",
-      title: "RADICAL SPEED",
+      title: "Business Focused",
       description:
-        "We iterate in days, not months. Our automated toolchain removes the friction of traditional enterprise software cycles.",
+        "Every solution is designed around measurable outcomes, ensuring technology supports your growth—not the other way around.",
     },
     {
       icon: "/images/protocol-3.webp",
-      title: "AI TRANSPARENCY",
+      title: "Trusted Partnerships",
       description:
-        'Explainability is built-in. We provide the "Why" behind every AI decision, ensuring human-in-the-loop oversight at every stage.',
+        "We believe successful projects are built on collaboration, honest communication, and long-term relationships.",
     },
   ];
   return (
@@ -91,8 +91,9 @@ export default function AboutPage() {
 
             {/* Buttons */}
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <button
-                type="button"
+              <Link
+                href="/services"
+                // type="button"
                 className="flex h-[42px] cursor-pointer items-center justify-center gap-3 rounded-[4px] border border-white/[0.05] bg-[#262A32] px-4 py-2 transition-all duration-300 hover:border-[#A0D14F]/30 hover:bg-[#2C313A]"
               >
                 <Image
@@ -104,12 +105,13 @@ export default function AboutPage() {
                 />
 
                 <span className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#DFE2ED] uppercase">
-                  Velocity First
+                  Explore Our Services
                 </span>
-              </button>
+              </Link>
 
-              <button
-                type="button"
+              <Link
+                href="/contact"
+                // type="button"
                 className="flex h-[42px] cursor-pointer items-center justify-center gap-3 rounded-[4px] border border-white/[0.05] bg-[#262A32] px-4 py-2 transition-all duration-300 hover:border-[#A0D14F]/30 hover:bg-[#2C313A]"
               >
                 <Image
@@ -121,9 +123,9 @@ export default function AboutPage() {
                 />
 
                 <span className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#DFE2ED] uppercase">
-                  GENDD Framework
+                  Get in Touch
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -157,11 +159,11 @@ export default function AboutPage() {
           {/* Section Header */}
           <div className="mb-8">
             <p className="font-['Space_Grotesk'] text-[16px] leading-6 font-normal text-[#A0D14F]">
-              GenDD METHODOLOGY
+              OUR METHODOLOGY
             </p>
 
             <h2 className="mt-2 font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-              Generative-Driven Development: Our Core Engine
+              AI-Driven Innovation: Our Foundation
             </h2>
           </div>
 
@@ -171,17 +173,18 @@ export default function AboutPage() {
             <div className="flex min-h-[400px] flex-col justify-between rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-6 backdrop-blur-[20px] lg:col-span-2">
               <div>
                 <p className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#A0D14F]">
-                  01 / ARCHITECTURE
+                  DISCOVERY
                 </p>
 
                 <h3 className="mt-6 font-['Space_Grotesk'] text-[16px] leading-6 font-normal text-[#DFE2ED]">
-                  Autonomous Pipeline Integration
+                  Business-First Strategy
                 </h3>
 
                 <p className="mt-6 max-w-[680px] font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-                  Our GenDD model integrates LLMs directly into the software
-                  lifecycle, automating the translation from business intent to
-                  production-grade code with 99.9% semantic accuracy.
+                  Every successful solution starts with understanding your
+                  business. We identify challenges, uncover opportunities, and
+                  design intelligent systems that align technology with
+                  measurable business outcomes.
                 </p>
               </div>
 
@@ -197,11 +200,11 @@ export default function AboutPage() {
 
                 <div className="mt-4 flex items-center justify-between">
                   <span className="font-['JetBrains_Mono'] text-[10px] leading-[15px] font-normal text-white/40 uppercase">
-                    System Status: Operational
+                    STRATEGY STATUS: ACTIVE
                   </span>
 
                   <span className="font-['JetBrains_Mono'] text-[10px] leading-[15px] font-normal text-white/40 uppercase">
-                    Uploading Data_Core...
+                    ANALYZING BUSINESS WORKFLOWS...
                   </span>
                 </div>
               </div>
@@ -217,13 +220,13 @@ export default function AboutPage() {
               />
 
               <h3 className="mt-8 font-['Space_Grotesk'] text-[16px] leading-6 font-normal text-[#DFE2ED]">
-                ROI Precision
+                Intelligent Execution
               </h3>
 
               <p className="mt-6 font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-                We don't build toys. Every GenDD deployment is mapped to a
-                specific financial KPI, ensuring that every token spent
-                generates measurable enterprise value.
+                From AI automation to custom applications, every solution is
+                engineered with performance, scalability, and long-term growth
+                in mind.
               </p>
             </div>
 
@@ -272,16 +275,17 @@ export default function AboutPage() {
           <div className="w-full max-w-[552px]">
             {/* Heading */}
             <h2 className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#DFE2ED]">
-              GLOBAL <span className="text-[#0057FF]">VELOCITY.</span> LOCAL
-              CONTEXT.
+              GLOBAL <span className="text-[#0057FF]">EXPERTISE.</span> LOCAL
+              IMPACT.
             </h2>
 
             {/* Description */}
             <p className="mt-8 font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-              Operating at the intersection of Silicon Valley innovation and
-              Latin American engineering talent. Our bicultural presence ensures
-              we deliver cost-effective, high-tier AI solutions that scale
-              across borders.
+              We partner with businesses across industries to deliver AI
+              automation, websites, mobile applications, digital marketing, and
+              eCommerce solutions. No matter where your business operates, our
+              focus remains the same—building technology that drives measurable
+              growth.
             </p>
 
             {/* Locations */}
@@ -314,13 +318,13 @@ export default function AboutPage() {
           {/* Header */}
           <div className="mx-auto max-w-[900px] text-center">
             <h2 className="font-['Space_Grotesk'] text-[16px] leading-6 font-normal text-[#DFE2ED] uppercase">
-              THE DIGIGROWTHERZ PROTOCOL
+              THE DIGIGROWTHTERZ PRINCIPLES
             </h2>
 
             <p className="mx-auto mt-4 max-w-[780px] font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-              Our engineering culture is built on three immutable pillars that
-              ensure we stay ahead of the curve while maintaining absolute
-              integrity.
+              Everything we build is guided by a commitment to innovation,
+              transparency, and delivering real business value through modern
+              technology.
             </p>
           </div>
 
@@ -368,9 +372,9 @@ export default function AboutPage() {
         <div className="relative mx-auto flex max-w-[1280px] flex-col items-center">
           {/* Heading */}
           <h2 className="text-center font-['Space_Grotesk'] text-[clamp(48px,7vw,72px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED] uppercase">
-            Ready to Automate
+            READY TO BUILD
             <br />
-            <span className="text-[#A0D14F]">Your Growth?</span>
+            <span className="text-[#A0D14F]">SMARTER SOLUTIONS?</span>
           </h2>
 
           {/* Buttons */}
@@ -381,17 +385,17 @@ export default function AboutPage() {
               className="flex h-[68px] w-full items-center justify-center bg-[#A0D14F] px-6 py-5 transition-all duration-300 hover:brightness-110 md:max-w-[370px]"
             >
               <span className="font-['JetBrains_Mono'] text-[16px] leading-7 font-bold tracking-[1.8px] text-[#070B12] uppercase md:text-[18px]">
-                Initialize Consultation
+                BOOK A CONSULTATION
               </span>
             </Link>
 
             {/* Secondary CTA */}
             <Link
-              href="/documentation"
-              className="flex h-[70px] w-full items-center justify-center border border-[#0057FF] bg-transparent px-6 py-5 transition-all duration-300 hover:bg-[#0057FF]/10 md:max-w-[309px]"
+              href="/services"
+              className="flex h-[70px] w-full items-center justify-center border border-[#0057FF] bg-transparent px-6 py-5 transition-all duration-300 hover:bg-[#0057FF]/10 md:max-w-[370px]"
             >
               <span className="font-['JetBrains_Mono'] text-[16px] leading-7 font-bold tracking-[1.8px] text-[#0057FF] uppercase md:text-[18px]">
-                View Documentation
+                EXPLORE OUR SERVICES
               </span>
             </Link>
           </div>
