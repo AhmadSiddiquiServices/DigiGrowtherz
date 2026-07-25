@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HowWeWorkPage() {
   const phases = [
@@ -9,7 +10,7 @@ export default function HowWeWorkPage() {
       title: "Discovery",
       icon: "/images/phase-1.webp",
       description:
-        "Mapping workflows, identifying bottlenecks, and pinpointing AI-native opportunities with ROI priority.",
+        "Understanding your business, identifying opportunities, and defining project goals to create a clear roadmap for success.",
       active: true,
     },
     {
@@ -17,68 +18,68 @@ export default function HowWeWorkPage() {
       title: "Strategy",
       icon: "/images/phase-2.webp",
       description:
-        "Designing the AI roadmap, selecting the LLM stack, and establishing data governance protocols.",
+        "Planning the right technology, architecture, workflows, and implementation approach based on your business objectives.",
     },
     {
       phase: "Phase 03",
-      title: "Engineering",
+      title: "Development",
       icon: "/images/phase-3.webp",
       description:
-        "Core GenDD execution. Building agents, RAG pipelines, and integrating proprietary data systems.",
+        "Designing, developing, and integrating scalable AI, web, mobile, and digital solutions using modern technologies.",
     },
     {
       phase: "Phase 04",
       title: "Deployment",
       icon: "/images/phase-4.webp",
       description:
-        "Seamless rollouts into production environments with MLOps monitoring and team training.",
+        "Launching secure, high-performance solutions with testing, optimization, and seamless integration into your business.",
     },
     {
       phase: "Phase 05",
-      title: "Optimization",
+      title: "Growth",
       icon: "/images/phase-5.webp",
       description:
-        "Continuous feedback loops. Refining agents based on performance metrics and evolving data.",
+        "Monitoring performance, gathering insights, and continuously improving your digital ecosystem for long-term success.",
     },
   ];
 
   const features = [
     {
-      title: "Agentic Lifecycle Management",
+      title: "Business-First Strategy",
       description:
-        "AI agents manage version control, testing, and deployment cycles autonomously.",
+        "Every solution begins with understanding your goals, workflows, and opportunities before choosing the right technology.",
     },
     {
-      title: "RAG-First Architecture",
+      title: "Modern Development",
       description:
-        "Every build is grounded in your proprietary knowledge base from day one.",
+        "From AI automation and custom platforms to websites and mobile applications, we build solutions designed for long-term performance.  ",
     },
     {
-      title: "Automated Governance",
+      title: "Continuous Improvement",
       description:
-        "Compliance and security checks are baked into the generative prompts.",
+        "Launch is only the beginning. We optimize, monitor, and enhance every solution to maximize efficiency and business growth.",
     },
   ];
 
   const metrics = [
     {
-      value: "300%",
-      label: "Velocity Increase",
+      value: "100%",
+      label: "Client-Focused Solutions",
       color: "#A0D14F",
     },
     {
-      value: "99%",
-      label: "Deployment Accuracy",
+      value: "AI",
+      label: "Powered Innovation",
       color: "#0057FF",
     },
     {
-      value: "Zero",
-      label: "Learning Curve",
+      value: "End-to-End",
+      label: "Project Delivery",
       color: "#FFED00",
     },
     {
       value: "ROI",
-      label: "Focused Design",
+      label: "Driven Results",
       color: "#FFFFFF",
     },
   ];
@@ -91,45 +92,44 @@ export default function HowWeWorkPage() {
           <div>
             {/* Sub Heading */}
             <p className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal tracking-[1.6px] text-[#0057FF] uppercase">
-              Engineered for ROI
+              HOW WE WORK
             </p>
 
             {/* Heading */}
             <h2 className="mt-6 font-['Space_Grotesk'] text-[clamp(2.8rem,5vw,60px)] leading-[0.95] font-bold tracking-[-2.88px] text-[#DFE2ED]">
-              The AI-Native
-              <br />
-              <span className="text-[#A0D14F]">Operating Model.</span>
+              Transforming Ideas Into <br className="hidden md:block" />
+              <span className="text-[#A0D14F]">Intelligent Solutions.</span>
             </h2>
 
             {/* Description */}
             <p className="mt-8 font-['Inter'] text-[18px] leading-[28.8px] font-normal text-[#DFE2ED99]">
-              Most organizations get stuck in pilots. We deliver
-              production-grade results through our proprietary{" "}
-              <span className="text-[#A0D14F]">
-                Generative-Driven Development (GenDD)
-              </span>{" "}
-              methodology.
+              Every successful project starts with understanding your business.
+              From <span className="text-[#A0D14F]">AI automation</span> to
+              custom software and digital growth, we follow a proven process
+              that delivers scalable solutions and measurable business results.
             </p>
 
             {/* CTA Buttons */}
             <div className="mt-12 flex flex-col gap-4 sm:flex-row">
-              <button
-                type="button"
+              <Link
+                href="/contact"
+                // type="button"
                 className="flex h-[58px] cursor-pointer items-center justify-center bg-[#A0D14F] px-6 transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
               >
                 <span className="font-['Inter'] text-[16px] leading-6 font-semibold tracking-[1.6px] text-[#070B12] uppercase">
-                  Launch Transformation
+                  START YOUR PROJECT
                 </span>
-              </button>
+              </Link>
 
-              <button
-                type="button"
+              <Link
+                href="/services"
+                // type="button"
                 className="flex h-[58px] cursor-pointer items-center justify-center border border-[#0057FF] px-6 transition-all duration-300 hover:bg-[#0057FF]/10 active:scale-[0.98]"
               >
                 <span className="font-['Inter'] text-[16px] leading-6 font-semibold tracking-[1.6px] text-[#0057FF] uppercase">
-                  View Case Studies
+                  VIEW OUR SERVICES
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -162,13 +162,13 @@ export default function HowWeWorkPage() {
           {/* Header */}
           <div className="mx-auto max-w-[760px] text-center">
             <h2 className="font-['Space_Grotesk'] text-[clamp(2.5rem,4vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
-              The Automated Journey
+              Our Proven Process
             </h2>
 
             <p className="mx-auto mt-6 max-w-[760px] font-['Inter'] text-[16px] leading-6 text-[#DFE2ED99]">
-              From identifying high-impact use cases to deploying
-              self-optimizing agentic systems, we map every node of your AI
-              evolution.
+              From discovery to continuous optimization, every phase is designed
+              to reduce complexity, accelerate delivery, and create long-term
+              business value.
             </p>
           </div>
           <div className="relative mt-24">
@@ -222,22 +222,22 @@ export default function HowWeWorkPage() {
                 <div className="flex items-center gap-4">
                   <div className="rounded-[2px] bg-[#A0D14F]/10 px-3 py-1">
                     <span className="font-['JetBrains_Mono'] text-[16px] leading-6 text-[#A0D14F] uppercase">
-                      Proprietary Method
+                      OUR APPROACH
                     </span>
                   </div>
 
                   <div className="h-px flex-1 bg-white/20" />
                 </div>
                 <h2 className="mt-8 font-['Space_Grotesk'] text-[30px] leading-[40px] font-semibold tracking-[-0.96px] text-[#DFE2ED] lg:text-[48px] lg:leading-[57.6px]">
-                  Generative-Driven
-                  <br />
-                  Development™
+                  AI-Powered Innovation, Built
+                  <br className="hidden md:block" />
+                  Around Your Business
                 </h2>
                 <p className="mt-8 max-w-[700px] font-['Inter'] leading-[28.8px] text-[#DFE2ED]/70 md:text-[18px]">
-                  Unlike traditional SDLC, GenDD uses AI to build AI. It's an
-                  AI-native operating model that blends generative engineering
-                  with agentic automation to ship production software 3x faster
-                  with near-zero technical debt.
+                  Technology should solve business problems—not create new ones.
+                  Our approach combines AI automation with modern software
+                  engineering to build secure, scalable, and future-ready
+                  digital solutions that grow with your business.
                 </p>
                 <div className="mt-12 space-y-8">
                   {features.map((feature) => (
@@ -267,14 +267,14 @@ export default function HowWeWorkPage() {
 
               {/* Right */}
               <div className="flex flex-col items-center justify-center">
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid gap-6 md:grid-cols-2">
                   {metrics.map((metric) => (
                     <div
                       key={metric.label}
                       className="flex flex-col items-center justify-center rounded-[4px] border border-white/10 bg-[rgba(25,25,25,0.6)] px-6 py-4 backdrop-blur-[12px]"
                     >
                       <h3
-                        className="text-center font-['Inter'] text-[36px] leading-10 font-bold"
+                        className="text-center font-['Inter'] text-[24px] leading-10 font-bold md:text-[28px]"
                         style={{ color: metric.color }}
                       >
                         {metric.value}
@@ -306,24 +306,26 @@ export default function HowWeWorkPage() {
           <div className="mx-auto flex max-w-[850px] flex-col items-center">
             {/* Heading */}
             <h2 className="text-center font-['Space_Grotesk'] text-[clamp(2.2rem,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-black">
-              Ready to scale your intelligence?
+              Ready to Build Smarter Solutions?
             </h2>
 
             {/* Description */}
             <p className="mt-[22px] text-center font-['Inter'] text-[18px] leading-[28.8px] text-[#070B12]/80">
-              Stop building apps. Start building agents. Our team is ready to
-              audit your current workflows and deploy the GenDD advantage.
+              Whether you're looking to automate workflows, launch a custom
+              website, develop a mobile application, or accelerate business
+              growth, our team is ready to turn your vision into reality.
             </p>
 
             {/* CTA */}
-            <button
-              type="button"
-              className="mt-[40px] flex h-16 cursor-pointer items-center justify-center bg-[#070B12] px-10 transition-all duration-300 hover:brightness-110 active:scale-[0.98] md:min-w-[349px]"
+            <Link
+              href="/contact"
+              // type="button"
+              className="mt-[40px] flex h-16 cursor-pointer items-center justify-center bg-[#070B12] px-6 transition-all duration-300 hover:brightness-110 active:scale-[0.98] md:min-w-[349px] md:px-10"
             >
               <span className="font-['Inter'] text-[16px] leading-6 font-bold tracking-[1.6px] text-[#A0D14F] uppercase">
-                Book Strategy Workshop
+                BOOK A FREE CONSULTATION
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </section>
