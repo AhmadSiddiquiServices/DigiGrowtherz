@@ -96,7 +96,7 @@ export default function HowWeWorkPage() {
             </p>
 
             {/* Heading */}
-            <h2 className="mt-6 font-['Space_Grotesk'] text-[clamp(2.8rem,5vw,60px)] leading-[0.95] font-bold tracking-[-2.88px] text-[#DFE2ED]">
+            <h2 className="mt-6 font-['Space_Grotesk'] text-[clamp(2.6rem,5vw,60px)] leading-[0.95] font-bold tracking-[-2.88px] text-[#DFE2ED]">
               Transforming Ideas Into <br className="hidden md:block" />
               <span className="text-[#A0D14F]">Intelligent Solutions.</span>
             </h2>
@@ -161,7 +161,7 @@ export default function HowWeWorkPage() {
         <div className="mx-auto">
           {/* Header */}
           <div className="mx-auto max-w-[760px] text-center">
-            <h2 className="font-['Space_Grotesk'] text-[clamp(2.5rem,4vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
+            <h2 className="font-['Space_Grotesk'] text-[clamp(2.3rem,4vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
               Our Proven Process
             </h2>
 
@@ -322,7 +322,7 @@ export default function HowWeWorkPage() {
               // type="button"
               className="mt-[40px] flex h-16 cursor-pointer items-center justify-center bg-[#070B12] px-6 transition-all duration-300 hover:brightness-110 active:scale-[0.98] md:min-w-[349px] md:px-10"
             >
-              <span className="font-['Inter'] text-[16px] leading-6 font-bold tracking-[1.6px] text-[#A0D14F] uppercase">
+              <span className="font-['Inter'] text-[14px] leading-6 font-bold tracking-[1.6px] text-[#A0D14F] uppercase md:text-[16px]">
                 BOOK A FREE CONSULTATION
               </span>
             </Link>

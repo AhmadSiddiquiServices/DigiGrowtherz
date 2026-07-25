@@ -18,7 +18,7 @@ export default function Home() {
       {/* Banner */}
       <Hero />
 
-      {/* Companies Names */}
+      {/* Services Names */}
       <section className="border-y border-[#FFFFFF0D] bg-[#070B12]">
         <div className="container-wrapper py-[clamp(4rem,6vw,5rem)]">
           {/* Heading */}
@@ -26,12 +26,12 @@ export default function Home() {
             AI & Digital Solutions We Deliver
           </p>
 
-          {/* Companies */}
-          <div className="mt-[clamp(3rem,5vw,4rem)] grid grid-cols-2 gap-y-10 text-center sm:grid-cols-3 lg:grid-cols-5">
+          {/* Services */}
+          <div className="mt-[clamp(3rem,5vw,4rem)] grid grid-cols-2 gap-y-10 px-5 sm:grid-cols-3 md:px-0 md:text-center lg:grid-cols-5">
             {TRUSTED_COMPANIES.map((company) => (
               <div
                 key={company}
-                className="font-space text-[clamp(1.5rem,2vw,2rem)] leading-8 font-bold tracking-[-1.2px] text-[#DFE2ED] transition-all duration-300 hover:text-[#A0D14F]"
+                className="font-space text-[clamp(1.2rem,2vw,2rem)] leading-8 font-bold tracking-[-1.2px] text-[#DFE2ED] transition-all duration-300 hover:text-[#A0D14F]"
               >
                 {company}
               </div>
@@ -57,7 +57,7 @@ export default function Home() {
                 {/* Yellow Glow */}
                 <div className="absolute z-0 h-16 w-16 rounded-xl bg-[#FFED0030] blur-[40px]" />
 
-                <h2 className="relative z-10 font-['Space_Grotesk'] text-[clamp(2.3rem,5vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
+                <h2 className="relative z-10 font-['Space_Grotesk'] text-[clamp(2.2rem,5vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
                   Many promise digital transformation.
                   {/* <br className="block md:hidden" /> */}
                   <span className="text-[#A0D14F]">
