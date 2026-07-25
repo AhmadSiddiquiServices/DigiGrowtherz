@@ -24,18 +24,20 @@ export default function ContactPage() {
           <div className="max-w-[920px]">
             {/* Subheading */}
             <p className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal tracking-[1.6px] text-[#A0D14F] uppercase">
-              Connect with Intelligence
+              CONNECT WITH DIGIGROWTHTERZ
             </p>
 
             {/* Heading */}
             <h1 className="mt-6 font-['Space_Grotesk'] text-[clamp(48px,7vw,72px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
-              Talk to an <span className="text-[#A0D14F]">AI Expert.</span>
+              Let's Build Smarter{" "}
+              <span className="text-[#A0D14F]">Digital Solutions.</span>
             </h1>
 
             {/* Description */}
             <p className="mt-8 max-w-[860px] font-['Inter'] text-[18px] leading-[28.8px] font-normal text-[#C3C9B3]">
-              Bridge the gap between vision and velocity. Our architects are
-              ready to deploy automated growth engines for your enterprise.
+              Whether you're exploring AI automation, a custom website, a mobile
+              application, digital marketing, or eCommerce growth, our team is
+              ready to help turn your ideas into measurable business results.
             </p>
           </div>
         </div>

@@ -193,10 +193,10 @@ export default function ContactSidebar() {
             />
 
             <a
-              href="mailto:connect@digigrowtherz.ai"
+              href="mailto:info@digigrowtherz.com"
               className="font-['JetBrains_Mono'] text-[16px] leading-6 text-[#DFE2ED]"
             >
-              connect@digigrowtherz.ai
+              info@digigrowtherz.com
             </a>
           </div>
 
@@ -210,10 +210,10 @@ export default function ContactSidebar() {
             />
 
             <a
-              href="tel:+18004769246"
+              href="tel:+923036083548"
               className="font-['JetBrains_Mono'] text-[16px] leading-6 text-[#DFE2ED]"
             >
-              +1 (800) GROW-AI-0
+              +92 303 6083548
             </a>
           </div>
         </div>

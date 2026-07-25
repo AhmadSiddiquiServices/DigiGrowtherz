@@ -7,11 +7,11 @@ export default function ContactForm() {
         {/* Header */}
         <div>
           <h2 className="font-['Space_Grotesk'] text-[32px] leading-[41.6px] font-medium text-[#DFE2ED]">
-            Initialize Connection
+            Start Your Project
           </h2>
 
           <p className="mt-4 font-['JetBrains_Mono'] text-[16px] font-normal tracking-[-0.4px] text-[#C3C9B3] uppercase">
-            Transmission Protocol: Secure / Encrypted
+            Secure Consultation • Fast Response
           </p>
         </div>
 
@@ -22,12 +22,12 @@ export default function ContactForm() {
             {/* Name */}
             <div>
               <label className="mb-3 block font-['JetBrains_Mono'] text-[16px] font-normal text-[#C3C9B3]">
-                NAME_IDENTIFIER
+                FULL_NAME
               </label>
 
               <input
                 type="text"
-                placeholder="Enter Full Name"
+                placeholder="Enter your full name"
                 className="h-12 w-full border-b border-[#6B7280] bg-white px-2 py-[14px] font-['Inter'] text-[16px] text-[#111827] placeholder:text-[#6B7280] focus:outline-none"
               />
             </div>
@@ -35,39 +35,39 @@ export default function ContactForm() {
             {/* Email */}
             <div>
               <label className="mb-3 block font-['JetBrains_Mono'] text-[16px] font-normal text-[#C3C9B3]">
-                NODE_EMAIL
+                BUSINESS_EMAIL
               </label>
 
               <input
                 type="email"
-                placeholder="example@enterprise.com"
+                placeholder="you@company.com"
                 className="h-12 w-full border-b border-[#6B7280] bg-white px-2 py-[14px] font-['Inter'] text-[16px] text-[#111827] placeholder:text-[#6B7280] focus:outline-none"
               />
             </div>
           </div>
 
-          {/* Subject */}
+          {/* Service */}
           <div>
             <label className="mb-3 block font-['JetBrains_Mono'] text-[16px] font-normal text-[#C3C9B3]">
-              SUBJECT_DOMAIN
+              SERVICE_REQUIRED
             </label>
 
             <input
               type="text"
-              placeholder="AI Automation Strategy"
-              className="h-[49px] w-full border-b border-[#434938] bg-[#111111] px-2 py-3 font-['Inter'] text-[16px] text-[#DFE2ED] placeholder:text-[#DFE2ED] focus:outline-none"
+              placeholder="AI Automation, Website, Mobile App, Marketing..."
+              className="h-[49px] w-full border-b border-[#434938] bg-[#111111] px-2 py-3 font-['Inter'] text-[16px] text-[#DFE2ED] placeholder:text-[#6B7280] focus:outline-none"
             />
           </div>
 
           {/* Message */}
           <div>
             <label className="mb-3 block font-['JetBrains_Mono'] text-[16px] font-normal text-[#C3C9B3]">
-              MESSAGE_PAYLOAD
+              PROJECT_DETAILS
             </label>
 
             <textarea
               rows={6}
-              placeholder="Describe your automation requirements..."
+              placeholder="Tell us about your project, business goals, or the challenges you're looking to solve..."
               className="h-[145px] w-full resize-y border-b border-[#434938] bg-[#111111] px-2 py-3 font-['Inter'] text-[16px] leading-6 text-[#DFE2ED] placeholder:text-[#6B7280] focus:outline-none"
             />
           </div>
@@ -75,10 +75,10 @@ export default function ContactForm() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="flex h-14 w-full max-w-[243px] cursor-pointer items-center justify-center bg-[#A0D14F] px-6 py-4 transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+            className="flex h-14 cursor-pointer items-center justify-center bg-[#A0D14F] px-10 py-4 transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
           >
             <span className="font-['JetBrains_Mono'] text-[16px] leading-6 font-bold text-[#070B12]">
-              SEND TRANSMISSION
+              SEND
             </span>
           </button>
         </form>
