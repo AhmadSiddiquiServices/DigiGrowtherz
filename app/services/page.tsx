@@ -36,6 +36,7 @@ export default function ServicesPage() {
         "Business Process Optimization",
       ],
       cta: "EXPLORE AI",
+      link: "/services/ai-automation",
       color: "#A0D14F",
     },
     {
@@ -48,6 +49,7 @@ export default function ServicesPage() {
         "Custom Web Applications",
       ],
       cta: "Explore Web Development",
+      link: "#",
       color: "#0057FF",
     },
     {
@@ -60,6 +62,7 @@ export default function ServicesPage() {
         "Cross-Platform Solutions",
       ],
       cta: "Explore Mobile Development",
+      link: "#",
       color: "#FFED00",
     },
     {
@@ -72,6 +75,7 @@ export default function ServicesPage() {
         "Google Ads Campaigns",
       ],
       cta: "Explore Digital Marketing",
+      link: "#",
       color: "#A0D14F",
     },
     {
@@ -80,6 +84,7 @@ export default function ServicesPage() {
       title: "SEO Services",
       features: ["Technical SEO", "On-Page Optimization", "Local SEO Strategy"],
       cta: "Explore SEO Services",
+      link: "#",
       color: "#A0D14F",
     },
     {
@@ -92,6 +97,7 @@ export default function ServicesPage() {
         "Marketing Creatives",
       ],
       cta: "Explore Branding",
+      link: "#",
       color: "#A0D14F",
     },
     {
@@ -100,6 +106,7 @@ export default function ServicesPage() {
       title: "eCommerce Solutions",
       features: ["Amazon Marketplace", "eBay & Etsy", "Walmart & Alibaba"],
       cta: "Explore eCommerce Services",
+      link: "#",
       color: "#A0D14F",
     },
   ];
@@ -277,13 +284,13 @@ export default function ServicesPage() {
 
                   {/* CTA */}
                   <div className="mt-auto pt-12">
-                    <button
-                      type="button"
+                    <Link
+                      href={service.link}
                       className="font-['JetBrains_Mono'] text-[12px] leading-4 tracking-[1.2px] uppercase transition-colors hover:text-white"
                       style={{ color: service.color }}
                     >
                       {service.cta} →
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
