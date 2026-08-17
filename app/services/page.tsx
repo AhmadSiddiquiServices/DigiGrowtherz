@@ -49,7 +49,7 @@ export default function ServicesPage() {
         "Custom Web Applications",
       ],
       cta: "Explore Web Development",
-      link: "#",
+      link: "/services/web-development",
       color: "#0057FF",
     },
     {
@@ -62,7 +62,7 @@ export default function ServicesPage() {
         "Cross-Platform Solutions",
       ],
       cta: "Explore Mobile Development",
-      link: "#",
+      link: "/services/mobile-development",
       color: "#FFED00",
     },
     {

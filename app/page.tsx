@@ -3,6 +3,7 @@ import CoreServices from "@/components/sections/CoreServices";
 import Hero from "@/components/sections/Hero";
 import TestimonialsSlider from "@/components/sections/TestimonialsSlider";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const TRUSTED_COMPANIES = [
@@ -166,8 +167,8 @@ export default function Home() {
           </div>
 
           {/* CTA Button */}
-          <button
-            type="button"
+          <Link
+            href="/contact"
             className="group flex h-[66px] w-full max-w-[290px] cursor-pointer items-center justify-center gap-4 bg-[#070B12] px-12 py-6 transition-transform duration-300 hover:scale-[1.02] active:scale-[0.98]"
           >
             <span className="font-['JetBrains_Mono'] text-[12px] font-bold tracking-[1.2px] text-white uppercase">
@@ -181,7 +182,7 @@ export default function Home() {
               height={18}
               className="transition-transform duration-300 group-hover:rotate-12"
             />
-          </button>
+          </Link>
         </div>
       </section>
     </>
