@@ -84,8 +84,8 @@ export default function ServicesPage() {
       title: "SEO Services",
       features: ["Technical SEO", "On-Page Optimization", "Local SEO Strategy"],
       cta: "Explore SEO Services",
-      link: "#",
-      color: "#A0D14F",
+      link: "/services/seo",
+      color: "#0057FF",
     },
     {
       icon: "/images/ser-4.webp",
@@ -97,7 +97,7 @@ export default function ServicesPage() {
         "Marketing Creatives",
       ],
       cta: "Explore Branding",
-      link: "#",
+      link: "/services/branding",
       color: "#A0D14F",
     },
     {
@@ -106,8 +106,8 @@ export default function ServicesPage() {
       title: "eCommerce Solutions",
       features: ["Amazon Marketplace", "eBay & Etsy", "Walmart & Alibaba"],
       cta: "Explore eCommerce Services",
-      link: "#",
-      color: "#A0D14F",
+      link: "/services/ecommerce",
+      color: "#FFED00",
     },
   ];
   return (
