@@ -75,7 +75,7 @@ export default function ServicesPage() {
         "Google Ads Campaigns",
       ],
       cta: "Explore Digital Marketing",
-      link: "#",
+      link: "/services/digital-marketing",
       color: "#A0D14F",
     },
     {
