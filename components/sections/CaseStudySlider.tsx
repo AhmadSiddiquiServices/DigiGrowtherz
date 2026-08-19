@@ -9,33 +9,64 @@ type CaseStudy = {
   title: string;
   description: string;
   image: string;
-  badge: string;
+  btn_text: string;
+  link: string;
 };
 
 const caseStudies: CaseStudy[] = [
   {
-    tag: "FEATURED SUCCESS",
-    title: "99% Faster Client Onboarding for Specialty Pharmacy",
+    tag: "CUSTOM DEVELOPMENT",
+    title: "A Dynamic Sports Platform Built for Athletes & Events",
     description:
-      "Using our agentic AI framework, we automated the entire patient intake process, reducing manual labor from 20 days to under 5.",
-    image: "/images/gradient.webp",
-    badge: "IMPACT",
+      "A custom Next.js platform bringing athletes, events, upcoming shows, and sports content together in one immersive experience.",
+    image: "/images/portfolio-1.webp",
+    btn_text: "VIEW LIVE WEBSITE",
+    link: "https://www.wildersideofsports.com/",
   },
   {
-    tag: "CASE STUDY",
-    title: "Automated Lead Qualification for Healthcare Providers",
+    tag: "CUSTOM DEVELOPMENT",
+    title: "A Purpose-Built Digital Platform for LifeCare Billing",
     description:
-      "AI agents screened and prioritized incoming inquiries, reducing sales response time by 83%.",
-    image: "/images/gradient.webp",
-    badge: "83%",
+      "A custom web solution built to support the digital operations and professional presence of a billing-focused business.",
+    image: "/images/portfolio-2.webp",
+    btn_text: "VIEW LIVE WEBSITE",
+    link: "https://lifecarebilling.com/",
   },
   {
-    tag: "SUCCESS STORY",
-    title: "AI Workflow Automation for Financial Services",
+    tag: "CUSTOM DEVELOPMENT",
+    title: "A Custom Digital Experience Built for Sync2Surge",
     description:
-      "Reduced repetitive tasks by 74%, allowing teams to focus on high-value work.",
-    image: "/images/gradient.webp",
-    badge: "74%",
+      "A tailored web experience designed around the brand, business goals, and digital presence of Sync2Surge.",
+    image: "/images/portfolio-3.webp",
+    btn_text: "VIEW LIVE WEBSITE",
+    link: "https://sync2surge.com/",
+  },
+  {
+    tag: "WORDPRESS",
+    title: "A Modern Digital Agency Platform for AfroSmile",
+    description:
+      "A professional WordPress website built to showcase AfroSmile's digital services, capabilities, and solutions through a modern, responsive, and conversion-focused experience.",
+    image: "/images/portfolio-4.webp",
+    btn_text: "VIEW LIVE WEBSITE",
+    link: "https://afrosmiletechhubug.com/",
+  },
+  {
+    tag: "SHOPIFY",
+    title: "Launching a Sweet New eCommerce Experience for GumJoy",
+    description:
+      "A Shopify store built for GumJoy's fruit sweets, with product merchandising, promotional offers, cart discounts, and a conversion-focused shopping experience.",
+    image: "/images/portfolio-5.webp",
+    btn_text: "VIEW LIVE WEBSITE",
+    link: "https://gumjoy.co.uk/",
+  },
+  {
+    tag: "WORDPRESS",
+    title: "A Modern WordPress Website for Voyager Center",
+    description:
+      "A tailored WordPress experience designed to present Voyager Center's services and information through a clean, responsive interface.",
+    image: "/images/portfolio-6.webp",
+    btn_text: "VIEW LIVE WEBSITE",
+    link: "https://voyagerscenter.com/",
   },
 ];
 
@@ -109,30 +140,23 @@ export default function CaseStudySlider() {
               <Image
                 src={activeCaseStudy.image}
                 alt={activeCaseStudy.title}
-                width={462}
-                height={192}
+                width={1386}
+                height={576}
                 priority
                 className="h-[192px] w-full object-cover"
               />
-
-              {/* Badge */}
-              {/* <div className="absolute top-6 right-6 rounded-[2px] bg-[#A0D14F] px-4 py-3">
-                <span className="font-['Space_Grotesk'] text-[clamp(0.875rem,1vw,1.125rem)] leading-none font-semibold text-[#070B12]">
-                  {activeCaseStudy.badge}
-                </span>
-              </div> */}
             </div>
           </motion.div>
         </AnimatePresence>
 
         {/* CTA */}
         <div className="mt-12 border-t border-white/10 pt-8">
-          <button
-            type="button"
-            className="w-full font-mono text-[12px] leading-3 font-medium tracking-[0.1em] text-white uppercase transition-opacity duration-300 hover:opacity-80"
+          <a
+            href={activeCaseStudy.link}
+            className="flex w-full items-center justify-center font-mono text-[12px] leading-3 font-medium tracking-[0.1em] text-white uppercase transition-opacity duration-300 hover:opacity-80"
           >
-            View All Case Studies
-          </button>
+            {activeCaseStudy.btn_text}
+          </a>
         </div>
       </div>
     </div>

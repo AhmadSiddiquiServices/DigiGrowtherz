@@ -9,7 +9,7 @@ export const NAV_LINKS = [
   },
   {
     label: "PORTFOLIO",
-    href: "/case-studies",
+    href: "/#portfolios",
   },
   {
     label: "HOW WE WORK",
@@ -23,8 +23,8 @@ export const NAV_LINKS = [
   //   label: "BLOG",
   //   href: "/blog",
   // },
-  {
-    label: "CONTACT",
-    href: "/contact",
-  },
+  // {
+  //   label: "CONTACT",
+  //   href: "/contact",
+  // },
 ];

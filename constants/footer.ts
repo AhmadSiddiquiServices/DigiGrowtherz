@@ -1,23 +1,24 @@
 export const FOOTER_LINKS = {
-  services: [
-    { label: "Strategy", href: "#" },
-    { label: "Engineering", href: "#" },
-    { label: "Talent", href: "#" },
-    { label: "Training", href: "#" },
+  quick_links: [
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "Portfolio", href: "/#portfolios" },
+    { label: "How We Work", href: "/how-we-work" },
   ],
 
-  resources: [
-    { label: "Blog", href: "#" },
-    { label: "Podcast", href: "#" },
-    { label: "Newsletter", href: "#" },
-    { label: "Webinars", href: "#" },
+  services: [
+    { label: "AI Automation", href: "/services/ai-automation" },
+    { label: "Website Development", href: "/services/web-development" },
+    { label: "Mobile Development", href: "/services/mobile-development" },
+    { label: "Digital Marketing", href: "/services/digital-marketing" },
+    { label: "SEO", href: "/services/seo" },
+    { label: "Branding", href: "/services/branding" },
+    { label: "Ecommerce", href: "/services/ecommerce" },
   ],
 
   company: [
-    { label: "About Us", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#" },
-    { label: "Support", href: "#" },
+    { label: "About Us", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ],
 
   bottom: [

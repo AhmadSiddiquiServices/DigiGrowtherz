@@ -60,9 +60,12 @@ export default function Footer() {
             </div>
 
             {/* Footer Links */}
-            <FooterColumn title="Services" links={FOOTER_LINKS.services} />
+            <FooterColumn
+              title="Quick Links"
+              links={FOOTER_LINKS.quick_links}
+            />
 
-            <FooterColumn title="Resources" links={FOOTER_LINKS.resources} />
+            <FooterColumn title="Our Services" links={FOOTER_LINKS.services} />
 
             <FooterColumn title="Company" links={FOOTER_LINKS.company} />
           </div>
@@ -74,7 +77,7 @@ export default function Footer() {
           {/* Bottom Section */}
           <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <p className="font-inter text-[12px] leading-4 text-[#DFE2ED66]">
-              © 2026 DigiGrowtherz AI Automation. All rights reserved.
+              © 2026 DigiGrowtherz. All rights reserved.
             </p>
 
             <div className="flex flex-wrap items-center gap-8">
@@ -158,7 +161,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="/case-studies"
+                href="/#portfolios"
                 className="font-jetbrains text-[14px] text-[#DFE2ED] uppercase"
               >
                 Portfolio

@@ -45,7 +45,10 @@ export default function Home() {
       <CoreServices />
 
       {/* Case Studies */}
-      <section className="relative overflow-hidden bg-[#181C23] px-[clamp(1rem,4vw,5rem)] py-[clamp(48px,6vw,80px)]">
+      <section
+        id="portfolios"
+        className="relative overflow-hidden bg-[#181C23] px-[clamp(1rem,4vw,5rem)] py-[clamp(48px,6vw,80px)]"
+      >
         {/* Green Glow */}
         <div className="pointer-events-none absolute top-0 right-0 h-full w-[426px] bg-[#A0D14F0D] blur-[100px]" />
 

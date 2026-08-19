@@ -3969,7 +3969,7 @@ export default function AiAutomationServicePage() {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="relative z-10 mx-auto mt-24 max-w-5xl px-6">
+        <div className="relative z-10 mx-auto mt-24 px-6">
           <div className="space-y-6">
             {faqItems.map((item, index) => (
               <motion.div
@@ -4146,38 +4146,6 @@ export default function AiAutomationServicePage() {
               help you create a solution tailored to your business goals and
               future growth.
             </p>
-
-            {/* CTA Buttons */}
-            {/* <div className="mt-14 flex flex-col items-center justify-center gap-5 sm:flex-row">
-              <motion.a
-                whileHover={{
-                  y: -4,
-                  scale: 1.03,
-                }}
-                whileTap={{
-                  scale: 0.98,
-                }}
-                href="/contact"
-                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 font-semibold text-[#081019] shadow-[0_0_35px_rgba(34,211,238,0.25)] transition-all duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.45)]"
-              >
-                Schedule a Consultation
-                <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </motion.a>
-
-              <motion.a
-                whileHover={{
-                  y: -4,
-                  scale: 1.03,
-                }}
-                whileTap={{
-                  scale: 0.98,
-                }}
-                href="/about"
-                className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-8 py-4 font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/20 hover:bg-white/[0.08]"
-              >
-                Learn More About Us
-              </motion.a>
-            </div> */}
           </motion.div>
         </div>
 
@@ -4198,7 +4166,7 @@ export default function AiAutomationServicePage() {
             duration: 0.8,
             delay: 0.2,
           }}
-          className="mx-auto mt-20 max-w-6xl"
+          className="mx-auto mt-20"
         >
           <div className="grid gap-6 md:grid-cols-3">
             {/* Card 1 */}
@@ -4308,7 +4276,7 @@ export default function AiAutomationServicePage() {
             duration: 0.8,
             delay: 0.3,
           }}
-          className="mx-auto mt-20 max-w-6xl"
+          className="mx-auto mt-20"
         >
           <div className="grid gap-8 lg:grid-cols-2">
             {/* Email Card */}

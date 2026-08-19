@@ -2,23 +2,34 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import {
+  TrendingUp,
+  Bot,
+  Globe,
+  Smartphone,
+  Megaphone,
+  Search,
+  Palette,
+  ShoppingCart,
+  CheckCircle2,
+} from "lucide-react";
 
 export default function ServicesPage() {
   const metrics = [
     {
-      icon: "/images/ser-stat-1.webp",
+      icon: Bot,
       title: "AI Automation",
       description: "Intelligent Workflow Solutions",
       color: "#A0D14F",
     },
     {
-      icon: "/images/ser-stat-2.webp",
+      icon: Globe,
       title: "Website Development",
       description: "WordPress • Shopify • Custom",
       color: "#FFED00",
     },
     {
-      icon: "/images/ser-stat-3.webp",
+      icon: TrendingUp,
       title: "Digital Growth",
       description: "Marketing • SEO • eCommerce",
       color: "#0057FF",
@@ -27,8 +38,7 @@ export default function ServicesPage() {
 
   const services = [
     {
-      icon: "/images/ser-1.webp",
-      bgIcon: "/images/ser-bg-1.webp",
+      icon: Bot,
       title: "AI Automation",
       features: [
         "Workflow Automation",
@@ -40,8 +50,7 @@ export default function ServicesPage() {
       color: "#A0D14F",
     },
     {
-      icon: "/images/ser-2.webp",
-      bgIcon: "/images/ser-bg-2.webp",
+      icon: Globe,
       title: "Website Development",
       features: [
         "WordPress Development",
@@ -53,8 +62,7 @@ export default function ServicesPage() {
       color: "#0057FF",
     },
     {
-      icon: "/images/ser-3.webp",
-      bgIcon: "/images/ser-bg-3.webp",
+      icon: Smartphone,
       title: "Mobile Development",
       features: [
         "Android Applications",
@@ -66,8 +74,7 @@ export default function ServicesPage() {
       color: "#FFED00",
     },
     {
-      icon: "/images/ser-4.webp",
-      bgIcon: "/images/ser-bg-4.webp",
+      icon: Megaphone,
       title: "Digital Marketing",
       features: [
         "Facebook Marketing",
@@ -79,8 +86,7 @@ export default function ServicesPage() {
       color: "#A0D14F",
     },
     {
-      icon: "/images/ser-4.webp",
-      bgIcon: "/images/ser-bg-4.webp",
+      icon: Search,
       title: "SEO Services",
       features: ["Technical SEO", "On-Page Optimization", "Local SEO Strategy"],
       cta: "Explore SEO Services",
@@ -88,8 +94,7 @@ export default function ServicesPage() {
       color: "#0057FF",
     },
     {
-      icon: "/images/ser-4.webp",
-      bgIcon: "/images/ser-bg-4.webp",
+      icon: Palette,
       title: "Branding & Design",
       features: [
         "Company Branding",
@@ -101,8 +106,7 @@ export default function ServicesPage() {
       color: "#A0D14F",
     },
     {
-      icon: "/images/ser-4.webp",
-      bgIcon: "/images/ser-bg-4.webp",
+      icon: ShoppingCart,
       title: "eCommerce Solutions",
       features: ["Amazon Marketplace", "eBay & Etsy", "Walmart & Alibaba"],
       cta: "Explore eCommerce Services",
@@ -164,36 +168,45 @@ export default function ServicesPage() {
 
               <div className="relative z-10">
                 <div className="space-y-8">
-                  {metrics.map((metric, index) => (
-                    <div key={metric.title}>
-                      <div className="flex items-center gap-6">
-                        <Image
-                          src={metric.icon}
-                          alt={metric.title}
-                          width={48}
-                          height={48}
-                          className="rounded-[2px]"
-                        />
+                  {metrics.map((metric, index) => {
+                    const Icon = metric.icon;
 
-                        <div>
-                          <h3
-                            className="font-['Inter'] text-[16px] leading-6 font-bold"
-                            style={{ color: metric.color }}
+                    return (
+                      <div key={metric.title}>
+                        <div className="flex items-center gap-6">
+                          <div
+                            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[2px]"
+                            style={{
+                              backgroundColor: `${metric.color}12`,
+                            }}
                           >
-                            {metric.title}
-                          </h3>
+                            <Icon
+                              className="h-6 w-6"
+                              style={{ color: metric.color }}
+                              strokeWidth={1.8}
+                            />
+                          </div>
 
-                          <p className="font-['Inter'] text-[12px] leading-4 text-[#DFE2ED]">
-                            {metric.description}
-                          </p>
+                          <div>
+                            <h3
+                              className="font-['Inter'] text-[16px] leading-6 font-bold"
+                              style={{ color: metric.color }}
+                            >
+                              {metric.title}
+                            </h3>
+
+                            <p className="font-['Inter'] text-[12px] leading-4 text-[#DFE2ED]">
+                              {metric.description}
+                            </p>
+                          </div>
                         </div>
-                      </div>
 
-                      {index < metrics.length - 1 && (
-                        <div className="mt-8 border-b border-white/[0.05]" />
-                      )}
-                    </div>
-                  ))}
+                        {index < metrics.length - 1 && (
+                          <div className="mt-8 border-b border-white/[0.05]" />
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -234,67 +247,73 @@ export default function ServicesPage() {
 
           {/* Cards */}
           <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="relative overflow-hidden rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.4)] p-8 backdrop-blur-[20px]"
-              >
-                {/* Background Icon */}
-                <Image
-                  src={service.bgIcon}
-                  alt=""
-                  width={service.bgIcon === "/images/ser-bg-4.webp" ? 120 : 60}
-                  height={180}
-                  className="pointer-events-none absolute top-4 right-4 opacity-[0.05]"
-                />
+            {services.map((service) => {
+              const Icon = service.icon;
 
-                <div className="relative z-10 flex min-h-[370px] flex-col">
-                  {/* Top Icon */}
-                  <Image
-                    src={service.icon}
-                    alt={service.title}
-                    width={56}
-                    height={56}
-                    className="h-[56px] w-[56px]"
-                  />
-
-                  {/* Title */}
-                  <h3 className="mt-10 font-['Space_Grotesk'] text-[32px] leading-[41.6px] font-medium text-[#DFE2ED]">
-                    {service.title}
-                  </h3>
-
-                  {/* Features */}
-                  <div className="mt-8 space-y-5">
-                    {service.features.map((feature) => (
-                      <div key={feature} className="flex items-start gap-3">
-                        <Image
-                          src="/images/list-check.webp"
-                          alt=""
-                          width={14}
-                          height={14}
-                          className="mt-[2px] h-[14px] w-[14px] shrink-0"
-                        />
-
-                        <p className="font-['Inter'] text-[14px] leading-5 text-[#DFE2EDB2]">
-                          {feature}
-                        </p>
-                      </div>
-                    ))}
+              return (
+                <div
+                  key={service.title}
+                  className="relative overflow-hidden rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.4)] p-8 backdrop-blur-[20px]"
+                >
+                  {/* Background Icon */}
+                  <div
+                    className="pointer-events-none absolute top-4 right-4 opacity-[0.05]"
+                    style={{ color: service.color }}
+                  >
+                    <Icon className="h-28 w-28" strokeWidth={1.2} />
                   </div>
 
-                  {/* CTA */}
-                  <div className="mt-auto pt-12">
-                    <Link
-                      href={service.link}
-                      className="font-['JetBrains_Mono'] text-[12px] leading-4 tracking-[1.2px] uppercase transition-colors hover:text-white"
-                      style={{ color: service.color }}
+                  <div className="relative z-10 flex min-h-[370px] flex-col">
+                    {/* Top Icon */}
+                    <div
+                      className="flex h-14 w-14 items-center justify-center rounded-[3px]"
+                      style={{
+                        backgroundColor: `${service.color}12`,
+                      }}
                     >
-                      {service.cta} →
-                    </Link>
+                      <Icon
+                        className="h-7 w-7"
+                        style={{ color: service.color }}
+                        strokeWidth={1.8}
+                      />
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="mt-10 font-['Space_Grotesk'] text-[32px] leading-[41.6px] font-medium text-[#DFE2ED]">
+                      {service.title}
+                    </h3>
+
+                    {/* Features */}
+                    <div className="mt-8 space-y-5">
+                      {service.features.map((feature) => (
+                        <div key={feature} className="flex items-start gap-3">
+                          <CheckCircle2
+                            className="mt-[2px] h-[14px] w-[14px] shrink-0"
+                            style={{ color: service.color }}
+                            strokeWidth={2}
+                          />
+
+                          <p className="font-['Inter'] text-[14px] leading-5 text-[#DFE2EDB2]">
+                            {feature}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* CTA */}
+                    <div className="mt-auto pt-12">
+                      <Link
+                        href={service.link}
+                        className="font-['JetBrains_Mono'] text-[12px] leading-4 tracking-[1.2px] uppercase transition-colors hover:text-white"
+                        style={{ color: service.color }}
+                      >
+                        {service.cta} →
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -463,7 +482,7 @@ export default function ServicesPage() {
                 {/* Divider */}
                 <div className="mt-auto border-t border-white/[0.05] pt-6">
                   <Link
-                    href="/case-studies"
+                    href="/#portfolios"
                     type="button"
                     className="cursor-pointer font-['JetBrains_Mono'] text-[12px] leading-4 tracking-[1.2px] text-[#0057FF] uppercase transition-opacity hover:opacity-80"
                   >
@@ -541,7 +560,7 @@ export default function ServicesPage() {
               <div className="mt-14 flex flex-col items-center justify-center gap-5 sm:flex-row">
                 {/* Primary Button */}
                 <Link
-                  href="/case-studies"
+                  href="/#portfolios"
                   // type="button"
                   className="flex h-[62px] w-full cursor-pointer items-center justify-center bg-[#A0D14F] px-8 transition-all duration-300 hover:brightness-105 active:scale-[0.98] md:max-w-[213px]"
                 >

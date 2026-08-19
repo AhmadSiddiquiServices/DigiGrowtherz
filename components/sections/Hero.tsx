@@ -68,7 +68,7 @@ export default function Hero() {
             </Link>
 
             <Link
-              href="/case-studies"
+              href="/#portfolios"
               className="flex h-[53px] items-center justify-center border border-[#FFFFFF33] px-8 transition-colors duration-300 hover:border-[#A0D14F]"
             >
               <span className="font-jetbrains text-[12px] font-bold tracking-[1.2px] text-white uppercase">

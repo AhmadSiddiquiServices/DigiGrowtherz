@@ -635,7 +635,7 @@ export default function WebDevelopmentServicePage() {
           </div>
 
           {/* OVERVIEW — CORE WEBSITE DEVELOPMENT PILLARS */}
-          <div className="mx-auto mt-16 max-w-6xl lg:mt-20">
+          <div className="mx-auto mt-16 lg:mt-20">
             {/* Feature Grid */}
             <div className="grid gap-4 md:grid-cols-2 lg:gap-5">
               {/* CARD 1 — DESIGN & UX */}
