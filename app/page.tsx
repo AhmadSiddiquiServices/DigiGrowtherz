@@ -12,6 +12,7 @@ export default function Home() {
     "Mobile Apps",
     "Digital Marketing",
     "eCommerce",
+    "B2B Exports",
   ];
 
   return (
@@ -28,11 +29,11 @@ export default function Home() {
           </p>
 
           {/* Services */}
-          <div className="mt-[clamp(3rem,5vw,4rem)] grid grid-cols-2 gap-y-10 px-5 sm:grid-cols-3 md:px-0 md:text-center lg:grid-cols-5">
+          <div className="mt-[clamp(3rem,5vw,4rem)] grid grid-cols-2 gap-y-10 px-5 sm:grid-cols-3 md:px-0 md:text-center lg:grid-cols-6 lg:gap-x-4">
             {TRUSTED_COMPANIES.map((company) => (
               <div
                 key={company}
-                className="font-space text-[clamp(1.2rem,2vw,2rem)] leading-8 font-bold tracking-[-1.2px] text-[#DFE2ED] transition-all duration-300 hover:text-[#A0D14F]"
+                className="font-space text-[clamp(1.2rem,2vw,1.5rem)] leading-8 font-bold tracking-[-1.2px] text-[#DFE2ED] transition-all duration-300 hover:text-[#A0D14F]"
               >
                 {company}
               </div>
@@ -84,7 +85,7 @@ export default function Home() {
                 {/* Feature 1 */}
                 <div className="flex items-start gap-6">
                   <Image
-                    src="/images/result-1.webp"
+                    src="/images/ai-sol.webp"
                     alt="AI Expertise"
                     width={48}
                     height={48}
@@ -108,7 +109,7 @@ export default function Home() {
                 {/* Feature 2 */}
                 <div className="flex items-start gap-6">
                   <Image
-                    src="/images/result-2.webp"
+                    src="/images/results.webp"
                     alt="Outcome Driven"
                     width={48}
                     height={48}

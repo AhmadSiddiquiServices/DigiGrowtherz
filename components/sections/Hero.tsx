@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import HeroVisual from "../layout/HeroVisual";
 
 export default function Hero() {
   const [showBlend, setShowBlend] = useState(false);
@@ -79,7 +79,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Right */}
-        <motion.div
+        {/* <motion.div
           className="relative w-full max-w-[780px]"
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -96,6 +96,18 @@ export default function Hero() {
             priority
             className="h-auto w-full object-contain mix-blend-lighten"
           />
+        </motion.div> */}
+        {/* Right */}
+        <motion.div
+          className="relative w-full max-w-[720px] lg:-mr-8 xl:-mr-12"
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.2,
+          }}
+        >
+          <HeroVisual />
         </motion.div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function AboutPage() {
   const stats = [
@@ -56,6 +57,41 @@ export default function AboutPage() {
       title: "Trusted Partnerships",
       description:
         "We believe successful projects are built on collaboration, honest communication, and long-term relationships.",
+    },
+  ];
+
+  const teamMembers = [
+    {
+      number: "01",
+      name: "Habib U. Siddiqui",
+      role: "FOUNDER & CEO",
+      specialty: "eCOMMERCE • STRATEGY • GROWTH",
+      image: "/images/avatar-img.webp",
+      accent: "#A0D14F",
+    },
+    {
+      number: "02",
+      name: "Usama Siddiqui",
+      role: "LEAD MANAGER",
+      specialty: "OPERATIONS • CLIENTS • PROJECTS",
+      image: "/images/avatar-img.webp",
+      accent: "#0057FF",
+    },
+    {
+      number: "03",
+      name: "Ahmad Siddiqui",
+      role: "LEAD DEVELOPER",
+      specialty: "WEB • SOFTWARE • AUTOMATION",
+      image: "/images/avatar-img.webp",
+      accent: "#A0D14F",
+    },
+    {
+      number: "04",
+      name: "Abdur Rehman Siddiqui",
+      role: "MARKETING MANAGER",
+      specialty: "LOGISTICS • FLEET • OPERATIONS",
+      image: "/images/avatar-img.webp",
+      accent: "#FFED00",
     },
   ];
   return (
@@ -308,6 +344,198 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="relative overflow-hidden bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-16 lg:py-24">
+        {/* Ambient Glow */}
+        <div className="pointer-events-none absolute top-1/4 left-1/2 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-[#A0D14F]/[0.035] blur-[160px]" />
+
+        {/* Technical Grid */}
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.025]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+        />
+
+        <div className="relative mx-auto">
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="mb-12 lg:mb-16"
+          >
+            {/* Technical Label */}
+            <div className="flex items-center gap-4">
+              <span className="h-px w-12 bg-[#A0D14F]" />
+
+              <span className="font-['JetBrains_Mono'] text-[11px] leading-4 font-normal tracking-[2.2px] text-[#A0D14F] uppercase">
+                OUR TEAM
+              </span>
+            </div>
+
+            {/* Heading */}
+            <h2 className="mt-6 max-w-[850px] font-['Space_Grotesk'] text-[clamp(40px,6vw,68px)] leading-[1.02] font-bold tracking-[-0.04em] text-[#DFE2ED] uppercase">
+              THE PEOPLE BEHIND
+              <br />
+              <span className="text-[#A0D14F]">THE SYSTEM.</span>
+            </h2>
+
+            {/* Description */}
+            <p className="mt-6 max-w-[720px] font-['Inter'] text-[15px] leading-7 font-normal text-[#C3C9B3] sm:text-[16px] sm:leading-7">
+              Behind every intelligent solution is a team that understands the
+              technology, the business, and the people it serves. Our
+              multidisciplinary team brings strategy, engineering, design, and
+              digital growth together to build solutions that move businesses
+              forward.
+            </p>
+          </motion.div>
+
+          {/* Team Grid */}
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {teamMembers.map((member, index) => (
+              <motion.div
+                key={member.number}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{
+                  duration: 0.65,
+                  delay: index * 0.08,
+                  ease: "easeOut",
+                }}
+                whileHover={{ y: -6 }}
+                className="group relative"
+              >
+                {/* Card */}
+                <div
+                  className="relative overflow-hidden rounded-[8px] border border-white/[0.08] bg-[rgba(25,25,25,0.6)] backdrop-blur-[20px] transition-all duration-500"
+                  style={{
+                    borderColor: "rgba(255,255,255,0.08)",
+                  }}
+                >
+                  {/* Image Area */}
+                  <div className="relative aspect-[4/5] overflow-hidden bg-[#10151C]">
+                    {/* Accent Glow */}
+                    <div
+                      className="pointer-events-none absolute -top-20 -right-20 z-10 h-40 w-40 rounded-full opacity-0 blur-[70px] transition-opacity duration-500 group-hover:opacity-30"
+                      style={{
+                        backgroundColor: member.accent,
+                      }}
+                    />
+
+                    {/* Portrait */}
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={600}
+                      height={750}
+                      className="h-full w-full object-top grayscale-[15%] transition-all duration-700 group-hover:scale-[1.04] group-hover:grayscale-0"
+                    />
+
+                    {/* Image Overlay */}
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070B12] via-[#070B12]/10 to-transparent opacity-80" />
+
+                    {/* Top Technical Line */}
+                    <div className="absolute top-0 right-0 left-0 z-20 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
+                    {/* Member Number */}
+                    <div className="absolute top-5 right-5 z-20">
+                      <span
+                        className="font-['JetBrains_Mono'] text-[11px] font-normal tracking-[1.5px] transition-colors duration-300"
+                        style={{
+                          color: member.accent,
+                        }}
+                      >
+                        {member.number}
+                      </span>
+                    </div>
+
+                    {/* Corner Marker */}
+                    <div className="absolute bottom-5 left-5 z-20 flex items-center gap-2">
+                      <span
+                        className="h-1.5 w-1.5 rounded-full transition-all duration-300 group-hover:scale-125"
+                        style={{
+                          backgroundColor: member.accent,
+                          boxShadow: `0 0 10px ${member.accent}`,
+                        }}
+                      />
+
+                      <span className="font-['JetBrains_Mono'] text-[9px] tracking-[1.5px] text-white/50 uppercase">
+                        TEAM MEMBER
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Card Content */}
+                  <div className="relative p-5">
+                    {/* Name */}
+                    <h3 className="font-['Space_Grotesk'] text-[20px] leading-7 font-semibold tracking-[-0.02em] text-[#DFE2ED] transition-colors duration-300 group-hover:text-white">
+                      {member.name}
+                    </h3>
+
+                    {/* Role */}
+                    <p
+                      className="mt-2 font-['JetBrains_Mono'] text-[10px] leading-4 font-normal tracking-[1.5px] uppercase"
+                      style={{
+                        color: member.accent,
+                      }}
+                    >
+                      {member.role}
+                    </p>
+
+                    {/* Divider */}
+                    <div className="my-5 h-px w-full bg-white/[0.07] transition-colors duration-500 group-hover:bg-white/[0.12]" />
+
+                    {/* Specialty */}
+                    <p className="font-['JetBrains_Mono'] text-[9px] leading-5 font-normal tracking-[1px] text-[#C3C9B3]/60 uppercase">
+                      {member.specialty}
+                    </p>
+
+                    {/* System Status */}
+                    <div className="mt-5 flex items-center justify-between">
+                      <span className="font-['JetBrains_Mono'] text-[9px] tracking-[1.2px] text-white/30 uppercase">
+                        STATUS
+                      </span>
+
+                      <div className="flex items-center gap-2">
+                        <span
+                          className="h-1.5 w-1.5 rounded-full"
+                          style={{
+                            backgroundColor: member.accent,
+                            boxShadow: `0 0 8px ${member.accent}`,
+                          }}
+                        />
+
+                        <span
+                          className="font-['JetBrains_Mono'] text-[9px] tracking-[1.2px] uppercase"
+                          style={{
+                            color: member.accent,
+                          }}
+                        >
+                          CONNECTED
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Bottom Accent */}
+                  <div
+                    className="absolute right-0 bottom-0 left-0 h-px scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
+                    style={{
+                      background: `linear-gradient(90deg, transparent, ${member.accent}, transparent)`,
+                    }}
+                  />
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
