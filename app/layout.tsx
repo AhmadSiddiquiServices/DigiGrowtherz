@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "leaflet/dist/leaflet.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,7 +26,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "DigiGrowtherz | AI Automation & Digital Transformation Agency",
+  title: "DigiGrowtherz | Digital AI Automation",
   description:
     "DigiGrowtherz helps businesses scale through AI automation, custom software development, intelligent workflows, and growth-focused digital solutions. Transform operations, increase efficiency, and accelerate innovation with our expert team.",
 };
@@ -42,6 +44,16 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col">
         <Header />
         {children}
+        <ToastContainer
+          position="top-right"
+          autoClose={4000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          pauseOnHover
+          draggable
+          theme="dark"
+        />
         <Footer />
       </body>
     </html>

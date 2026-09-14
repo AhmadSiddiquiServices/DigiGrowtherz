@@ -97,7 +97,7 @@ export default function Header() {
           <Image
             src="/images/logo.webp"
             alt="DigiGrowtherz"
-            width={160}
+            width={180}
             height={40}
             priority
           />
