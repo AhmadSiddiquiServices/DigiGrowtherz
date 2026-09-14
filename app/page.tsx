@@ -85,7 +85,7 @@ export default function Home() {
                 {/* Feature 1 */}
                 <div className="flex items-start gap-6">
                   <Image
-                    src="/images/ai-sol.webp"
+                    src="/images/result-1.webp"
                     alt="AI Expertise"
                     width={48}
                     height={48}
@@ -109,7 +109,7 @@ export default function Home() {
                 {/* Feature 2 */}
                 <div className="flex items-start gap-6">
                   <Image
-                    src="/images/results.webp"
+                    src="/images/result-2.webp"
                     alt="Outcome Driven"
                     width={48}
                     height={48}
