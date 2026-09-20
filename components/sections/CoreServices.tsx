@@ -2,6 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CoreServices() {
   const fadeUp: Variants = {
@@ -56,9 +57,9 @@ export default function CoreServices() {
               {/* Content */}
               <div className="flex flex-col p-[clamp(24px,3vw,40px)]">
                 <Image
-                  src="/images/service-1-icon.webp"
+                  src="/images/ai.webp"
                   alt="Service 1 Icon"
-                  width={44}
+                  width={64}
                   height={34}
                   priority
                   className="mb-8"
@@ -91,8 +92,8 @@ export default function CoreServices() {
                   ))}
                 </ul>
 
-                <a
-                  href="#"
+                <Link
+                  href="/services/ai-automation"
                   className="mt-20 inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#A0D14F] uppercase md:mt-auto"
                 >
                   EXPLORE AI
@@ -103,13 +104,13 @@ export default function CoreServices() {
                     height={9}
                     priority
                   />
-                </a>
+                </Link>
               </div>
 
               {/* Image */}
               <div className="relative hidden h-full overflow-hidden lg:block">
                 <Image
-                  src="/images/service-1.webp"
+                  src="/images/ai-banner.webp"
                   alt="AI Strategy"
                   fill
                   priority
@@ -130,9 +131,9 @@ export default function CoreServices() {
             className="flex min-h-[400px] flex-col rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-[clamp(24px,3vw,40px)] backdrop-blur-[20px]"
           >
             <Image
-              src="/images/service-2-icon.webp"
+              src="/images/web.webp"
               alt="Service 2 Icon"
-              width={44}
+              width={64}
               height={34}
               priority
               className="mb-8"
@@ -147,19 +148,19 @@ export default function CoreServices() {
               designed for speed, scalability, and business growth.
             </p>
 
-            <a
-              href="#"
-              className="mt-auto inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#005EFF] uppercase"
+            <Link
+              href="/services/web-development"
+              className="mt-auto inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#E6D40D] uppercase"
             >
               VIEW Web Development
               <Image
-                src="/images/blue-arrow.webp"
-                alt="Arrow Blue"
+                src="/images/yellow-arrow.webp"
+                alt="Arrow Yellow"
                 width={19}
                 height={9}
                 priority
               />
-            </a>
+            </Link>
           </motion.div>
 
           {/* ===== THIRD CARD ===== */}
@@ -174,15 +175,15 @@ export default function CoreServices() {
           >
             {/* Background Image */}
             <div className="absolute inset-x-0 top-0 h-[180px] overflow-hidden">
-              <Image src="/images/service-3.webp" alt="" fill priority />
+              <Image src="/images/mobile-banner.webp" alt="" fill priority />
             </div>
 
             {/* Content */}
             <div className="relative z-10 flex h-full flex-col">
               <Image
-                src="/images/service-3-icon.webp"
-                alt="Data Engineering"
-                width={44}
+                src="/images/mobile.webp"
+                alt="Mobile Development"
+                width={64}
                 height={34}
                 priority
                 className="mb-8"
@@ -197,8 +198,8 @@ export default function CoreServices() {
                 experiences and enterprise-grade performance.
               </p>
 
-              <a
-                href="#"
+              <Link
+                href="/services/mobile-development"
                 className="mt-auto inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#E6D40D] uppercase"
               >
                 View Mobile Development
@@ -208,7 +209,7 @@ export default function CoreServices() {
                   width={19}
                   height={9}
                 />
-              </a>
+              </Link>
             </div>
           </motion.div>
 
@@ -223,9 +224,9 @@ export default function CoreServices() {
             className="flex min-h-[468px] flex-col rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-[clamp(24px,3vw,40px)] backdrop-blur-[20px] lg:col-span-2"
           >
             <Image
-              src="/images/service-4-icon.webp"
-              alt="Service 4 Icon"
-              width={44}
+              src="/images/digital.webp"
+              alt="Digital Solutions"
+              width={64}
               height={34}
               priority
               className="mb-8"
@@ -242,7 +243,7 @@ export default function CoreServices() {
             </p>
 
             {/* Bottom Image */}
-            <div className="mt-8 h-[160px] w-full overflow-hidden rounded-[2px] bg-[url('/images/service-4.webp')] bg-cover bg-center" />
+            <div className="mt-8 h-[160px] w-full overflow-hidden rounded-[2px] bg-[url('/images/digital-solutions.webp')] bg-cover bg-center" />
           </motion.div>
         </div>
       </div>

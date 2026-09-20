@@ -56,7 +56,7 @@ const testimonials = [
     designation: "Operations Director, NovaEdge Solutions (USA)",
   },
   {
-    icon: "/images/partner-2.webp",
+    icon: "/images/partner-3.webp",
     quote:
       "From strategy to launch, the team delivered a modern Shopify store that exceeded our expectations. Communication and execution were excellent throughout.",
     initials: "EW",
@@ -64,7 +64,7 @@ const testimonials = [
     designation: "Founder, Willow & Co. (United Kingdom)",
   },
   {
-    icon: "/images/partner-3.webp",
+    icon: "/images/partner-1.webp",
     quote:
       "Their custom web application automated several manual tasks and significantly improved our team's productivity.",
     initials: "MV",
@@ -72,7 +72,7 @@ const testimonials = [
     designation: "Managing Director, BelTech Group (Belgium)",
   },
   {
-    icon: "/images/partner-1.webp",
+    icon: "/images/partner-3.webp",
     quote:
       "The mobile application they developed is fast, intuitive, and exactly what our customers needed. We couldn't be happier with the outcome.",
     initials: "OC",
@@ -80,7 +80,7 @@ const testimonials = [
     designation: "Product Manager, BrightPath Digital (United Kingdom)",
   },
   {
-    icon: "/images/partner-2.webp",
+    icon: "/images/partner-1.webp",
     quote:
       "Their digital marketing and SEO strategy helped us reach new customers while AI automation simplified many of our day-to-day operations.",
     initials: "AL",

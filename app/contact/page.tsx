@@ -150,18 +150,21 @@ export default function ContactPage() {
 
                 {/* Email */}
                 <div className="group flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[4px] border border-cyan-300/10 bg-cyan-300/[0.05] transition-all duration-300 group-hover:border-cyan-300/25 group-hover:bg-cyan-300/[0.08]">
-                    <Mail className="h-5 w-5 text-cyan-300" strokeWidth={1.7} />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[4px] border border-[#FFED00]/10 bg-[#FFED00]/[0.04] transition-all duration-300 group-hover:border-[#FFED00]/25 group-hover:bg-[#FFED00]/[0.07]">
+                    <Mail
+                      className="h-5 w-5 text-[#FFED00]"
+                      strokeWidth={1.7}
+                    />
                   </div>
 
                   <div>
                     <h3 className="font-space-grotesk text-[16px] font-semibold text-[#DFE2ED]">
-                      Email us
+                      Email
                     </h3>
 
                     <a
                       href="mailto:info@digigrowtherz.com"
-                      className="font-inter mt-1 block text-[14px] leading-6 text-[#DFE2ED80] transition-colors duration-300 hover:text-cyan-300"
+                      className="font-inter mt-1 block text-[14px] leading-6 text-[#DFE2ED80] transition-colors duration-300 hover:text-[#FFED00]"
                     >
                       info@digigrowtherz.com
                     </a>
@@ -170,9 +173,9 @@ export default function ContactPage() {
 
                 {/* Address */}
                 <div className="group flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[4px] border border-[#FFED00]/10 bg-[#FFED00]/[0.04] transition-all duration-300 group-hover:border-[#FFED00]/25 group-hover:bg-[#FFED00]/[0.07]">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[4px] border border-[#A0D14F]/10 bg-[#A0D14F]/[0.06] transition-all duration-300 group-hover:border-[#A0D14F]/25 group-hover:bg-[#A0D14F]/[0.09]">
                     <MapPin
-                      className="h-5 w-5 text-[#FFED00]"
+                      className="h-5 w-5 text-[#A0D14F]"
                       strokeWidth={1.7}
                     />
                   </div>
@@ -186,7 +189,7 @@ export default function ContactPage() {
                       href="https://www.google.com/maps/search/?api=1&query=Street+No.+3%2C+Mohallah+Jinnah+Colony%2C+Wazirabad%2C+52000"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-inter mt-1 block max-w-[430px] text-[14px] leading-6 text-[#DFE2ED80] transition-colors duration-300 hover:text-[#FFED00]"
+                      className="font-inter mt-1 block max-w-[430px] text-[14px] leading-6 text-[#DFE2ED80] transition-colors duration-300 hover:text-[#A0D14F]"
                     >
                       Street No. 3, Mohallah Jinnah Colony, Wazirabad, 52000
                     </a>

@@ -38,7 +38,7 @@ export default function Header() {
       description: "WordPress, Shopify & custom web applications",
       href: "/services/web-development",
       icon: Globe,
-      color: "#0057FF",
+      color: "#FFED00",
     },
     {
       label: "Mobile Development",
@@ -59,14 +59,14 @@ export default function Header() {
       description: "Technical, on-page & local SEO strategies",
       href: "/services/seo",
       icon: Search,
-      color: "#0057FF",
+      color: "#A0D14F",
     },
     {
       label: "Branding & Design",
       description: "Brand identity, creatives & visual systems",
       href: "/services/branding",
       icon: Palette,
-      color: "#A0D14F",
+      color: "#FFED00",
     },
     {
       label: "eCommerce Solutions",
@@ -316,7 +316,7 @@ export default function Header() {
                               className="group flex items-center justify-between rounded-xl px-4 py-3 transition-colors duration-300 hover:bg-white/[0.035]"
                             >
                               <div>
-                                <p className="font-mono text-[10px] tracking-[0.2em] text-cyan-300 uppercase">
+                                <p className="font-mono text-[10px] tracking-[0.2em] text-[#A0D14F] uppercase">
                                   Explore Everything
                                 </p>
 

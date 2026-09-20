@@ -10,19 +10,19 @@ export default function AboutPage() {
       label: "EFFICIENCY",
       value: "40%+",
       description: "PROCESS OPTIMIZATION",
-      color: "#0057FF",
+      color: "#A0D14F",
     },
     {
       label: "INNOVATION",
       value: "AI-FIRST",
       description: "DIGITAL TRANSFORMATION",
-      color: "#A0D14F",
+      color: "#FFED00",
     },
     {
       label: "SCALABILITY",
       value: "GLOBAL",
       description: "BUSINESS SOLUTIONS",
-      color: "#FFED00",
+      color: "#A0D14F",
     },
   ];
 
@@ -41,19 +41,19 @@ export default function AboutPage() {
 
   const protocols = [
     {
-      icon: "/images/protocol-1.webp",
+      icon: "/images/innovation.webp",
       title: "Innovation First",
       description:
         "We embrace emerging technologies and AI-driven thinking to help businesses stay ahead in an evolving digital landscape.",
     },
     {
-      icon: "/images/protocol-2.webp",
+      icon: "/images/business.webp",
       title: "Business Focused",
       description:
         "Every solution is designed around measurable outcomes, ensuring technology supports your growth—not the other way around.",
     },
     {
-      icon: "/images/protocol-3.webp",
+      icon: "/images/trust.webp",
       title: "Trusted Partnerships",
       description:
         "We believe successful projects are built on collaboration, honest communication, and long-term relationships.",
@@ -75,7 +75,7 @@ export default function AboutPage() {
       role: "LEAD MANAGER",
       specialty: "OPERATIONS • CLIENTS • PROJECTS",
       image: "/images/avatar-img.webp",
-      accent: "#0057FF",
+      accent: "#FFED00",
     },
     {
       number: "03",
@@ -133,11 +133,10 @@ export default function AboutPage() {
                 className="flex h-[42px] cursor-pointer items-center justify-center gap-3 rounded-[4px] border border-white/[0.05] bg-[#262A32] px-4 py-2 transition-all duration-300 hover:border-[#A0D14F]/30 hover:bg-[#2C313A]"
               >
                 <Image
-                  src="/images/about-btn-1.webp"
-                  alt="Velocity First"
-                  width={20}
-                  height={16}
-                  className="h-4 w-5"
+                  src="/images/icon-13.png"
+                  alt="Explore Services"
+                  width={25}
+                  height={25}
                 />
 
                 <span className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#DFE2ED] uppercase">
@@ -151,11 +150,10 @@ export default function AboutPage() {
                 className="flex h-[42px] cursor-pointer items-center justify-center gap-3 rounded-[4px] border border-white/[0.05] bg-[#262A32] px-4 py-2 transition-all duration-300 hover:border-[#A0D14F]/30 hover:bg-[#2C313A]"
               >
                 <Image
-                  src="/images/about-btn-2.webp"
-                  alt="GENDD Framework"
-                  width={20}
-                  height={16}
-                  className="h-4 w-5"
+                  src="/images/icon-14.png"
+                  alt="Get in Touch"
+                  width={25}
+                  height={25}
                 />
 
                 <span className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#DFE2ED] uppercase">
@@ -171,20 +169,20 @@ export default function AboutPage() {
 
             <Image
               src="/images/about-banner.webp"
-              alt="AI Infrastructure"
+              alt="About"
               width={552}
               height={552}
               priority
-              className="hidden md:block"
+              className="block"
             />
-            <Image
+            {/* <Image
               src="/images/about-banner-mobile.webp"
               alt="AI Infrastructure"
               width={308}
               height={174}
               priority
               className="block md:hidden"
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -298,7 +296,7 @@ export default function AboutPage() {
           {/* Left Image */}
           <div className="shrink-0">
             <Image
-              src="/images/areas.webp"
+              src="/images/map.webp"
               alt="Global Presence"
               width={552}
               height={552}
@@ -311,7 +309,7 @@ export default function AboutPage() {
           <div className="w-full max-w-[552px]">
             {/* Heading */}
             <h2 className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#DFE2ED]">
-              GLOBAL <span className="text-[#0057FF]">EXPERTISE.</span> LOCAL
+              GLOBAL <span className="text-[#A0D14F]">EXPERTISE.</span> LOCAL
               IMPACT.
             </h2>
 
@@ -567,8 +565,8 @@ export default function AboutPage() {
                 <Image
                   src={protocol.icon}
                   alt={protocol.title}
-                  width={39}
-                  height={40}
+                  width={45}
+                  height={45}
                 />
 
                 {/* Title */}
@@ -620,9 +618,9 @@ export default function AboutPage() {
             {/* Secondary CTA */}
             <Link
               href="/services"
-              className="flex h-[70px] w-full items-center justify-center border border-[#0057FF] bg-transparent px-6 py-5 transition-all duration-300 hover:bg-[#0057FF]/10 md:max-w-[370px]"
+              className="flex h-[70px] w-full items-center justify-center border border-[#FFED00] bg-transparent px-6 py-5 transition-all duration-300 hover:bg-[#FFED00]/10 md:max-w-[370px]"
             >
-              <span className="font-['JetBrains_Mono'] text-[16px] leading-7 font-bold tracking-[1.8px] text-[#0057FF] uppercase md:text-[18px]">
+              <span className="font-['JetBrains_Mono'] text-[16px] leading-7 font-bold tracking-[1.8px] text-[#FFED00] uppercase md:text-[18px]">
                 EXPLORE OUR SERVICES
               </span>
             </Link>

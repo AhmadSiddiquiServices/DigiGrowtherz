@@ -32,7 +32,7 @@ export default function ServicesPage() {
       icon: TrendingUp,
       title: "Digital Growth",
       description: "Marketing • SEO • eCommerce",
-      color: "#0057FF",
+      color: "#A0D14F",
     },
   ];
 
@@ -59,7 +59,7 @@ export default function ServicesPage() {
       ],
       cta: "Explore Web Development",
       link: "/services/web-development",
-      color: "#0057FF",
+      color: "#FFED00",
     },
     {
       icon: Smartphone,
@@ -71,7 +71,7 @@ export default function ServicesPage() {
       ],
       cta: "Explore Mobile Development",
       link: "/services/mobile-development",
-      color: "#FFED00",
+      color: "#A0D14F",
     },
     {
       icon: Megaphone,
@@ -83,7 +83,7 @@ export default function ServicesPage() {
       ],
       cta: "Explore Digital Marketing",
       link: "/services/digital-marketing",
-      color: "#A0D14F",
+      color: "#FFED00",
     },
     {
       icon: Search,
@@ -91,7 +91,7 @@ export default function ServicesPage() {
       features: ["Technical SEO", "On-Page Optimization", "Local SEO Strategy"],
       cta: "Explore SEO Services",
       link: "/services/seo",
-      color: "#0057FF",
+      color: "#FFED00",
     },
     {
       icon: Palette,
@@ -154,9 +154,9 @@ export default function ServicesPage() {
                 <Link
                   href="/contact"
                   // type="button"
-                  className="flex h-12 min-w-[208px] cursor-pointer items-center justify-center border border-[#0057FF] px-8 transition-all duration-300 hover:bg-[#0057FF]/10 active:scale-[0.98]"
+                  className="flex h-12 min-w-[208px] cursor-pointer items-center justify-center border border-[#FFED00] px-8 transition-all duration-300 hover:bg-[#FFED00]/10 active:scale-[0.98]"
                 >
-                  <span className="font-['Inter'] text-[12px] leading-4 font-bold tracking-[1.2px] text-[#0057FF] uppercase">
+                  <span className="font-['Inter'] text-[12px] leading-4 font-bold tracking-[1.2px] text-[#FFED00] uppercase">
                     GET IN TOUCH
                   </span>
                 </Link>
@@ -462,8 +462,8 @@ export default function ServicesPage() {
             <div className="rounded-[8px] border border-[#0057FF33] bg-[rgba(25,25,25,0.4)] p-8 backdrop-blur-[20px]">
               <div className="flex h-full min-h-[307px] flex-col">
                 {/* Label */}
-                <div className="inline-flex w-fit rounded-[2px] bg-[#0057FF33] px-3 py-1">
-                  <span className="font-['JetBrains_Mono'] text-[12px] leading-4 text-[#0057FF] uppercase">
+                <div className="inline-flex w-fit rounded-[2px] bg-[#FFED0033] px-3 py-1">
+                  <span className="font-['JetBrains_Mono'] text-[12px] leading-4 text-[#FFED00] uppercase">
                     Case-Studies
                   </span>
                 </div>
@@ -484,7 +484,7 @@ export default function ServicesPage() {
                   <Link
                     href="/#portfolios"
                     type="button"
-                    className="cursor-pointer font-['JetBrains_Mono'] text-[12px] leading-4 tracking-[1.2px] text-[#0057FF] uppercase transition-opacity hover:opacity-80"
+                    className="cursor-pointer font-['JetBrains_Mono'] text-[12px] leading-4 tracking-[1.2px] text-[#FFED00] uppercase transition-opacity hover:opacity-80"
                   >
                     VIEW WEBSITES
                   </Link>
@@ -521,11 +521,11 @@ export default function ServicesPage() {
                 {/* Decorative Image */}
                 <div className="hidden justify-center md:flex lg:justify-end">
                   <Image
-                    src="/images/readiness.webp"
+                    src="/images/growth.webp"
                     alt="AI Readiness"
-                    width={190}
-                    height={176}
-                    className="opacity-20"
+                    width={192}
+                    height={178}
+                    className="opacity-70"
                   />
                 </div>
               </div>
@@ -539,7 +539,7 @@ export default function ServicesPage() {
         <div className="mx-auto">
           <div className="relative overflow-hidden rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.4)] px-6 py-16 backdrop-blur-[20px] sm:px-10 lg:px-16 lg:py-16">
             {/* Top Gradient Border */}
-            <div className="absolute top-0 left-0 h-px w-full bg-gradient-to-r from-[#A0D14F] via-[#FFED00] to-[#0057FF]" />
+            <div className="absolute top-0 left-0 h-px w-full bg-gradient-to-r from-[#A0D14F] to-[#FFED00]" />
 
             <div className="mx-auto max-w-[860px] text-center">
               {/* Heading */}

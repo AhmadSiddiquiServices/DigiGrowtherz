@@ -50,7 +50,7 @@ export default function OfficeMap() {
             href={`https://www.google.com/maps?q=${officeLocation[0]},${officeLocation[1]}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-['JetBrains_Mono'] text-[14px] tracking-[2px] text-[#0057FF] uppercase transition-colors hover:text-[#A0D14F]"
+            className="font-['JetBrains_Mono'] text-[14px] tracking-[2px] text-[#FFED00] uppercase transition-colors hover:text-[#A0D14F]"
           >
             Open in Google Maps →
           </a>

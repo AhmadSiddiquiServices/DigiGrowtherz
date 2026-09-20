@@ -70,7 +70,7 @@ export default function HowWeWorkPage() {
     {
       value: "AI",
       label: "Powered Innovation",
-      color: "#0057FF",
+      color: "#FFED00",
     },
     {
       value: "End-to-End",
@@ -80,7 +80,7 @@ export default function HowWeWorkPage() {
     {
       value: "ROI",
       label: "Driven Results",
-      color: "#FFFFFF",
+      color: "#A0D14F",
     },
   ];
   return (
@@ -91,7 +91,7 @@ export default function HowWeWorkPage() {
           {/* Left Content */}
           <div>
             {/* Sub Heading */}
-            <p className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal tracking-[1.6px] text-[#0057FF] uppercase">
+            <p className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal tracking-[1.6px] text-[#A0D14F] uppercase">
               HOW WE WORK
             </p>
 
@@ -124,9 +124,9 @@ export default function HowWeWorkPage() {
               <Link
                 href="/services"
                 // type="button"
-                className="flex h-[58px] cursor-pointer items-center justify-center border border-[#0057FF] px-6 transition-all duration-300 hover:bg-[#0057FF]/10 active:scale-[0.98]"
+                className="flex h-[58px] cursor-pointer items-center justify-center border border-[#FFED00] px-6 transition-all duration-300 hover:bg-[#FFED00]/10 active:scale-[0.98]"
               >
-                <span className="font-['Inter'] text-[16px] leading-6 font-semibold tracking-[1.6px] text-[#0057FF] uppercase">
+                <span className="font-['Inter'] text-[16px] leading-6 font-semibold tracking-[1.6px] text-[#FFED00] uppercase">
                   VIEW OUR SERVICES
                 </span>
               </Link>
@@ -139,8 +139,8 @@ export default function HowWeWorkPage() {
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(160,209,79,0.12)_0%,_transparent_70%)] blur-3xl" />
 
             <Image
-              src="/images/how-it-works-banner.webp"
-              alt="The GenDD Framework"
+              src="/images/work-banner.webp"
+              alt="How We Work"
               width={650}
               height={415}
               priority
@@ -176,7 +176,7 @@ export default function HowWeWorkPage() {
             <div className="absolute top-[48px] right-0 left-0 hidden h-[2px] bg-white/10 lg:block" />
 
             {/* Active Segment */}
-            <div className="absolute top-[48px] left-0 hidden h-[2px] w-[45%] bg-[#A0D14F] shadow-[0_0_12px_rgba(160,209,79,0.6)] lg:block" />
+            <div className="absolute top-[48px] left-2 hidden h-[2px] w-[45%] bg-[#A0D14F] shadow-[0_0_12px_rgba(160,209,79,0.6)] lg:block" />
 
             <div className="grid gap-12 lg:grid-cols-5">
               {phases.map((phase, index) => (
@@ -288,8 +288,8 @@ export default function HowWeWorkPage() {
                 </div>
                 <div className="mt-8 overflow-hidden rounded-[4px] border border-white/10">
                   <Image
-                    src="/images/method.webp"
-                    alt="GenDD Dashboard"
+                    src="/images/approach-banner.webp"
+                    alt="OUR APPROACH"
                     width={495}
                     height={192}
                   />
