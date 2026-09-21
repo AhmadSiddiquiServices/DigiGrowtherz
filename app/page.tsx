@@ -1,9 +1,11 @@
 import CaseStudySlider from "@/components/sections/CaseStudySlider";
 import CoreServices from "@/components/sections/CoreServices";
 import Hero from "@/components/sections/Hero";
+import StatsCounter from "@/components/sections/StatsCounter";
 import TestimonialsSlider from "@/components/sections/TestimonialsSlider";
 import Image from "next/image";
 import Link from "next/link";
+import ClientSlider from "@/components/sections/ClientSlider";
 
 export default function Home() {
   const TRUSTED_COMPANIES = [
@@ -21,7 +23,7 @@ export default function Home() {
       <Hero />
 
       {/* Services Names */}
-      <section className="border-y border-[#FFFFFF0D] bg-[#070B12]">
+      <section className="border-y border-[#FFFFFF0D] bg-[#0F141B]">
         <div className="container-wrapper py-[clamp(4rem,6vw,5rem)]">
           {/* Heading */}
           <p className="font-jetbrains text-center text-[12px] leading-3 font-medium tracking-[1.2px] text-[#DFE2ED66] uppercase">
@@ -44,6 +46,9 @@ export default function Home() {
 
       {/* Core Services */}
       <CoreServices />
+
+      {/* Client Slider */}
+      <ClientSlider />
 
       {/* Case Studies */}
       <section
@@ -85,7 +90,7 @@ export default function Home() {
                 {/* Feature 1 */}
                 <div className="flex items-start gap-6">
                   <Image
-                    src="/images/icon-5.png"
+                    src="/images/ai-sol.webp"
                     alt="AI Expertise"
                     width={48}
                     height={48}
@@ -109,7 +114,7 @@ export default function Home() {
                 {/* Feature 2 */}
                 <div className="flex items-start gap-6">
                   <Image
-                    src="/images/icon-7.png"
+                    src="/images/results.webp"
                     alt="Outcome Driven"
                     width={48}
                     height={48}
@@ -138,6 +143,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Stats Counter */}
+      <StatsCounter />
 
       {/* Testimonials */}
       <TestimonialsSlider />
