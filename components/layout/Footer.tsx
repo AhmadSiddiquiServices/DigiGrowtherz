@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FOOTER_LINKS } from "@/constants/footer";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 interface FooterColumnProps {
   title: string;
@@ -44,19 +45,51 @@ export default function Footer() {
           {/* Left Content */}
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-5 lg:gap-x-[clamp(5rem,10vw,12rem)]">
             <div className="col-span-2">
-              <Image
-                src="/images/logo.webp"
-                alt="DigiGrowtherz"
-                width={136}
-                height={40}
-                className="mb-8"
-              />
+              <Link href="/">
+                <Image
+                  src="/images/logo.webp"
+                  alt="DigiGrowtherz"
+                  width={180}
+                  height={40}
+                  priority
+                  className="mb-8"
+                />
+              </Link>
 
               <p className="font-inter text-[14px] leading-[22.75px] text-[#DFE2ED99]">
                 We empower businesses with AI automation and innovative digital
                 solutions that streamline operations, enhance customer
                 experiences, and drive sustainable growth.
               </p>
+              <div className="font-inter mt-8 space-y-6 text-[18px] leading-[22px] text-[#DFE2ED99]">
+                <a
+                  href="mailto:info@digigrowtherz.com"
+                  className="flex items-center gap-3 transition-colors hover:text-[#A0D14F]"
+                >
+                  <Mail color="#A0D14F" size={20} strokeWidth={1.8} />
+                  <span>info@digigrowtherz.com</span>
+                </a>
+
+                <a
+                  href="tel:+923036083548"
+                  className="flex items-center gap-3 transition-colors hover:text-[#A0D14F]"
+                >
+                  <Phone color="#A0D14F" size={20} strokeWidth={1.8} />
+                  <span>+92 303 6083548</span>
+                </a>
+
+                <div className="flex items-start gap-3 hover:text-[#A0D14F]">
+                  <MapPin
+                    color="#A0D14F"
+                    size={20}
+                    strokeWidth={1.8}
+                    className="mt-0.5 shrink-0"
+                  />
+                  <span>
+                    Street No. 3, Mohallah Jinnah Colony, Wazirabad, 52000
+                  </span>
+                </div>
+              </div>
             </div>
 
             {/* Footer Links */}
@@ -75,12 +108,12 @@ export default function Footer() {
           <div className="mt-16 border-t border-[#FFFFFF0D]" />
 
           {/* Bottom Section */}
-          <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-center">
             <p className="font-inter text-[12px] leading-4 text-[#DFE2ED66]">
-              © 2026 DigiGrowtherz. All rights reserved.
+              © 2019-2026 DigiGrowtherz. All rights reserved.
             </p>
 
-            <div className="flex flex-wrap items-center gap-8">
+            {/* <div className="flex flex-wrap items-center gap-8">
               {FOOTER_LINKS.bottom.map((link) => (
                 <Link
                   key={link.label}
@@ -90,7 +123,7 @@ export default function Footer() {
                   {link.label}
                 </Link>
               ))}
-            </div>
+            </div> */}
 
             {/* <button
               className="hidden h-8 w-8 items-center justify-center rounded-xl border border-[#FFFFFF1A] transition-all duration-300 hover:border-[#A0D14F] md:flex"
@@ -177,7 +210,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <p className="font-jetbrains mt-14 text-[12px] tracking-[1.2px] text-[#DFE2ED33] uppercase">
-              © 2026 DIGIGROWTHERZ | ALL RIGHTS RESERVED.
+              © 2019-2026 DIGIGROWTHERZ | ALL RIGHTS RESERVED.
             </p>
           </div>
         </div>

@@ -133,7 +133,7 @@ export default function AboutPage() {
                 className="flex h-[42px] cursor-pointer items-center justify-center gap-3 rounded-[4px] border border-white/[0.05] bg-[#262A32] px-4 py-2 transition-all duration-300 hover:border-[#A0D14F]/30 hover:bg-[#2C313A]"
               >
                 <Image
-                  src="/images/icon-13.png"
+                  src="/images/about-btn-1.webp"
                   alt="Explore Services"
                   width={25}
                   height={25}
@@ -150,7 +150,7 @@ export default function AboutPage() {
                 className="flex h-[42px] cursor-pointer items-center justify-center gap-3 rounded-[4px] border border-white/[0.05] bg-[#262A32] px-4 py-2 transition-all duration-300 hover:border-[#A0D14F]/30 hover:bg-[#2C313A]"
               >
                 <Image
-                  src="/images/icon-14.png"
+                  src="/images/about-btn-2.webp"
                   alt="Get in Touch"
                   width={25}
                   height={25}
