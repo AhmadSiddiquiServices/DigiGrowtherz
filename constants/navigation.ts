@@ -16,13 +16,13 @@ export const NAV_LINKS = [
     href: "/how-we-work",
   },
   {
+    label: "BLOGS",
+    href: "/blog",
+  },
+  {
     label: "ABOUT",
     href: "/about",
   },
-  // {
-  //   label: "BLOG",
-  //   href: "/blog",
-  // },
   // {
   //   label: "CONTACT",
   //   href: "/contact",
