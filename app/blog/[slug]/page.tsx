@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 import BlogCard from "@/components/blog/BlogCard";
 import BlogContent from "@/components/blog/BlogContent";
@@ -28,6 +29,11 @@ function formatDate(value?: string | null) {
   });
 }
 
+/*
+ * SEO metadata
+ *
+ * This still uses the real blog data.
+ */
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
 
@@ -36,6 +42,7 @@ export async function generateMetadata({ params }: Props) {
 
     return {
       title: post.seo?.metaTitle || `${post.title} | DigiGrowtherz`,
+
       description: post.seo?.metaDescription || post.excerpt || undefined,
 
       alternates: post.seo?.canonicalUrl
@@ -85,9 +92,164 @@ export async function generateMetadata({ params }: Props) {
   }
 }
 
-export default async function BlogDetailPage({ params }: Props) {
-  const { slug } = await params;
+/*
+ * Loading skeleton shown while Postora is being called.
+ *
+ * This intentionally mirrors the actual blog detail layout.
+ */
+function BlogDetailSkeleton() {
+  return (
+    <>
+      {/* Hero Skeleton */}
+      <section className="relative overflow-hidden border-b border-[#FFFFFF0D] bg-[#070B12]">
+        <div className="pointer-events-none absolute top-[-100px] right-[-100px] h-[420px] w-[420px] rounded-full bg-[#A0D14F08] blur-[120px]" />
 
+        <div className="mx-auto px-[clamp(1rem,4vw,5rem)] pt-[clamp(70px,9vw,130px)] pb-[clamp(60px,8vw,100px)]">
+          {/* Back link */}
+          <div className="h-4 w-32 animate-pulse bg-[#DFE2ED0D]" />
+
+          <div className="mt-14">
+            {/* Meta */}
+            <div className="flex flex-wrap gap-3">
+              <div className="h-3 w-28 animate-pulse bg-[#A0D14F15]" />
+
+              <div className="h-3 w-24 animate-pulse bg-[#DFE2ED0D]" />
+
+              <div className="h-3 w-20 animate-pulse bg-[#DFE2ED0D]" />
+            </div>
+
+            {/* Title */}
+            <div className="mt-8 max-w-[1100px] space-y-4">
+              <div className="h-[clamp(3rem,7vw,5.5rem)] w-[90%] animate-pulse bg-[#DFE2ED0D]" />
+
+              <div className="h-[clamp(3rem,7vw,5.5rem)] w-[64%] animate-pulse bg-[#DFE2ED0D]" />
+            </div>
+
+            {/* Excerpt */}
+            <div className="mt-8 max-w-[850px] space-y-3">
+              <div className="h-5 w-full animate-pulse bg-[#DFE2ED09]" />
+
+              <div className="h-5 w-[90%] animate-pulse bg-[#DFE2ED09]" />
+            </div>
+
+            {/* Author */}
+            <div className="mt-8 flex items-center gap-3">
+              <div className="h-10 w-10 animate-pulse rounded-full bg-[#DFE2ED0D]" />
+
+              <div>
+                <div className="h-3 w-24 animate-pulse bg-[#DFE2ED0D]" />
+
+                <div className="mt-2 h-2 w-16 animate-pulse bg-[#DFE2ED08]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Image Skeleton */}
+      <section className="px-[clamp(1rem,4vw,5rem)] py-[clamp(35px,5vw,65px)]">
+        <div className="relative mx-auto">
+          <div className="pointer-events-none absolute -inset-10 -z-10 bg-[#A0D14F06] blur-[90px]" />
+
+          <div className="overflow-hidden border border-[#FFFFFF10] bg-[#0F141B] p-2 sm:p-3">
+            <div className="relative aspect-[16/6] w-full animate-pulse overflow-hidden bg-[#181C23]" />
+          </div>
+        </div>
+      </section>
+
+      {/* Article Skeleton */}
+      <section className="px-[clamp(1rem,4vw,5rem)] pb-[clamp(80px,10vw,140px)]">
+        <div className="mx-auto grid gap-14 lg:grid-cols-[180px_minmax(0,1fr)] lg:gap-20">
+          {/* Sidebar */}
+          <aside className="hidden lg:block">
+            <div className="sticky top-28">
+              <div className="h-4 w-16 animate-pulse bg-[#DFE2ED0D]" />
+
+              <div className="mt-4 h-px w-10 bg-[#A0D14F33]" />
+
+              <div className="mt-5 space-y-3">
+                <div className="h-3 w-28 animate-pulse bg-[#DFE2ED09]" />
+
+                <div className="h-3 w-20 animate-pulse bg-[#DFE2ED09]" />
+              </div>
+            </div>
+          </aside>
+
+          {/* Article */}
+          <article className="max-w-[1000px] min-w-0 space-y-8">
+            <div className="h-10 w-[65%] animate-pulse bg-[#DFE2ED0D]" />
+
+            <div className="space-y-4">
+              <div className="h-6 w-full animate-pulse bg-[#DFE2ED09]" />
+              <div className="h-6 w-[94%] animate-pulse bg-[#DFE2ED09]" />
+              <div className="h-6 w-[82%] animate-pulse bg-[#DFE2ED09]" />
+            </div>
+
+            <div className="h-10 w-[58%] animate-pulse bg-[#DFE2ED0D]" />
+
+            <div className="space-y-4">
+              <div className="h-6 w-full animate-pulse bg-[#DFE2ED09]" />
+              <div className="h-6 w-[91%] animate-pulse bg-[#DFE2ED09]" />
+              <div className="h-6 w-[76%] animate-pulse bg-[#DFE2ED09]" />
+              <div className="h-6 w-[88%] animate-pulse bg-[#DFE2ED09]" />
+            </div>
+
+            <div className="h-10 w-[48%] animate-pulse bg-[#DFE2ED0D]" />
+
+            <div className="space-y-4">
+              <div className="h-6 w-full animate-pulse bg-[#DFE2ED09]" />
+              <div className="h-6 w-[96%] animate-pulse bg-[#DFE2ED09]" />
+              <div className="h-6 w-[84%] animate-pulse bg-[#DFE2ED09]" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* Related Posts Skeleton */}
+      <section className="border-t border-[#FFFFFF0D] bg-[#0F141B] px-[clamp(1rem,4vw,5rem)] py-[clamp(70px,8vw,120px)]">
+        <div className="mx-auto">
+          <div className="mb-12">
+            <div className="h-3 w-28 animate-pulse bg-[#DFE2ED0D]" />
+
+            <div className="mt-5 h-12 w-[420px] max-w-full animate-pulse bg-[#DFE2ED0D]" />
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {Array.from({ length: 3 }).map((_, index) => (
+              <div
+                key={index}
+                className="overflow-hidden border border-[#FFFFFF0D] bg-[#070B12]"
+              >
+                <div className="aspect-[1.55/1] animate-pulse bg-[#10161D]" />
+
+                <div className="p-6">
+                  <div className="h-3 w-24 animate-pulse bg-[#DFE2ED0D]" />
+
+                  <div className="mt-5 space-y-3">
+                    <div className="h-6 w-full animate-pulse bg-[#DFE2ED0D]" />
+                    <div className="h-6 w-[78%] animate-pulse bg-[#DFE2ED0D]" />
+                  </div>
+
+                  <div className="mt-5 space-y-2">
+                    <div className="h-3 w-full animate-pulse bg-[#DFE2ED08]" />
+                    <div className="h-3 w-[90%] animate-pulse bg-[#DFE2ED08]" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+/*
+ * All Postora-dependent content lives inside this async component.
+ *
+ * This is what Suspense waits for.
+ */
+async function BlogDetailContent({ slug }: { slug: string }) {
   let post;
 
   try {
@@ -101,7 +263,7 @@ export default async function BlogDetailPage({ params }: Props) {
   }
 
   return (
-    <main className="overflow-hidden bg-[#070B12]">
+    <>
       {/* Article Hero */}
       <section className="relative overflow-hidden border-b border-[#FFFFFF0D]">
         <div className="pointer-events-none absolute top-[-100px] right-[-100px] h-[420px] w-[420px] rounded-full bg-[#A0D14F10] blur-[120px]" />
@@ -193,24 +355,6 @@ export default async function BlogDetailPage({ params }: Props) {
       </section>
 
       {/* Featured Image */}
-      {/* {post.featuredImage?.url && (
-        <section className="px-[clamp(1rem,4vw,5rem)] py-[clamp(40px,6vw,80px)]">
-          <div className="mx-auto">
-            <div className="relative aspect-[16/8] overflow-hidden border border-[#FFFFFF0D] bg-[#0F141B]">
-              <Image
-                src={post.featuredImage.url}
-                alt={post.featuredImage.alt || post.title}
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 1400px"
-                className="object-cover"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-[#070B12]/30 via-transparent to-transparent" />
-            </div>
-          </div>
-        </section>
-      )} */}
       {post.featuredImage?.url && (
         <section className="px-[clamp(1rem,4vw,5rem)] py-[clamp(35px,5vw,65px)]">
           <div className="relative mx-auto">
@@ -224,7 +368,7 @@ export default async function BlogDetailPage({ params }: Props) {
                   fill
                   priority
                   sizes="(max-width: 768px) 100vw, 1180px"
-                  className="transition-transform duration-700 hover:scale-[1.015]"
+                  className="object-cover transition-transform duration-700 hover:scale-[1.015]"
                 />
 
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070B12]/25 via-transparent to-transparent" />
@@ -284,6 +428,18 @@ export default async function BlogDetailPage({ params }: Props) {
           </div>
         </section>
       ) : null}
+    </>
+  );
+}
+
+export default async function BlogDetailPage({ params }: Props) {
+  const { slug } = await params;
+
+  return (
+    <main className="overflow-hidden bg-[#070B12]">
+      <Suspense key={slug} fallback={<BlogDetailSkeleton />}>
+        <BlogDetailContent slug={slug} />
+      </Suspense>
 
       {/* CTA */}
       <section className="overflow-hidden bg-[#A0D14F] px-[clamp(1rem,4vw,5rem)] py-16 lg:py-20">

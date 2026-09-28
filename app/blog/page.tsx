@@ -1,8 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
-
+import { Suspense } from "react";
 import BlogCard from "@/components/blog/BlogCard";
 import { getBlogPosts } from "@/lib/postora";
-import Image from "next/image";
 
 type Props = {
   searchParams: Promise<{
@@ -11,13 +11,105 @@ type Props = {
   }>;
 };
 
-export default async function BlogPage({ searchParams }: Props) {
-  const params = await searchParams;
+type BlogDataSectionsProps = {
+  page: number;
+  search: string;
+};
 
-  const page = Math.max(1, Number.parseInt(params.page ?? "1", 10) || 1);
+function BlogDataLoader() {
+  return (
+    <>
+      {/* Featured Skeleton */}
+      <section className="bg-[#0F141B] px-[clamp(1rem,4vw,5rem)] py-[clamp(70px,8vw,120px)]">
+        <div className="mx-auto">
+          {/* Section Heading */}
+          <div className="mb-10">
+            <div className="h-3 w-28 animate-pulse bg-[#DFE2ED12]" />
 
-  const search = params.search?.trim() ?? "";
+            <div className="mt-4 h-12 w-[320px] max-w-full animate-pulse bg-[#DFE2ED0D]" />
+          </div>
 
+          {/* Featured Card Skeleton */}
+          <div className="mx-auto overflow-hidden border border-[#FFFFFF0D] bg-[#070B12]">
+            {/* Image */}
+            <div className="px-3 pt-3 sm:px-4 sm:pt-4">
+              <div className="relative aspect-[3/1] w-full animate-pulse overflow-hidden bg-[#10161D] sm:aspect-[4.5/1] lg:aspect-[5.9/1]">
+                <div className="absolute inset-0 animate-[shimmer_2s_linear_infinite] bg-[linear-gradient(90deg,transparent,#FFFFFF06,transparent)] bg-[length:200%_100%]" />
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="grid grid-cols-1 border-t border-[#FFFFFF0D] lg:grid-cols-[1.15fr_0.85fr]">
+              {/* Left */}
+              <div className="px-[clamp(1.5rem,4vw,3.5rem)] py-[clamp(1.5rem,3vw,3.5rem)] lg:border-r lg:border-[#FFFFFF0D]">
+                <div className="h-3 w-48 animate-pulse bg-[#DFE2ED10]" />
+
+                <div className="mt-7 space-y-3">
+                  <div className="h-12 w-[90%] animate-pulse bg-[#DFE2ED0D]" />
+                  <div className="h-12 w-[70%] animate-pulse bg-[#DFE2ED0D]" />
+                </div>
+              </div>
+
+              {/* Right */}
+              <div className="px-[clamp(1.5rem,4vw,3.5rem)] py-[clamp(1.5rem,3vw,3.5rem)] max-[767px]:border-t max-[767px]:border-[#FFFFFF0D]">
+                <div className="h-px w-12 animate-pulse bg-[#A0D14F44]" />
+
+                <div className="mt-7 space-y-3">
+                  <div className="h-4 w-full animate-pulse bg-[#DFE2ED0A]" />
+                  <div className="h-4 w-[90%] animate-pulse bg-[#DFE2ED0A]" />
+                  <div className="h-4 w-[75%] animate-pulse bg-[#DFE2ED0A]" />
+                </div>
+
+                <div className="mt-10 h-4 w-36 animate-pulse bg-[#A0D14F18]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Skeleton */}
+      <section className="bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-[clamp(70px,8vw,120px)]">
+        <div className="mx-auto">
+          {/* Heading */}
+          <div className="mb-12">
+            <div className="h-3 w-28 animate-pulse bg-[#DFE2ED12]" />
+
+            <div className="mt-4 h-10 w-[420px] max-w-full animate-pulse bg-[#DFE2ED0D]" />
+          </div>
+
+          {/* Cards */}
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {Array.from({ length: 3 }).map((_, index) => (
+              <div
+                key={index}
+                className="overflow-hidden border border-[#FFFFFF0D] bg-[#0F141B]"
+              >
+                <div className="aspect-[1.55/1] w-full animate-pulse bg-[#10161D]" />
+
+                <div className="p-6">
+                  <div className="h-3 w-28 animate-pulse bg-[#DFE2ED10]" />
+
+                  <div className="mt-5 space-y-3">
+                    <div className="h-6 w-full animate-pulse bg-[#DFE2ED0D]" />
+                    <div className="h-6 w-[78%] animate-pulse bg-[#DFE2ED0D]" />
+                  </div>
+
+                  <div className="mt-5 space-y-2">
+                    <div className="h-3 w-full animate-pulse bg-[#DFE2ED08]" />
+                    <div className="h-3 w-[90%] animate-pulse bg-[#DFE2ED08]" />
+                    <div className="h-3 w-[65%] animate-pulse bg-[#DFE2ED08]" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+async function BlogDataSections({ page, search }: BlogDataSectionsProps) {
   const { posts, pagination } = await getBlogPosts({
     page,
     limit: 10,
@@ -31,161 +123,7 @@ export default async function BlogPage({ searchParams }: Props) {
     : posts;
 
   return (
-    <main className="overflow-hidden bg-[#070B12]">
-      {/* Hero */}
-      <section className="relative overflow-hidden border-b border-[#FFFFFF0D] bg-[#070B12]">
-        {/* Ambient glow */}
-        <div className="pointer-events-none absolute top-[-180px] right-[-120px] h-[520px] w-[520px] rounded-full bg-[#A0D14F0D] blur-[140px]" />
-
-        {/* Technical grid */}
-        <div
-          className="pointer-events-none absolute inset-0 opacity-60"
-          style={{
-            backgroundImage: `
-        linear-gradient(to right, #A0D14F08 1px, transparent 1px),
-        linear-gradient(to bottom, #A0D14F08 1px, transparent 1px)
-      `,
-            backgroundSize: "120px 120px",
-            maskImage:
-              "linear-gradient(to right, transparent 0%, black 40%, black 100%)",
-            WebkitMaskImage:
-              "linear-gradient(to right, transparent 0%, black 40%, black 100%)",
-          }}
-        />
-
-        {/* Large diagonal light beam */}
-        <div className="pointer-events-none absolute top-[-20%] right-[9%] h-[150%] w-[1px] rotate-[42deg] bg-[#A0D14F40] blur-[1px]" />
-
-        <div className="pointer-events-none absolute top-[-20%] right-[9%] h-[150%] w-[2px] rotate-[42deg] bg-[#A0D14F20] blur-[10px]" />
-
-        {/* Right-side circuit paths */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[48%] lg:block">
-          {/* Horizontal path */}
-          <div className="absolute top-[42%] right-[8%] left-[10%] h-px bg-[#A0D14F18]" />
-
-          <div className="absolute top-[42%] right-[8%] left-[10%] h-px bg-[#A0D14F18] blur-[2px]" />
-
-          {/* Vertical path 1 */}
-          <div className="absolute top-[8%] right-[23%] h-[58%] w-px bg-[#A0D14F20]" />
-
-          {/* Vertical path 2 */}
-          <div className="absolute top-[18%] right-[7%] h-[72%] w-px bg-[#A0D14F18]" />
-
-          {/* Horizontal upper path */}
-          <div className="absolute top-[17%] right-[7%] h-px w-[23%] bg-[#A0D14F18]" />
-
-          {/* Stepped circuit line */}
-          <div className="absolute top-[58%] right-[23%] h-px w-[16%] bg-[#A0D14F25]" />
-
-          <div className="absolute top-[58%] right-[7%] h-[26%] w-px bg-[#A0D14F18]" />
-
-          <div className="absolute top-[84%] right-[7%] h-px w-[16%] bg-[#A0D14F18]" />
-
-          {/* Node squares */}
-          <div className="absolute top-[16%] right-[23%] h-2 w-2 border border-[#A0D14F99] bg-[#A0D14F25]" />
-
-          <div className="absolute top-[41%] right-[22.5%] h-3 w-3 border border-[#A0D14F88] bg-[#A0D14F30]" />
-
-          <div className="absolute top-[57%] right-[7%] h-3 w-3 border border-[#A0D14F88] bg-[#A0D14F30]" />
-
-          <div className="absolute top-[83%] right-[7%] h-2 w-2 border border-[#A0D14F77] bg-[#A0D14F20]" />
-
-          {/* Glow around important nodes */}
-          <div className="absolute top-[39.5%] right-[21.8%] h-5 w-5 rounded-full bg-[#A0D14F20] blur-md" />
-
-          <div className="absolute top-[55%] right-[6.3%] h-5 w-5 rounded-full bg-[#A0D14F16] blur-md" />
-
-          {/* Right diagonal glow source */}
-          <div className="absolute top-[0%] right-[-5%] h-[280px] w-[280px] rounded-full bg-[#A0D14F18] blur-[100px]" />
-
-          <div className="absolute top-[0%] right-[2%] h-[180px] w-[180px] rounded-full bg-[#A0D14F12] blur-[80px]" />
-        </div>
-
-        {/* Main Content */}
-        <div className="relative z-10 mx-auto px-[clamp(1rem,4vw,5rem)] py-[clamp(80px,8vw,125px)]">
-          <div className="max-w-[760px]">
-            {/* Eyebrow */}
-            <p className="font-jetbrains text-[10px] font-medium tracking-[1.8px] text-[#A0D14F] uppercase">
-              DigiGrowtherz / Insights
-            </p>
-
-            {/* Heading */}
-            <h1 className="font-space mt-6 max-w-[720px] text-[clamp(3rem,6vw,6rem)] leading-[0.96] font-semibold tracking-[-0.055em] text-[#DFE2ED]">
-              Ideas that drive{" "}
-              <span className="text-[#A0D14F]">digital growth.</span>
-            </h1>
-
-            {/* Description */}
-            <p className="font-inter mt-7 max-w-[680px] text-[clamp(0.95rem,1.3vw,1.1rem)] leading-[1.75] text-[#DFE2ED88]">
-              Practical insights on AI automation, custom development, digital
-              marketing, eCommerce, and the technologies helping modern
-              businesses move forward.
-            </p>
-
-            {/* Search */}
-            <form
-              action="/blog"
-              method="GET"
-              className="mt-9 flex w-full max-w-[540px]"
-            >
-              <div className="relative min-w-0 flex-1">
-                <svg
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-[#DFE2ED44]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                >
-                  <circle cx="11" cy="11" r="7" />
-                  <path d="m20 20-3.5-3.5" />
-                </svg>
-
-                <input
-                  type="search"
-                  name="search"
-                  defaultValue={search}
-                  placeholder="Search insights..."
-                  className="font-inter h-12 w-full border border-[#FFFFFF12] bg-[#0F141B] pr-4 pl-11 text-[12px] text-[#DFE2ED] outline-none placeholder:text-[#DFE2ED3D] focus:border-[#A0D14F55]"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="font-jetbrains h-12 shrink-0 cursor-pointer bg-[#A0D14F] px-7 text-[10px] font-bold tracking-[1px] text-[#070B12] uppercase transition-all duration-300 hover:bg-[#B3E65E]"
-              >
-                Search
-              </button>
-            </form>
-          </div>
-
-          {/* Bottom topics */}
-          <div className="mt-12 hidden flex-wrap items-center gap-x-6 gap-y-3 md:flex lg:mt-14">
-            <span className="font-jetbrains text-[8px] tracking-[1.3px] text-[#DFE2ED44] uppercase">
-              AI & Automation
-            </span>
-
-            <span className="h-[3px] w-[3px] rounded-full bg-[#A0D14F55]" />
-
-            <span className="font-jetbrains text-[8px] tracking-[1.3px] text-[#DFE2ED44] uppercase">
-              Development
-            </span>
-
-            <span className="h-[3px] w-[3px] rounded-full bg-[#A0D14F55]" />
-
-            <span className="font-jetbrains text-[8px] tracking-[1.3px] text-[#DFE2ED44] uppercase">
-              Marketing
-            </span>
-
-            <span className="h-[3px] w-[3px] rounded-full bg-[#A0D14F55]" />
-
-            <span className="font-jetbrains text-[8px] tracking-[1.3px] text-[#DFE2ED44] uppercase">
-              eCommerce
-            </span>
-          </div>
-        </div>
-      </section>
-
+    <>
       {/* Featured */}
       {featuredPost && (
         <section className="bg-[#0F141B] px-[clamp(1rem,4vw,5rem)] py-[clamp(70px,8vw,120px)]">
@@ -202,13 +140,13 @@ export default async function BlogPage({ searchParams }: Props) {
             </div>
 
             {/* Featured Card */}
-            <article className="mx-auto max-w-[1800px] overflow-hidden rounded-2xl border border-[#FFFFFF0D] bg-[#070B12]">
+            <article className="mx-auto overflow-hidden rounded-2xl border border-[#FFFFFF0D] bg-[#070B12]">
               {/* Featured Image */}
               <Link
                 href={`/blog/${featuredPost.slug}`}
                 className="group relative block px-3 pt-3 sm:px-4 sm:pt-4"
               >
-                <div className="relative mx-auto aspect-[5.9/1] w-full max-w-[1800px]">
+                <div className="relative mx-auto aspect-[3/1] w-full sm:aspect-[4.5/1] lg:aspect-[5.9/1]">
                   {/* Lime border frame */}
                   <div
                     className="absolute inset-0 bg-[#A0D14F55]"
@@ -218,41 +156,30 @@ export default async function BlogPage({ searchParams }: Props) {
                     }}
                   />
 
-                  <div className="relative aspect-[3/1] w-full sm:aspect-[4.5/1] lg:aspect-[5.9/1]">
-                    {/* Lime border frame */}
-                    <div
-                      className="absolute inset-0 bg-[#A0D14F55]"
-                      style={{
-                        clipPath:
-                          "polygon(4.2% 0, 95.8% 0, 100% 15%, 100% 85%, 95.8% 100%, 4.2% 100%, 0 85%, 0 15%)",
-                      }}
-                    />
+                  {/* Image */}
+                  <div
+                    className="absolute inset-px overflow-hidden bg-[#10161D]"
+                    style={{
+                      clipPath:
+                        "polygon(4.2% 0, 95.8% 0, 100% 15%, 100% 85%, 95.8% 100%, 4.2% 100%, 0 85%, 0 15%)",
+                    }}
+                  >
+                    {featuredPost.featuredImage?.url ? (
+                      <Image
+                        src={featuredPost.featuredImage.url}
+                        alt={
+                          featuredPost.featuredImage.alt || featuredPost.title
+                        }
+                        fill
+                        priority
+                        sizes="100vw"
+                        className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 bg-[#10161D]" />
+                    )}
 
-                    {/* Image */}
-                    <div
-                      className="absolute inset-px overflow-hidden bg-[#10161D]"
-                      style={{
-                        clipPath:
-                          "polygon(4.2% 0, 95.8% 0, 100% 15%, 100% 85%, 95.8% 100%, 4.2% 100%, 0 85%, 0 15%)",
-                      }}
-                    >
-                      {featuredPost.featuredImage?.url ? (
-                        <Image
-                          src={featuredPost.featuredImage.url}
-                          alt={
-                            featuredPost.featuredImage.alt || featuredPost.title
-                          }
-                          fill
-                          priority
-                          sizes="100vw"
-                          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-                        />
-                      ) : (
-                        <div className="absolute inset-0 bg-[#10161D]" />
-                      )}
-
-                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#070B12]/20" />
-                    </div>
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#070B12]/20" />
                   </div>
 
                   {/* Featured Badge */}
@@ -268,7 +195,6 @@ export default async function BlogPage({ searchParams }: Props) {
               <div className="grid grid-cols-[1.15fr_0.85fr] border-t border-[#FFFFFF0D] max-[767px]:grid-cols-1">
                 {/* Left Content */}
                 <div className="px-[clamp(1.5rem,4vw,3.5rem)] py-[clamp(1.5rem,3vw,3.5rem)] min-[768px]:border-r min-[768px]:border-[#FFFFFF0D]">
-                  {/* Meta */}
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                     {featuredPost.categoryId?.name && (
                       <>
@@ -303,7 +229,6 @@ export default async function BlogPage({ searchParams }: Props) {
                     )}
                   </div>
 
-                  {/* Title */}
                   <Link href={`/blog/${featuredPost.slug}`} className="block">
                     <h3 className="font-space mt-6 max-w-[900px] text-[clamp(1.6rem,4vw,3.5rem)] leading-[2rem] font-semibold tracking-[-0.055em] text-[#DFE2ED] md:leading-[0.98]">
                       {featuredPost.title}
@@ -314,7 +239,6 @@ export default async function BlogPage({ searchParams }: Props) {
                 {/* Right Content */}
                 <div className="flex flex-col justify-between px-[clamp(1.5rem,4vw,3.5rem)] py-[clamp(1.5rem,3vw,3.5rem)] max-[767px]:border-t max-[767px]:border-[#FFFFFF0D]">
                   <div>
-                    {/* Accent */}
                     <div className="h-px w-12 bg-[#A0D14F]" />
 
                     {featuredPost.excerpt && (
@@ -324,7 +248,6 @@ export default async function BlogPage({ searchParams }: Props) {
                     )}
                   </div>
 
-                  {/* CTA */}
                   <Link
                     href={`/blog/${featuredPost.slug}`}
                     className="font-jetbrains mt-10 inline-flex items-center gap-4 self-start text-[10px] font-bold tracking-[1.2px] text-[#A0D14F] uppercase transition-colors duration-300 hover:text-[#DFE2ED]"
@@ -418,6 +341,165 @@ export default async function BlogPage({ searchParams }: Props) {
           )}
         </div>
       </section>
+    </>
+  );
+}
+
+export default async function BlogPage({ searchParams }: Props) {
+  const params = await searchParams;
+
+  const page = Math.max(1, Number.parseInt(params.page ?? "1", 10) || 1);
+
+  const search = params.search?.trim() ?? "";
+
+  return (
+    <main className="overflow-hidden bg-[#070B12]">
+      {/* Hero */}
+      <section className="relative overflow-hidden border-b border-[#FFFFFF0D] bg-[#070B12]">
+        {/* Ambient glow */}
+        <div className="pointer-events-none absolute top-[-180px] right-[-120px] h-[520px] w-[520px] rounded-full bg-[#A0D14F0D] blur-[140px]" />
+
+        {/* Technical grid */}
+        <div
+          className="pointer-events-none absolute inset-0 opacity-60"
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, #A0D14F08 1px, transparent 1px),
+              linear-gradient(to bottom, #A0D14F08 1px, transparent 1px)
+            `,
+            backgroundSize: "120px 120px",
+            maskImage:
+              "linear-gradient(to right, transparent 0%, black 40%, black 100%)",
+            WebkitMaskImage:
+              "linear-gradient(to right, transparent 0%, black 40%, black 100%)",
+          }}
+        />
+
+        {/* Large diagonal light beam */}
+        <div className="pointer-events-none absolute top-[-20%] right-[9%] h-[150%] w-[1px] rotate-[42deg] bg-[#A0D14F40] blur-[1px]" />
+
+        <div className="pointer-events-none absolute top-[-20%] right-[9%] h-[150%] w-[2px] rotate-[42deg] bg-[#A0D14F20] blur-[10px]" />
+
+        {/* Right-side circuit paths */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[48%] lg:block">
+          <div className="absolute top-[42%] right-[8%] left-[10%] h-px bg-[#A0D14F18]" />
+          <div className="absolute top-[42%] right-[8%] left-[10%] h-px bg-[#A0D14F18] blur-[2px]" />
+
+          <div className="absolute top-[8%] right-[23%] h-[58%] w-px bg-[#A0D14F20]" />
+
+          <div className="absolute top-[18%] right-[7%] h-[72%] w-px bg-[#A0D14F18]" />
+
+          <div className="absolute top-[17%] right-[7%] h-px w-[23%] bg-[#A0D14F18]" />
+
+          <div className="absolute top-[58%] right-[23%] h-px w-[16%] bg-[#A0D14F25]" />
+
+          <div className="absolute top-[58%] right-[7%] h-[26%] w-px bg-[#A0D14F18]" />
+
+          <div className="absolute top-[84%] right-[7%] h-px w-[16%] bg-[#A0D14F18]" />
+
+          <div className="absolute top-[16%] right-[23%] h-2 w-2 border border-[#A0D14F99] bg-[#A0D14F25]" />
+
+          <div className="absolute top-[41%] right-[22.5%] h-3 w-3 border border-[#A0D14F88] bg-[#A0D14F30]" />
+
+          <div className="absolute top-[57%] right-[7%] h-3 w-3 border border-[#A0D14F88] bg-[#A0D14F30]" />
+
+          <div className="absolute top-[83%] right-[7%] h-2 w-2 border border-[#A0D14F77] bg-[#A0D14F20]" />
+
+          <div className="absolute top-[39.5%] right-[21.8%] h-5 w-5 rounded-full bg-[#A0D14F20] blur-md" />
+
+          <div className="absolute top-[55%] right-[6.3%] h-5 w-5 rounded-full bg-[#A0D14F16] blur-md" />
+
+          <div className="absolute top-[0%] right-[-5%] h-[280px] w-[280px] rounded-full bg-[#A0D14F18] blur-[100px]" />
+
+          <div className="absolute top-[0%] right-[2%] h-[180px] w-[180px] rounded-full bg-[#A0D14F12] blur-[80px]" />
+        </div>
+
+        {/* Main Content */}
+        <div className="relative z-10 mx-auto px-[clamp(1rem,4vw,5rem)] py-[clamp(70px,7vw,110px)]">
+          <div className="max-w-[760px]">
+            <p className="font-jetbrains text-[10px] font-medium tracking-[1.8px] text-[#A0D14F] uppercase">
+              DigiGrowtherz / Insights
+            </p>
+
+            <h1 className="font-space mt-6 max-w-[720px] text-[clamp(3rem,6vw,6rem)] leading-[0.96] font-semibold tracking-[-0.055em] text-[#DFE2ED]">
+              Ideas that drive{" "}
+              <span className="text-[#A0D14F]">digital growth.</span>
+            </h1>
+
+            <p className="font-inter mt-7 max-w-[680px] text-[clamp(0.95rem,1.3vw,1.1rem)] leading-[1.75] text-[#DFE2ED88]">
+              Practical insights on AI automation, custom development, digital
+              marketing, eCommerce, and the technologies helping modern
+              businesses move forward.
+            </p>
+          </div>
+
+          {/* Search */}
+          <form
+            action="/blog"
+            method="GET"
+            className="mt-9 flex w-full max-w-[540px]"
+          >
+            <div className="relative min-w-0 flex-1">
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-[#DFE2ED44]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+
+              <input
+                type="search"
+                name="search"
+                defaultValue={search}
+                placeholder="Search insights..."
+                className="font-inter h-12 w-full border border-[#FFFFFF12] bg-[#0F141B] pr-4 pl-11 text-[12px] text-[#DFE2ED] outline-none placeholder:text-[#DFE2ED3D] focus:border-[#A0D14F55]"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="font-jetbrains h-12 shrink-0 cursor-pointer bg-[#A0D14F] px-7 text-[10px] font-bold tracking-[1px] text-[#070B12] uppercase transition-all duration-300 hover:bg-[#B3E65E]"
+            >
+              Search
+            </button>
+          </form>
+
+          {/* Bottom topics */}
+          <div className="mt-12 hidden flex-wrap items-center gap-x-6 gap-y-3 md:flex lg:mt-14">
+            <span className="font-jetbrains text-[8px] tracking-[1.3px] text-[#DFE2ED44] uppercase">
+              AI & Automation
+            </span>
+
+            <span className="h-[3px] w-[3px] rounded-full bg-[#A0D14F55]" />
+
+            <span className="font-jetbrains text-[8px] tracking-[1.3px] text-[#DFE2ED44] uppercase">
+              Development
+            </span>
+
+            <span className="h-[3px] w-[3px] rounded-full bg-[#A0D14F55]" />
+
+            <span className="font-jetbrains text-[8px] tracking-[1.3px] text-[#DFE2ED44] uppercase">
+              Marketing
+            </span>
+
+            <span className="h-[3px] w-[3px] rounded-full bg-[#A0D14F55]" />
+
+            <span className="font-jetbrains text-[8px] tracking-[1.3px] text-[#DFE2ED44] uppercase">
+              eCommerce
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* API-driven content */}
+      <Suspense key={`${page}-${search}`} fallback={<BlogDataLoader />}>
+        <BlogDataSections page={page} search={search} />
+      </Suspense>
     </main>
   );
 }
