@@ -146,7 +146,7 @@ export default async function BlogDetailPage({ params }: Props) {
               )}
             </div>
 
-            <h1 className="font-space mt-7 text-[clamp(3rem,7vw,5.5rem)] leading-[0.98] font-semibold tracking-[-0.055em] text-[#DFE2ED]">
+            <h1 className="font-space mt-7 text-[clamp(2.6rem,7vw,5.5rem)] leading-[0.98] font-semibold tracking-[-0.055em] text-[#DFE2ED]">
               {post.title}
             </h1>
 
