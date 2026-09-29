@@ -13,6 +13,8 @@ type Props = {
   }>;
 };
 
+const SITE_URL = "https://digigrowtherz.com";
+
 function formatDate(value?: string | null) {
   if (!value) return "";
 
@@ -27,6 +29,76 @@ function formatDate(value?: string | null) {
     day: "numeric",
     year: "numeric",
   });
+}
+
+function createArticleJsonLd(
+  post: Awaited<ReturnType<typeof getBlogPostBySlug>>,
+  slug: string
+) {
+  const articleUrl = post.seo?.canonicalUrl || `${SITE_URL}/blog/${slug}`;
+
+  const articleImage = post.featuredImage?.url;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+
+    "@id": `${articleUrl}#article`,
+
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl,
+    },
+
+    headline: post.title,
+
+    description: post.seo?.metaDescription || post.excerpt || undefined,
+
+    ...(articleImage
+      ? {
+          image: [articleImage],
+        }
+      : {}),
+
+    ...(post.publishedAt
+      ? {
+          datePublished: post.publishedAt,
+        }
+      : {}),
+
+    ...(post.updatedAt
+      ? {
+          dateModified: post.updatedAt,
+        }
+      : post.publishedAt
+        ? {
+            dateModified: post.publishedAt,
+          }
+        : {}),
+
+    author: post.authorId?.name
+      ? {
+          "@type": "Person",
+          name: post.authorId.name,
+        }
+      : {
+          "@type": "Organization",
+          name: "DigiGrowtherz",
+          url: SITE_URL,
+        },
+
+    publisher: {
+      "@type": "Organization",
+      name: "DigiGrowtherz",
+      url: SITE_URL,
+    },
+  };
+
+  /*
+   * Prevent user-controlled text such as a title containing
+   * </script> from breaking the JSON-LD script element.
+   */
+  return JSON.stringify(jsonLd).replace(/</g, "\\u003c");
 }
 
 /*
@@ -262,8 +334,17 @@ async function BlogDetailContent({ slug }: { slug: string }) {
     notFound();
   }
 
+  const articleJsonLd = createArticleJsonLd(post, slug);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: articleJsonLd,
+        }}
+      />
+
       {/* Article Hero */}
       <section className="relative overflow-hidden border-b border-[#FFFFFF0D]">
         <div className="pointer-events-none absolute top-[-100px] right-[-100px] h-[420px] w-[420px] rounded-full bg-[#A0D14F10] blur-[120px]" />
