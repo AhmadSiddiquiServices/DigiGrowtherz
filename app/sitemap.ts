@@ -105,12 +105,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  const blogUrls: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: post.publishedAt ? new Date(post.publishedAt) : undefined,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
+  const blogUrls: MetadataRoute.Sitemap = blogPosts
+    .filter((post) => post.seo?.noIndex !== true)
+    .map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: post.updatedAt
+        ? new Date(post.updatedAt)
+        : post.publishedAt
+          ? new Date(post.publishedAt)
+          : undefined,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    }));
 
   return [...staticUrls, ...blogUrls];
 }

@@ -40,12 +40,6 @@ export type PostoraAuthor = {
   socialLinks?: Record<string, string>;
 };
 
-export type PostoraTag = {
-  _id: string;
-  name: string;
-  slug: string;
-};
-
 export type PostoraPostCard = {
   _id: string;
   title: string;
@@ -54,10 +48,15 @@ export type PostoraPostCard = {
   featuredImage?: PostoraImage;
   categoryId?: PostoraCategory | null;
   authorId?: PostoraAuthor | null;
-  tagIds?: PostoraTag[];
+  tags?: string[];
   isFeatured?: boolean;
   publishedAt?: string | null;
+  updatedAt?: string | null;
   readingTime?: number;
+
+  seo?: {
+    noIndex?: boolean;
+  };
 };
 
 export type PostoraContentNode = {
@@ -86,7 +85,6 @@ export type PostoraPost = PostoraPostCard & {
   };
 
   createdAt?: string;
-  updatedAt?: string;
 };
 
 type PostoraPagination = {
