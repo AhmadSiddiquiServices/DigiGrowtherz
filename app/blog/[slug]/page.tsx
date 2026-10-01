@@ -349,7 +349,7 @@ async function BlogDetailContent({ slug }: { slug: string }) {
       <section className="relative overflow-hidden border-b border-[#FFFFFF0D]">
         <div className="pointer-events-none absolute top-[-100px] right-[-100px] h-[420px] w-[420px] rounded-full bg-[#A0D14F10] blur-[120px]" />
 
-        <div className="mx-auto px-[clamp(1rem,4vw,5rem)] pt-[clamp(70px,9vw,130px)] pb-[clamp(60px,8vw,100px)]">
+        <div className="mx-auto px-[clamp(1rem,4vw,5rem)] pt-[clamp(70px,9vw,130px)] pb-[10px]">
           <Link
             href="/blog"
             className="group font-jetbrains inline-flex items-center gap-3 text-[12px] font-bold tracking-[1.2px] text-[#DFE2ED66] uppercase transition-colors hover:text-[#A0D14F]"
