@@ -91,6 +91,15 @@ async function getAllBlogPosts() {
     page += 1;
   }
 
+  console.log(
+    "[SITEMAP] Postora posts received:",
+    allPosts.map((post) => ({
+      title: post.title,
+      slug: post.slug,
+      publishedAt: post.publishedAt,
+    }))
+  );
+
   return allPosts;
 }
 
