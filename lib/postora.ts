@@ -140,7 +140,10 @@ function getErrorMessage(
 
 async function postoraFetch<T>(
   path: string,
-  params: Record<string, string> = {}
+  params: Record<string, string> = {},
+  options?: {
+    cache?: RequestCache;
+  }
 ): Promise<T> {
   const { apiUrl, siteId } = getPostoraConfig();
 
@@ -158,9 +161,15 @@ async function postoraFetch<T>(
         Accept: "application/json",
       },
 
-      next: {
-        revalidate: 60,
-      },
+      ...(options?.cache === "no-store"
+        ? {
+            cache: "no-store" as const,
+          }
+        : {
+            next: {
+              revalidate: 60,
+            },
+          }),
     }
   );
 
@@ -189,6 +198,7 @@ export async function getBlogPosts({
   tag,
   author,
   featured,
+  cache,
 }: {
   page?: number;
   limit?: number;
@@ -197,6 +207,7 @@ export async function getBlogPosts({
   tag?: string;
   author?: string;
   featured?: boolean;
+  cache?: RequestCache;
 } = {}) {
   const params: Record<string, string> = {
     page: String(page),
@@ -223,7 +234,9 @@ export async function getBlogPosts({
     params.featured = "true";
   }
 
-  const result = await postoraFetch<PostoraListResponse>("/api/blogs", params);
+  const result = await postoraFetch<PostoraListResponse>("/api/blogs", params, {
+    cache,
+  });
 
   return {
     posts: result.data?.posts ?? [],

@@ -77,6 +77,7 @@ async function getAllBlogPosts() {
     const result = await getBlogPosts({
       page,
       limit: 100,
+      cache: "no-store",
     });
 
     allPosts.push(...result.posts);
@@ -90,15 +91,6 @@ async function getAllBlogPosts() {
 
     page += 1;
   }
-
-  console.log(
-    "[SITEMAP] Postora posts received:",
-    allPosts.map((post) => ({
-      title: post.title,
-      slug: post.slug,
-      publishedAt: post.publishedAt,
-    }))
-  );
 
   return allPosts;
 }
@@ -130,4 +122,4 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [...staticUrls, ...blogUrls];
 }
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
