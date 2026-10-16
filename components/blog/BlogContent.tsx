@@ -1,11 +1,56 @@
+import type { ReactNode } from "react";
 import type { PostoraContentNode } from "@/lib/postora";
 
-function renderChildren(nodes: PostoraContentNode[] | undefined) {
-  return nodes?.map((node, index) => renderNode(node, index));
+function renderChildren(
+  nodes: PostoraContentNode[] | undefined,
+  inTable = false
+): ReactNode {
+  return nodes?.map((node, index) => renderNode(node, index, inTable));
 }
 
-function renderNode(node: PostoraContentNode, index: number): React.ReactNode {
-  const children = renderChildren(node.content);
+function getPositiveSpan(
+  attrs: Record<string, unknown> | undefined,
+  name: "colspan" | "rowspan"
+): number | undefined {
+  const value = attrs?.[name];
+
+  if (typeof value === "number" && Number.isSafeInteger(value) && value >= 1) {
+    return value;
+  }
+
+  return undefined;
+}
+
+function getColumnWidth(
+  attrs: Record<string, unknown> | undefined
+): number | undefined {
+  const colwidth = attrs?.colwidth;
+
+  if (!Array.isArray(colwidth) || colwidth.length === 0) {
+    return undefined;
+  }
+
+  const validWidths = colwidth.every(
+    (width): width is number =>
+      typeof width === "number" && Number.isSafeInteger(width) && width > 0
+  );
+
+  if (!validWidths) {
+    return undefined;
+  }
+
+  return colwidth.reduce<number>((total, width) => total + width, 0);
+}
+
+function renderNode(
+  node: PostoraContentNode,
+  index: number,
+  inTable = false
+): ReactNode {
+  const children = renderChildren(
+    node.content,
+    inTable || node.type === "table"
+  );
 
   switch (node.type) {
     case "doc":
@@ -15,7 +60,11 @@ function renderNode(node: PostoraContentNode, index: number): React.ReactNode {
       return (
         <p
           key={index}
-          className="font-inter mb-7 text-[16px] leading-[1.95] text-[#DFE2EDB2] sm:text-[18px]"
+          className={
+            inTable
+              ? "font-inter text-[13px] leading-6 break-words text-[#DFE2EDB2] sm:text-[14px]"
+              : "font-inter mb-7 text-[16px] leading-[1.95] text-[#DFE2EDB2] sm:text-[18px]"
+          }
         >
           {children}
         </p>
@@ -89,12 +138,92 @@ function renderNode(node: PostoraContentNode, index: number): React.ReactNode {
         </pre>
       );
 
+    /*
+     * TABLE
+     *
+     * Keep the table inside a horizontally scrollable wrapper
+     * so wide tables remain usable on smaller screens.
+     */
+    case "table":
+      return (
+        <figure key={index} className="my-10 w-full max-w-full">
+          <div className="max-w-full overflow-x-auto rounded-lg border border-[#FFFFFF1A]">
+            <table className="w-full min-w-[640px] border-collapse text-left">
+              <tbody>{children}</tbody>
+            </table>
+          </div>
+        </figure>
+      );
+
+    /*
+     * TABLE ROW
+     */
+    case "tableRow":
+      return (
+        <tr key={index} className="border-b border-[#FFFFFF1A] last:border-b-0">
+          {children}
+        </tr>
+      );
+
+    /*
+     * TABLE HEADER
+     */
+    case "tableHeader": {
+      const colSpan = getPositiveSpan(node.attrs, "colspan");
+      const rowSpan = getPositiveSpan(node.attrs, "rowspan");
+      const columnWidth = getColumnWidth(node.attrs);
+
+      return (
+        <th
+          key={index}
+          scope="col"
+          colSpan={colSpan}
+          rowSpan={rowSpan}
+          style={
+            columnWidth !== undefined
+              ? { width: `${columnWidth}px` }
+              : undefined
+          }
+          className="border border-[#FFFFFF1A] bg-[#0F141B] px-4 py-4 text-left align-top text-[13px] leading-6 font-semibold text-[#DFE2ED] sm:px-5 sm:text-[15px]"
+        >
+          {children}
+        </th>
+      );
+    }
+
+    /*
+     * TABLE CELL
+     */
+    case "tableCell": {
+      const colSpan = getPositiveSpan(node.attrs, "colspan");
+      const rowSpan = getPositiveSpan(node.attrs, "rowspan");
+      const columnWidth = getColumnWidth(node.attrs);
+
+      return (
+        <td
+          key={index}
+          colSpan={colSpan}
+          rowSpan={rowSpan}
+          style={
+            columnWidth !== undefined
+              ? { width: `${columnWidth}px` }
+              : undefined
+          }
+          className="border border-[#FFFFFF1A] px-4 py-4 align-top text-[13px] leading-6 text-[#DFE2EDB2] sm:px-5 sm:py-5 sm:text-[14px]"
+        >
+          {children}
+        </td>
+      );
+    }
+
     case "image": {
       const src = typeof node.attrs?.src === "string" ? node.attrs.src : "";
 
       const alt = typeof node.attrs?.alt === "string" ? node.attrs.alt : "";
 
-      if (!src) return null;
+      if (!src) {
+        return null;
+      }
 
       return (
         <figure key={index} className="my-10 overflow-hidden">
