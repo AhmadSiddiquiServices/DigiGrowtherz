@@ -3,9 +3,10 @@ import type { PostoraContentNode } from "@/lib/postora";
 
 function renderChildren(
   nodes: PostoraContentNode[] | undefined,
-  inTable = false
+  inTable = false,
+  inList = false
 ): ReactNode {
-  return nodes?.map((node, index) => renderNode(node, index, inTable));
+  return nodes?.map((node, index) => renderNode(node, index, inTable, inList));
 }
 
 function getPositiveSpan(
@@ -45,11 +46,13 @@ function getColumnWidth(
 function renderNode(
   node: PostoraContentNode,
   index: number,
-  inTable = false
+  inTable = false,
+  inList = false
 ): ReactNode {
   const children = renderChildren(
     node.content,
-    inTable || node.type === "table"
+    inTable || node.type === "table",
+    inList || node.type === "bulletList" || node.type === "orderedList"
   );
 
   switch (node.type) {
@@ -63,7 +66,9 @@ function renderNode(
           className={
             inTable
               ? "font-inter text-[13px] leading-6 break-words text-[#DFE2EDB2] sm:text-[14px]"
-              : "font-inter mb-7 text-[16px] leading-[1.95] text-[#DFE2EDB2] sm:text-[18px]"
+              : inList
+                ? "font-inter m-0 text-[16px] leading-8 text-[#DFE2EDB2] sm:text-[18px]"
+                : "font-inter mb-7 text-[16px] leading-[1.95] text-[#DFE2EDB2] sm:text-[18px]"
           }
         >
           {children}
@@ -99,7 +104,7 @@ function renderNode(
       return (
         <ul
           key={index}
-          className="font-inter mb-8 list-disc space-y-3 pl-6 text-[16px] leading-8 text-[#DFE2EDB2] sm:text-[18px]"
+          className="font-inter mb-8 list-disc space-y-2 pl-6 text-[16px] leading-8 text-[#DFE2EDB2] sm:text-[18px]"
         >
           {children}
         </ul>
@@ -109,7 +114,7 @@ function renderNode(
       return (
         <ol
           key={index}
-          className="font-inter mb-8 list-decimal space-y-3 pl-6 text-[16px] leading-8 text-[#DFE2EDB2] sm:text-[18px]"
+          className="font-inter mb-8 list-decimal space-y-2 pl-6 text-[16px] leading-8 text-[#DFE2EDB2] sm:text-[18px]"
         >
           {children}
         </ol>
