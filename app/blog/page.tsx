@@ -146,7 +146,7 @@ async function BlogDataSections({ page, search }: BlogDataSectionsProps) {
                 href={`/blog/${featuredPost.slug}`}
                 className="group relative block px-3 pt-3 sm:px-4 sm:pt-4"
               >
-                <div className="relative mx-auto aspect-[3/1] w-full sm:aspect-[4.5/1] lg:aspect-[5.9/1]">
+                <div className="relative mx-auto aspect-[3/1] w-full sm:aspect-[4.5/1] lg:aspect-[4/1]">
                   {/* Lime border frame */}
                   <div
                     className="absolute inset-0 bg-[#A0D14F55]"
@@ -173,7 +173,7 @@ async function BlogDataSections({ page, search }: BlogDataSectionsProps) {
                         fill
                         priority
                         sizes="100vw"
-                        className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                        className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]"
                       />
                     ) : (
                       <div className="absolute inset-0 bg-[#10161D]" />

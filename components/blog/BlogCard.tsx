@@ -32,15 +32,15 @@ export default function BlogCard({
     <article className="group flex h-full flex-col overflow-hidden border border-[#FFFFFF0D] bg-[#0F141B] transition-all duration-300 hover:border-[#A0D14F33]">
       <Link
         href={`/blog/${slug}`}
-        className="relative block aspect-[16/10] overflow-hidden bg-[#181C23]"
+        className="relative block aspect-[2.54/1] overflow-hidden bg-[#181C23]"
       >
         {featuredImage?.url ? (
           <Image
             src={featuredImage.url}
             alt={featuredImage.alt || title}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.035]"
+            sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 33vw"
+            className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.035]"
           />
         ) : (
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,#A0D14F18,transparent_35%),#181C23]" />
