@@ -1,70 +1,118 @@
 "use client";
 
+import { useRef, useState } from "react";
+import type { FormEvent } from "react";
 import { ArrowUpRight, ChevronDown, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
-import { FormEvent, useState } from "react";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { toast } from "react-toastify";
 
 type FormStatus = "idle" | "loading";
 
+interface InquiryApiResponse {
+  success?: boolean;
+  message?: string;
+  id?: string;
+  errors?: Record<string, string[] | undefined>;
+}
+
 export default function ContactForm() {
+  const turnstileRef = useRef<TurnstileInstance | null>(null);
+  const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+
   const [status, setStatus] = useState<FormStatus>("idle");
+  const [turnstileToken, setTurnstileToken] = useState("");
+
+  const isLoading = status === "loading";
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    setStatus("loading");
+    if (isLoading) {
+      return;
+    }
+
+    if (!turnstileSiteKey) {
+      toast.error(
+        "Security verification is not configured. Please contact us directly.",
+        { position: "bottom-right" }
+      );
+      return;
+    }
+
+    if (!turnstileToken) {
+      toast.error(
+        "Please complete the security verification before submitting.",
+        { position: "bottom-right" }
+      );
+      return;
+    }
 
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    const payload = {
-      name: String(formData.get("name") || ""),
-      email: String(formData.get("email") || ""),
-      company: String(formData.get("company") || ""),
-      service: String(formData.get("service") || ""),
-      message: String(formData.get("message") || ""),
-    };
+    // Identify the intended form to the API.
+    formData.set("formType", "contact");
+
+    // The server validates this token with Cloudflare.
+    formData.set("turnstileToken", turnstileToken);
+
+    // The hidden contactFax field remains in FormData.
+    // The server checks it independently of client-side validation.
+
+    setStatus("loading");
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
+        body: formData,
       });
 
-      const data = await response.json();
+      let result: InquiryApiResponse | null = null;
 
-      if (!response.ok) {
-        toast.error(data?.message || "Unable to send your inquiry.", {
-          position: "bottom-right",
-        });
+      try {
+        result = (await response.json()) as InquiryApiResponse;
+      } catch {
+        result = null;
+      }
+
+      if (!response.ok || !result?.success) {
+        const firstFieldError = result?.errors
+          ? Object.values(result.errors).flat().find(Boolean)
+          : undefined;
+
+        toast.error(
+          firstFieldError ||
+            result?.message ||
+            "Unable to send your inquiry. Please try again.",
+          { position: "bottom-right" }
+        );
 
         return;
       }
 
       toast.success(
-        data?.message || "Your inquiry has been sent successfully.",
-        {
-          position: "bottom-right",
-        }
+        result.message || "Your inquiry has been sent successfully.",
+        { position: "bottom-right" }
       );
 
+      // Reset the form only after the API confirms success.
       form.reset();
     } catch (error) {
-      console.error("Contact form error:", error);
+      console.error("[ContactForm] Submission failed:", error);
 
-      toast.error("Something went wrong. Please try again.", {
-        position: "bottom-right",
-      });
+      toast.error(
+        "Unable to connect to the server. Please check your connection and try again.",
+        { position: "bottom-right" }
+      );
     } finally {
+      // Turnstile tokens are single-use. Request a fresh token next time.
+      setTurnstileToken("");
+      turnstileRef.current?.reset();
+
       setStatus("idle");
     }
   }
-
-  const isLoading = status === "loading";
 
   return (
     <motion.div
@@ -121,19 +169,22 @@ export default function ContactForm() {
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="mt-7 space-y-6">
-          {/* Honeypot */}
+          {/* HONEYPOT — hidden from real visitors */}
           <div
-            className="absolute -left-[9999px] h-0 w-0 overflow-hidden"
             aria-hidden="true"
+            className="pointer-events-none absolute top-auto -left-[10000px] h-px w-px overflow-hidden"
           >
-            <label htmlFor="website">Website</label>
+            <label htmlFor="contact-fax">Leave this field empty</label>
 
             <input
-              id="website"
+              id="contact-fax"
               type="text"
-              name="website"
+              name="contactFax"
               tabIndex={-1}
               autoComplete="off"
+              autoCapitalize="off"
+              spellCheck={false}
+              defaultValue=""
               aria-hidden="true"
             />
           </div>
@@ -154,6 +205,8 @@ export default function ContactForm() {
                 name="name"
                 placeholder="Your full name"
                 autoComplete="name"
+                minLength={2}
+                maxLength={100}
                 required
                 disabled={isLoading}
                 className="font-inter h-12 w-full rounded-[4px] border border-white/[0.09] bg-[#070B12]/70 px-4 text-[14px] text-[#DFE2ED] transition-all duration-300 outline-none placeholder:text-[#DFE2ED35] focus:border-[#A0D14F]/35 focus:bg-[#070B12] disabled:cursor-not-allowed disabled:opacity-60"
@@ -174,6 +227,7 @@ export default function ContactForm() {
                 name="email"
                 placeholder="you@company.com"
                 autoComplete="email"
+                maxLength={254}
                 required
                 disabled={isLoading}
                 className="font-inter h-12 w-full rounded-[4px] border border-white/[0.09] bg-[#070B12]/70 px-4 text-[14px] text-[#DFE2ED] transition-all duration-300 outline-none placeholder:text-[#DFE2ED35] focus:border-[#A0D14F]/35 focus:bg-[#070B12] disabled:cursor-not-allowed disabled:opacity-60"
@@ -196,6 +250,7 @@ export default function ContactForm() {
               name="company"
               placeholder="Your company or business name"
               autoComplete="organization"
+              maxLength={120}
               disabled={isLoading}
               className="font-inter h-12 w-full rounded-[4px] border border-white/[0.09] bg-[#070B12]/70 px-4 text-[14px] text-[#DFE2ED] transition-all duration-300 outline-none placeholder:text-[#DFE2ED35] focus:border-[#A0D14F]/35 focus:bg-[#070B12] disabled:cursor-not-allowed disabled:opacity-60"
             />
@@ -217,34 +272,27 @@ export default function ContactForm() {
                 defaultValue=""
                 required
                 disabled={isLoading}
-                className="font-inter h-12 w-full appearance-none rounded-[4px] border border-white/[0.09] bg-[#070B12]/70 px-4 pr-10 text-[14px] text-[#DFE2ED80] transition-all duration-300 outline-none focus:border-[#A0D14F]/35 focus:bg-[#070B12] disabled:cursor-not-allowed disabled:opacity-60"
+                className="font-inter h-12 w-full cursor-pointer appearance-none rounded-[4px] border border-white/[0.09] bg-[#070B12]/70 px-4 pr-10 text-[14px] text-[#DFE2ED80] transition-all duration-300 outline-none focus:border-[#A0D14F]/35 focus:bg-[#070B12] disabled:cursor-not-allowed disabled:opacity-60"
               >
                 <option value="" disabled>
                   Select a service
                 </option>
 
                 <option value="ai-automation">AI Automation</option>
-
                 <option value="web-development">Website Development</option>
-
                 <option value="mobile-development">Mobile Development</option>
-
                 <option value="digital-marketing">Digital Marketing</option>
-
                 <option value="seo">SEO Services</option>
-
-                <option value="branding">Branding & Design</option>
-
+                <option value="branding">Branding &amp; Design</option>
                 <option value="ecommerce">eCommerce Solutions</option>
-
                 <option value="b2b-exports">B2B Exports</option>
-
                 <option value="other">Other / Custom Solution</option>
               </select>
 
               <ChevronDown
                 className="pointer-events-none absolute top-1/2 right-4 h-4 w-4 -translate-y-1/2 text-[#DFE2ED50]"
                 strokeWidth={1.7}
+                aria-hidden="true"
               />
             </div>
           </div>
@@ -262,6 +310,8 @@ export default function ContactForm() {
               id="message"
               name="message"
               rows={6}
+              minLength={10}
+              maxLength={5000}
               required
               disabled={isLoading}
               placeholder="Tell us about your goals, current challenges, or what you'd like to build..."
@@ -269,10 +319,64 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* CLOUDFLARE TURNSTILE */}
+          <div>
+            <label className="font-jetbrains mb-2.5 block text-[10px] font-medium tracking-[0.16em] text-[#DFE2ED66] uppercase">
+              Security Verification
+              <span className="text-[#A0D14F]"> *</span>
+            </label>
+
+            {turnstileSiteKey ? (
+              <div className="min-h-[65px] overflow-hidden">
+                <Turnstile
+                  ref={turnstileRef}
+                  siteKey={turnstileSiteKey}
+                  options={{
+                    theme: "dark",
+                    size: "flexible",
+                    action: "contact",
+                  }}
+                  onSuccess={(token) => {
+                    setTurnstileToken(token);
+                  }}
+                  onExpire={() => {
+                    setTurnstileToken("");
+
+                    toast.info(
+                      "Your security check expired. Please verify again.",
+                      { position: "bottom-right" }
+                    );
+                  }}
+                  onError={() => {
+                    setTurnstileToken("");
+
+                    toast.error(
+                      "The security check could not load. Please refresh and try again.",
+                      { position: "bottom-right" }
+                    );
+                  }}
+                />
+              </div>
+            ) : (
+              <p
+                role="alert"
+                className="font-inter rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-300"
+              >
+                Security verification is not configured. Please contact the
+                website administrator.
+              </p>
+            )}
+
+            <p className="font-inter mt-2 text-[10px] leading-5 text-[#DFE2ED40]">
+              Complete the security check before sending your inquiry.
+            </p>
+          </div>
+
           {/* Submit */}
           <button
             type="submit"
-            disabled={isLoading}
+            disabled={isLoading || !turnstileSiteKey}
+            aria-busy={isLoading}
             className="group flex h-14 w-full cursor-pointer items-center justify-center gap-3 rounded-[4px] bg-[#A0D14F] px-6 transition-all duration-300 hover:shadow-[0_0_35px_rgba(160,209,79,0.14)] hover:brightness-105 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:shadow-none"
           >
             {isLoading ? (
