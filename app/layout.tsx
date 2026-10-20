@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -39,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={` ${inter.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={`${inter.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <Header />
@@ -56,6 +57,8 @@ export default function RootLayout({
         />
         <Footer />
       </body>
+
+      <GoogleAnalytics gaId="G-MQ06FWE95" />
     </html>
   );
 }
