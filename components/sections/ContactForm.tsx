@@ -6,6 +6,7 @@ import { ArrowUpRight, ChevronDown, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { toast } from "react-toastify";
+import { sendGAEvent } from "@next/third-parties/google";
 
 type FormStatus = "idle" | "loading";
 
@@ -95,6 +96,12 @@ export default function ContactForm() {
         result.message || "Your inquiry has been sent successfully.",
         { position: "bottom-right" }
       );
+
+      // Track only successfully submitted inquiries.
+      sendGAEvent("event", "generate_lead", {
+        form_name: "contact_form",
+        lead_source: "website_contact_form",
+      });
 
       // Reset the form only after the API confirms success.
       form.reset();
