@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FOOTER_LINKS } from "@/constants/footer";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { sendGAEvent } from "@next/third-parties/google";
+import WhatsAppFloatingButton from "@/components/layout/WhatsAppFloatingButton";
 
 interface FooterColumnProps {
   title: string;
@@ -225,6 +228,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Floating WhatsApp Button */}
+      <WhatsAppFloatingButton />
     </footer>
   );
 }

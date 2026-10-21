@@ -36,7 +36,7 @@ export default function ContactForm() {
     if (!turnstileSiteKey) {
       toast.error(
         "Security verification is not configured. Please contact us directly.",
-        { position: "bottom-right" }
+        { position: "top-right" }
       );
       return;
     }
@@ -44,7 +44,7 @@ export default function ContactForm() {
     if (!turnstileToken) {
       toast.error(
         "Please complete the security verification before submitting.",
-        { position: "bottom-right" }
+        { position: "top-right" }
       );
       return;
     }
@@ -86,7 +86,7 @@ export default function ContactForm() {
           firstFieldError ||
             result?.message ||
             "Unable to send your inquiry. Please try again.",
-          { position: "bottom-right" }
+          { position: "top-right" }
         );
 
         return;
@@ -94,7 +94,7 @@ export default function ContactForm() {
 
       toast.success(
         result.message || "Your inquiry has been sent successfully.",
-        { position: "bottom-right" }
+        { position: "top-right" }
       );
 
       // Track only successfully submitted inquiries.
@@ -110,7 +110,7 @@ export default function ContactForm() {
 
       toast.error(
         "Unable to connect to the server. Please check your connection and try again.",
-        { position: "bottom-right" }
+        { position: "top-right" }
       );
     } finally {
       // Turnstile tokens are single-use. Request a fresh token next time.
@@ -351,7 +351,7 @@ export default function ContactForm() {
 
                     toast.info(
                       "Your security check expired. Please verify again.",
-                      { position: "bottom-right" }
+                      { position: "top-right" }
                     );
                   }}
                   onError={() => {
@@ -359,7 +359,7 @@ export default function ContactForm() {
 
                     toast.error(
                       "The security check could not load. Please refresh and try again.",
-                      { position: "bottom-right" }
+                      { position: "top-right" }
                     );
                   }}
                 />
