@@ -4,6 +4,7 @@ import ContactForm from "@/components/sections/ContactForm";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function ContactPage() {
   const OfficeMap = dynamic(() => import("@/components/sections/OfficeMap"), {
@@ -141,6 +142,11 @@ export default function ContactPage() {
 
                     <a
                       href="tel:+923036083548"
+                      onClick={() =>
+                        sendGAEvent("event", "phone_click", {
+                          link_location: "contact_information",
+                        })
+                      }
                       className="font-inter mt-1 block text-[14px] leading-6 text-[#DFE2ED80] transition-colors duration-300 hover:text-[#A0D14F]"
                     >
                       +92 303 6083548
@@ -164,6 +170,11 @@ export default function ContactPage() {
 
                     <a
                       href="mailto:info@digigrowtherz.com"
+                      onClick={() =>
+                        sendGAEvent("event", "email_click", {
+                          link_location: "contact_information",
+                        })
+                      }
                       className="font-inter mt-1 block text-[14px] leading-6 text-[#DFE2ED80] transition-colors duration-300 hover:text-[#FFED00]"
                     >
                       info@digigrowtherz.com

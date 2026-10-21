@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import { FOOTER_LINKS } from "@/constants/footer";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { sendGAEvent } from "@next/third-parties/google";
 
 interface FooterColumnProps {
   title: string;
@@ -64,6 +64,11 @@ export default function Footer() {
               <div className="font-inter mt-8 space-y-6 text-[18px] leading-[22px] text-[#DFE2ED99]">
                 <a
                   href="mailto:info@digigrowtherz.com"
+                  onClick={() =>
+                    sendGAEvent("event", "email_click", {
+                      link_location: "secondary_contact_block",
+                    })
+                  }
                   className="flex items-center gap-3 transition-colors hover:text-[#A0D14F]"
                 >
                   <Mail color="#A0D14F" size={20} strokeWidth={1.8} />
@@ -72,6 +77,11 @@ export default function Footer() {
 
                 <a
                   href="tel:+923036083548"
+                  onClick={() =>
+                    sendGAEvent("event", "phone_click", {
+                      link_location: "secondary_contact_block",
+                    })
+                  }
                   className="flex items-center gap-3 transition-colors hover:text-[#A0D14F]"
                 >
                   <Phone color="#A0D14F" size={20} strokeWidth={1.8} />
