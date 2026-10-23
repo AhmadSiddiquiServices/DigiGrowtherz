@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   title: "DigiGrowtherz | Digital AI Automation",
   description:
     "DigiGrowtherz helps businesses scale through AI automation, custom software development, intelligent workflows, and growth-focused digital solutions. Transform operations, increase efficiency, and accelerate innovation with our expert team.",
+  other: {
+    "p:domain_verify": "079ff6ea70387d5987a8a3c5a28a24bd",
+  },
 };
 
 export default function RootLayout({
