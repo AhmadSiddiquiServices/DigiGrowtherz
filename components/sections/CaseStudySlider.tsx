@@ -153,7 +153,8 @@ export default function CaseStudySlider() {
         <div className="mt-12 border-t border-white/10 pt-8">
           <a
             href={activeCaseStudy.link}
-            className="flex w-full items-center justify-center font-mono text-[12px] leading-3 font-medium tracking-[0.1em] text-white uppercase transition-opacity duration-300 hover:opacity-80"
+            // className="flex w-full items-center justify-center font-mono text-[12px] leading-3 font-medium tracking-[0.1em] text-white uppercase transition-opacity duration-300 hover:opacity-80"
+            className="group flex h-[53px] items-center justify-center gap-3 bg-[#A0D14F] px-8 font-bold transition-all duration-300 hover:translate-y-[-2px]"
           >
             {activeCaseStudy.btn_text}
           </a>
