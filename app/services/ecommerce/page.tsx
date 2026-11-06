@@ -30,6 +30,7 @@ import {
 import { motion } from "framer-motion";
 import { BsAmazon, BsFileExcel, BsFileExcelFill } from "react-icons/bs";
 import { TbBrandWalmart } from "react-icons/tb";
+import Link from "next/link";
 
 export default function eCommerceServicePage() {
   function SolutionCard({
@@ -359,7 +360,7 @@ export default function eCommerceServicePage() {
                 <ShoppingCart className="h-4 w-4 text-cyan-300" />
 
                 <span className="font-mono text-xs tracking-[0.28em] text-cyan-300 uppercase">
-                  E-commerce Services
+                  E-commerce Solutions
                 </span>
               </motion.div>
 
@@ -377,11 +378,11 @@ export default function eCommerceServicePage() {
                   duration: 0.8,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk max-w-3xl text-5xl leading-[1.05] font-bold tracking-tight text-white md:text-6xl xl:text-7xl"
+                className="font-space-grotesk text-[36px] leading-[1.05] font-bold tracking-tight text-white md:text-6xl xl:text-[52px]"
               >
-                Build, Optimize &{" "}
+                E-commerce Solutions for{" "}
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Scale Your E-commerce
+                  Growing Online Stores
                 </span>
               </motion.h1>
 
@@ -399,12 +400,12 @@ export default function eCommerceServicePage() {
                   duration: 0.8,
                   delay: 0.2,
                 }}
-                className="mt-8 max-w-xl text-lg leading-8 text-slate-300"
+                className="mt-8 text-lg leading-8 text-slate-300"
               >
-                From product research and marketplace listings to SEO, product
-                content, multi-brand stores, and custom automation — we help
-                businesses manage and grow their e-commerce operations across
-                leading marketplaces and online channels.
+                DigiGrowtherz provides e-commerce solutions for businesses that
+                need help with marketplace management, product research, listing
+                optimization, online store development, catalog operations, and
+                automation across multiple sales channels.
               </motion.p>
 
               {/* CTA BUTTONS */}
@@ -435,7 +436,7 @@ export default function eCommerceServicePage() {
                   }}
                   className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)]"
                 >
-                  Grow Your E-commerce
+                  Plan Your E-commerce
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.a>
 
@@ -472,11 +473,11 @@ export default function eCommerceServicePage() {
               >
                 <div>
                   <h4 className="text-2xl font-bold text-white">
-                    Multi-Channel
+                    Marketplaces
                   </h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Marketplace Support
+                    Store & Seller Support
                   </p>
                 </div>
 
@@ -484,14 +485,16 @@ export default function eCommerceServicePage() {
                   <h4 className="text-2xl font-bold text-white">SEO</h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Listing & Product Optimization
+                    Product Listing Optimization
                   </p>
                 </div>
 
                 <div>
                   <h4 className="text-2xl font-bold text-white">Automation</h4>
 
-                  <p className="mt-1 text-sm text-slate-400">Built for Scale</p>
+                  <p className="mt-1 text-sm text-slate-400">
+                    Streamlined Workflows
+                  </p>
                 </div>
               </motion.div>
             </div>
@@ -543,7 +546,7 @@ export default function eCommerceServicePage() {
                     </p>
 
                     <h5 className="mt-1 font-semibold text-white">
-                      Multi-Channel Growth
+                      Marketplace Management
                     </h5>
                   </div>
                 </div>
@@ -573,7 +576,7 @@ export default function eCommerceServicePage() {
                       <div className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_#A3E635]" />
 
                       <span className="ml-2 truncate font-mono text-[9px] text-slate-500">
-                        ecommerce-dashboard.com
+                        store-operations.example
                       </span>
                     </div>
                   </div>
@@ -716,7 +719,7 @@ export default function eCommerceServicePage() {
                       </p>
 
                       <p className="mt-0.5 text-sm font-medium text-white">
-                        Listings Built to Convert
+                        Product Listings Optimized
                       </p>
                     </div>
                   </div>
@@ -852,16 +855,15 @@ export default function eCommerceServicePage() {
                 <ShoppingBag className="h-4 w-4 text-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.28em] text-cyan-300 uppercase sm:text-[11px]">
-                  E-commerce Overview
+                  E-commerce Services Overview
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                More Than Just
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                More Than Just <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Selling Online.
+                  an Online Store.
                 </span>
               </h2>
             </motion.div>
@@ -886,10 +888,11 @@ export default function eCommerceServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We support the complete e-commerce workflow — from finding and
-              researching products to creating optimized marketplace listings,
-              preparing product content, managing online stores, and automating
-              repetitive operations across multiple sales channels.
+              Our e-commerce management services connect product research,
+              marketplace listing optimization, product content, online store
+              development, catalog management, and workflow automation. We help
+              businesses organize the work behind selling across multiple
+              channels.
             </motion.p>
           </div>
 
@@ -925,22 +928,22 @@ export default function eCommerceServicePage() {
 
                   <div>
                     <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                      Complete E-commerce Support
+                      End-to-End E-commerce Support
                     </p>
 
                     <h3 className="font-space-grotesk mt-1 text-xl font-semibold text-white sm:text-2xl">
-                      From Research to Marketplace Growth
+                      From Product Research to Store Operations
                     </h3>
                   </div>
                 </div>
 
                 <p className="mt-7 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
-                  Our e-commerce services bring together marketplace operations,
-                  product research, listing optimization, product content, SEO,
-                  websites, branding, marketing, data management, and
-                  automation. This allows businesses to build a stronger and
-                  more organized online selling operation without treating each
-                  part of the workflow separately.
+                  Our e-commerce solutions bring together marketplace
+                  management, product research, SEO-focused listings, product
+                  media, online stores, branding, marketing support, catalog
+                  data, and automation. Coordinating these services helps
+                  businesses manage the work behind their online sales in a more
+                  structured way.
                 </p>
 
                 {/* Workflow */}
@@ -953,17 +956,17 @@ export default function eCommerceServicePage() {
                     },
                     {
                       title: "Optimize",
-                      text: "Listings, titles, keywords, categories & product content.",
+                      text: "Listing titles, keywords, categories & product content.",
                       icon: Sparkles,
                     },
                     {
                       title: "Present",
-                      text: "Images, graphics, videos, stores & brand presentation.",
+                      text: "Product images, graphics, videos & store presentation.",
                       icon: ImageIcon,
                     },
                     {
                       title: "Automate",
-                      text: "Scraping, bulk processing, matching, data & workflows.",
+                      text: "Product and marketplace data scraping, bulk data processing & workflows.",
                       icon: Workflow,
                     },
                   ].map((item, index) => {
@@ -1039,13 +1042,13 @@ export default function eCommerceServicePage() {
                 </p>
 
                 <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white">
-                  Built Around Your E-commerce Ecosystem
+                  Platforms for Your E-commerce Business
                 </h3>
 
                 <p className="mt-5 text-sm leading-7 text-slate-400">
-                  We work across major marketplaces, social commerce channels,
-                  websites, and B2B platforms depending on your business model
-                  and product requirements.
+                  We support marketplace and social commerce operations, online
+                  stores, and B2B channels according to your products, target
+                  customers, business model, and selling requirements.
                 </p>
 
                 {/* Channel List */}
@@ -1111,11 +1114,10 @@ export default function eCommerceServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-3xl text-sm leading-7 text-slate-500 sm:text-base">
-                Whether you are selling through marketplaces, operating your own
-                online store, exporting through B2B channels, or managing
-                multiple brands, we provide the research, content, technology,
-                and operational support needed to keep your e-commerce workflow
-                organized.
+                Whether you sell through online marketplaces, run an independent
+                store, serve wholesale buyers, or manage multiple product
+                brands, our e-commerce services bring research, listing content,
+                store operations, and automation together around your workflow.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -1235,11 +1237,10 @@ export default function eCommerceServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Everything Your
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                E-commerce Solutions <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  E-commerce Needs.
+                  for Every Channel.
                 </span>
               </h2>
             </motion.div>
@@ -1264,10 +1265,10 @@ export default function eCommerceServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              From marketplace operations and product research to optimized
-              listings, branded stores, automation, and B2B buyer follow-up, we
-              provide the tools and services needed to build, manage, and scale
-              modern e-commerce operations.
+              Explore e-commerce marketplace management, product research,
+              listing optimization, SEO, product content, online store
+              development, catalog management, and automation services designed
+              around the way your business sells.
             </motion.p>
           </div>
 
@@ -1295,17 +1296,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="01"
               label="Marketplace Operations"
-              title="Sell Across Leading Marketplaces"
-              description="Support for marketplace research, seller operations, product uploads, listing preparation, optimization, and marketplace-specific workflows."
+              title="Marketplace Management Across Major Channels"
+              description="Manage marketplace workflows with support for seller operations, product uploads, keyword research, listing creation, catalog updates, and platform-specific requirements."
               items={[
-                "Alibaba seller & store management",
-                "Amazon product & listing support",
-                "Etsy listing research & SEO",
-                "eBay marketplace research",
-                "Walmart product matching",
-                "Facebook Marketplace workflows",
-                "Pinterest product & affiliate pins",
-                "Costco & Sam's Club research",
+                "Alibaba seller account and store support",
+                "Amazon product research and listing support",
+                "Etsy product listing research and SEO",
+                "eBay marketplace and competitor research",
+                "Walmart product matching and catalog support",
+                "Facebook Marketplace listing workflows",
+                "Pinterest product discovery and pins",
+                "Costco and Sam's Club product research",
               ]}
               accent="cyan"
             />
@@ -1314,17 +1315,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="02"
               label="Research & Discovery"
-              title="Find Products Worth Selling"
-              description="Research-driven product discovery designed to identify opportunities, compare markets, understand competition, and match products with suppliers."
+              title="E-commerce Product Research & Discovery"
+              description="Use structured product research to explore market demand, compare competitors and pricing, assess marketplace opportunities, and identify potential supplier matches."
               items={[
-                "Product discovery",
-                "Competitor analysis",
-                "Pricing comparison",
-                "Marketplace demand research",
-                "Supplier & product matching",
-                "Reverse-image product matching",
-                "B2B product research",
-                "Marketplace comparison",
+                "Product and niche discovery",
+                "Marketplace competitor analysis",
+                "Product pricing and margin comparison",
+                "Marketplace demand and trend research",
+                "Supplier sourcing and product matching",
+                "Reverse image product matching",
+                "Wholesale product and B2B market research",
+                "Marketplace and channel comparison",
               ]}
               accent="lime"
             />
@@ -1333,17 +1334,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="03"
               label="Listing Optimization"
-              title="Turn Products Into Better Listings"
-              description="Structured marketplace listing optimization covering the information customers search for and the details that help products convert."
+              title="E-commerce Product Listing Optimization"
+              description="Improve marketplace product listings with clear, keyword-informed content, accurate attributes, useful specifications, and structured details that help shoppers evaluate products."
               items={[
-                "SEO-focused titles",
-                "Bullet points & features",
-                "Product descriptions",
-                "Search terms & keywords",
-                "Tags & specifications",
-                "Attributes & variations",
-                "Category placement",
-                "Conversion-focused presentation",
+                "SEO-friendly marketplace product titles",
+                "Product bullet points and key features",
+                "Customer-focused product descriptions",
+                "Marketplace search terms and keywords",
+                "Product tags and specifications",
+                "Product attributes and variations",
+                "Relevant marketplace category placement",
+                "Clear, conversion-focused product content",
               ]}
               accent="cyan"
             />
@@ -1352,17 +1353,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="04"
               label="SEO & Visibility"
-              title="Make Products Easier to Find"
-              description="Search optimization across marketplaces and websites, helping product pages, categories, images, and content become more discoverable."
+              title="Marketplace SEO & Product Visibility"
+              description="Improve product discoverability with marketplace SEO and website optimization, using relevant keywords and structured product information across listings, categories, images, and content."
               items={[
-                "Keyword research",
-                "Marketplace SEO",
-                "Product SEO",
-                "Google & website SEO",
-                "Keyword-optimized titles",
-                "Descriptions & tags",
-                "Image SEO naming",
-                "Competitor keyword research",
+                "Marketplace and product keyword research",
+                "Marketplace search optimization",
+                "Product page SEO",
+                "Google search and e-commerce website SEO",
+                "Keyword-informed product titles",
+                "Optimized descriptions and product tags",
+                "Search-friendly product image filenames",
+                "Competitor keyword and listing research",
               ]}
               accent="lime"
             />
@@ -1371,17 +1372,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="05"
               label="Product Content"
-              title="Create Marketplace-Ready Content"
-              description="Product media and content prepared for professional presentation across marketplaces, websites, catalogs, and promotional channels."
+              title="E-commerce Product Content & Media"
+              description="Prepare consistent product content and visual assets for marketplace listings, e-commerce websites, digital catalogs, and promotional campaigns."
               items={[
-                "Product photography support",
-                "Feature images",
-                "Infographic-style graphics",
-                "Image resizing & compression",
-                "Background cleanup",
-                "SEO-friendly filenames",
-                "Product videos",
-                "Marketplace-ready media",
+                "Product photography coordination and support",
+                "Product feature and detail images",
+                "Product infographic and comparison graphics",
+                "Marketplace image resizing and compression",
+                "Product image background cleanup",
+                "SEO-friendly product image filenames",
+                "Product demonstration and listing videos",
+                "Marketplace-compliant product media",
               ]}
               accent="cyan"
             />
@@ -1390,17 +1391,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="06"
               label="Websites & Stores"
-              title="Build the Store Behind the Products"
-              description="Professional websites and online stores designed around your brand, products, categories, customers, and long-term e-commerce goals."
+              title="E-commerce Website & Online Store Development"
+              description="Build responsive e-commerce websites and online stores around your brand, product catalog, customer journey, and business requirements."
               items={[
-                "E-commerce websites",
-                "Professional company websites",
-                "Category-specific brand sites",
-                "Product pages",
-                "Landing pages",
-                "Responsive frontend design",
-                "Custom web functionality",
-                "Online store development",
+                "Custom e-commerce website development",
+                "Professional business website development",
+                "Dedicated product and brand websites",
+                "Optimized product detail pages",
+                "Campaign and product landing pages",
+                "Responsive e-commerce frontend design",
+                "Custom store features and functionality",
+                "Online store setup and development",
               ]}
               accent="lime"
             />
@@ -1409,17 +1410,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="07"
               label="Branding"
-              title="Build a Consistent Brand Presence"
-              description="Brand identity and marketplace presentation designed to create a recognizable and consistent appearance across stores, products, catalogs, and digital channels."
+              title="E-commerce Branding & Store Design"
+              description="Create a consistent visual identity across e-commerce websites, marketplace storefronts, product listings, catalogs, and digital marketing channels."
               items={[
-                "Brand identity",
-                "Logo design",
-                "Marketplace presentation",
-                "Store banners",
-                "Product graphics",
-                "Catalog design",
-                "Brand assets",
-                "Consistent visual presentation",
+                "E-commerce brand identity",
+                "Logo and visual identity design",
+                "Marketplace storefront presentation",
+                "Marketplace and online store banners",
+                "Branded product listing graphics",
+                "Product catalog design",
+                "Reusable digital brand assets",
+                "Consistent multi-channel brand presentation",
               ]}
               accent="cyan"
             />
@@ -1428,17 +1429,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="08"
               label="Marketing"
-              title="Connect Products With Customers"
-              description="Promotional support across social and email channels to help businesses communicate products, offers, launches, and updates to their audiences."
+              title="E-commerce Marketing & Customer Engagement"
+              description="Support product promotion and customer communication through social content, campaign assets, email follow-ups, product announcements, and branded marketing materials."
               items={[
-                "Facebook marketing",
-                "Instagram content",
-                "Pinterest promotion",
-                "Social media content",
-                "Promotional campaigns",
-                "Product announcements",
-                "Buyer follow-up emails",
-                "Branded email templates",
+                "Facebook product and store promotion",
+                "Instagram product content",
+                "Pinterest product promotion",
+                "E-commerce social media content",
+                "Product and promotional campaigns",
+                "New product and launch announcements",
+                "Customer and buyer follow-up emails",
+                "Branded e-commerce email templates",
               ]}
               accent="lime"
             />
@@ -1447,17 +1448,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="09"
               label="B2B Growth"
-              title="Generate Leads & Follow Up"
-              description="B2B support focused particularly on exporters and manufacturers using Alibaba and international channels to connect with potential buyers."
+              title="B2B E-commerce Lead Generation & Follow-Up"
+              description="Support exporters and manufacturers with B2B product research, marketplace presence, buyer prospecting, inquiry coordination, and follow-up across relevant international channels."
               items={[
-                "B2B lead generation",
-                "Alibaba buyer research",
-                "Buyer follow-up",
-                "Inquiry management support",
-                "International B2B research",
-                "Product presentation",
-                "Export-focused workflows",
-                "Lead tracking",
+                "B2B buyer lead generation support",
+                "Alibaba buyer and prospect research",
+                "B2B buyer follow-up workflows",
+                "Marketplace inquiry management support",
+                "International wholesale market research",
+                "B2B product and catalog presentation",
+                "Export-focused e-commerce workflows",
+                "Buyer lead and inquiry tracking",
               ]}
               accent="cyan"
             />
@@ -1466,17 +1467,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="10"
               label="Automation"
-              title="Automate Repetitive E-commerce Work"
-              description="Custom automation and data-processing tools designed to reduce manual work across product research, scraping, listing preparation, and marketplace operations."
+              title="E-commerce Workflow Automation & Data Processing"
+              description="Use custom automation and data-processing workflows to handle repetitive tasks in product research, marketplace data collection, listing preparation, catalog updates, and operations."
               items={[
-                "Python automation",
-                "Product scraping",
-                "Image scraping",
-                "Bulk product processing",
-                "Bulk listing preparation",
-                "CSV & Excel processing",
-                "Data matching",
-                "Custom dashboards & tracking",
+                "Python-based e-commerce automation",
+                "Product and marketplace data scraping",
+                "Product image collection workflows",
+                "Bulk product data processing",
+                "Bulk marketplace listing preparation",
+                "CSV and Excel catalog processing",
+                "Product data and image matching",
+                "Custom e-commerce dashboards and tracking",
               ]}
               accent="lime"
             />
@@ -1485,17 +1486,17 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="11"
               label="Data & Catalogs"
-              title="Keep Product Data Organized"
-              description="Structured catalog and data management for large product databases, marketplace information, media assets, and business records."
+              title="E-commerce Catalog & Product Data Management"
+              description="Organize large product catalogs, SKU records, marketplace attributes, media files, and business data with structured catalog management workflows."
               items={[
-                "Excel processing",
-                "CSV processing",
-                "Google Sheets",
-                "PDF & JSON processing",
-                "Bulk product databases",
-                "SKU organization",
-                "Catalog cleanup",
-                "Image & video outputs",
+                "Excel product data processing",
+                "CSV catalog processing",
+                "Google Sheets product tracking",
+                "PDF and JSON data processing",
+                "Bulk product database organization",
+                "SKU and product variant organization",
+                "Product catalog cleanup and standardization",
+                "Organized product image and video files",
               ]}
               accent="cyan"
             />
@@ -1504,12 +1505,12 @@ export default function eCommerceServicePage() {
             <SolutionCard
               number="12"
               label="Export E-commerce"
-              title="Scale Multiple Product Brands"
-              description="Support for businesses operating different product sectors under a structured multi-brand export e-commerce model."
+              title="Multi-Brand E-commerce & Export Support"
+              description="Support multi-brand businesses and exporters with coordinated online stores, product catalogs, brand identities, and digital channels across different product sectors."
               items={[
-                "Separate brand identities",
-                "Dedicated websites",
-                "Social media presence",
+                "Distinct product brand identities",
+                "Dedicated brand and e-commerce websites",
+                "Separate social media presence",
                 "Apparel products",
                 "Sports goods",
                 "Surgical products",
@@ -1546,13 +1547,13 @@ export default function eCommerceServicePage() {
                 </p>
 
                 <h3 className="font-space-grotesk mt-2 text-2xl font-semibold text-white sm:text-3xl">
-                  One E-commerce Operation. Multiple Channels.
+                  Manage Your E-commerce Across Multiple Channels.
                 </h3>
 
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                  Research, listings, product content, pricing, SEO, and
-                  marketplace workflows can be organized across the platforms
-                  that matter to your business.
+                  Coordinate product research, marketplace listings, product
+                  content, catalog updates, SEO, and seller workflows across the
+                  platforms that support your business.
                 </p>
               </div>
 
@@ -1600,9 +1601,10 @@ export default function eCommerceServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                From a single product listing to a multi-brand export operation,
-                we connect research, content, marketplaces, websites, marketing,
-                data, and automation into a scalable e-commerce workflow.
+                From individual product listings to multi-brand export
+                operations, we connect marketplace management, product content,
+                online stores, catalog data, marketing support, and automation
+                in one workflow.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -1722,11 +1724,10 @@ export default function eCommerceServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                From Product
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                A Structured E-commerce <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  To Market.
+                  Growth Process.
                 </span>
               </h2>
             </motion.div>
@@ -1751,9 +1752,9 @@ export default function eCommerceServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We turn products and ideas into structured e-commerce operations
-              through research, preparation, optimization, marketplace setup,
-              automation, and continuous improvement.
+              Our e-commerce process moves from product and market research to
+              catalog preparation, listing optimization, channel launch,
+              automation, and ongoing operational improvements.
             </motion.p>
           </div>
 
@@ -1786,12 +1787,12 @@ export default function eCommerceServicePage() {
                 number="01"
                 label="Research"
                 title="Understand the Market"
-                description="We begin by understanding your products, target market, competitors, marketplaces, pricing, demand, and business goals."
+                description="We review your products, target customers, competitors, pricing, marketplace options, demand signals, and e-commerce objectives before planning the work."
                 items={[
                   "Product research",
-                  "Competitor analysis",
+                  "Marketplace competitor analysis",
                   "Marketplace research",
-                  "Pricing comparison",
+                  "Product pricing and margin comparison",
                 ]}
                 accent="cyan"
               />
@@ -1801,7 +1802,7 @@ export default function eCommerceServicePage() {
                 number="02"
                 label="Prepare"
                 title="Build the Product Foundation"
-                description="We organize the information, media, specifications, keywords, and assets required to present your products professionally."
+                description="We prepare accurate product data, specifications, images, keywords, and catalog assets needed for consistent marketplace and store listings."
                 items={[
                   "Product data",
                   "Images & media",
@@ -1816,7 +1817,7 @@ export default function eCommerceServicePage() {
                 number="03"
                 label="Optimize"
                 title="Prepare for Conversion"
-                description="Listings, product pages, categories, and content are structured around discoverability, clarity, and conversion."
+                description="We optimize marketplace listings, product pages, categories, titles, descriptions, and search terms to improve product discoverability and shopper clarity."
                 items={[
                   "Listing optimization",
                   "Titles & descriptions",
@@ -1831,7 +1832,7 @@ export default function eCommerceServicePage() {
                 number="04"
                 label="Launch"
                 title="Take Products to Market"
-                description="We help deploy products across the required marketplaces, websites, stores, social channels, and supporting systems."
+                description="We prepare and publish products across the selected marketplaces, e-commerce websites, online stores, social channels, and supporting systems."
                 items={[
                   "Marketplace setup",
                   "Store deployment",
@@ -1850,12 +1851,12 @@ export default function eCommerceServicePage() {
               number="05"
               label="Automate"
               title="Reduce Manual Work"
-              description="Where repetitive work exists, we introduce automation, scraping, bulk processing, data matching, and custom tools."
+              description="We identify repeatable tasks and apply suitable scraping, Python automation, bulk processing, data matching, and custom tools where appropriate."
               items={[
-                "Python automation",
-                "Product scraping",
+                "Python-based e-commerce automation",
+                "Product and marketplace data scraping",
                 "Bulk processing",
-                "Data matching",
+                "Product data and image matching",
               ]}
               accent="lime"
             />
@@ -1865,7 +1866,7 @@ export default function eCommerceServicePage() {
               number="06"
               label="Connect"
               title="Build the Growth System"
-              description="We connect stores, marketplaces, branding, social media, email, B2B workflows, and product data into a more organized operation."
+              description="We coordinate online stores, marketplaces, brand assets, social channels, email workflows, B2B activity, and product data across the operation."
               items={[
                 "Social channels",
                 "Email marketing",
@@ -1880,7 +1881,7 @@ export default function eCommerceServicePage() {
               number="07"
               label="Analyze"
               title="Measure What Matters"
-              description="We review marketplace information, product performance, competitor activity, pricing, and data to identify areas for improvement."
+              description="We review available marketplace data, listing performance, competitor activity, product pricing, and catalog quality to identify practical improvements."
               items={[
                 "Performance review",
                 "Competitor tracking",
@@ -1895,7 +1896,7 @@ export default function eCommerceServicePage() {
               number="08"
               label="Scale"
               title="Expand the Operation"
-              description="Once the foundation is working, we help expand products, marketplaces, brands, catalogs, and automated workflows."
+              description="With the core workflows in place, we can support expansion into additional products, marketplaces, brand sites, catalogs, and automated processes."
               items={[
                 "More products",
                 "More marketplaces",
@@ -1929,18 +1930,18 @@ export default function eCommerceServicePage() {
               {/* COPY */}
               <div className="p-6 sm:p-8 lg:p-10">
                 <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                  Continuous E-commerce Workflow
+                  Ongoing E-commerce Management
                 </p>
 
                 <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white sm:text-3xl">
-                  Built for Operations That Keep Growing
+                  E-commerce Operations Ready to Evolve
                 </h3>
 
                 <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                  E-commerce is not a one-time setup. Products change,
-                  marketplaces evolve, competitors move, and new opportunities
-                  appear. Our process is designed to support the operation
-                  beyond the initial launch.
+                  E-commerce operations need ongoing attention. Product catalogs
+                  change, marketplace requirements evolve, and new selling
+                  opportunities emerge. Our workflow supports updates and
+                  improvements after the initial setup and launch.
                 </p>
               </div>
 
@@ -1995,9 +1996,9 @@ export default function eCommerceServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                The goal is simple: create an e-commerce system that is
-                organized, discoverable, easier to manage, and ready to scale
-                across products, marketplaces, and brands.
+                The goal is to build e-commerce workflows that are organized,
+                easier to maintain, and prepared to support additional products,
+                channels, catalogs, and brands as your business develops.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -2108,16 +2109,15 @@ export default function eCommerceServicePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_10px_rgba(103,232,249,0.8)]" />
 
                 <span className="font-mono text-[10px] tracking-[0.28em] text-cyan-300 uppercase sm:text-[11px]">
-                  E-commerce Ecosystem
+                  E-commerce Platforms & Tools
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                The Platforms
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Platforms That <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Behind Your Store.
+                  Support Your Store.
                 </span>
               </h2>
             </motion.div>
@@ -2142,10 +2142,10 @@ export default function eCommerceServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We work across major marketplaces, social commerce channels,
-              e-commerce platforms, and supporting tools to research products,
-              optimize listings, manage catalogs, and build scalable online
-              selling operations.
+              We work with the marketplaces, social commerce channels, store
+              platforms, and productivity tools already relevant to your
+              business to manage product listings, catalog data, online stores,
+              and multi-channel e-commerce operations.
             </motion.p>
           </div>
 
@@ -2174,11 +2174,11 @@ export default function eCommerceServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                    01 — Marketplaces
+                    01 — Online Marketplaces
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Global E-commerce Platforms
+                    Marketplace Management Platforms
                   </h3>
                 </div>
 
@@ -2280,11 +2280,11 @@ export default function eCommerceServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                    02 — Commerce & Social
+                    02 — Social Commerce & Retail
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Social Commerce & Retail Research
+                    Social Commerce and Retail Channels
                   </h3>
                 </div>
 
@@ -2388,11 +2388,11 @@ export default function eCommerceServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                    03 — E-commerce Operations
+                    03 — Store & Operations Tools
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Stores, Data & Automation
+                    E-commerce Stores, Catalogs & Automation
                   </h3>
                 </div>
 
@@ -2493,9 +2493,9 @@ export default function eCommerceServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                From marketplace research and product listings to catalog
-                management, automation, and multi-channel selling, we use the
-                right platforms and tools to build efficient e-commerce
+                From marketplace listings and social commerce to online store
+                management, catalog organization, and workflow automation, we
+                use relevant platforms and tools to support efficient e-commerce
                 operations.
               </p>
 
@@ -2612,11 +2612,10 @@ export default function eCommerceServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                More Than
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                A Partner for <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Just Selling Online.
+                  E-commerce Operations.
                 </span>
               </h2>
             </motion.div>
@@ -2641,10 +2640,10 @@ export default function eCommerceServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              E-commerce success requires more than putting products on a
-              marketplace. We connect research, listings, content, branding,
-              automation, and multi-channel operations into a system designed
-              around your products and business goals.
+              Managing e-commerce takes more than uploading products. We bring
+              product research, marketplace management, optimized listings,
+              content, catalog data, online stores, and automation together
+              around your products, channels, and business requirements.
             </motion.p>
           </div>
 
@@ -2653,44 +2652,44 @@ export default function eCommerceServicePage() {
             {[
               {
                 number: "01",
-                title: "Marketplace Expertise",
+                title: "Multi-Marketplace Experience",
                 description:
-                  "We work across Alibaba, Amazon, Etsy, eBay, Walmart, Facebook Marketplace, Pinterest, and other channels to support research, listings, optimization, and marketplace operations.",
+                  "We support workflows across Alibaba, Amazon, Etsy, eBay, Walmart, Facebook Marketplace, Pinterest, and other relevant channels, with services shaped around each platform and your seller requirements.",
                 accent: "cyan",
               },
               {
                 number: "02",
-                title: "Research Before Execution",
+                title: "Product Research Before Listing",
                 description:
-                  "Products, competitors, pricing, demand, keywords, suppliers, and marketplace opportunities are researched before building the strategy around your catalog.",
+                  "We assess product opportunities, competitor listings, pricing, demand, search terms, suppliers, and channel fit before preparing your marketplace and catalog workflows.",
                 accent: "lime",
               },
               {
                 number: "03",
-                title: "Conversion-Focused Listings",
+                title: "Search-Ready Product Listings",
                 description:
-                  "Titles, bullets, descriptions, search terms, specifications, images, variations, and category placement are structured to make products easier to discover and understand.",
+                  "We refine product titles, bullet points, descriptions, keywords, attributes, images, variations, and categories so shoppers can find and understand your products more easily.",
                 accent: "cyan",
               },
               {
                 number: "04",
-                title: "Built for Multi-Channel Growth",
+                title: "Multi-Channel E-commerce Management",
                 description:
-                  "We help businesses operate across marketplaces, websites, social channels, and B2B platforms while keeping product data and brand presentation consistent.",
+                  "We help coordinate marketplace accounts, independent online stores, social commerce channels, and B2B platforms while keeping product information and brand presentation consistent.",
                 accent: "lime",
               },
               {
                 number: "05",
-                title: "Automation at Scale",
+                title: "Practical E-commerce Automation",
                 description:
-                  "Scraping, bulk product processing, image workflows, CSV and Excel processing, catalog matching, dashboards, and repetitive task automation can reduce manual work.",
+                  "Python workflows, product scraping, bulk catalog processing, image handling, CSV and Excel operations, data matching, and custom tracking can help reduce repetitive manual tasks.",
                 accent: "cyan",
               },
               {
                 number: "06",
-                title: "Complete E-commerce Support",
+                title: "End-to-End E-commerce Support",
                 description:
-                  "From product research and listing preparation to websites, branding, social media, email marketing, buyer follow-up, and catalog management, we support the wider operation.",
+                  "From product research and marketplace listing support to online stores, branding, social content, email communication, buyer follow-up, and catalog management, services can be coordinated around your needs.",
                 accent: "lime",
               },
             ].map((item, index) => (
@@ -2782,9 +2781,10 @@ export default function eCommerceServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Your products, marketplace presence, data, and brand should work
-                together. We bring those pieces together to create a more
-                organized, scalable, and efficient e-commerce operation.
+                Your product catalog, marketplace listings, online stores, brand
+                assets, and operational data should support one another. We
+                connect these areas to help create a more organized e-commerce
+                business.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -2900,11 +2900,10 @@ export default function eCommerceServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Questions Before
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                E-commerce Solutions <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  You Start Selling.
+                  Questions & Answers.
                 </span>
               </h2>
             </motion.div>
@@ -2929,10 +2928,10 @@ export default function eCommerceServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              From marketplace research and product listings to automation,
-              websites, branding, and multi-channel e-commerce, here are answers
-              to some of the questions businesses commonly have before getting
-              started.
+              Find answers about our e-commerce services, supported
+              marketplaces, product research, listing optimization, catalog
+              management, online store development, automation, and B2B
+              marketplace support.
             </motion.p>
           </div>
 
@@ -2941,67 +2940,73 @@ export default function eCommerceServicePage() {
             {[
               {
                 number: "01",
-                question: "Which e-commerce marketplaces do you support?",
+                question:
+                  "Which e-commerce marketplaces and sales channels do you support?",
                 answer:
-                  "We support a wide range of e-commerce and marketplace workflows, including Alibaba, Amazon, Etsy, eBay, Walmart, Facebook Marketplace, Pinterest, Costco, and Sam’s Club. The exact services depend on your marketplace, products, and business requirements.",
+                  "We support e-commerce workflows across Alibaba, Amazon, Etsy, eBay, Walmart, Facebook Marketplace, Pinterest, Costco, and Sam’s Club. The available tasks depend on the platform, your products, account requirements, and agreed project scope.",
               },
               {
                 number: "02",
                 question:
-                  "Can you help with product research before we start selling?",
+                  "Do you provide e-commerce product research before launch?",
                 answer:
-                  "Yes. Product research can include finding products, competitor analysis, pricing comparisons, marketplace demand research, supplier and product matching, and reverse-image product matching.",
+                  "Yes. Product research may include product and niche discovery, competitor analysis, pricing comparisons, marketplace demand research, supplier matching, reverse-image product matching, and comparisons between sales channels.",
               },
               {
                 number: "03",
-                question: "Do you optimize existing product listings?",
+                question:
+                  "Can you optimize existing marketplace product listings?",
                 answer:
-                  "Yes. We can optimize titles, bullet points, descriptions, search terms, tags, specifications, attributes, variations, category placement, and product presentation with a focus on discoverability and conversion.",
+                  "Yes. Marketplace listing optimization can cover product titles, bullet points, descriptions, search terms, tags, specifications, attributes, variations, category placement, and product media to improve discoverability and make product information clearer.",
               },
               {
                 number: "04",
-                question: "Can you manage product data for large catalogs?",
+                question:
+                  "Can you organize and manage large e-commerce product catalogs?",
                 answer:
-                  "Yes. We can work with Excel, CSV, Google Sheets, PDF, JSON, and other structured product data to organize catalogs, SKUs, marketplace information, images, videos, and bulk product records.",
+                  "Yes. We can work with Excel, CSV, Google Sheets, PDF, and JSON files to organize SKUs, product attributes, marketplace records, media references, and bulk catalog information. The workflow depends on your file formats and data requirements.",
               },
               {
                 number: "05",
                 question:
-                  "Can you help prepare product images and marketplace content?",
+                  "Do you prepare product images and content for marketplace listings?",
                 answer:
-                  "Yes. Our e-commerce workflows can include product photography support, feature images, infographic-style graphics, image resizing and compression, background cleanup, SEO-friendly filenames, videos, and marketplace-ready media.",
+                  "Yes. Depending on the project, product content support can include photography coordination, feature images, infographic-style graphics, image resizing and compression, background cleanup, search-friendly filenames, product videos, and marketplace-ready media.",
               },
               {
                 number: "06",
-                question: "Do you build websites and online stores as well?",
+                question:
+                  "Do you develop e-commerce websites and online stores?",
                 answer:
-                  "Yes. We can build professional company websites, e-commerce stores, category-specific brand websites, product pages, landing pages, responsive frontends, and custom web functionality connected to your broader e-commerce operation.",
+                  "Yes. We develop professional business websites, e-commerce stores, dedicated brand websites, product pages, landing pages, responsive frontends, and custom functionality based on your store requirements and wider e-commerce workflow.",
               },
               {
                 number: "07",
-                question: "Can you automate repetitive e-commerce tasks?",
+                question:
+                  "Can you automate repetitive e-commerce and catalog tasks?",
                 answer:
-                  "Yes. Automation can include Python and web automation, product scraping, image scraping, bulk product processing, listing preparation, CSV and Excel processing, data matching, dashboards, CRM and tracking tools, and other repetitive workflows.",
+                  "Yes. Automation may include Python scripts, web and product data scraping, image collection, bulk catalog processing, listing preparation, CSV and Excel workflows, data matching, dashboards, and other agreed repetitive tasks.",
               },
               {
                 number: "08",
-                question: "Can you support Alibaba sellers and B2B businesses?",
+                question:
+                  "Do you provide Alibaba seller support and B2B e-commerce services?",
                 answer:
-                  "Yes. Alibaba-related support can include seller account and store management, product uploading, listing optimization, SEO titles and keywords, product presentation, buyer and inquiry follow-up, B2B product research, category and brand setup, and support for Verified Seller operations.",
+                  "Yes. Alibaba and B2B support can include seller store assistance, product uploads, listing optimization, keyword-informed titles, product presentation, buyer research, inquiry follow-up, category setup, and workflows for exporters and manufacturers. Specific account-related tasks depend on platform access and project scope.",
               },
               {
                 number: "09",
                 question:
-                  "Can you manage multiple brands or product categories?",
+                  "Can you support multi-brand stores and different product categories?",
                 answer:
-                  "Yes. We can support multi-brand export e-commerce setups with separate branding, websites, and social presence for different sectors while products are managed through a main business structure.",
+                  "Yes. We can support multi-brand e-commerce operations with distinct brand identities, dedicated websites, social profiles, and product catalogs for different sectors, organized around your business structure.",
               },
               {
                 number: "10",
                 question:
-                  "Do you provide social media and email marketing for e-commerce?",
+                  "Can you support social media and email marketing for online stores?",
                 answer:
-                  "Yes. E-commerce support can extend to Facebook, Instagram, Pinterest, and other social channels, as well as promotional emails, buyer follow-up campaigns, product announcements, lead nurturing, and branded email templates.",
+                  "Yes. Depending on the project, support can include Facebook and Instagram content, Pinterest promotion, product announcements, promotional campaigns, buyer follow-up emails, lead nurturing, and branded email templates.",
               },
             ].map((faq, index) => (
               <motion.details
@@ -3080,10 +3085,10 @@ export default function eCommerceServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Every e-commerce operation is different. We can combine
-                marketplace services, product research, listing optimization,
-                content, automation, and online-store development around your
-                specific needs.
+                Every online business has different requirements. We can combine
+                marketplace management, product research, listing optimization,
+                catalog support, automation, and online store development around
+                your products and sales channels.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -3216,11 +3221,11 @@ export default function eCommerceServicePage() {
                 }}
                 className="flex justify-center"
               >
-                <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.07] px-5 py-2 backdrop-blur-xl">
+                <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.07] px-3 py-2 backdrop-blur-xl md:px-5">
                   <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
-                  <span className="font-mono text-[10px] tracking-[0.28em] text-cyan-300 uppercase sm:text-[11px]">
-                    Start Your E-commerce Journey
+                  <span className="font-mono text-[9px] tracking-[0.28em] text-cyan-300 uppercase sm:text-[11px] md:text-[10px]">
+                    Build Your E-commerce Business
                   </span>
                 </div>
               </motion.div>
@@ -3242,12 +3247,11 @@ export default function eCommerceServicePage() {
                   duration: 0.7,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk mt-7 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+                className="font-space-grotesk mt-7 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[48px]"
               >
-                Ready to Build a
-                <br />
+                Ready to Improve Your <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Better E-commerce Business?
+                  E-commerce Operations?
                 </span>
               </motion.h2>
 
@@ -3270,10 +3274,11 @@ export default function eCommerceServicePage() {
                 }}
                 className="mx-auto mt-7 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
               >
-                Whether you need marketplace support, product research, listing
-                optimization, catalog management, automation, a professional
-                online store, or a complete multi-channel e-commerce setup, we
-                can help turn your products into a stronger digital business.
+                Tell us whether you need marketplace management, product
+                research, optimized listings, catalog organization, automation,
+                an online store, or support for multiple sales channels. We will
+                discuss a practical e-commerce solution around your business
+                requirements.
               </motion.p>
 
               {/* CTA BUTTONS */}
@@ -3296,22 +3301,24 @@ export default function eCommerceServicePage() {
                 className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row"
               >
                 {/* Primary CTA */}
-                <a
+                <Link
                   href="/contact"
-                  className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-cyan-300 to-lime-300 px-7 py-3.5 font-mono text-xs font-semibold tracking-[0.12em] text-[#071015] uppercase transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_35px_rgba(103,232,249,0.2)]"
+                  className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-cyan-300 to-lime-300 px-5 py-3.5 font-mono text-xs font-semibold tracking-[0.12em] text-[#071015] uppercase transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_35px_rgba(103,232,249,0.2)]"
                 >
-                  <span className="relative z-10">Start a Project</span>
+                  <span className="relative z-10">
+                    Discuss E-commerce Solutions
+                  </span>
 
                   <span className="absolute inset-0 -translate-x-full bg-white/30 transition-transform duration-500 group-hover:translate-x-full" />
-                </a>
+                </Link>
 
                 {/* Secondary CTA */}
-                <a
+                <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded-full border border-white/[0.1] bg-white/[0.025] px-7 py-3.5 font-mono text-xs font-semibold tracking-[0.12em] text-slate-300 uppercase transition-all duration-300 hover:border-cyan-300/30 hover:bg-white/[0.05] hover:text-white"
+                  className="inline-flex items-center justify-center rounded-full border border-white/[0.1] bg-white/[0.025] px-3 py-3.5 font-mono text-[10px] font-semibold tracking-[0.12em] text-slate-300 uppercase transition-all duration-300 hover:border-cyan-300/30 hover:bg-white/[0.05] hover:text-white md:text-xs"
                 >
-                  Discuss Your Needs
-                </a>
+                  Request an E-commerce Consultation
+                </Link>
               </motion.div>
             </div>
 
@@ -3334,7 +3341,8 @@ export default function eCommerceServicePage() {
             >
               <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
                 <p className="text-center text-xs text-slate-600 sm:text-left">
-                  Marketplace • Research • Listings • Automation • Stores
+                  Marketplace Management • Product Listings • Online Stores •
+                  Automation
                 </p>
 
                 <div className="flex items-center gap-3">

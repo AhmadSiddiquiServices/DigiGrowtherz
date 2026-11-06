@@ -130,8 +130,8 @@ export default function MobileDevelopmentServicePage() {
               >
                 <Smartphone className="h-4 w-4 text-cyan-300" />
 
-                <span className="font-mono text-xs tracking-[0.28em] text-cyan-300 uppercase">
-                  Mobile Development
+                <span className="font-mono text-[9px] tracking-[0.28em] text-cyan-300 uppercase md:text-xs">
+                  Mobile App Development Services
                 </span>
               </motion.div>
 
@@ -149,11 +149,11 @@ export default function MobileDevelopmentServicePage() {
                   duration: 0.8,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk max-w-3xl text-5xl leading-[1.05] font-bold tracking-tight text-white md:text-6xl xl:text-7xl"
+                className="font-space-grotesk text-[36px] leading-[1.05] font-bold tracking-tight text-white md:text-6xl xl:text-[52px]"
               >
-                Mobile Apps Built to {/* <br className="hidden md:block" /> */}
+                Custom Mobile App Development{" "}
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Move Your Business
+                  for iOS & Android
                 </span>
               </motion.h1>
 
@@ -171,11 +171,13 @@ export default function MobileDevelopmentServicePage() {
                   duration: 0.8,
                   delay: 0.2,
                 }}
-                className="mt-8 max-w-xl text-lg leading-8 text-slate-300"
+                className="mt-8 text-lg leading-8 text-slate-300"
               >
-                We design and develop fast, intuitive, and scalable mobile
-                applications that deliver powerful experiences across Android
-                and iOS.
+                DigiGrowtherz provides custom mobile app development services
+                for startups and businesses. We design and build iOS and Android
+                applications with intuitive user experiences, dependable
+                functionality, and scalable architecture tailored to your
+                product requirements.
               </motion.p>
 
               {/* CTA BUTTONS */}
@@ -206,7 +208,7 @@ export default function MobileDevelopmentServicePage() {
                   }}
                   className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)]"
                 >
-                  Start Your App
+                  Discuss Your App Project
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.a>
 
@@ -221,7 +223,7 @@ export default function MobileDevelopmentServicePage() {
                   }}
                   className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/10"
                 >
-                  Explore Our Services
+                  Explore Mobile App Solutions
                 </motion.a>
               </motion.div>
 
@@ -245,7 +247,7 @@ export default function MobileDevelopmentServicePage() {
                   <h4 className="text-2xl font-bold text-white">iOS</h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Apple Applications
+                    iOS App Development
                   </p>
                 </div>
 
@@ -253,7 +255,7 @@ export default function MobileDevelopmentServicePage() {
                   <h4 className="text-2xl font-bold text-white">Android</h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Native Experiences
+                    Android App Development
                   </p>
                 </div>
 
@@ -261,7 +263,7 @@ export default function MobileDevelopmentServicePage() {
                   <h4 className="text-2xl font-bold text-white">Cross</h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Platform Solutions
+                    Cross-Platform Apps
                   </p>
                 </div>
               </motion.div>
@@ -361,7 +363,7 @@ export default function MobileDevelopmentServicePage() {
                       <div className="flex items-center justify-between">
                         <div>
                           <p className="font-mono text-[8px] tracking-[0.2em] text-cyan-300 uppercase">
-                            Your App
+                            Mobile App
                           </p>
 
                           <h3 className="font-space-grotesk mt-1 text-xl font-semibold text-white">
@@ -379,17 +381,17 @@ export default function MobileDevelopmentServicePage() {
                         <div className="absolute top-[-50px] right-[-40px] h-32 w-32 rounded-full bg-cyan-300/10 blur-2xl" />
 
                         <p className="relative font-mono text-[8px] tracking-[0.18em] text-slate-500 uppercase">
-                          Performance
+                          App Interface
                         </p>
 
                         <div className="relative mt-2 flex items-end justify-between">
                           <div>
                             <p className="font-space-grotesk text-3xl font-bold text-white">
-                              98%
+                              UX
                             </p>
 
                             <p className="mt-1 text-[9px] text-slate-500">
-                              App experience
+                              Interface design
                             </p>
                           </div>
 
@@ -474,11 +476,11 @@ export default function MobileDevelopmentServicePage() {
 
                     <div>
                       <p className="font-mono text-[9px] tracking-[0.2em] text-slate-500 uppercase">
-                        Experience
+                        App Design
                       </p>
 
                       <p className="mt-0.5 text-sm font-medium text-white">
-                        Built for Mobile
+                        Designed for iOS & Android
                       </p>
                     </div>
                   </div>
@@ -618,11 +620,10 @@ export default function MobileDevelopmentServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Mobile Experiences
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Mobile App Development <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-yellow-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Built for Real Users.
+                  Built Around Real Users.
                 </span>
               </h2>
             </motion.div>
@@ -648,10 +649,11 @@ export default function MobileDevelopmentServicePage() {
               className="lg:justify-self-end"
             >
               <p className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8">
-                We design and develop mobile applications that combine intuitive
-                user experiences, reliable performance, and scalable
-                architecture — helping businesses turn ideas into powerful
-                mobile products.
+                Our mobile app development team turns business requirements into
+                practical iOS and Android applications. We bring together
+                product planning, mobile UI/UX design, application development,
+                backend integrations, and testing to create digital products
+                built around your users and business objectives.
               </p>
             </motion.div>
           </div>
@@ -705,27 +707,30 @@ export default function MobileDevelopmentServicePage() {
                 </div>
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-600 uppercase">
-                  Mobile First
+                  Mobile App Development
                 </span>
               </div>
 
               {/* Content */}
               <div className="relative mt-10 max-w-3xl">
                 <h3 className="font-space-grotesk text-2xl font-semibold text-white sm:text-3xl">
-                  From concept to a complete mobile product.
+                  From Mobile App Idea to a Complete Digital Product.
                 </h3>
 
                 <p className="mt-5 text-base leading-8 text-slate-400">
-                  Whether you need a native mobile application or a
-                  cross-platform solution, we focus on creating products that
-                  feel natural to use, perform reliably, and remain easy to
-                  maintain as your business grows.
+                  Whether you need an iOS app, an Android app, or a
+                  cross-platform mobile application, we plan the product around
+                  your users, required features, and technical needs. Our focus
+                  is on intuitive navigation, reliable functionality, and a
+                  maintainable foundation that can evolve with your business.
                 </p>
 
                 <p className="mt-5 text-base leading-8 text-slate-500">
-                  Every application is planned around your users, business
-                  goals, technical requirements, and long-term product roadmap —
-                  not simply the technology itself.
+                  Every mobile app project begins with your business goals,
+                  target audience, core features, integrations, and product
+                  roadmap. We recommend the development approach and technology
+                  stack based on those requirements rather than choosing tools
+                  first.
                 </p>
               </div>
 
@@ -744,27 +749,27 @@ export default function MobileDevelopmentServicePage() {
               {[
                 {
                   icon: Smartphone,
-                  title: "Native Experiences",
+                  title: "Intuitive Mobile Experiences",
                   description:
-                    "Mobile interfaces designed around the way people naturally use their devices.",
+                    "iOS and Android app interfaces planned around familiar navigation, accessible interactions, and the needs of your target users.",
                 },
                 {
                   icon: Layers3,
-                  title: "Scalable Architecture",
+                  title: "Maintainable App Architecture",
                   description:
-                    "Clean technical foundations that can evolve with your users and business.",
+                    "Application structure and integrations planned to support future features and changing business requirements.",
                 },
                 {
                   icon: ShieldCheck,
-                  title: "Reliable Performance",
+                  title: "App Quality & Reliability",
                   description:
-                    "Fast, stable applications built with performance and reliability in mind.",
+                    "Testing and performance considerations help deliver stable app experiences across supported devices and operating systems.",
                 },
                 {
                   icon: Rocket,
-                  title: "Ready to Grow",
+                  title: "Built for Future Growth",
                   description:
-                    "Products structured to support future features, integrations, and expansion.",
+                    "Flexible mobile app foundations that can accommodate new features, services, and product improvements over time.",
                 },
               ].map((item, index) => {
                 const Icon = item.icon;
@@ -842,11 +847,11 @@ export default function MobileDevelopmentServicePage() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="font-mono text-[10px] tracking-[0.25em] text-yellow-300 uppercase">
-                  What We Build
+                  Mobile App Development Services
                 </p>
 
                 <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                  Mobile Solutions for Different Needs
+                  Mobile Applications for Different Business Needs
                 </h3>
               </div>
 
@@ -858,12 +863,12 @@ export default function MobileDevelopmentServicePage() {
             {/* Capability List */}
             <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                "Android Applications",
-                "iOS Applications",
-                "Cross-Platform Solutions",
-                "Business Applications",
-                "E-Commerce Applications",
-                "API & Backend Integration",
+                "Android App Development",
+                "iOS App Development",
+                "Cross-Platform Mobile Apps",
+                "Custom Business Applications",
+                "eCommerce Mobile Applications",
+                "API & Backend Integrations",
               ].map((item, index) => (
                 <motion.div
                   key={item}
@@ -914,16 +919,17 @@ export default function MobileDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                A great mobile application is more than a collection of
-                features. We build experiences that are useful, intuitive,
-                reliable, and ready for what comes next.
+                Effective mobile app development is about more than adding
+                features. We bring together user-focused design, thoughtful
+                engineering, integrations, and testing to create applications
+                that solve real problems for customers and business teams.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-yellow-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Built for Mobile
+                  Designed for iOS & Android
                 </span>
               </div>
             </div>
@@ -1030,16 +1036,15 @@ export default function MobileDevelopmentServicePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-yellow-300 shadow-[0_0_10px_rgba(250,204,21,0.8)]" />
 
                 <span className="font-mono text-[10px] tracking-[0.28em] text-yellow-300 uppercase sm:text-[11px]">
-                  Solutions
+                  Mobile App Solutions
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Mobile Solutions
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[34px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Custom Mobile App Solutions{" "}
                 <span className="bg-gradient-to-r from-yellow-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Built Around Your Goals.
+                  For Your Business Goals.
                 </span>
               </h2>
             </motion.div>
@@ -1064,9 +1069,10 @@ export default function MobileDevelopmentServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              From customer-facing applications to internal business tools, we
-              build mobile solutions around the way your users work, interact,
-              and engage with your business.
+              We develop customer-facing mobile apps, internal business
+              applications, and eCommerce apps around your users' needs. Each
+              solution is planned according to your required features,
+              workflows, integrations, and business objectives.
             </motion.p>
           </div>
 
@@ -1076,9 +1082,9 @@ export default function MobileDevelopmentServicePage() {
               {
                 number: "01",
                 icon: Smartphone,
-                title: "Customer Mobile Apps",
+                title: "Customer-Facing Mobile Apps",
                 description:
-                  "Create polished mobile experiences that help customers discover your products, access services, interact with your brand, and stay connected wherever they are.",
+                  "Develop customer mobile applications that help people discover products, access services, manage accounts, receive updates, and interact with your business from their devices.",
                 features: [
                   "Customer-facing applications",
                   "Account & profile experiences",
@@ -1090,9 +1096,9 @@ export default function MobileDevelopmentServicePage() {
               {
                 number: "02",
                 icon: Building2,
-                title: "Business Applications",
+                title: "Custom Business Mobile Apps",
                 description:
-                  "Turn internal processes into streamlined mobile workflows with applications designed to help teams work faster and access important information on the go.",
+                  "Turn internal processes into mobile workflows with custom business applications that help teams access information, manage tasks, and use relevant tools while working remotely or on the move.",
                 features: [
                   "Internal business tools",
                   "Team workflows",
@@ -1104,9 +1110,9 @@ export default function MobileDevelopmentServicePage() {
               {
                 number: "03",
                 icon: ShoppingBag,
-                title: "E-Commerce Apps",
+                title: "eCommerce Mobile Apps",
                 description:
-                  "Bring your online store directly to your customers with smooth shopping experiences designed for browsing, purchasing, engagement, and retention.",
+                  "Extend your online store with a mobile shopping experience for product discovery, customer accounts, checkout, order updates, and ongoing customer engagement.",
                 features: [
                   "Product browsing",
                   "Mobile checkout",
@@ -1199,7 +1205,7 @@ export default function MobileDevelopmentServicePage() {
 
                     <div className="mt-5 flex items-center justify-between">
                       <span className="font-mono text-[9px] tracking-[0.2em] text-slate-600 uppercase">
-                        Mobile Development
+                        Mobile App Development
                       </span>
 
                       <ArrowUpRight className="h-4 w-4 text-slate-600 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-yellow-300" />
@@ -1233,11 +1239,11 @@ export default function MobileDevelopmentServicePage() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                  More Possibilities
+                  Mobile App Capabilities
                 </p>
 
                 <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                  Built for Different Mobile Needs
+                  Additional Mobile App Features & Integrations
                 </h3>
               </div>
 
@@ -1251,19 +1257,19 @@ export default function MobileDevelopmentServicePage() {
               {[
                 {
                   icon: MapPin,
-                  title: "Location-Based Apps",
+                  title: "Maps & Location-Based Features",
                 },
                 {
                   icon: Bell,
-                  title: "Real-Time Notifications",
+                  title: "Push Notifications",
                 },
                 {
                   icon: CreditCard,
-                  title: "Payment Integration",
+                  title: "Payment Gateway Integration",
                 },
                 {
                   icon: PlugZap,
-                  title: "API Integrations",
+                  title: "Backend & Third-Party APIs",
                 },
               ].map((item, index) => {
                 const Icon = item.icon;
@@ -1328,16 +1334,16 @@ export default function MobileDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Whatever your mobile idea looks like, we focus on turning it
-                into a reliable product that delivers real value to your users
-                and your business.
+                From customer apps and business tools to eCommerce applications,
+                we plan mobile products around user needs, core functionality,
+                and the business outcomes they are intended to support.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-yellow-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Built Around You
+                  Designed Around Your Users
                 </span>
               </div>
             </div>
@@ -1444,17 +1450,16 @@ export default function MobileDevelopmentServicePage() {
               <div className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/[0.07] px-5 py-2 backdrop-blur-xl">
                 <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
-                <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                  Our Process
+                <span className="font-mono text-[9px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px] md:text-[10px]">
+                  Our Mobile App Development Process
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                From Idea
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[44px]">
+                A Clear Mobile App Development Process{" "}
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  To App Store.
+                  From Discovery to Launch.
                 </span>
               </h2>
             </motion.div>
@@ -1479,9 +1484,10 @@ export default function MobileDevelopmentServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We follow a structured development process that transforms your
-              idea into a polished mobile experience — from planning and
-              interface design to development, testing, and launch.
+              Our mobile app development process moves from discovery and
+              product planning to UI/UX design, application development, quality
+              assurance, and launch preparation. Each stage is aligned with your
+              app requirements, target users, and agreed project scope.
             </motion.p>
           </div>
 
@@ -1494,7 +1500,7 @@ export default function MobileDevelopmentServicePage() {
                   number: "01",
                   title: "Discovery",
                   description:
-                    "We understand your idea, users, goals, features, and technical requirements before development begins.",
+                    "We review your business goals, target audience, app idea, core features, platforms, and technical requirements to define a clear project scope.",
                   label: "Understand",
                   accent: "lime",
                 },
@@ -1502,7 +1508,7 @@ export default function MobileDevelopmentServicePage() {
                   number: "02",
                   title: "Strategy",
                   description:
-                    "We define the app structure, user journey, technology stack, and development roadmap.",
+                    "We plan the app architecture, user journeys, feature priorities, integrations, technology stack, and delivery roadmap for the iOS and Android experience.",
                   label: "Plan",
                   accent: "cyan",
                 },
@@ -1510,7 +1516,7 @@ export default function MobileDevelopmentServicePage() {
                   number: "03",
                   title: "Design",
                   description:
-                    "We create intuitive interfaces focused on usability, consistency, and a smooth mobile experience.",
+                    "We create mobile UI/UX designs, wireframes, and interface flows that make the application clear, accessible, and consistent across supported screen sizes.",
                   label: "Create",
                   accent: "lime",
                 },
@@ -1518,7 +1524,7 @@ export default function MobileDevelopmentServicePage() {
                   number: "04",
                   title: "Development",
                   description:
-                    "We build the application with clean architecture, responsive interfaces, and scalable technology.",
+                    "We develop the mobile application, connect required APIs and backend services, and implement the agreed features using the selected mobile technology stack.",
                   label: "Build",
                   accent: "cyan",
                 },
@@ -1526,7 +1532,7 @@ export default function MobileDevelopmentServicePage() {
                   number: "05",
                   title: "Testing & Launch",
                   description:
-                    "We test, refine, prepare, and launch your application so it is ready for real users.",
+                    "We test core features, device behavior, usability, and integrations, then prepare the application for release and agreed app store submission support.",
                   label: "Deliver",
                   accent: "lime",
                 },
@@ -1633,9 +1639,9 @@ export default function MobileDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Every stage is built around clarity, quality, and measurable
-                progress — keeping your project moving from the first idea to a
-                production-ready mobile application.
+                Each phase keeps the mobile app project organized and aligned
+                with its agreed requirements, from initial discovery and design
+                through development, testing, and release preparation.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -1755,11 +1761,10 @@ export default function MobileDevelopmentServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                The Technology
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[44px]">
+                Mobile App Development Technologies {/* <br /> */}
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Behind Your App.
+                  Behind Your Application.
                 </span>
               </h2>
             </motion.div>
@@ -1784,9 +1789,11 @@ export default function MobileDevelopmentServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We use modern mobile technologies and proven development
-              frameworks to create applications that are fast, reliable,
-              scalable, and ready to evolve as your business grows.
+              We select mobile app development frameworks, programming
+              languages, backend services, and deployment tools according to
+              your product requirements. Our technology stack includes options
+              for cross-platform development, APIs, databases, cloud services,
+              and application delivery.
             </motion.p>
           </div>
 
@@ -1815,11 +1822,11 @@ export default function MobileDevelopmentServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                    01 — Mobile Development
+                    01 — Mobile App Development
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Mobile App Technologies
+                    iOS & Android App Development Frameworks
                   </h3>
                 </div>
 
@@ -1921,16 +1928,16 @@ export default function MobileDevelopmentServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                    02 — Backend & Data
+                    02 — Backend, APIs & Data
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Backend, APIs & Databases
+                    Mobile App Backend & Database Technologies
                   </h3>
                 </div>
 
                 <span className="hidden font-mono text-[10px] tracking-[0.2em] text-slate-600 uppercase sm:block">
-                  Connect / Secure
+                  Integrate / Manage Data
                 </span>
               </div>
 
@@ -2029,16 +2036,16 @@ export default function MobileDevelopmentServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                    03 — Cloud & Workflow
+                    03 — Cloud & Deployment
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Deployment & Development Tools
+                    Mobile App Deployment & Collaboration Tools
                   </h3>
                 </div>
 
                 <span className="hidden font-mono text-[10px] tracking-[0.2em] text-slate-600 uppercase sm:block">
-                  Deploy / Ship
+                  Deploy / Collaborate
                 </span>
               </div>
 
@@ -2134,16 +2141,17 @@ export default function MobileDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                The technology is chosen around your product — not the other way
-                around. We use the right tools to create mobile experiences that
-                are maintainable, scalable, and ready for what comes next.
+                The technology stack should fit your mobile product, not dictate
+                it. We choose frameworks, backend services, databases, and
+                deployment tools according to the app's features, integrations,
+                maintenance needs, and future development plans.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Built For Growth
+                  Technology Matched to Your App
                 </span>
               </div>
             </div>
@@ -2251,16 +2259,15 @@ export default function MobileDevelopmentServicePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
                 <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                  Why DigiGrowtherz
+                  Why Choose DigiGrowtherz
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                More Than
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                A Mobile App Development Partner{" "}
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Just An App.
+                  Focused on Your Goals.
                 </span>
               </h2>
             </motion.div>
@@ -2285,10 +2292,11 @@ export default function MobileDevelopmentServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We build mobile experiences around real business goals — combining
-              thoughtful product strategy, polished interfaces, reliable
-              engineering, and scalable technology to create apps people
-              actually want to use.
+              DigiGrowtherz approaches mobile app development as a complete
+              product process. We bring together business analysis, mobile UI/UX
+              design, application engineering, backend integrations, and testing
+              to create apps that serve users and support your business
+              objectives.
             </motion.p>
           </div>
 
@@ -2298,30 +2306,30 @@ export default function MobileDevelopmentServicePage() {
               {[
                 {
                   number: "01",
-                  title: "User First",
+                  title: "User-Centered UI/UX",
                   description:
-                    "Every screen is designed around clarity, usability, and the people using your product.",
+                    "Mobile interfaces are planned around clear navigation, accessible interactions, and the needs of your target users.",
                   accent: "cyan",
                 },
                 {
                   number: "02",
-                  title: "Built To Scale",
+                  title: "Maintainable Architecture",
                   description:
-                    "We create strong foundations that can support new features, users, and business growth.",
+                    "We plan application structure and integrations so your mobile product can evolve as features and requirements change.",
                   accent: "lime",
                 },
                 {
                   number: "03",
-                  title: "Performance",
+                  title: "Testing & Performance",
                   description:
-                    "Fast interactions, efficient architecture, and responsive experiences across devices.",
+                    "We consider loading behavior, device compatibility, app stability, and usability throughout development and testing.",
                   accent: "cyan",
                 },
                 {
                   number: "04",
-                  title: "Business Focused",
+                  title: "Business-Aligned Development",
                   description:
-                    "Technology serves the outcome — whether that means engagement, revenue, or operational efficiency.",
+                    "App features and technical decisions are guided by your product goals, customer needs, and operational requirements.",
                   accent: "lime",
                 },
               ].map((item, index) => (
@@ -2422,19 +2430,21 @@ export default function MobileDevelopmentServicePage() {
               {/* LEFT */}
               <div className="relative p-7 sm:p-10 lg:p-12">
                 <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                  A Better Development Partner
+                  A Mobile App Development Partner
                 </p>
 
                 <h3 className="font-space-grotesk mt-5 max-w-2xl text-2xl leading-tight font-semibold text-white sm:text-3xl md:text-4xl">
-                  From the first idea to the next version, we build with the
-                  bigger picture in mind.
+                  From initial planning to post-launch improvements, we build
+                  mobile applications with your product's long-term needs in
+                  mind.
                 </h3>
 
                 <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                  Your app should not only work today. It should be ready for
-                  tomorrow. Our approach combines clean engineering, flexible
-                  architecture, and thoughtful product decisions so your mobile
-                  experience can continue evolving alongside your business.
+                  Your mobile application should meet today's requirements and
+                  remain adaptable as your business changes. We focus on clear
+                  product decisions, maintainable code, suitable integrations,
+                  and flexible architecture so future enhancements can be
+                  planned around your users and roadmap.
                 </p>
               </div>
 
@@ -2459,7 +2469,7 @@ export default function MobileDevelopmentServicePage() {
                       </p>
 
                       <p className="mt-2 font-mono text-[9px] tracking-[0.18em] text-slate-500 uppercase">
-                        Connected
+                        API Integrations
                       </p>
                     </div>
 
@@ -2475,11 +2485,11 @@ export default function MobileDevelopmentServicePage() {
 
                     <div className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5">
                       <p className="font-space-grotesk text-3xl font-bold text-white">
-                        24/7
+                        QA
                       </p>
 
                       <p className="mt-2 font-mono text-[9px] tracking-[0.18em] text-slate-500 uppercase">
-                        Digital
+                        Quality Checks
                       </p>
                     </div>
                   </div>
@@ -2509,16 +2519,17 @@ export default function MobileDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                We do not just build mobile applications. We build digital
-                products designed to create lasting value for the people and
-                businesses behind them.
+                We build more than mobile interfaces. We develop iOS and Android
+                applications around real user needs, business workflows, and
+                product goals, with a focus on usability, functionality, and
+                long-term maintainability.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Built With Purpose
+                  Built Around Your Product
                 </span>
               </div>
             </div>
@@ -2622,16 +2633,15 @@ export default function MobileDevelopmentServicePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_10px_rgba(103,232,249,0.8)]" />
 
                 <span className="font-mono text-[10px] tracking-[0.28em] text-cyan-300 uppercase sm:text-[11px]">
-                  FAQ
+                  Mobile App Development FAQs
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Mobile App
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Mobile App Development{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Development FAQ.
+                  Frequently Asked Questions.
                 </span>
               </h2>
             </motion.div>
@@ -2656,9 +2666,9 @@ export default function MobileDevelopmentServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              Have questions about building a mobile application? Here are
-              answers to some of the most common questions we receive about our
-              mobile development process.
+              Find answers about our mobile app development services, including
+              iOS and Android platforms, native and cross-platform approaches,
+              app design, integrations, project timelines, and ongoing support.
             </motion.p>
           </div>
 
@@ -2667,45 +2677,48 @@ export default function MobileDevelopmentServicePage() {
             <div className="border-t border-white/10">
               {[
                 {
-                  question: "What types of mobile apps do you develop?",
+                  question: "What types of mobile applications do you develop?",
                   answer:
-                    "We develop custom mobile applications for startups, businesses, and established brands. Depending on your requirements, we can build customer-facing apps, business applications, marketplace platforms, booking systems, eCommerce apps, dashboards, and other custom mobile experiences.",
+                    "We provide custom mobile app development for startups, small businesses, and established organizations. Project types can include customer-facing apps, internal business applications, booking and service apps, marketplace platforms, eCommerce apps, and applications connected to existing business systems. The features and scope are planned around your users and requirements.",
                 },
                 {
-                  question: "Do you develop for both iOS and Android?",
+                  question: "Can you develop apps for both iOS and Android?",
                   answer:
-                    "Yes. We can build mobile applications for both iOS and Android. We select the development approach based on your project requirements, performance expectations, target audience, and long-term product goals.",
-                },
-                {
-                  question: "Should I build a native or cross-platform app?",
-                  answer:
-                    "It depends on your product. Cross-platform development can provide an efficient way to launch on multiple platforms, while native development may be preferable when a project requires highly platform-specific functionality or optimization. We help determine the right approach before development begins.",
+                    "Yes. We develop mobile applications for iOS and Android. Depending on your requirements, we can assess a cross-platform approach using technologies such as React Native or Flutter, and recommend an implementation based on the required features, device capabilities, user experience, and maintenance needs.",
                 },
                 {
                   question:
-                    "Can you turn my existing website into a mobile app?",
+                    "Should I choose native or cross-platform mobile app development?",
                   answer:
-                    "Yes. If you already have a website or web-based platform, we can evaluate its functionality and determine the best approach for creating a dedicated mobile experience around your existing product.",
+                    "The right approach depends on your app's features, platform requirements, budget, timeline, and expected user experience. Cross-platform development can support iOS and Android from a shared codebase, while native development may be appropriate when a product relies on platform-specific capabilities. We review these factors during discovery before recommending an approach.",
                 },
                 {
-                  question: "Can you integrate APIs and third-party services?",
+                  question:
+                    "Can you convert my website into a mobile application?",
                   answer:
-                    "Yes. Mobile applications can be connected with existing APIs, databases, payment systems, authentication services, maps, notifications, analytics, and other third-party services required by your product.",
+                    "We can review your existing website or web platform and assess the options for a dedicated mobile app. The recommended approach depends on the website's functionality, available APIs, user accounts, integrations, and whether a separate app experience would provide meaningful value to your users.",
                 },
                 {
-                  question: "How long does mobile app development take?",
+                  question:
+                    "Can you integrate APIs, payment gateways, and third-party services?",
                   answer:
-                    "The timeline depends on the scope, number of features, design requirements, integrations, and platforms involved. After understanding your requirements, we can provide a more realistic development timeline for your specific project.",
+                    "Yes. Where required by the project, mobile apps can connect with backend APIs, databases, payment providers, authentication services, maps, push notifications, analytics, and other third-party platforms. We review available documentation, security needs, and integration requirements during planning.",
                 },
                 {
-                  question: "Do you provide UI/UX design for mobile apps?",
+                  question: "How long does it take to develop a mobile app?",
                   answer:
-                    "Yes. We can design the mobile experience before development, focusing on intuitive navigation, clear user flows, responsive layouts, and an interface that aligns with your brand and product goals.",
+                    "Mobile app development timelines vary with the number and complexity of features, UI/UX design requirements, platform coverage, backend work, and third-party integrations. After reviewing your requirements and priorities, we can outline a project scope and estimated timeline for your application.",
                 },
                 {
-                  question: "Do you provide support after the app is launched?",
+                  question: "Do you provide mobile app UI/UX design?",
                   answer:
-                    "Yes. We can continue supporting your application after launch with maintenance, improvements, bug fixes, performance optimization, and future feature development as your product grows.",
+                    "Yes. We can plan and design the app experience before development, including user flows, wireframes, interface layouts, and visual design. The focus is on intuitive navigation, consistent interactions, accessibility considerations, and alignment with your brand and product requirements.",
+                },
+                {
+                  question:
+                    "Do you provide mobile app maintenance and post-launch support?",
+                  answer:
+                    "Post-launch support can be discussed as part of the project scope. Depending on the agreed arrangement, it may include issue resolution, compatibility updates, maintenance, performance improvements, and development of additional features as your application evolves.",
                 },
               ].map((faq, index) => (
                 <motion.details
@@ -2784,16 +2797,16 @@ export default function MobileDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Still have questions about your mobile application? Let&apos;s
-                discuss your idea, requirements, and the best technical approach
-                for bringing it to life.
+                Have more questions about mobile app development? Tell us about
+                your app idea, target users, preferred platforms, and required
+                features so we can discuss a suitable technical approach.
               </p>
 
               <a
                 href="/contact"
                 className="group inline-flex shrink-0 items-center gap-3 text-sm font-medium text-white transition-colors duration-300 hover:text-cyan-300"
               >
-                Talk About Your App
+                Discuss Your Mobile App
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300 transition-all duration-300 group-hover:w-12" />
               </a>
             </div>
@@ -2886,7 +2899,7 @@ export default function MobileDevelopmentServicePage() {
             <div className="pointer-events-none absolute right-0 bottom-0 h-px w-[45%] bg-gradient-to-l from-transparent via-lime-300/20 to-transparent" />
 
             {/* CONTENT GRID */}
-            <div className="relative z-10 grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+            <div className="relative z-10 grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
               {/* LEFT */}
               <motion.div
                 initial={{
@@ -2906,29 +2919,28 @@ export default function MobileDevelopmentServicePage() {
                 }}
               >
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/[0.07] px-5 py-2 backdrop-blur-xl">
+                <div className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/[0.07] px-4 py-2 backdrop-blur-xl">
                   <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
-                  <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                    Start Your App
+                  <span className="font-mono text-[9px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px] md:text-[10px]">
+                    Start Your Mobile App Project
                   </span>
                 </div>
 
                 {/* Heading */}
-                <h2 className="font-space-grotesk mt-6 max-w-3xl text-4xl leading-[1.06] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-                  Have an App
-                  <br />
+                <h2 className="font-space-grotesk mt-6 max-w-3xl text-[32px] leading-[1.06] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[48px]">
+                  Need Custom Mobile App Development?{" "}
                   <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                    Idea in Mind?
+                    Let's Plan Your App.
                   </span>
                 </h2>
 
                 {/* Description */}
                 <p className="mt-7 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8">
-                  Turn your idea into a powerful mobile experience built around
-                  your users, your business goals, and your long-term vision.
-                  Let&apos;s create an app that is ready to launch, scale, and
-                  grow with your business.
+                  Work with DigiGrowtherz to plan and develop a custom iOS or
+                  Android application around your users, features, and business
+                  goals. Share your requirements with our team to discuss the
+                  right mobile app development approach for your product.
                 </p>
 
                 {/* CTA */}
@@ -2945,7 +2957,7 @@ export default function MobileDevelopmentServicePage() {
                     }}
                     className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_50px_rgba(34,211,238,0.35)]"
                   >
-                    Start Your Project
+                    Discuss Your App Project
                     <svg
                       className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
                       viewBox="0 0 24 24"
@@ -2970,9 +2982,9 @@ export default function MobileDevelopmentServicePage() {
                     whileTap={{
                       scale: 0.98,
                     }}
-                    className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-300/30 hover:bg-white/[0.08]"
+                    className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-6 py-4 text-[13px] font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-300/30 hover:bg-white/[0.08] md:text-sm"
                   >
-                    Discuss Your Idea
+                    Request a Mobile App Consultation
                   </motion.a>
                 </div>
               </motion.div>

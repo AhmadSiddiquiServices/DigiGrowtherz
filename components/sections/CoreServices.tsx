@@ -28,16 +28,18 @@ export default function CoreServices() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="mb-[clamp(48px,5vw,64px)] max-w-[800px]"
+          className="mb-[clamp(48px,5vw,64px)]"
         >
-          <h2 className="font-['Space_Grotesk'] text-[clamp(2rem,3vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
-            Core Services
+          <h2 className="font-['Space_Grotesk'] text-[clamp(1.8rem,3vw,3rem)] leading-[1.2] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
+            AI Automation & Digital Growth Services
           </h2>
 
-          <p className="mt-4 font-sans text-[clamp(1rem,1.3vw,1.125rem)] leading-[1.8] font-normal text-[#DFE2ED99]">
-            Transform your business with AI-powered solutions, modern digital
-            experiences, and growth-focused services designed to help you scale
-            faster.
+          <p className="mt-4 font-sans text-[clamp(0.95rem,1.3vw,1.125rem)] leading-[1.8] font-normal text-[#DFE2ED99]">
+            Explore DigiGrowtherz's business solutions, including AI automation,
+            website development, mobile app development, SEO, digital marketing,
+            branding, and eCommerce services. We also support businesses with
+            cybersecurity, truck dispatching, medical billing, and B2B export
+            solutions to address their operational and digital needs.
           </p>
         </motion.div>
 
@@ -58,7 +60,7 @@ export default function CoreServices() {
               <div className="flex flex-col p-[clamp(24px,3vw,40px)]">
                 <Image
                   src="/images/ai.webp"
-                  alt="Service 1 Icon"
+                  alt="AI automation services icon"
                   width={64}
                   height={34}
                   priority
@@ -66,14 +68,14 @@ export default function CoreServices() {
                 />
 
                 <h3 className="font-['Space_Grotesk'] text-[clamp(1.75rem,2.5vw,2rem)] leading-[1.3] font-medium text-[#DFE2ED]">
-                  AI Automation
+                  AI Automation Services
                 </h3>
 
                 <ul className="mt-8 space-y-6">
                   {[
-                    "Intelligent Workflow Automation",
+                    "AI Workflow & Business Process Automation",
                     "AI Chatbots & Virtual Assistants",
-                    "Business Process Optimization",
+                    "CRM & Business System Integrations",
                   ].map((item) => (
                     <li
                       key={item}
@@ -96,7 +98,7 @@ export default function CoreServices() {
                   href="/services/ai-automation"
                   className="mt-20 inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#A0D14F] uppercase md:mt-auto"
                 >
-                  EXPLORE AI
+                  EXPLORE AI AUTOMATION
                   <Image
                     src="/images/green-arrow.webp"
                     alt=""
@@ -111,7 +113,7 @@ export default function CoreServices() {
               <div className="relative hidden h-full overflow-hidden lg:block">
                 <Image
                   src="/images/ai-banner.webp"
-                  alt="AI Strategy"
+                  alt="AI-powered business workflow automation"
                   fill
                   priority
                   className="object-cover opacity-80"
@@ -132,7 +134,7 @@ export default function CoreServices() {
           >
             <Image
               src="/images/web.webp"
-              alt="Service 2 Icon"
+              alt="Website development services icon"
               width={64}
               height={34}
               priority
@@ -143,19 +145,20 @@ export default function CoreServices() {
               Website Development
             </h3>
 
-            <p className="mt-6 text-[16px] leading-[1.8] text-[#DFE2EDB2]">
-              Build high-performance WordPress, Shopify, and custom websites
-              designed for speed, scalability, and business growth.
+            <p className="mt-6 mb-4 text-[16px] leading-[1.8] text-[#DFE2EDB2] md:mb-0">
+              We design and develop responsive business websites, WordPress
+              websites, Shopify stores, and custom web applications built for
+              performance, usability, scalability, and search engine visibility.
             </p>
 
             <Link
               href="/services/web-development"
               className="mt-auto inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#E6D40D] uppercase"
             >
-              VIEW Web Development
+              EXPLORE WEB DEVELOPMENT
               <Image
                 src="/images/yellow-arrow.webp"
-                alt="Arrow Yellow"
+                alt=""
                 width={19}
                 height={9}
                 priority
@@ -182,7 +185,7 @@ export default function CoreServices() {
             <div className="relative z-10 flex h-full flex-col">
               <Image
                 src="/images/mobile.webp"
-                alt="Mobile Development"
+                alt="Mobile app development services icon"
                 width={64}
                 height={34}
                 priority
@@ -190,23 +193,24 @@ export default function CoreServices() {
               />
 
               <h3 className="font-['Space_Grotesk'] text-[clamp(2rem,2.5vw,2.5rem)] leading-[1.3] font-medium text-[#DFE2ED]">
-                Mobile Development
+                Mobile App Development
               </h3>
 
-              <p className="mt-16 text-[18px] leading-[1.8] text-[#DFE2EDB2]">
-                Create powerful Android and iOS applications with seamless user
-                experiences and enterprise-grade performance.
+              <p className="mt-16 mb-4 text-[16px] leading-[1.8] text-[#DFE2EDB2] md:mb-0 md:text-[18px]">
+                Build custom Android and iOS mobile applications for businesses,
+                customers, and eCommerce platforms. We focus on intuitive user
+                experiences, reliable functionality, and scalable app solutions.
               </p>
 
               <Link
                 href="/services/mobile-development"
                 className="mt-auto inline-flex items-center gap-3 font-mono text-[12px] font-medium tracking-[0.1em] text-[#E6D40D] uppercase"
               >
-                View Mobile Development
+                EXPLORE MOBILE APP DEVELOPMENT
                 <Image
                   src="/images/yellow-arrow.webp"
                   alt=""
-                  width={19}
+                  width={12}
                   height={9}
                 />
               </Link>
@@ -225,7 +229,7 @@ export default function CoreServices() {
           >
             <Image
               src="/images/digital.webp"
-              alt="Digital Solutions"
+              alt="SEO and digital marketing services icon"
               width={64}
               height={34}
               priority
@@ -233,13 +237,15 @@ export default function CoreServices() {
             />
 
             <h3 className="font-['Space_Grotesk'] text-[clamp(2rem,2.5vw,2.25rem)] leading-[1.3] font-medium text-[#DFE2ED]">
-              Digital Growth Solutions
+              SEO, Digital Marketing & eCommerce
             </h3>
 
-            <p className="mt-6 max-w-[700px] text-[16px] leading-[1.8] text-[#DFE2EDB2]">
-              Accelerate your brand with digital marketing, SEO, company
-              branding, and multi-channel eCommerce solutions that drive
-              measurable results.
+            <p className="mt-6 text-[16px] leading-[1.8] text-[#DFE2EDB2]">
+              Improve your search engine visibility and reach more potential
+              customers through SEO, digital marketing, brand development, and
+              eCommerce solutions. From website optimization and content
+              strategy to online store development and marketplace support, we
+              help businesses strengthen their digital presence and grow online.
             </p>
 
             {/* Bottom Image */}

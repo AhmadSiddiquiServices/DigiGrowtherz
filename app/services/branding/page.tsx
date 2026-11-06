@@ -119,7 +119,7 @@ export default function BrandingServicePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
                 <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                  Branding & Design
+                  Branding & Design Services
                 </span>
               </motion.div>
 
@@ -137,12 +137,11 @@ export default function BrandingServicePage() {
                   duration: 0.8,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk max-w-3xl text-5xl leading-[1.05] font-bold tracking-tight text-white sm:text-6xl xl:text-7xl"
+                className="font-space-grotesk text-[36px] leading-[1.05] font-bold tracking-tight text-white sm:text-6xl xl:text-[52px]"
               >
-                Build a Brand
-                <br />
+                Branding & Design <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  People Remember.
+                  That Builds Recognition.
                 </span>
               </motion.h1>
 
@@ -160,11 +159,13 @@ export default function BrandingServicePage() {
                   duration: 0.8,
                   delay: 0.2,
                 }}
-                className="mt-8 max-w-xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8"
+                className="mt-8 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8"
               >
-                We create distinctive brand identities, compelling visuals, and
-                high-impact creative assets that help businesses stand out,
-                communicate clearly, and build lasting recognition.
+                DigiGrowtherz provides branding and graphic design services that
+                help businesses build a distinctive brand identity. From logo
+                design and brand guidelines to marketing creatives, print
+                materials, and packaging design, we create visuals aligned with
+                your audience and business goals.
               </motion.p>
 
               {/* CTA */}
@@ -195,7 +196,7 @@ export default function BrandingServicePage() {
                   }}
                   className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)]"
                 >
-                  Start Your Brand
+                  Start Your Branding Project
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.a>
 
@@ -210,7 +211,7 @@ export default function BrandingServicePage() {
                   }}
                   className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-lime-300/30 hover:bg-white/[0.08]"
                 >
-                  Explore Our Services
+                  Explore Branding Services
                 </motion.a>
               </motion.div>
 
@@ -231,26 +232,28 @@ export default function BrandingServicePage() {
                 className="mt-14 flex flex-wrap gap-8 md:gap-14"
               >
                 <div>
-                  <h4 className="text-2xl font-bold text-white">Identity</h4>
+                  <h4 className="text-2xl font-bold text-white">
+                    Brand Identity
+                  </h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Built to Stand Out
+                    Distinctive Visual Identity
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-2xl font-bold text-white">Visuals</h4>
+                  <h4 className="text-2xl font-bold text-white">Logo Design</h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Designed to Connect
+                    Clear Brand Communication
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-2xl font-bold text-white">Impact</h4>
+                  <h4 className="text-2xl font-bold text-white">Consistency</h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Made to Be Remembered
+                    Across Every Touchpoint
                   </p>
                 </div>
               </motion.div>
@@ -631,11 +634,11 @@ export default function BrandingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                More Than a
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                A Strong Brand Is
                 <br />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Visual Identity.
+                  More Than a Logo.
                 </span>
               </h2>
             </motion.div>
@@ -660,11 +663,11 @@ export default function BrandingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We create distinctive brands and purposeful visual experiences
-              that help businesses communicate clearly, build recognition, and
-              stand out in competitive markets. From company branding to
-              marketing creatives, every design is created with consistency and
-              impact in mind.
+              Our branding and design services bring strategy and creativity
+              together to give your business a clear, recognizable identity. We
+              align logo design, brand colors, typography, and graphic design
+              across your website, social media, marketing materials, and print
+              touchpoints for a consistent customer experience.
             </motion.p>
           </div>
 
@@ -730,12 +733,13 @@ export default function BrandingServicePage() {
               {/* Content */}
               <div className="relative mt-7">
                 <h3 className="font-space-grotesk text-xl font-semibold text-white sm:text-2xl">
-                  Build a Strong Identity
+                  Build a Recognizable Brand Identity
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-slate-400">
-                  We establish a visual foundation that gives your business a
-                  recognizable and consistent identity across every touchpoint.
+                  We develop a clear brand identity system with logo design,
+                  colors, typography, and visual elements that help customers
+                  recognize your business across every channel.
                 </p>
               </div>
             </motion.div>
@@ -783,13 +787,13 @@ export default function BrandingServicePage() {
               {/* Content */}
               <div className="relative mt-7">
                 <h3 className="font-space-grotesk text-xl font-semibold text-white sm:text-2xl">
-                  Stay Consistent Everywhere
+                  Consistent Design Across Channels
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-slate-400">
-                  From digital platforms to printed materials, we keep your
-                  brand language unified so customers experience the same
-                  identity wherever they interact with you.
+                  Our graphic design keeps your visual identity aligned across
+                  websites, social media, advertising, business stationery, and
+                  printed materials so every interaction feels connected.
                 </p>
               </div>
             </motion.div>
@@ -837,13 +841,13 @@ export default function BrandingServicePage() {
               {/* Content */}
               <div className="relative mt-7">
                 <h3 className="font-space-grotesk text-xl font-semibold text-white sm:text-2xl">
-                  Design With Purpose
+                  Create Graphic Design With Purpose
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-slate-400">
-                  Every creative decision is made to support your business
-                  goals, strengthen your message, and create a memorable
-                  experience for your audience.
+                  From social media graphics to marketing and print design, each
+                  creative asset is planned to communicate your message, support
+                  campaign goals, and connect with your audience.
                 </p>
               </div>
             </motion.div>
@@ -871,9 +875,9 @@ export default function BrandingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-3xl text-sm leading-7 text-slate-500 sm:text-base">
-                Great branding creates recognition. Great design turns that
-                recognition into trust. We bring both together to create visual
-                experiences built for your business.
+                Effective brand identity design combines a clear strategy with
+                consistent visual execution. We bring both together to help your
+                business communicate with clarity at every customer touchpoint.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -993,11 +997,11 @@ export default function BrandingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Design That
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Branding Services
                 <br />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Moves Your Brand.
+                  For Every Touchpoint.
                 </span>
               </h2>
             </motion.div>
@@ -1022,9 +1026,9 @@ export default function BrandingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              From defining your visual identity to creating everyday marketing
-              assets, we provide branding and design solutions that keep your
-              business recognizable, consistent, and visually compelling.
+              Explore branding and graphic design services for building your
+              company identity, promoting products, and creating consistent
+              visual communication across digital and print channels.
             </motion.p>
           </div>
 
@@ -1084,7 +1088,7 @@ export default function BrandingServicePage() {
                   </span>
 
                   <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white sm:text-3xl">
-                    Company Branding
+                    Company Branding & Logo Design
                   </h3>
                 </div>
 
@@ -1095,18 +1099,18 @@ export default function BrandingServicePage() {
 
               {/* Description */}
               <p className="relative mt-6 max-w-xl text-sm leading-7 text-slate-400 sm:text-base">
-                Build a memorable brand identity with a clear visual language,
-                including logos, colors, typography, and supporting brand
-                elements designed around your business.
+                Build a professional brand identity with custom logo design, a
+                considered color palette, typography, and supporting visual
+                elements shaped around your business positioning.
               </p>
 
               {/* Feature List */}
               <div className="relative mt-7 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Logo & Visual Identity",
-                  "Brand Color Systems",
-                  "Typography Systems",
-                  "Brand Guidelines",
+                  "Logo Design & Brand Identity",
+                  "Brand Color Palette",
+                  "Brand Typography",
+                  "Brand Guidelines & Usage",
                 ].map((item) => (
                   <div
                     key={item}
@@ -1159,7 +1163,7 @@ export default function BrandingServicePage() {
                   </span>
 
                   <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white sm:text-3xl">
-                    Marketing Creatives
+                    Social Media & Marketing Design
                   </h3>
                 </div>
 
@@ -1170,17 +1174,17 @@ export default function BrandingServicePage() {
 
               {/* Description */}
               <p className="relative mt-6 max-w-xl text-sm leading-7 text-slate-400 sm:text-base">
-                Create high-impact visuals for campaigns, social media,
-                advertising, and digital channels that communicate your message
-                and capture attention.
+                Get consistent graphic design for social media, digital ads,
+                promotional campaigns, and marketing materials that present your
+                message clearly and support your brand identity.
               </p>
 
               {/* Feature List */}
               <div className="relative mt-7 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Social Media Graphics",
-                  "Advertising Creatives",
-                  "Campaign Visuals",
+                  "Social Media Post Design",
+                  "Digital Ad Creatives",
+                  "Campaign Graphic Design",
                   "Promotional Assets",
                 ].map((item) => (
                   <div
@@ -1234,7 +1238,7 @@ export default function BrandingServicePage() {
                   </span>
 
                   <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white sm:text-3xl">
-                    Print & Packaging
+                    Print & Packaging Design
                   </h3>
                 </div>
 
@@ -1245,17 +1249,17 @@ export default function BrandingServicePage() {
 
               {/* Description */}
               <p className="relative mt-6 max-w-xl text-sm leading-7 text-slate-400 sm:text-base">
-                Extend your brand beyond the screen with polished print
-                materials and packaging designs that maintain the same
-                professional identity.
+                Extend your visual identity to physical products with print
+                design and packaging artwork for business stationery, brochures,
+                flyers, and product presentation.
               </p>
 
               {/* Feature List */}
               <div className="relative mt-7 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Business Stationery",
-                  "Brochures & Flyers",
-                  "Product Packaging",
+                  "Business Card & Stationery Design",
+                  "Brochure & Flyer Design",
+                  "Product Packaging Design",
                   "Print-Ready Artwork",
                 ].map((item) => (
                   <div
@@ -1309,7 +1313,7 @@ export default function BrandingServicePage() {
                   </span>
 
                   <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white sm:text-3xl">
-                    Digital Design Systems
+                    Digital Brand Design Systems
                   </h3>
                 </div>
 
@@ -1320,18 +1324,18 @@ export default function BrandingServicePage() {
 
               {/* Description */}
               <p className="relative mt-6 max-w-xl text-sm leading-7 text-slate-400 sm:text-base">
-                Create reusable visual systems that make your digital presence
-                easier to scale while keeping every interface and creative
-                aligned with your brand.
+                Build reusable digital brand assets and design systems that keep
+                website visuals, social media templates, and marketing graphics
+                aligned as your business and content needs grow.
               </p>
 
               {/* Feature List */}
               <div className="relative mt-7 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Social Templates",
-                  "Digital Brand Assets",
-                  "UI Visual Direction",
-                  "Reusable Design Systems",
+                  "Social Media Templates",
+                  "Digital Branding Assets",
+                  "Website & UI Visual Direction",
+                  "Reusable Graphic Design Systems",
                 ].map((item) => (
                   <div
                     key={item}
@@ -1370,9 +1374,9 @@ export default function BrandingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-3xl text-sm leading-7 text-slate-500 sm:text-base">
-                From the first sketch to the final creative, every design
-                decision should strengthen your brand and make your business
-                easier to recognize.
+                From logo design and brand guidelines to social media graphics
+                and packaging artwork, every asset should strengthen recognition
+                and keep your visual identity consistent.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -1492,11 +1496,11 @@ export default function BrandingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                From Idea
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                A Strategic Branding
                 <br />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  To Brand Identity.
+                  & Design Process.
                 </span>
               </h2>
             </motion.div>
@@ -1521,10 +1525,10 @@ export default function BrandingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We turn ideas into distinctive visual identities through a
-              structured creative process — combining strategy, design,
-              refinement, and real-world application to create brands built for
-              recognition.
+              Our branding process moves from discovery and brand positioning to
+              creative direction, logo and identity design, feedback, and final
+              asset delivery. Each stage keeps the visual direction aligned with
+              your business and target audience.
             </motion.p>
           </div>
 
@@ -1536,30 +1540,30 @@ export default function BrandingServicePage() {
                 {
                   number: "01",
                   label: "Discovery",
-                  title: "Understand the Brand",
+                  title: "Understand Your Brand",
                   description:
-                    "We learn about your business, audience, positioning, goals, and the personality your brand needs to communicate.",
+                    "We review your business, audience, market position, competitors, and goals to define what your brand needs to communicate.",
                 },
                 {
                   number: "02",
                   label: "Strategy",
-                  title: "Define the Direction",
+                  title: "Define Your Brand Strategy",
                   description:
-                    "We establish the visual direction, creative concepts, messaging style, and design principles that shape the identity.",
+                    "We shape the creative direction, brand personality, messaging, and visual principles that guide the identity and design system.",
                 },
                 {
                   number: "03",
                   label: "Design",
-                  title: "Build the Identity",
+                  title: "Design the Brand Identity",
                   description:
-                    "We develop the core visual system including logos, typography, colors, graphics, and creative assets.",
+                    "We create the logo, color palette, typography, graphic elements, and supporting brand assets for digital and print use.",
                 },
                 {
                   number: "04",
                   label: "Refine & Deliver",
-                  title: "Make It Ready",
+                  title: "Prepare and Deliver Brand Assets",
                   description:
-                    "We refine the final direction and prepare polished, practical brand assets ready for digital and print use.",
+                    "We refine approved designs and organize the agreed brand files and guidelines for practical use across your channels.",
                 },
               ].map((step, index) => (
                 <motion.div
@@ -1617,7 +1621,7 @@ export default function BrandingServicePage() {
                     <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.7)]" />
 
                     <span className="font-mono text-[9px] tracking-[0.18em] text-slate-600 uppercase">
-                      Brand Development
+                      Brand Identity Design
                     </span>
                   </div>
                 </motion.div>
@@ -1682,8 +1686,9 @@ export default function BrandingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Every stage is designed to keep the creative direction focused,
-                purposeful, and aligned with the brand you want to build.
+                Every stage of our branding and graphic design process is
+                focused on clear communication, consistent visuals, and assets
+                that are ready to use across your business.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -1803,11 +1808,11 @@ export default function BrandingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Tools That Bring
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[45px]">
+                Design Tools for
                 <br />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Ideas to Life.
+                  Consistent Brand Identity.
                 </span>
               </h2>
             </motion.div>
@@ -1832,9 +1837,9 @@ export default function BrandingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We use modern design, creative, and collaboration tools to
-              transform brand ideas into polished visual systems that remain
-              consistent, flexible, and ready for real-world use.
+              We use Figma and established creative workflows to plan brand
+              identity systems, refine graphic design, organize visual assets,
+              and maintain consistency across digital and print deliverables.
             </motion.p>
           </div>
 
@@ -1867,7 +1872,7 @@ export default function BrandingServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Creative Design Tools
+                    Brand Identity & Graphic Design Tools
                   </h3>
                 </div>
 
@@ -1973,7 +1978,7 @@ export default function BrandingServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Identity & Creative Systems
+                    Brand Assets & Design Deliverables
                   </h3>
                 </div>
 
@@ -2081,7 +2086,7 @@ export default function BrandingServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Collaboration & Delivery
+                    Design Collaboration & File Delivery
                   </h3>
                 </div>
 
@@ -2174,9 +2179,9 @@ export default function BrandingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Great branding is more than aesthetics. We combine the right
-                tools and creative systems to make your identity consistent,
-                recognizable, and ready to grow with your business.
+                Our branding and graphic design workflow connects strategy,
+                creative tools, and organized file delivery to keep your visual
+                identity recognizable and consistent as your business grows.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -2296,11 +2301,11 @@ export default function BrandingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Your Brand
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Branding & Design
                 <br />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Deserves More.
+                  Focused on Your Goals.
                 </span>
               </h2>
             </motion.div>
@@ -2325,10 +2330,11 @@ export default function BrandingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We don't treat branding as simply making things look good. We
-              build thoughtful visual identities that communicate who you are,
-              create recognition, and give your business a consistent presence
-              everywhere your audience sees you.
+              DigiGrowtherz approaches branding as a business foundation, not
+              just a logo or a collection of graphics. We connect brand
+              strategy, logo design, and graphic design into a visual identity
+              that helps your business communicate consistently across every
+              touchpoint.
             </motion.p>
           </div>
 
@@ -2337,33 +2343,33 @@ export default function BrandingServicePage() {
             {[
               {
                 number: "01",
-                title: "Strategy First",
+                title: "Brand Strategy First",
                 description:
-                  "We understand your business, audience, positioning, and goals before designing the visual identity.",
+                  "We understand your audience, market position, and business goals before shaping your brand identity and creative direction.",
                 icon: Lightbulb,
                 accent: "lime",
               },
               {
                 number: "02",
-                title: "Distinctive Identity",
+                title: "Distinctive Brand Identity",
                 description:
-                  "We create visual systems designed to make your brand recognizable instead of blending into the competition.",
+                  "We develop logo, color, and typography systems that give your business a recognizable visual presence in its market.",
                 icon: Sparkles,
                 accent: "cyan",
               },
               {
                 number: "03",
-                title: "Built for Consistency",
+                title: "Consistent Graphic Design",
                 description:
-                  "Your logo, colors, typography, and creative assets work together as one cohesive brand system.",
+                  "Your logo, brand guidelines, social media graphics, and marketing materials work together as one visual system.",
                 icon: Layers,
                 accent: "lime",
               },
               {
                 number: "04",
-                title: "Ready to Grow",
+                title: "Designed to Scale",
                 description:
-                  "We create flexible brand foundations that can evolve with your business across digital and physical touchpoints.",
+                  "We create flexible brand assets that can support new campaigns, products, platforms, and print applications over time.",
                 icon: TrendingUp,
                 accent: "cyan",
               },
@@ -2488,8 +2494,8 @@ export default function BrandingServicePage() {
                 </p>
 
                 <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white sm:text-3xl">
-                  Design With
-                  <span className="text-lime-300"> Meaning.</span>
+                  Brand Identity With
+                  <span className="text-lime-300"> Purpose.</span>
                 </h3>
               </div>
 
@@ -2498,15 +2504,15 @@ export default function BrandingServicePage() {
                 {[
                   {
                     title: "Recognizable",
-                    text: "Built to stand apart.",
+                    text: "A visual identity people can recognize.",
                   },
                   {
                     title: "Consistent",
-                    text: "Designed to work everywhere.",
+                    text: "One clear system across every channel.",
                   },
                   {
                     title: "Scalable",
-                    text: "Ready for what's next.",
+                    text: "Flexible assets for future business needs.",
                   },
                 ].map((principle, index) => (
                   <motion.div
@@ -2563,9 +2569,9 @@ export default function BrandingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Your brand is often the first impression people have of your
-                business. We make sure that impression is intentional,
-                memorable, and built to last.
+                Your visual identity helps shape how customers recognize your
+                business. We bring strategy and graphic design together to make
+                that identity clear, consistent, and memorable.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -2678,11 +2684,11 @@ export default function BrandingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Questions About
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Branding & Design
                 <br />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Branding?
+                  FAQs.
                 </span>
               </h2>
             </motion.div>
@@ -2707,9 +2713,9 @@ export default function BrandingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              Everything you need to know about our branding process,
-              deliverables, timelines, and how we build identities that make
-              businesses recognizable and memorable.
+              Find answers about our branding and graphic design services,
+              including logo design, brand guidelines, marketing creatives,
+              packaging design, project timelines, and deliverables.
             </motion.p>
           </div>
 
@@ -2719,52 +2725,57 @@ export default function BrandingServicePage() {
               {[
                 {
                   number: "01",
-                  question: "What does your branding service include?",
+                  question:
+                    "What do your branding and design services include?",
                   answer:
-                    "Our branding service can include brand strategy, visual identity, logo design, typography, color systems, brand guidelines, and supporting visual assets — depending on the needs of your business.",
+                    "Our branding and design services can include brand strategy, logo design, visual identity, typography, color palettes, brand guidelines, social media graphics, marketing creatives, and print assets, depending on your project scope.",
                 },
                 {
                   number: "02",
-                  question: "Can you create a completely new brand identity?",
+                  question:
+                    "Do you offer logo design and complete brand identity design?",
                   answer:
-                    "Yes. We can build a brand identity from the ground up, starting with positioning and visual direction and developing a consistent identity that reflects your business and audience.",
+                    "Yes. We can develop a new brand identity from the ground up, including creative direction, logo design, colors, typography, and supporting visual elements tailored to your business and audience.",
                 },
                 {
                   number: "03",
-                  question: "Can you also refresh an existing brand?",
+                  question: "Can you redesign or refresh an existing brand?",
                   answer:
-                    "Absolutely. We can refine or modernize an existing identity while preserving the elements that already have value and introducing a more consistent and contemporary visual direction.",
+                    "Yes. We can update an existing logo and visual identity, retain recognizable brand elements where appropriate, and create a more consistent design system for your current business needs.",
                 },
                 {
                   number: "04",
-                  question: "How long does a branding project take?",
+                  question:
+                    "How long does a brand identity design project take?",
                   answer:
-                    "The timeline depends on the scope and number of deliverables. A focused identity project can move quickly, while a complete brand system requires more strategy, exploration, revisions, and documentation.",
+                    "Project timelines depend on the scope, number of design deliverables, feedback rounds, and approval process. A focused logo project differs from a complete brand identity and guidelines package.",
                 },
                 {
                   number: "05",
-                  question: "Will I receive brand guidelines?",
+                  question: "Will you provide brand guidelines?",
                   answer:
-                    "Brand guidelines can be included to document how your identity should be used across colors, typography, logos, spacing, imagery, and other important brand elements.",
+                    "Brand guidelines can be included in the agreed scope. They document logo usage, colors, typography, spacing, and other visual rules to help keep your brand consistent across platforms.",
                 },
                 {
                   number: "06",
-                  question: "Can you create branding for a new business?",
+                  question:
+                    "Do you provide branding for startups and new businesses?",
                   answer:
-                    "Yes. We work with new businesses to establish a clear and professional identity from the beginning, giving them a strong foundation for websites, marketing, social media, and future growth.",
+                    "Yes. We help startups and new businesses establish a professional visual identity, including logo design and core brand assets for their website, social media, marketing, and future communications.",
                 },
                 {
                   number: "07",
-                  question: "Can branding and website design be done together?",
+                  question:
+                    "Can you create branding and website visuals together?",
                   answer:
-                    "Yes. Combining branding with website design allows us to carry the same visual language across your digital presence, creating a more cohesive and recognizable customer experience.",
+                    "Yes. We can align your brand identity with your website visuals so the logo, colors, typography, imagery, and interface direction create a cohesive digital experience.",
                 },
                 {
                   number: "08",
                   question:
-                    "How do you make sure the branding fits our business?",
+                    "Do you design social media graphics, packaging, and print materials?",
                   answer:
-                    "We start by understanding your business, audience, positioning, competitors, and goals. These insights guide the creative direction so the final identity is purposeful rather than simply decorative.",
+                    "Yes. Our design solutions can include social media post graphics, advertising creatives, brochures, flyers, business stationery, and product packaging artwork, based on your requirements.",
                 },
               ].map((faq, index) => (
                 <motion.div
@@ -2840,8 +2851,9 @@ export default function BrandingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                A strong brand gives your business more than a logo — it creates
-                a clear identity people can recognize, remember, and trust.
+                A consistent brand identity connects logo design, graphic
+                design, and brand guidelines into a visual system customers can
+                recognize across your business.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -2986,7 +2998,7 @@ export default function BrandingServicePage() {
                   <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
                   <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                    Start Your Brand
+                    Start Your Branding Project
                   </span>
                 </div>
               </motion.div>
@@ -3008,12 +3020,12 @@ export default function BrandingServicePage() {
                   duration: 0.7,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk mx-auto mt-7 max-w-4xl text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+                className="font-space-grotesk mx-auto mt-7 max-w-4xl text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
               >
-                Ready to Build a Brand
+                Ready for a Stronger Brand
                 <br />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  People Remember?
+                  & Better Design?
                 </span>
               </motion.h2>
 
@@ -3036,9 +3048,9 @@ export default function BrandingServicePage() {
                 }}
                 className="mx-auto mt-7 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
               >
-                Let's create a distinctive brand identity that gives your
-                business clarity, consistency, and a stronger presence across
-                every touchpoint.
+                Tell us about your business and design goals. Let's build a
+                distinctive brand identity with professional logo design and
+                graphic design that stays consistent across every touchpoint.
               </motion.p>
 
               {/* CTA BUTTONS */}
@@ -3070,9 +3082,9 @@ export default function BrandingServicePage() {
                   whileTap={{
                     scale: 0.98,
                   }}
-                  className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)] sm:w-auto"
+                  className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-4 py-4 text-[12px] font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)] sm:w-auto md:px-8 md:text-sm"
                 >
-                  Start Your Project
+                  Discuss Your Branding Project
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.a>
 
@@ -3113,28 +3125,28 @@ export default function BrandingServicePage() {
                 <div className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_8px_rgba(163,230,53,0.8)]" />
                   <span className="font-mono text-[10px] tracking-[0.16em] text-slate-500 uppercase">
-                    Strategic
+                    Strategy-Led
                   </span>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_8px_rgba(103,232,249,0.8)]" />
                   <span className="font-mono text-[10px] tracking-[0.16em] text-slate-500 uppercase">
-                    Distinctive
+                    Distinctive Design
                   </span>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_8px_rgba(163,230,53,0.8)]" />
                   <span className="font-mono text-[10px] tracking-[0.16em] text-slate-500 uppercase">
-                    Consistent
+                    Consistent Branding
                   </span>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_8px_rgba(103,232,249,0.8)]" />
                   <span className="font-mono text-[10px] tracking-[0.16em] text-slate-500 uppercase">
-                    Memorable
+                    Memorable Identity
                   </span>
                 </div>
               </motion.div>

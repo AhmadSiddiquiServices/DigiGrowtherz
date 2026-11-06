@@ -73,25 +73,27 @@ export default function ClientSlider() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1600px]">
         {/* Heading */}
-        <div className="mx-auto mb-[clamp(2.5rem,4vw,4rem)] max-w-[780px] px-6 text-center">
+        <div className="mx-auto mb-[clamp(2.5rem,4vw,4rem)] max-w-[800px] px-6 text-center">
           <div className="mb-4 flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-[#A0D14F]" />
 
             <span className="font-jetbrains text-[10px] font-medium tracking-[0.22em] text-[#A0D14F] uppercase">
-              Selected Clients
+              Our Clients & Projects
             </span>
 
             <span className="h-px w-8 bg-[#A0D14F]" />
           </div>
 
-          <h2 className="font-space-grotesk text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] font-medium tracking-[-0.04em] text-[#DFE2ED]">
-            Digital Experiences{" "}
-            <span className="text-[#A0D14F]">We&apos;ve Built.</span>
+          <h2 className="font-space-grotesk text-[clamp(1.7rem,4vw,3.5rem)] leading-[1.05] font-medium tracking-[-0.04em] text-[#DFE2ED]">
+            Businesses & Digital Projects{" "}
+            <span className="text-[#A0D14F]">We&apos;ve Worked With.</span>
           </h2>
 
-          <p className="font-inter mx-auto mt-5 max-w-[650px] text-[14px] leading-7 text-[#DFE2ED70] sm:text-[15px]">
-            A selection of businesses and brands we&apos;ve helped bring to life
-            through thoughtful design, development, and digital experiences.
+          <p className="font-inter mx-auto mt-5 max-w-[680px] text-[14px] leading-7 text-[#DFE2ED70] sm:text-[15px]">
+            Explore a selection of client brands and digital projects across
+            different industries, showcasing our experience in website
+            development, eCommerce solutions, custom digital platforms, and
+            business technology.
           </p>
         </div>
 

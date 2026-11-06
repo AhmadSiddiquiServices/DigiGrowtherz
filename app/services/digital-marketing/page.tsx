@@ -34,7 +34,7 @@ export default function DigitalMarketingServicePage() {
   return (
     <>
       {/* DIGITAL MARKETING — HERO SECTION */}
-      <section className="relative overflow-hidden bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-10 lg:py-28">
+      <section className="relative overflow-hidden bg-[#070B12] px-[clamp(0.8rem,4vw,5rem)] py-10 lg:py-28">
         {/* BACKGROUND EFFECTS */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Base Gradient */}
@@ -101,7 +101,7 @@ export default function DigitalMarketingServicePage() {
         <div className="absolute top-0 left-1/2 h-[220px] w-[320px] -translate-x-1/2 rounded-full bg-cyan-400/[0.08] blur-[130px]" />
 
         {/* HERO CONTAINER */}
-        <div className="relative z-10 mx-auto px-4">
+        <div className="relative z-10 mx-auto px-2 md:px-4">
           <div className="grid items-center gap-20 lg:grid-cols-2">
             {/* LEFT SIDE */}
             <div>
@@ -141,12 +141,11 @@ export default function DigitalMarketingServicePage() {
                   duration: 0.8,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk max-w-3xl text-5xl leading-[1.05] font-bold tracking-tight text-white md:text-6xl xl:text-7xl"
+                className="font-space-grotesk text-[36px] leading-[1.05] font-bold tracking-tight text-white md:text-6xl xl:text-[53px]"
               >
-                Marketing That
-                <br className="hidden md:block" />
+                Digital Marketing <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Drives Real Growth
+                  Services That Drive Growth
                 </span>
               </motion.h1>
 
@@ -164,11 +163,13 @@ export default function DigitalMarketingServicePage() {
                   duration: 0.8,
                   delay: 0.2,
                 }}
-                className="mt-8 max-w-xl text-lg leading-8 text-slate-300"
+                className="mt-8 text-lg leading-8 text-slate-300"
               >
-                We create data-driven digital marketing strategies that increase
-                visibility, attract the right audience, and turn attention into
-                measurable business growth.
+                DigiGrowtherz provides digital marketing services that help
+                businesses improve online visibility, connect with relevant
+                audiences, and generate more opportunities. Our approach brings
+                together social media marketing, paid advertising, SEO, content
+                marketing, and campaign analytics around your business goals.
               </motion.p>
 
               {/* CTA BUTTONS */}
@@ -199,7 +200,7 @@ export default function DigitalMarketingServicePage() {
                   }}
                   className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)]"
                 >
-                  Start Your Campaign
+                  Discuss Your Marketing Goals
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.a>
 
@@ -214,7 +215,7 @@ export default function DigitalMarketingServicePage() {
                   }}
                   className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/10"
                 >
-                  Explore Our Services
+                  Explore Marketing Solutions
                 </motion.a>
               </motion.div>
 
@@ -238,20 +239,24 @@ export default function DigitalMarketingServicePage() {
                   <h4 className="text-2xl font-bold text-white">Reach</h4>
 
                   <p className="mt-1 text-sm text-slate-400">
-                    Targeted Audiences
+                    Reach Relevant Audiences
                   </p>
                 </div>
 
                 <div>
                   <h4 className="text-2xl font-bold text-white">ROI</h4>
 
-                  <p className="mt-1 text-sm text-slate-400">Data Driven</p>
+                  <p className="mt-1 text-sm text-slate-400">
+                    Trackable Performance
+                  </p>
                 </div>
 
                 <div>
                   <h4 className="text-2xl font-bold text-white">∞</h4>
 
-                  <p className="mt-1 text-sm text-slate-400">Built to Scale</p>
+                  <p className="mt-1 text-sm text-slate-400">
+                    Scalable Campaigns
+                  </p>
                 </div>
               </motion.div>
             </div>
@@ -303,7 +308,7 @@ export default function DigitalMarketingServicePage() {
                     </p>
 
                     <h5 className="mt-1 font-semibold text-white">
-                      Performance Driven
+                      Campaign Planning
                     </h5>
                   </div>
                 </div>
@@ -333,7 +338,7 @@ export default function DigitalMarketingServicePage() {
                       <div className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_#A3E635]" />
 
                       <span className="ml-2 truncate font-mono text-[9px] text-slate-500">
-                        analytics.yourbusiness.com
+                        sample.analytics.yourbusiness.com
                       </span>
                     </div>
                   </div>
@@ -369,7 +374,7 @@ export default function DigitalMarketingServicePage() {
                     <div className="relative mt-8 grid grid-cols-3 gap-3">
                       <div className="rounded-2xl border border-white/[0.07] bg-white/[0.035] p-4">
                         <p className="font-mono text-[8px] tracking-[0.15em] text-slate-500 uppercase">
-                          Reach
+                          Sample Reach
                         </p>
 
                         <p className="mt-2 text-xl font-semibold text-white">
@@ -387,7 +392,7 @@ export default function DigitalMarketingServicePage() {
 
                       <div className="rounded-2xl border border-white/[0.07] bg-white/[0.035] p-4">
                         <p className="font-mono text-[8px] tracking-[0.15em] text-slate-500 uppercase">
-                          Leads
+                          Sample Leads
                         </p>
 
                         <p className="mt-2 text-xl font-semibold text-white">
@@ -405,7 +410,7 @@ export default function DigitalMarketingServicePage() {
 
                       <div className="rounded-2xl border border-white/[0.07] bg-white/[0.035] p-4">
                         <p className="font-mono text-[8px] tracking-[0.15em] text-slate-500 uppercase">
-                          ROI
+                          Sample ROI
                         </p>
 
                         <p className="mt-2 text-xl font-semibold text-white">
@@ -427,11 +432,11 @@ export default function DigitalMarketingServicePage() {
                       <div className="flex items-center justify-between">
                         <div>
                           <p className="font-mono text-[9px] tracking-[0.18em] text-slate-500 uppercase">
-                            Campaign Performance
+                            Illustrative Campaign Metrics
                           </p>
 
                           <p className="mt-1 text-sm font-medium text-white">
-                            Growth Overview
+                            Sample Growth Overview
                           </p>
                         </div>
 
@@ -558,7 +563,7 @@ export default function DigitalMarketingServicePage() {
                       </p>
 
                       <p className="mt-0.5 text-sm font-medium text-white">
-                        Growing Every Day
+                        Ongoing Optimization
                       </p>
                     </div>
                   </div>
@@ -584,11 +589,11 @@ export default function DigitalMarketingServicePage() {
 
                     <div>
                       <p className="font-mono text-[9px] tracking-[0.2em] text-slate-500 uppercase">
-                        Audience
+                        Targeting
                       </p>
 
                       <p className="mt-0.5 text-sm font-medium text-white">
-                        Right People
+                        Relevant Audiences
                       </p>
                     </div>
                   </div>
@@ -728,11 +733,10 @@ export default function DigitalMarketingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Marketing Built
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[36px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Digital Marketing <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Around Growth.
+                  Built Around Your Goals.
                 </span>
               </h2>
             </motion.div>
@@ -757,10 +761,11 @@ export default function DigitalMarketingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              Digital marketing is more than posting content or running ads. We
-              combine strategy, creative execution, audience targeting, and
-              performance data to build campaigns that attract the right people
-              and turn attention into meaningful business results.
+              Effective digital marketing connects your business with the people
+              most likely to need your products or services. We combine social
+              media, paid advertising, search engine optimization, content, and
+              performance tracking into a coordinated strategy built around your
+              audience and business objectives.
             </motion.p>
           </div>
 
@@ -818,19 +823,21 @@ export default function DigitalMarketingServicePage() {
 
                 {/* Heading */}
                 <h3 className="font-space-grotesk mt-7 max-w-2xl text-3xl leading-[1.12] font-semibold tracking-tight text-white sm:text-4xl">
-                  Every campaign starts with
+                  Effective digital marketing starts with
                   <span className="text-cyan-300">
                     {" "}
-                    understanding your audience.
+                    the right audience and strategy.
                   </span>
                 </h3>
 
                 {/* Description */}
                 <p className="mt-7 max-w-2xl text-base leading-8 text-slate-400">
-                  Before we launch campaigns, we understand your business,
-                  target audience, market position, competitors, and growth
-                  objectives. This allows us to build a marketing strategy
-                  around real opportunities instead of relying on guesswork.
+                  Before recommending channels or launching campaigns, we review
+                  your business goals, target customers, current online
+                  presence, competitors, and available resources. This helps us
+                  prioritize relevant opportunities and build a digital
+                  marketing plan with clear objectives and measurable key
+                  performance indicators.
                 </p>
 
                 {/* Highlights */}
@@ -846,7 +853,7 @@ export default function DigitalMarketingServicePage() {
                     </div>
 
                     <p className="mt-2 text-sm font-medium text-white">
-                      Right Audience
+                      Relevant Audience
                     </p>
                   </div>
 
@@ -861,7 +868,7 @@ export default function DigitalMarketingServicePage() {
                     </div>
 
                     <p className="mt-2 text-sm font-medium text-white">
-                      Real Performance
+                      Meaningful Metrics
                     </p>
                   </div>
 
@@ -876,7 +883,7 @@ export default function DigitalMarketingServicePage() {
                     </div>
 
                     <p className="mt-2 text-sm font-medium text-white">
-                      Sustainable Results
+                      Long-Term Growth
                     </p>
                   </div>
                 </div>
@@ -915,7 +922,7 @@ export default function DigitalMarketingServicePage() {
                     </p>
 
                     <h3 className="font-space-grotesk mt-2 text-2xl font-semibold text-white">
-                      From Attention to Action
+                      From Audience Reach to Conversions
                     </h3>
                   </div>
 
@@ -942,12 +949,12 @@ export default function DigitalMarketingServicePage() {
                       </p>
 
                       <h4 className="mt-1 text-sm font-semibold text-white">
-                        Reach the Right People
+                        Reach Your Target Audience
                       </h4>
 
                       <p className="mt-2 text-sm leading-6 text-slate-500">
-                        Identify and reach audiences that are most likely to
-                        engage with your business.
+                        Define audience segments and use relevant channels to
+                        connect with people interested in your offer.
                       </p>
                     </div>
                   </div>
@@ -968,12 +975,13 @@ export default function DigitalMarketingServicePage() {
                       </p>
 
                       <h4 className="mt-1 text-sm font-semibold text-white">
-                        Turn Interest Into Action
+                        Encourage Meaningful Action
                       </h4>
 
                       <p className="mt-2 text-sm leading-6 text-slate-500">
-                        Use compelling creative, messaging, and offers to move
-                        potential customers forward.
+                        Use clear messaging, useful content, and relevant calls
+                        to action to guide interested visitors toward an enquiry
+                        or purchase.
                       </p>
                     </div>
                   </div>
@@ -994,8 +1002,8 @@ export default function DigitalMarketingServicePage() {
                       </h4>
 
                       <p className="mt-2 text-sm leading-6 text-slate-500">
-                        Track performance and continuously optimize campaigns
-                        for stronger results.
+                        Review reach, engagement, traffic, leads, and
+                        conversions to identify what to refine in each campaign.
                       </p>
                     </div>
                   </div>
@@ -1010,26 +1018,30 @@ export default function DigitalMarketingServicePage() {
               {
                 icon: Target,
                 label: "Audience",
-                title: "Precise Targeting",
-                description: "Reach people who matter most to your business.",
+                title: "Audience-Focused Targeting",
+                description:
+                  "Reach relevant customer groups through suitable marketing channels.",
               },
               {
                 icon: Lightbulb,
                 label: "Creative",
-                title: "Strategic Content",
-                description: "Build messaging designed to capture attention.",
+                title: "Purposeful Content",
+                description:
+                  "Create useful content and messaging aligned with your brand and audience.",
               },
               {
                 icon: BarChart3,
                 label: "Analytics",
-                title: "Data Driven",
-                description: "Use performance data to guide every decision.",
+                title: "Trackable Performance",
+                description:
+                  "Use campaign and website analytics to make informed marketing decisions.",
               },
               {
                 icon: TrendingUp,
                 label: "Growth",
-                title: "Continuous Optimization",
-                description: "Improve campaigns as your business grows.",
+                title: "Ongoing Optimization",
+                description:
+                  "Review campaign performance and adjust activity as business needs change.",
               },
             ].map((item, index) => {
               const Icon = item.icon;
@@ -1104,16 +1116,16 @@ export default function DigitalMarketingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Great marketing connects the right message with the right
-                audience at the right time. We build that connection around your
-                business goals.
+                A coordinated digital marketing strategy keeps your messaging,
+                channels, content, and measurement aligned with the customers
+                you want to reach and the actions you want them to take.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Growth With Purpose
+                  Marketing With Purpose
                 </span>
               </div>
             </div>
@@ -1226,11 +1238,10 @@ export default function DigitalMarketingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Marketing That
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[34px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Digital Marketing Solutions{" "}
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Drives Results.
+                  For Your Business.
                 </span>
               </h2>
             </motion.div>
@@ -1255,10 +1266,10 @@ export default function DigitalMarketingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              From social media and paid advertising to search and content, we
-              build digital marketing strategies designed to increase
-              visibility, attract the right audience, and turn attention into
-              measurable business growth.
+              Our digital marketing services cover the key activities that help
+              businesses build awareness, attract prospects, and support
+              conversions. Choose the channels and services that fit your goals,
+              audience, industry, and available marketing resources.
             </motion.p>
           </div>
 
@@ -1287,7 +1298,7 @@ export default function DigitalMarketingServicePage() {
                 number: "01",
                 title: "Social Media Marketing",
                 description:
-                  "Build a stronger social presence with engaging content and campaigns that connect your brand with the right audience.",
+                  "Plan and manage social media content and campaigns for platforms such as Facebook, Instagram, LinkedIn, and TikTok to build brand awareness and engage relevant audiences.",
                 tag: "Engage / Grow",
                 accent: "lime",
               },
@@ -1295,15 +1306,15 @@ export default function DigitalMarketingServicePage() {
                 number: "02",
                 title: "Paid Advertising",
                 description:
-                  "Launch targeted advertising campaigns across major platforms to generate qualified traffic, leads, and conversions.",
-                tag: "Reach / Convert",
+                  "Plan, launch, and optimize paid campaigns on platforms such as Google Ads and Meta Ads, with targeting, creative, and landing-page messaging aligned to your campaign objectives.",
+                tag: "Target / Engage / Convert",
                 accent: "cyan",
               },
               {
                 number: "03",
                 title: "Search Engine Optimization",
                 description:
-                  "Improve your search visibility with SEO strategies that help your business attract consistent organic traffic over time.",
+                  "Improve organic search visibility through keyword research, technical recommendations, on-page optimization, and useful content that addresses what your potential customers are searching for.",
                 tag: "Rank / Discover",
                 accent: "lime",
               },
@@ -1311,7 +1322,7 @@ export default function DigitalMarketingServicePage() {
                 number: "04",
                 title: "Content Marketing",
                 description:
-                  "Create valuable, strategic content that builds authority, educates your audience, and supports your wider marketing goals.",
+                  "Develop blog content, website copy, campaign messaging, and other useful resources that answer audience questions and support your brand and marketing objectives.",
                 tag: "Create / Educate",
                 accent: "cyan",
               },
@@ -1319,7 +1330,7 @@ export default function DigitalMarketingServicePage() {
                 number: "05",
                 title: "Email Marketing",
                 description:
-                  "Turn prospects into customers and customers into repeat buyers with targeted email campaigns and automated communication.",
+                  "Plan newsletters, promotional emails, and customer communication that share relevant information, nurture prospects, and support customer relationships.",
                 tag: "Nurture / Retain",
                 accent: "lime",
               },
@@ -1327,8 +1338,8 @@ export default function DigitalMarketingServicePage() {
                 number: "06",
                 title: "Analytics & Reporting",
                 description:
-                  "Track performance with meaningful data and insights so every campaign can be refined around what actually drives results.",
-                tag: "Measure / Improve",
+                  "Monitor campaign activity, website traffic, engagement, leads, and conversions using appropriate analytics and reporting tools to guide ongoing improvements.",
+                tag: "Track / Analyze / Improve",
                 accent: "cyan",
               },
             ].map((solution, index) => (
@@ -1458,16 +1469,16 @@ export default function DigitalMarketingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Every campaign is built around your goals, your audience, and
-                the metrics that matter — combining strategy, creativity, and
-                data to create sustainable growth.
+                Each digital marketing activity should have a clear purpose,
+                from building awareness and attracting website visitors to
+                generating enquiries and supporting customer retention.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Strategy / Growth
+                  Plan / Track / Analyze / Improve
                 </span>
               </div>
             </div>
@@ -1580,11 +1591,11 @@ export default function DigitalMarketingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                From Strategy
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[34px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[43px]">
+                A Structured Digital Marketing Process{" "}
+                {/* <br className="hidden md:block" /> */}
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  To Real Growth.
+                  From Plan to Optimization.
                 </span>
               </h2>
             </motion.div>
@@ -1609,10 +1620,10 @@ export default function DigitalMarketingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We follow a structured, data-driven process that connects
-              strategy, creative execution, campaign management, and continuous
-              optimization to turn your marketing investment into measurable
-              business results.
+              Our digital marketing process connects research, planning, content
+              and creative development, campaign execution, and performance
+              reporting. Each stage is tied to agreed objectives so activity can
+              be reviewed and adjusted using relevant data.
             </motion.p>
           </div>
 
@@ -1628,7 +1639,7 @@ export default function DigitalMarketingServicePage() {
                   number: "01",
                   title: "Discover",
                   description:
-                    "We learn about your business, audience, competitors, goals, and current digital presence.",
+                    "We review your business goals, target customers, competitors, existing channels, website, and current marketing activity.",
                   label: "Understand",
                   accent: "lime",
                 },
@@ -1636,7 +1647,7 @@ export default function DigitalMarketingServicePage() {
                   number: "02",
                   title: "Strategize",
                   description:
-                    "We build a focused marketing strategy based on your objectives, audience, channels, and opportunities.",
+                    "We select relevant marketing channels, define campaign objectives, map audience segments, and agree on the key metrics to monitor.",
                   label: "Plan",
                   accent: "cyan",
                 },
@@ -1644,7 +1655,7 @@ export default function DigitalMarketingServicePage() {
                   number: "03",
                   title: "Create",
                   description:
-                    "We develop campaign concepts, content, creatives, messaging, and assets designed to capture attention.",
+                    "We prepare campaign messaging, social media content, ad creatives, email content, and landing-page recommendations suited to the plan.",
                   label: "Build",
                   accent: "lime",
                 },
@@ -1652,7 +1663,7 @@ export default function DigitalMarketingServicePage() {
                   number: "04",
                   title: "Launch",
                   description:
-                    "We deploy campaigns across the right channels, targeting the audiences most likely to take action.",
+                    "We publish or launch the agreed campaigns across selected social, search, advertising, and email channels, with tracking configured where applicable.",
                   label: "Execute",
                   accent: "cyan",
                 },
@@ -1660,7 +1671,7 @@ export default function DigitalMarketingServicePage() {
                   number: "05",
                   title: "Optimize",
                   description:
-                    "We monitor performance, analyze the data, refine campaigns, and continuously improve results.",
+                    "We review performance against agreed KPIs, identify opportunities, and recommend adjustments to targeting, creative, content, or channel activity.",
                   label: "Improve",
                   accent: "lime",
                 },
@@ -1812,16 +1823,16 @@ export default function DigitalMarketingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Great marketing is never a one-time campaign. We continuously
-                learn from the data, improve what works, and adapt the strategy
-                as your business grows.
+                Marketing performance changes as audiences, competition, and
+                business priorities evolve. Regular reviews help identify what
+                is working and where campaigns or content may need adjustment.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-cyan-300 to-lime-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Learn / Adapt / Grow
+                  Review / Refine / Improve
                 </span>
               </div>
             </div>
@@ -1934,11 +1945,10 @@ export default function DigitalMarketingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Tools That
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[34px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Digital Marketing Tools <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Drive Performance.
+                  That Support Better Decisions.
                 </span>
               </h2>
             </motion.div>
@@ -1963,10 +1973,11 @@ export default function DigitalMarketingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We use proven marketing platforms, analytics systems, advertising
-              networks, content tools, and creative technologies to build
-              campaigns that reach the right audience and generate measurable
-              results.
+              We work with advertising platforms, social networks, analytics and
+              tracking tools, SEO platforms, and creative applications to plan
+              campaigns, publish content, monitor activity, and review
+              performance. The tools used depend on your channels and project
+              requirements.
             </motion.p>
           </div>
 
@@ -1995,16 +2006,16 @@ export default function DigitalMarketingServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                    01 — Marketing
+                    01 — Advertising & Social
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Advertising & Social Platforms
+                    Paid Advertising & Social Media Platforms
                   </h3>
                 </div>
 
                 <span className="hidden font-mono text-[10px] tracking-[0.2em] text-slate-600 uppercase sm:block">
-                  Reach / Convert
+                  Target / Engage / Convert
                 </span>
               </div>
 
@@ -2101,16 +2112,16 @@ export default function DigitalMarketingServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                    02 — Analytics
+                    02 — Analytics & SEO
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Data, Analytics & SEO
+                    Website Analytics, Tracking & SEO Tools
                   </h3>
                 </div>
 
                 <span className="hidden font-mono text-[10px] tracking-[0.2em] text-slate-600 uppercase sm:block">
-                  Measure / Improve
+                  Track / Analyze / Improve
                 </span>
               </div>
 
@@ -2122,7 +2133,7 @@ export default function DigitalMarketingServicePage() {
                     icon: SiGoogleanalytics,
                   },
                   {
-                    name: "Google Search",
+                    name: "Google Search Console",
                     icon: SiGoogle,
                   },
                   {
@@ -2209,16 +2220,16 @@ export default function DigitalMarketingServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                    03 — Creative & Content
+                    03 — Content & Creative
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Content, Design & Workflow
+                    Content Creation, Design & Email Marketing
                   </h3>
                 </div>
 
                 <span className="hidden font-mono text-[10px] tracking-[0.2em] text-slate-600 uppercase sm:block">
-                  Create / Engage
+                  Create / Publish / Nurture
                 </span>
               </div>
 
@@ -2306,16 +2317,16 @@ export default function DigitalMarketingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Technology gives us the data, reach, and creative power to make
-                smarter marketing decisions and continuously improve campaign
-                performance.
+                Marketing platforms help manage campaigns and measure activity.
+                We select tools based on the channels in use, the data required,
+                and the reporting needs agreed for each project.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Data / Creativity / Growth
+                  Platforms / Content / Measurement
                 </span>
               </div>
             </div>
@@ -2428,11 +2439,10 @@ export default function DigitalMarketingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Marketing That
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[34px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Why Choose DigiGrowtherz for <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Moves Your Business.
+                  Digital Marketing?
                 </span>
               </h2>
             </motion.div>
@@ -2457,10 +2467,11 @@ export default function DigitalMarketingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We combine strategy, creative execution, data, and technology to
-              build digital marketing systems that attract the right audience,
-              strengthen your brand, and turn attention into measurable business
-              growth.
+              We bring strategy, content, paid campaigns, search visibility, and
+              analytics together around your business objectives. Our focus is
+              on clear communication, relevant audience targeting, and
+              performance reviews that help you understand what your marketing
+              activity is intended to achieve.
             </motion.p>
           </div>
 
@@ -2489,28 +2500,28 @@ export default function DigitalMarketingServicePage() {
                 number: "01",
                 title: "Strategy First",
                 description:
-                  "Every campaign starts with a clear understanding of your audience, goals, market, and competitive landscape.",
+                  "Campaign planning begins with your business objectives, customer needs, market context, and the channels that fit your audience.",
                 accent: "lime",
               },
               {
                 number: "02",
-                title: "Data Driven",
+                title: "Trackable Performance",
                 description:
-                  "We use performance data and meaningful insights to continuously improve campaigns and make smarter decisions.",
+                  "We review relevant metrics such as reach, clicks, engagement, website activity, leads, and conversions to inform campaign decisions.",
                 accent: "cyan",
               },
               {
                 number: "03",
                 title: "Creative That Converts",
                 description:
-                  "From messaging to visual content, we create experiences designed to capture attention and encourage action.",
+                  "We align ad creative, social posts, email messages, and website content so that the message is consistent across customer touchpoints.",
                 accent: "lime",
               },
               {
                 number: "04",
                 title: "Built for Growth",
                 description:
-                  "Our approach focuses on sustainable digital growth instead of short-term activity without measurable outcomes.",
+                  "We use ongoing measurement and periodic reviews to help keep marketing activity aligned with changing business goals.",
                 accent: "cyan",
               },
             ].map((item, index) => (
@@ -2619,12 +2630,12 @@ export default function DigitalMarketingServicePage() {
                 </div>
 
                 <h4 className="font-space-grotesk mt-5 text-xl font-semibold text-white">
-                  The Right Audience
+                  The Relevant Audience
                 </h4>
 
                 <p className="mt-3 text-sm leading-7 text-slate-500">
-                  Reach people who are genuinely relevant to your products,
-                  services, and business goals.
+                  Reach people whose needs, interests, and search behavior align
+                  with your products, services, and business goals.
                 </p>
               </div>
 
@@ -2639,12 +2650,12 @@ export default function DigitalMarketingServicePage() {
                 </div>
 
                 <h4 className="font-space-grotesk mt-5 text-xl font-semibold text-white">
-                  Measurable Progress
+                  Clear Performance Reporting
                 </h4>
 
                 <p className="mt-3 text-sm leading-7 text-slate-500">
-                  Track meaningful performance indicators instead of relying on
-                  vanity metrics alone.
+                  Review agreed KPIs such as engagement, qualified traffic,
+                  enquiries, and conversions—not just surface-level activity.
                 </p>
               </div>
 
@@ -2659,12 +2670,12 @@ export default function DigitalMarketingServicePage() {
                 </div>
 
                 <h4 className="font-space-grotesk mt-5 text-xl font-semibold text-white">
-                  Long-Term Thinking
+                  Continuous Improvement
                 </h4>
 
                 <p className="mt-3 text-sm leading-7 text-slate-500">
-                  We build marketing foundations that can evolve as your
-                  business grows and your goals change.
+                  We review strategy and channel performance as your audience,
+                  offerings, and business priorities change.
                 </p>
               </div>
             </div>
@@ -2691,16 +2702,16 @@ export default function DigitalMarketingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Digital marketing should do more than generate activity. It
-                should create momentum, strengthen your brand, and contribute to
-                real business growth.
+                A useful marketing partner helps connect your business goals to
+                the right channels, consistent messaging, and performance
+                information you can use to make informed decisions.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Growth With Purpose
+                  Marketing With Purpose
                 </span>
               </div>
             </div>
@@ -2809,11 +2820,10 @@ export default function DigitalMarketingServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Questions About
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Digital Marketing Services{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Digital Marketing?
+                  Frequently Asked Questions.
                 </span>
               </h2>
             </motion.div>
@@ -2838,9 +2848,9 @@ export default function DigitalMarketingServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              Everything you need to know about our digital marketing approach,
-              strategy, reporting, and how we help businesses build stronger
-              visibility and generate consistent growth.
+              Find answers about DigiGrowtherz digital marketing services,
+              including social media management, paid advertising, SEO, content
+              marketing, campaign strategy, and performance reporting.
             </motion.p>
           </div>
 
@@ -2902,8 +2912,8 @@ export default function DigitalMarketingServicePage() {
                         </p>
 
                         <p className="mt-1 text-xs leading-6 text-slate-500">
-                          We build campaigns around measurable business
-                          objectives.
+                          Campaign activity is planned around agreed goals and
+                          relevant performance indicators.
                         </p>
                       </div>
                     </div>
@@ -2913,12 +2923,12 @@ export default function DigitalMarketingServicePage() {
 
                       <div>
                         <p className="text-sm font-medium text-white">
-                          Data Driven
+                          Trackable Performance
                         </p>
 
                         <p className="mt-1 text-xs leading-6 text-slate-500">
-                          Decisions are guided by performance data and real
-                          results.
+                          We use available analytics and campaign data to inform
+                          recommendations and next steps.
                         </p>
                       </div>
                     </div>
@@ -2932,8 +2942,8 @@ export default function DigitalMarketingServicePage() {
                         </p>
 
                         <p className="mt-1 text-xs leading-6 text-slate-500">
-                          We focus on sustainable visibility instead of
-                          short-term vanity metrics.
+                          We consider longer-term brand visibility and audience
+                          relationships alongside campaign activity.
                         </p>
                       </div>
                     </div>
@@ -2945,45 +2955,46 @@ export default function DigitalMarketingServicePage() {
               <div className="space-y-3">
                 {[
                   {
-                    question: "What digital marketing services do you provide?",
+                    question:
+                      "What digital marketing services does DigiGrowtherz offer?",
                     answer:
-                      "We provide a range of digital marketing services including SEO, social media marketing, paid advertising, content strategy, analytics, and conversion-focused optimization. The exact combination depends on your business goals and target audience.",
+                      "DigiGrowtherz offers social media marketing, paid advertising, search engine optimization (SEO), content marketing, email marketing, and campaign analytics. The recommended mix depends on your business goals, audience, industry, and current digital presence.",
                   },
                   {
                     question: "How do you create a digital marketing strategy?",
                     answer:
-                      "We start by understanding your business, audience, competitors, current digital presence, and growth objectives. From there, we identify opportunities and build a strategy around the channels that can create the strongest measurable impact.",
+                      "We begin by reviewing your business objectives, target customers, competitors, existing marketing activity, and website. We then identify suitable channels, define campaign priorities, and agree on the key performance indicators (KPIs) to monitor.",
                   },
                   {
                     question: "How long does it take to see results?",
                     answer:
-                      "The timeline depends on the marketing channels involved. Paid campaigns can generate data and traffic relatively quickly, while SEO and organic growth generally require more time to build authority and momentum. We focus on measurable progress throughout the process.",
+                      "Timelines vary by channel, competition, budget, website condition, and campaign objectives. Paid advertising can provide early campaign data once launched, while SEO and organic content typically require sustained work. We review progress against agreed KPIs rather than promise a fixed ranking or result.",
                   },
                   {
                     question: "Do you provide SEO services?",
                     answer:
-                      "Yes. SEO can include technical optimization, on-page improvements, content strategy, keyword targeting, site structure, performance optimization, and ongoing analysis depending on the needs of your website.",
+                      "Yes. Our SEO services can include keyword research, technical SEO recommendations, on-page optimization, content planning, site structure review, and performance analysis. The scope is based on your website and search visibility requirements.",
                   },
                   {
                     question: "Can you manage our social media marketing?",
                     answer:
-                      "Yes. We can help with social media strategy, content planning, campaign execution, audience targeting, creative direction, and performance analysis across relevant platforms.",
+                      "Yes. Social media support can include channel planning, content calendars, post and creative coordination, audience targeting, campaign management, and performance reviews for relevant platforms such as Facebook, Instagram, LinkedIn, and TikTok.",
                   },
                   {
                     question: "Do you provide marketing reports?",
                     answer:
-                      "Yes. We believe performance should be transparent and measurable. Reporting can include key campaign metrics, traffic, engagement, conversions, rankings, and other KPIs relevant to your objectives.",
+                      "Reporting can cover the metrics agreed for your campaigns, such as impressions, reach, clicks, engagement, website traffic, leads, conversions, and selected SEO indicators. Reports should be interpreted in the context of your objectives and tracking setup.",
                   },
                   {
                     question:
                       "Can you work with our existing website and marketing setup?",
                     answer:
-                      "Absolutely. We can work with your existing website, analytics setup, advertising accounts, social platforms, and other marketing infrastructure. We first assess what is already working and where improvements can be made.",
+                      "We can review your existing website, analytics and tracking setup, advertising accounts, social channels, and current content. Any access, account permissions, or implementation work needed will be discussed as part of the project scope.",
                   },
                   {
                     question: "How do we get started?",
                     answer:
-                      "Simply get in touch with us and tell us about your business, goals, and current challenges. We can then discuss your requirements and determine which digital marketing approach makes the most sense for your business.",
+                      "Contact our team and tell us about your business, target audience, goals, and current marketing challenges. We can discuss your requirements and outline suitable next steps for your digital marketing project.",
                   },
                 ].map((faq, index) => (
                   <motion.details
@@ -3054,16 +3065,16 @@ export default function DigitalMarketingServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Still have questions? We&apos;re happy to discuss your goals and
-                explain how a focused digital marketing strategy can help your
-                business grow.
+                Have another question about social media marketing, paid
+                advertising, SEO, or campaign reporting? Contact our team to
+                discuss your requirements and the right next step.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Let&apos;s Talk
+                  Discuss Your Project
                 </span>
               </div>
             </div>
@@ -3201,12 +3212,12 @@ export default function DigitalMarketingServicePage() {
                   transition={{
                     duration: 0.6,
                   }}
-                  className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/[0.07] px-5 py-2 backdrop-blur-xl"
+                  className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/[0.07] px-3 py-2 backdrop-blur-xl md:px-5"
                 >
                   <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
-                  <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                    Ready To Grow?
+                  <span className="font-mono text-[8px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px] md:text-[10px]">
+                    Ready to Strengthen Your Marketing?
                   </span>
                 </motion.div>
 
@@ -3227,13 +3238,11 @@ export default function DigitalMarketingServicePage() {
                     duration: 0.7,
                     delay: 0.1,
                   }}
-                  className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
+                  className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
                 >
-                  Turn Your Marketing
-                  <br />
-                  Into{" "}
+                  Strengthen Your <br className="hidden md:block" />
                   <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                    Real Growth.
+                    Digital Marketing.
                   </span>
                 </motion.h2>
 
@@ -3256,10 +3265,10 @@ export default function DigitalMarketingServicePage() {
                   }}
                   className="mt-7 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
                 >
-                  Whether you need more visibility, stronger engagement, better
-                  search rankings, or a marketing strategy built around your
-                  business goals, we can help turn your digital presence into a
-                  growth engine.
+                  Whether you want to improve social media engagement, plan paid
+                  advertising, strengthen organic search visibility, or create a
+                  more coordinated digital marketing strategy, DigiGrowtherz can
+                  help you define a practical plan around your business goals.
                 </motion.p>
 
                 {/* CTA BUTTONS */}
@@ -3291,9 +3300,9 @@ export default function DigitalMarketingServicePage() {
                     whileTap={{
                       scale: 0.98,
                     }}
-                    className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)]"
+                    className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-6 py-4 text-[13px] font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)] md:text-sm"
                   >
-                    Start Your Project
+                    Discuss Your Marketing Project
                     <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </motion.a>
 
@@ -3308,7 +3317,7 @@ export default function DigitalMarketingServicePage() {
                     }}
                     className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/[0.08]"
                   >
-                    Talk To Our Team
+                    Contact Our Marketing Team
                   </motion.a>
                 </motion.div>
               </div>
@@ -3473,7 +3482,7 @@ export default function DigitalMarketingServicePage() {
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-lime-300">
-                    Data Driven
+                    Trackable Performance
                   </p>
                 </motion.div>
               </motion.div>
@@ -3509,7 +3518,7 @@ export default function DigitalMarketingServicePage() {
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Grow With Purpose
+                  Plan With Purpose
                 </span>
               </div>
             </div>

@@ -26,20 +26,22 @@ export default function ContactPage() {
           <div className="max-w-[920px]">
             {/* Subheading */}
             <p className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal tracking-[1.6px] text-[#A0D14F] uppercase">
-              CONNECT WITH DIGIGROWTHTERZ
+              CONTACT DIGIGROWTHERZ
             </p>
 
             {/* Heading */}
-            <h1 className="mt-6 font-['Space_Grotesk'] text-[clamp(48px,7vw,72px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
-              Let's Build Smarter{" "}
-              <span className="text-[#A0D14F]">Digital Solutions.</span>
+            <h1 className="mt-6 font-['Space_Grotesk'] text-[clamp(42px,7vw,72px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
+              Let's Discuss Your{" "}
+              <span className="text-[#A0D14F]">Digital Project.</span>
             </h1>
 
             {/* Description */}
             <p className="mt-8 max-w-[860px] font-['Inter'] text-[18px] leading-[28.8px] font-normal text-[#C3C9B3]">
-              Whether you're exploring AI automation, a custom website, a mobile
-              application, digital marketing, or eCommerce growth, our team is
-              ready to help turn your ideas into measurable business results.
+              Looking for AI automation, website development, mobile app
+              development, SEO, digital marketing, or eCommerce solutions? Get
+              in touch with DigiGrowtherz to discuss your business goals,
+              explore the right technology solutions, and find out how our team
+              can help bring your project to life.
             </p>
           </div>
         </div>
@@ -76,7 +78,7 @@ export default function ContactPage() {
 
         {/* CONTENT */}
         <div className="relative z-10 mx-auto">
-          <div className="grid items-stretch gap-10 lg:grid-cols-[0.95fr_1.05fr] xl:gap-16">
+          <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] xl:gap-16">
             {/* LEFT */}
             <motion.div
               initial={{
@@ -102,26 +104,27 @@ export default function ContactPage() {
                 <span className="h-px w-12 bg-[#A0D14F]" />
 
                 <span className="font-jetbrains text-[10px] font-medium tracking-[0.22em] text-[#A0D14F] uppercase sm:text-[11px]">
-                  Start A Conversation
+                  Discuss Your Project
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-8 text-[clamp(2.75rem,4.5vw,4.5rem)] leading-[1.02] font-medium tracking-[-0.04em] text-[#DFE2ED]">
-                Let&apos;s Build
+              <h2 className="font-space-grotesk mt-8 text-[clamp(2.4rem,4.5vw,4.5rem)] leading-[1.02] font-medium tracking-[-0.04em] text-[#DFE2ED]">
+                Tell Us What
                 <br />
-                Something{" "}
+                You Need.{" "}
                 <span className="bg-gradient-to-r from-[#A0D14F] via-[#C3F56B] to-cyan-300 bg-clip-text text-transparent">
-                  Smarter.
+                  Let's Build.
                 </span>
               </h2>
 
               {/* Description */}
-              <p className="font-inter mt-8 max-w-[590px] text-[15px] leading-7 text-[#DFE2ED99] sm:text-[16px] sm:leading-8">
-                Tell us about your business, your goals, or the challenges
-                you&apos;re trying to solve. From intelligent automation to
-                digital experiences, we&apos;ll help you identify the right
-                solution and turn it into something that works.
+              <p className="font-inter mt-8 max-w-[650px] text-[15px] leading-7 text-[#DFE2ED99] sm:text-[16px] sm:leading-8">
+                Have an idea, a business challenge, or a project in mind? Tell
+                us what you're looking to achieve. Whether you need AI workflow
+                automation, custom website development, a mobile application,
+                SEO, digital marketing, or eCommerce solutions, our team will
+                help you explore the right approach for your business.
               </p>
 
               {/* Contact Information */}
@@ -218,13 +221,14 @@ export default function ContactPage() {
 
                   <div>
                     <h3 className="font-space-grotesk text-[16px] font-semibold text-[#DFE2ED]">
-                      Built Around Your Business
+                      Digital Solutions Tailored to Your Business
                     </h3>
 
                     <p className="font-inter mt-2 text-[13px] leading-6 text-[#DFE2ED80]">
-                      No unnecessary complexity. We focus on understanding your
-                      business first, then build the technology, automation, or
-                      growth solution that actually fits.
+                      Every business has different goals and challenges. We take
+                      the time to understand your requirements before
+                      recommending suitable AI automation, website development,
+                      software, or digital growth solutions for your project.
                     </p>
                   </div>
                 </div>

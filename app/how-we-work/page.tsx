@@ -10,7 +10,7 @@ export default function HowWeWorkPage() {
       title: "Discovery",
       icon: "/images/phase-1.webp",
       description:
-        "Understanding your business, identifying opportunities, and defining project goals to create a clear roadmap for success.",
+        "We learn about your business, target audience, goals, and challenges. We review your requirements, existing workflows, and project needs to identify opportunities and establish a clear project scope.",
       active: true,
     },
     {
@@ -18,28 +18,28 @@ export default function HowWeWorkPage() {
       title: "Strategy",
       icon: "/images/phase-2.webp",
       description:
-        "Planning the right technology, architecture, workflows, and implementation approach based on your business objectives.",
+        "We create a project roadmap based on your requirements, selecting suitable technologies, software architecture, integrations, and development priorities for your website, application, or automation solution.",
     },
     {
       phase: "Phase 03",
       title: "Development",
       icon: "/images/phase-3.webp",
       description:
-        "Designing, developing, and integrating scalable AI, web, mobile, and digital solutions using modern technologies.",
+        "Our team designs and develops your digital solution, including AI automation workflows, custom websites, web applications, and mobile apps. We focus on functionality, usability, performance, and scalability.",
     },
     {
       phase: "Phase 04",
       title: "Deployment",
       icon: "/images/phase-4.webp",
       description:
-        "Launching secure, high-performance solutions with testing, optimization, and seamless integration into your business.",
+        "Before launch, we test functionality, review performance, check integrations, and address identified issues. We then deploy your website, application, or automation system according to the agreed project requirements.",
     },
     {
       phase: "Phase 05",
       title: "Growth",
       icon: "/images/phase-5.webp",
       description:
-        "Monitoring performance, gathering insights, and continuously improving your digital ecosystem for long-term success.",
+        "After launch, we review solution performance, identify improvement opportunities, and help align future enhancements with your business goals through ongoing optimization and support where included in the project scope.",
     },
   ];
 
@@ -47,29 +47,29 @@ export default function HowWeWorkPage() {
     {
       title: "Business-First Strategy",
       description:
-        "Every solution begins with understanding your goals, workflows, and opportunities before choosing the right technology.",
+        "We begin by understanding your business objectives, target audience, existing workflows, and technical requirements before recommending the right development or automation approach.",
     },
     {
-      title: "Modern Development",
+      title: "Modern Software Development",
       description:
-        "From AI automation and custom platforms to websites and mobile applications, we build solutions designed for long-term performance.  ",
+        "We develop AI automation systems, custom web applications, business websites, and mobile apps using technologies selected for your project's functionality, performance, and scalability requirements.",
     },
     {
-      title: "Continuous Improvement",
+      title: "Testing & Continuous Improvement",
       description:
-        "Launch is only the beginning. We optimize, monitor, and enhance every solution to maximize efficiency and business growth.",
+        "We focus on testing, functionality, performance, and reliability before deployment. After launch, we identify opportunities to improve your digital solution as your business requirements evolve.",
     },
   ];
 
   const metrics = [
     {
-      value: "100%",
-      label: "Client-Focused Solutions",
+      value: "GOAL-LED",
+      label: "Business-Focused Planning",
       color: "#A0D14F",
     },
     {
       value: "AI",
-      label: "Powered Innovation",
+      label: "Intelligent Automation",
       color: "#FFED00",
     },
     {
@@ -78,11 +78,12 @@ export default function HowWeWorkPage() {
       color: "#FFED00",
     },
     {
-      value: "ROI",
-      label: "Driven Results",
+      value: "QUALITY",
+      label: "Focused Development",
       color: "#A0D14F",
     },
   ];
+
   return (
     <>
       {/* How it Works - Hero Section */}
@@ -92,21 +93,25 @@ export default function HowWeWorkPage() {
           <div>
             {/* Sub Heading */}
             <p className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal tracking-[1.6px] text-[#A0D14F] uppercase">
-              HOW WE WORK
+              OUR PROJECT DELIVERY PROCESS
             </p>
 
             {/* Heading */}
-            <h2 className="mt-6 font-['Space_Grotesk'] text-[clamp(2.6rem,5vw,60px)] leading-[0.95] font-bold tracking-[-2.88px] text-[#DFE2ED]">
-              Transforming Ideas Into <br className="hidden md:block" />
-              <span className="text-[#A0D14F]">Intelligent Solutions.</span>
+            <h2 className="mt-6 font-['Space_Grotesk'] text-[clamp(2.6rem,5vw,53px)] leading-[0.95] font-bold tracking-[-2.88px] text-[#DFE2ED]">
+              From Business Requirements to{" "}
+              <span className="text-[#A0D14F]">
+                Intelligent Digital Solutions.
+              </span>
             </h2>
 
             {/* Description */}
             <p className="mt-8 font-['Inter'] text-[18px] leading-[28.8px] font-normal text-[#DFE2ED99]">
-              Every successful project starts with understanding your business.
-              From <span className="text-[#A0D14F]">AI automation</span> to
-              custom software and digital growth, we follow a proven process
-              that delivers scalable solutions and measurable business results.
+              At DigiGrowtherz, every project follows a structured process
+              designed around your business goals. From AI automation and custom
+              software development to website development, mobile applications,
+              and digital solutions, we move through discovery, strategy,
+              development, testing, and deployment to deliver solutions aligned
+              with your requirements.
             </p>
 
             {/* CTA Buttons */}
@@ -127,7 +132,7 @@ export default function HowWeWorkPage() {
                 className="flex h-[58px] cursor-pointer items-center justify-center border border-[#FFED00] px-6 transition-all duration-300 hover:bg-[#FFED00]/10 active:scale-[0.98]"
               >
                 <span className="font-['Inter'] text-[16px] leading-6 font-semibold tracking-[1.6px] text-[#FFED00] uppercase">
-                  VIEW OUR SERVICES
+                  EXPLORE OUR SERVICES
                 </span>
               </Link>
             </div>
@@ -140,7 +145,7 @@ export default function HowWeWorkPage() {
 
             <Image
               src="/images/work-banner.webp"
-              alt="How We Work"
+              alt="DigiGrowtherz project planning and digital development process"
               width={650}
               height={415}
               priority
@@ -161,16 +166,19 @@ export default function HowWeWorkPage() {
         <div className="mx-auto">
           {/* Header */}
           <div className="mx-auto max-w-[760px] text-center">
-            <h2 className="font-['Space_Grotesk'] text-[clamp(2.3rem,4vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
-              Our Proven Process
+            <h2 className="font-['Space_Grotesk'] text-[clamp(2rem,4vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-[#DFE2ED]">
+              Our Digital Project <br className="hidden md:block" /> Development
+              Process
             </h2>
 
             <p className="mx-auto mt-6 max-w-[760px] font-['Inter'] text-[16px] leading-6 text-[#DFE2ED99]">
-              From discovery to continuous optimization, every phase is designed
-              to reduce complexity, accelerate delivery, and create long-term
-              business value.
+              Our five-phase approach takes your project from initial business
+              requirements to deployment and future improvements. Each stage
+              focuses on clear objectives, organized development, and solutions
+              that address your business needs.
             </p>
           </div>
+
           <div className="relative mt-24">
             {/* Grey Connecting Line */}
             <div className="absolute top-[48px] right-0 left-0 hidden h-[2px] bg-white/10 lg:block" />
@@ -183,10 +191,11 @@ export default function HowWeWorkPage() {
                 <div key={phase.title} className="relative">
                   <Image
                     src={phase.icon}
-                    alt={phase.title}
+                    alt={`${phase.title} phase in the DigiGrowtherz project delivery process`}
                     width={96}
                     height={96}
                   />
+
                   <p
                     className={`mt-8 font-['JetBrains_Mono'] text-[16px] leading-6 ${
                       phase.active ? "text-[#A0D14F]" : "text-[#DFE2ED66]"
@@ -211,7 +220,7 @@ export default function HowWeWorkPage() {
 
       {/* Methodology */}
       <section className="bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-20">
-        <div className="mx-auto max-w-[1400px]">
+        <div className="mx-auto">
           <div className="relative overflow-hidden rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] px-4 py-6 backdrop-blur-[12px] md:p-12">
             {/* Green glow */}
             <div className="absolute top-0 right-0 h-96 w-96 rounded-[12px] bg-[#A0D14F]/5 blur-[120px]" />
@@ -228,17 +237,20 @@ export default function HowWeWorkPage() {
 
                   <div className="h-px flex-1 bg-white/20" />
                 </div>
-                <h2 className="mt-8 font-['Space_Grotesk'] text-[30px] leading-[40px] font-semibold tracking-[-0.96px] text-[#DFE2ED] lg:text-[48px] lg:leading-[57.6px]">
-                  AI-Powered Innovation, Built
-                  <br className="hidden md:block" />
-                  Around Your Business
+
+                <h2 className="mt-8 font-['Space_Grotesk'] text-[28px] leading-[40px] font-semibold tracking-[-0.96px] text-[#DFE2ED] md:text-[30px] lg:text-[44px] lg:leading-[57.6px]">
+                  AI Automation & Digital <br className="hidden md:block" />
+                  Development Built Around Your Goals
                 </h2>
-                <p className="mt-8 max-w-[700px] font-['Inter'] leading-[28.8px] text-[#DFE2ED]/70 md:text-[18px]">
-                  Technology should solve business problems—not create new ones.
-                  Our approach combines AI automation with modern software
-                  engineering to build secure, scalable, and future-ready
-                  digital solutions that grow with your business.
+
+                <p className="mt-8 font-['Inter'] leading-[28.8px] text-[#DFE2ED]/70 md:text-[18px]">
+                  Technology should address business challenges and make
+                  everyday operations more effective. We combine AI automation,
+                  custom software development, and modern web technologies to
+                  create practical digital solutions based on your workflows,
+                  technical requirements, and long-term business objectives.
                 </p>
+
                 <div className="mt-12 space-y-8">
                   {features.map((feature) => (
                     <div key={feature.title} className="flex gap-4">
@@ -251,6 +263,7 @@ export default function HowWeWorkPage() {
                           className="mt-1 shrink-0"
                         />
                       </div>
+
                       <div>
                         <h3 className="font-['Inter'] text-[16px] leading-6 font-bold text-white">
                           {feature.title}
@@ -286,10 +299,11 @@ export default function HowWeWorkPage() {
                     </div>
                   ))}
                 </div>
+
                 <div className="mt-8 overflow-hidden rounded-[4px] border border-white/10">
                   <Image
                     src="/images/approach-banner.webp"
-                    alt="OUR APPROACH"
+                    alt="DigiGrowtherz AI automation and software development approach"
                     width={495}
                     height={192}
                   />
@@ -305,15 +319,16 @@ export default function HowWeWorkPage() {
         <div className="mx-auto rounded-[8px] bg-[#A0D14F] px-6 py-12 sm:px-12">
           <div className="mx-auto flex max-w-[850px] flex-col items-center">
             {/* Heading */}
-            <h2 className="text-center font-['Space_Grotesk'] text-[clamp(2.2rem,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-black">
-              Ready to Build Smarter Solutions?
+            <h2 className="text-center font-['Space_Grotesk'] text-[clamp(2rem,5vw,48px)] leading-[1.2] font-semibold tracking-[-0.96px] text-black">
+              Ready to Start Your Digital Project?
             </h2>
 
             {/* Description */}
             <p className="mt-[22px] text-center font-['Inter'] text-[18px] leading-[28.8px] text-[#070B12]/80">
-              Whether you're looking to automate workflows, launch a custom
-              website, develop a mobile application, or accelerate business
-              growth, our team is ready to turn your vision into reality.
+              Whether you need AI workflow automation, a custom website, a
+              mobile application, or business software, DigiGrowtherz can help
+              you plan your next project. Tell us about your goals and let's
+              discuss the right digital solution for your business.
             </p>
 
             {/* CTA */}
@@ -323,7 +338,7 @@ export default function HowWeWorkPage() {
               className="mt-[40px] flex h-16 cursor-pointer items-center justify-center bg-[#070B12] px-6 transition-all duration-300 hover:brightness-110 active:scale-[0.98] md:min-w-[349px] md:px-10"
             >
               <span className="font-['Inter'] text-[14px] leading-6 font-bold tracking-[1.6px] text-[#A0D14F] uppercase md:text-[16px]">
-                BOOK A FREE CONSULTATION
+                BOOK A CONSULTATION
               </span>
             </Link>
           </div>

@@ -181,12 +181,12 @@ export default function SeoServicePage() {
                   duration: 0.8,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk max-w-3xl text-5xl leading-[1.04] font-bold tracking-tight text-white sm:text-6xl xl:text-7xl"
+                className="font-space-grotesk text-5xl leading-[1.04] font-bold tracking-tight text-white sm:text-6xl xl:text-[60px]"
               >
-                Get Found.
+                SEO Services.
                 <br />
                 <span className="bg-gradient-to-r from-blue-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Get Chosen.
+                  Built to Grow.
                 </span>
               </motion.h1>
 
@@ -204,11 +204,12 @@ export default function SeoServicePage() {
                   duration: 0.8,
                   delay: 0.2,
                 }}
-                className="mt-8 max-w-xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
+                className="mt-8 text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
               >
-                We build search strategies that improve your visibility, attract
-                qualified traffic, and help your business compete for the
-                searches that matter most.
+                DigiGrowtherz provides strategic SEO services that help
+                businesses improve Google search visibility, attract relevant
+                organic traffic, and reach customers actively searching for
+                their products or services.
               </motion.p>
 
               {/* CTA */}
@@ -239,7 +240,7 @@ export default function SeoServicePage() {
                   }}
                   className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-blue-400 via-cyan-400 to-lime-300 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.16)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.3)]"
                 >
-                  Improve Your Rankings
+                  Get an SEO Consultation
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.a>
 
@@ -282,7 +283,7 @@ export default function SeoServicePage() {
                   </div>
 
                   <p className="mt-1 text-sm text-slate-500">
-                    Sustainable Growth
+                    Sustainable Organic Traffic
                   </p>
                 </div>
 
@@ -294,7 +295,7 @@ export default function SeoServicePage() {
                   </div>
 
                   <p className="mt-1 text-sm text-slate-500">
-                    Better Search Presence
+                    Relevant Search Visibility
                   </p>
                 </div>
 
@@ -306,7 +307,7 @@ export default function SeoServicePage() {
                   </div>
 
                   <p className="mt-1 text-sm text-slate-500">
-                    Measurable Results
+                    Search Performance Insights
                   </p>
                 </div>
               </motion.div>
@@ -422,7 +423,7 @@ export default function SeoServicePage() {
                         <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_#A3E635]" />
 
                         <span className="font-mono text-[8px] tracking-[0.15em] text-lime-300 uppercase">
-                          Growing
+                          Sample Data
                         </span>
                       </div>
                     </div>
@@ -756,11 +757,11 @@ export default function SeoServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Visibility That
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                SEO Strategy
                 <br />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  Drives Growth.
+                  Built for Growth.
                 </span>
               </h2>
             </motion.div>
@@ -785,9 +786,10 @@ export default function SeoServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We build strategic SEO systems that help your business get
-              discovered by the right audience, improve search visibility, and
-              turn organic traffic into meaningful business opportunities.
+              Our search engine optimization services bring together keyword
+              research, technical SEO, on-page optimization, local SEO, and
+              useful content to help the right people discover your website and
+              take action.
             </motion.p>
           </div>
 
@@ -849,14 +851,14 @@ export default function SeoServicePage() {
 
               {/* Title */}
               <h3 className="font-space-grotesk relative mt-8 text-2xl font-semibold text-white">
-                Understand Your Search Landscape
+                Keyword Research & Search Intent
               </h3>
 
               {/* Description */}
               <p className="relative mt-4 text-sm leading-7 text-slate-400">
-                We analyze your website, industry, competitors, keywords, and
-                search opportunities to understand where your business currently
-                stands and where it can grow.
+                We research the search terms your potential customers use,
+                review competitor visibility, and map relevant keywords to the
+                pages and topics that support your business goals.
               </p>
 
               {/* Bottom Line */}
@@ -902,14 +904,14 @@ export default function SeoServicePage() {
 
               {/* Title */}
               <h3 className="font-space-grotesk relative mt-8 text-2xl font-semibold text-white">
-                Build a Stronger Search Foundation
+                Strengthen Your Website SEO
               </h3>
 
               {/* Description */}
               <p className="relative mt-4 text-sm leading-7 text-slate-400">
-                From technical improvements to on-page optimization, we
-                strengthen the elements that help search engines understand,
-                crawl, and rank your website.
+                We improve important on-page and technical elements, including
+                page titles, metadata, headings, internal links, site structure,
+                crawlability, and indexability where needed.
               </p>
 
               {/* Bottom Line */}
@@ -955,14 +957,14 @@ export default function SeoServicePage() {
 
               {/* Title */}
               <h3 className="font-space-grotesk relative mt-8 text-2xl font-semibold text-white">
-                Turn Rankings Into Opportunities
+                Attract Qualified Organic Traffic
               </h3>
 
               {/* Description */}
               <p className="relative mt-4 text-sm leading-7 text-slate-400">
-                We focus on sustainable visibility and qualified organic traffic
-                that supports your broader business goals — not rankings for the
-                sake of rankings.
+                We align search visibility with relevant landing pages and clear
+                calls to action, helping organic visitors find useful
+                information and move toward an enquiry, purchase, or next step.
               </p>
 
               {/* Bottom Line */}
@@ -992,10 +994,10 @@ export default function SeoServicePage() {
           >
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-3xl text-sm leading-7 text-slate-500 sm:text-base">
-                SEO is a long-term growth channel. Our approach combines
-                technical foundations, relevant content, strategic optimization,
-                and ongoing improvements to create visibility that compounds
-                over time.
+                Effective SEO connects the technical health of your website with
+                search intent and helpful content. We prioritize improvements
+                based on your market, website condition, and the opportunities
+                that matter.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -1115,7 +1117,7 @@ export default function SeoServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
                 Search Strategies
                 <br />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
@@ -1144,9 +1146,9 @@ export default function SeoServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              Our SEO solutions cover the technical, content, local, and
-              strategic elements required to build stronger search visibility
-              and attract qualified users to your business.
+              Our SEO services cover the key areas of organic search growth:
+              technical SEO, on-page optimization, local search, content
+              strategy, competitor research, and performance analytics.
             </motion.p>
           </div>
 
@@ -1217,23 +1219,27 @@ export default function SeoServicePage() {
               </h3>
 
               <p className="relative mt-3 text-sm leading-7 text-slate-400">
-                Improve the technical foundation of your website so search
-                engines can efficiently crawl, understand, and index your pages.
+                Technical SEO helps search engines discover, crawl, render, and
+                index your important pages. We review site structure,
+                indexability, page performance, and technical issues that can
+                affect visibility.
               </p>
 
               {/* Features */}
               <div className="relative mt-6 space-y-2">
-                {["Site Architecture", "Crawlability", "Page Performance"].map(
-                  (item) => (
-                    <div
-                      key={item}
-                      className="flex items-center gap-2 text-xs text-slate-500"
-                    >
-                      <span className="h-1 w-1 rounded-full bg-cyan-300" />
-                      {item}
-                    </div>
-                  )
-                )}
+                {[
+                  "Site Architecture & Internal Links",
+                  "Crawlability & Indexing",
+                  "Page Performance",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-2 text-xs text-slate-500"
+                  >
+                    <span className="h-1 w-1 rounded-full bg-cyan-300" />
+                    {item}
+                  </div>
+                ))}
               </div>
             </motion.div>
 
@@ -1285,24 +1291,27 @@ export default function SeoServicePage() {
               </h3>
 
               <p className="relative mt-3 text-sm leading-7 text-slate-400">
-                Optimize the content and structure of your pages around relevant
-                search intent, helping both users and search engines understand
-                your value.
+                On-page SEO aligns each important page with its target search
+                intent. We refine page titles, meta descriptions, headings,
+                content, image context, and internal links to make pages clearer
+                and more useful.
               </p>
 
               {/* Features */}
               <div className="relative mt-6 space-y-2">
-                {["Keyword Strategy", "Content Optimization", "Metadata"].map(
-                  (item) => (
-                    <div
-                      key={item}
-                      className="flex items-center gap-2 text-xs text-slate-500"
-                    >
-                      <span className="h-1 w-1 rounded-full bg-lime-300" />
-                      {item}
-                    </div>
-                  )
-                )}
+                {[
+                  "Keyword Mapping & Search Intent",
+                  "Content & Heading Optimization",
+                  "Title Tags & Meta Descriptions",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-2 text-xs text-slate-500"
+                  >
+                    <span className="h-1 w-1 rounded-full bg-lime-300" />
+                    {item}
+                  </div>
+                ))}
               </div>
             </motion.div>
 
@@ -1354,17 +1363,17 @@ export default function SeoServicePage() {
               </h3>
 
               <p className="relative mt-3 text-sm leading-7 text-slate-400">
-                Strengthen your local search presence so nearby customers can
-                find your business when they are actively looking for your
-                services.
+                Local SEO helps your business appear for relevant location-based
+                searches. We improve local search signals and business profile
+                information so nearby customers can discover your services.
               </p>
 
               {/* Features */}
               <div className="relative mt-6 space-y-2">
                 {[
-                  "Local Visibility",
-                  "Business Profiles",
-                  "Location Signals",
+                  "Google Business Profile Optimization",
+                  "Local Keywords & Location Pages",
+                  "Business Information Consistency",
                 ].map((item) => (
                   <div
                     key={item}
@@ -1425,17 +1434,18 @@ export default function SeoServicePage() {
               </h3>
 
               <p className="relative mt-3 text-sm leading-7 text-slate-400">
-                Create useful, search-focused content that answers real
-                questions, matches user intent, and gives your business more
-                opportunities to be discovered.
+                SEO content strategy turns customer questions and keyword
+                opportunities into useful website pages and articles. We plan
+                content around search intent, topical relevance, and the needs
+                of your audience.
               </p>
 
               {/* Features */}
               <div className="relative mt-6 space-y-2">
                 {[
-                  "Search Intent",
-                  "Content Planning",
-                  "Topic Opportunities",
+                  "Search Intent & Topic Research",
+                  "SEO Content Planning",
+                  "Content Refresh Opportunities",
                 ].map((item) => (
                   <div
                     key={item}
@@ -1496,16 +1506,17 @@ export default function SeoServicePage() {
               </h3>
 
               <p className="relative mt-3 text-sm leading-7 text-slate-400">
-                Identify what competing businesses are doing successfully in
-                search and uncover opportunities to build a stronger position.
+                Competitor SEO analysis reviews the keywords, pages, content
+                themes, and search visibility of businesses in your market to
+                uncover realistic gaps and opportunities for your website.
               </p>
 
               {/* Features */}
               <div className="relative mt-6 space-y-2">
                 {[
-                  "Competitor Research",
-                  "Keyword Gaps",
-                  "Market Opportunities",
+                  "Competitor Keyword Research",
+                  "Content & Keyword Gap Analysis",
+                  "Search Market Opportunities",
                 ].map((item) => (
                   <div
                     key={item}
@@ -1566,17 +1577,18 @@ export default function SeoServicePage() {
               </h3>
 
               <p className="relative mt-3 text-sm leading-7 text-slate-400">
-                Track meaningful search performance and use data to identify
-                what is working, what needs improvement, and where the next
-                opportunity lies.
+                SEO analytics and reporting help you understand how your website
+                performs in organic search. We review visibility, impressions,
+                clicks, traffic, and agreed conversion indicators to guide
+                ongoing improvements.
               </p>
 
               {/* Features */}
               <div className="relative mt-6 space-y-2">
                 {[
-                  "Performance Tracking",
-                  "Search Insights",
-                  "Ongoing Improvements",
+                  "Organic Traffic & Visibility Tracking",
+                  "Google Search Console & Analytics Insights",
+                  "Performance Reporting & Next Steps",
                 ].map((item) => (
                   <div
                     key={item}
@@ -1612,9 +1624,9 @@ export default function SeoServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-3xl text-sm leading-7 text-slate-500 sm:text-base">
-                No single SEO tactic works in isolation. We combine technical
-                optimization, content, local strategy, research, and measurement
-                to create a complete search growth system.
+                Strong SEO comes from coordinated improvements. We connect
+                technical website health, on-page optimization, local search,
+                helpful content, competitor insights, and ongoing measurement.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -1734,11 +1746,11 @@ export default function SeoServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                A Smarter Way
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                A Clear SEO Process
                 <br />
                 <span className="bg-gradient-to-r from-blue-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  To Grow Your Rankings.
+                  From Audit to Action.
                 </span>
               </h2>
             </motion.div>
@@ -1763,9 +1775,10 @@ export default function SeoServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              Our SEO process combines technical analysis, strategic
-              optimization, quality content, and continuous measurement to build
-              sustainable search visibility and long-term organic growth.
+              Every SEO campaign starts with understanding your current website
+              and business priorities. We then plan and implement technical,
+              on-page, local, and content improvements, measuring progress
+              against agreed goals.
             </motion.p>
           </div>
 
@@ -1794,28 +1807,28 @@ export default function SeoServicePage() {
                 number: "01",
                 title: "SEO Audit",
                 description:
-                  "We analyze your website, technical structure, content, keywords, backlinks, and current search performance to identify opportunities and weaknesses.",
+                  "We review crawlability, indexation, site structure, page content, keyword visibility, backlinks, and analytics to identify technical issues and organic search opportunities.",
                 accent: "blue",
               },
               {
                 number: "02",
-                title: "Strategy",
+                title: "Keyword & SEO Strategy",
                 description:
-                  "We build a focused SEO roadmap around your business goals, target audience, search intent, competitive landscape, and highest-value opportunities.",
+                  "We map relevant keywords to search intent, review competitors, prioritize important pages, and create an SEO roadmap aligned with your target audience and business goals.",
                 accent: "cyan",
               },
               {
                 number: "03",
-                title: "Optimization",
+                title: "On-Page & Technical SEO",
                 description:
-                  "We improve technical SEO, on-page elements, content structure, internal linking, local signals, and other ranking factors across your website.",
+                  "We implement agreed improvements to page titles, metadata, headings, content, internal links, site structure, technical health, and local search signals.",
                 accent: "lime",
               },
               {
                 number: "04",
-                title: "Measure & Grow",
+                title: "Monitor & Improve",
                 description:
-                  "We continuously monitor rankings, traffic, conversions, and search visibility to refine the strategy and create sustainable organic growth.",
+                  "We review keyword visibility, organic clicks, impressions, traffic, and relevant conversions, then use the findings to prioritize the next SEO improvements.",
                 accent: "blue",
               },
             ].map((step, index) => (
@@ -1862,7 +1875,7 @@ export default function SeoServicePage() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-space-grotesk relative mt-7 text-xl font-semibold text-white sm:text-2xl">
+                <h3 className="font-space-grotesk relative mt-7 text-xl font-semibold text-white sm:text-[22px]">
                   {step.title}
                 </h3>
 
@@ -1899,9 +1912,10 @@ export default function SeoServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                SEO is not a one-time task. We continuously refine every part of
-                the strategy based on data, search behavior, and your business
-                goals.
+                SEO requires consistent work as search results, competitors, and
+                customer behavior change. We use ongoing performance data to
+                refine priorities and keep your optimization plan aligned with
+                business goals.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -2021,11 +2035,11 @@ export default function SeoServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                The Tools Behind
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Tools for SEO
                 <br />
                 <span className="bg-gradient-to-r from-blue-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Better Search Results.
+                  Research & Insights.
                 </span>
               </h2>
             </motion.div>
@@ -2050,9 +2064,10 @@ export default function SeoServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We use proven SEO platforms, analytics systems, research tools,
-              and modern web technologies to uncover opportunities, measure
-              performance, and make smarter optimization decisions.
+              We work with SEO research platforms, Google measurement tools, and
+              modern website technologies to review keyword opportunities,
+              monitor organic search performance, and investigate technical SEO
+              issues.
             </motion.p>
           </div>
 
@@ -2085,7 +2100,7 @@ export default function SeoServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Search Intelligence & Research
+                    Keyword Research & Competitor Analysis
                   </h3>
                 </div>
 
@@ -2191,7 +2206,7 @@ export default function SeoServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Performance & Search Tracking
+                    Organic Search Analytics & Reporting
                   </h3>
                 </div>
 
@@ -2299,7 +2314,7 @@ export default function SeoServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Web Technologies & Optimization
+                    Website Platforms & Technical SEO
                   </h3>
                 </div>
 
@@ -2400,9 +2415,9 @@ export default function SeoServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                The right SEO technology helps us turn search data into
-                actionable insights, technical improvements, and measurable
-                organic growth.
+                The right SEO tools help us research search demand, monitor
+                website performance, identify technical issues, and prioritize
+                improvements using evidence rather than guesswork.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -2522,11 +2537,11 @@ export default function SeoServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                SEO Built Around
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                An SEO Partner
                 <br />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Real Business Growth.
+                  Focused on Growth.
                 </span>
               </h2>
             </motion.div>
@@ -2551,10 +2566,11 @@ export default function SeoServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We don't treat SEO as a collection of isolated tactics. We combine
-              technical optimization, search strategy, content, data, and
-              continuous improvement to build sustainable visibility that
-              supports your business goals.
+              DigiGrowtherz approaches search engine optimization as an ongoing
+              business growth activity. We connect technical SEO, keyword
+              strategy, useful content, local visibility, and transparent
+              reporting to focus on the organic search opportunities that matter
+              to your business.
             </motion.p>
           </div>
 
@@ -2566,42 +2582,42 @@ export default function SeoServicePage() {
                   number: "01",
                   title: "Strategy First",
                   description:
-                    "Every SEO campaign starts with understanding your business, audience, competitors, and search opportunities before we decide what to optimize.",
+                    "We begin with your business goals, audience, website, and competitors, then prioritize keyword and search opportunities that are relevant to the customers you want to reach.",
                   accent: "cyan",
                 },
                 {
                   number: "02",
                   title: "Technical Expertise",
                   description:
-                    "We identify and resolve technical issues that can limit crawling, indexing, performance, user experience, and your ability to compete in search.",
+                    "We review crawlability, indexability, site structure, page performance, and mobile usability to identify technical barriers that may limit search visibility.",
                   accent: "lime",
                 },
                 {
                   number: "03",
                   title: "Data Driven Decisions",
                   description:
-                    "We use search data, analytics, rankings, and user behavior to prioritize work based on opportunities that can create meaningful business impact.",
+                    "Keyword data, Google Search Console, analytics, and competitor research help us prioritize SEO tasks and evaluate whether organic search activity supports your business objectives.",
                   accent: "cyan",
                 },
                 {
                   number: "04",
                   title: "Quality Over Shortcuts",
                   description:
-                    "Our approach focuses on sustainable SEO practices rather than risky shortcuts that can create temporary gains and long-term problems.",
+                    "We focus on useful content, sound technical foundations, and relevant optimization rather than keyword stuffing, manipulative link schemes, or ranking guarantees.",
                   accent: "lime",
                 },
                 {
                   number: "05",
                   title: "Transparent Progress",
                   description:
-                    "You get clear visibility into what we're working on, why it matters, and how your organic search performance is evolving over time.",
+                    "We explain completed work, findings, performance changes, and recommended next steps so you can understand how your SEO activity is progressing.",
                   accent: "cyan",
                 },
                 {
                   number: "06",
                   title: "Built for Long-Term Growth",
                   description:
-                    "SEO compounds over time. We build a strong foundation that can continue generating visibility, traffic, leads, and opportunities as your business grows.",
+                    "We build an SEO foundation that can be improved over time as your website, content, product or service offering, and target market develop.",
                   accent: "lime",
                 },
               ].map((reason, index) => (
@@ -2698,9 +2714,10 @@ export default function SeoServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Better rankings are only part of the equation. Our goal is to
-                turn organic search visibility into meaningful traffic,
-                qualified opportunities, and sustainable business growth.
+                Rankings are one part of SEO performance. We aim to connect
+                relevant search visibility with useful landing pages, qualified
+                organic visits, enquiries, and other outcomes that matter to
+                your business.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -2820,8 +2837,8 @@ export default function SeoServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                SEO Questions,
+              <h2 className="font-space-grotesk mt-6 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                SEO FAQs,
                 <br />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
                   Answered Clearly.
@@ -2849,9 +2866,9 @@ export default function SeoServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              SEO is a long-term investment, and you should know exactly what
-              you're getting into. Here are answers to some of the most common
-              questions about our approach.
+              Learn more about SEO services, technical and on-page optimization,
+              local search, content strategy, timelines, and how we measure
+              organic search performance for your business.
             </motion.p>
           </div>
 
@@ -2861,9 +2878,9 @@ export default function SeoServicePage() {
               {[
                 {
                   number: "01",
-                  question: "How long does SEO take to show results?",
+                  question: "What do SEO services include?",
                   answer:
-                    "SEO is a long-term strategy, so results vary depending on your website, competition, industry, and current authority. Initial improvements can appear within a few months, while stronger organic growth typically develops through consistent optimization over time.",
+                    "SEO services can include website audits, keyword research, technical SEO, on-page optimization, content planning, local SEO, competitor analysis, and performance reporting. The right mix depends on your website, market, current search visibility, and business goals.",
                 },
                 {
                   number: "02",
@@ -2873,15 +2890,15 @@ export default function SeoServicePage() {
                 },
                 {
                   number: "03",
-                  question: "Do you work with existing websites?",
+                  question: "Can you improve SEO on an existing website?",
                   answer:
-                    "Yes. We can work with existing websites by first identifying technical issues, search opportunities, content gaps, and areas where the current site can be improved before building a prioritized SEO strategy.",
+                    "Yes. We can review an existing website to identify indexing or technical issues, keyword gaps, content improvements, and opportunities across important pages. Recommendations are prioritized according to the site's current condition and your goals.",
                 },
                 {
                   number: "04",
-                  question: "Do you also handle technical SEO?",
+                  question: "What is included in technical SEO?",
                   answer:
-                    "Yes. Technical SEO is an important part of our process. We can work on areas such as crawlability, indexing, site structure, metadata, performance, mobile experience, internal linking, and other technical factors that affect search visibility.",
+                    "Technical SEO focuses on how search engines access and understand your website. Depending on the audit, work may include crawlability, indexability, site architecture, redirects, metadata, internal linking, page performance, and mobile usability.",
                 },
                 {
                   number: "05",
@@ -2891,21 +2908,21 @@ export default function SeoServicePage() {
                 },
                 {
                   number: "06",
-                  question: "How do you measure SEO success?",
+                  question: "Do you provide local SEO services?",
                   answer:
-                    "We look beyond rankings alone. Depending on your goals, we can track organic traffic, keyword visibility, search impressions, clicks, conversions, leads, and other meaningful indicators of business growth.",
+                    "Yes. Local SEO can help eligible businesses improve visibility for location-based searches. Depending on the project, work may include Google Business Profile improvements, local keyword research, location-page optimization, and consistent business information across relevant listings.",
                 },
                 {
                   number: "07",
-                  question: "Do you provide SEO reports?",
+                  question: "How do you measure and report SEO performance?",
                   answer:
-                    "Yes. We provide clear performance reporting so you can understand what has been improved, what is changing, and where the next opportunities are. Reporting can be aligned with the goals and scope of your SEO campaign.",
+                    "We can report on indicators such as organic clicks, impressions, search visibility, keyword trends, website traffic, and agreed conversion events. Reporting uses available analytics and search data to explain progress, findings, and recommended next steps.",
                 },
                 {
                   number: "08",
-                  question: "Can SEO help generate more leads?",
+                  question: "Can SEO help my business generate more leads?",
                   answer:
-                    "Yes. When SEO is aligned with the right search intent and conversion experience, it can bring more qualified visitors to your website. Our goal is not simply more traffic, but traffic that has a meaningful chance of becoming a customer.",
+                    "SEO can support lead generation by helping people with relevant needs discover your website. Results depend on search demand, competition, your offer, and the quality of your website experience. We focus on attracting relevant visitors and making the next step clear.",
                 },
               ].map((faq, index) => (
                 <motion.details
@@ -2984,9 +3001,9 @@ export default function SeoServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Still have questions about your SEO goals, website, or current
-                search performance? Let's talk through your situation and
-                identify the right next step.
+                Have questions about your website's organic search visibility or
+                which SEO improvements to prioritize? Share your goals and we
+                can discuss a practical starting point for your SEO strategy.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
@@ -3147,12 +3164,12 @@ export default function SeoServicePage() {
                   duration: 0.7,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk mt-7 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+                className="font-space-grotesk mt-7 text-[32px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
               >
-                Get Found.
+                Get Found in Search.
                 <br />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Get Growing.
+                  Grow Organically.
                 </span>
               </motion.h2>
 
@@ -3175,9 +3192,10 @@ export default function SeoServicePage() {
                 }}
                 className="mx-auto mt-7 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
               >
-                Your customers are already searching. Let&apos;s build an SEO
-                strategy that helps your business get discovered, earn trust,
-                and turn organic traffic into measurable growth.
+                Help the right customers discover your business through search.
+                Let&apos;s discuss SEO services that connect keyword research,
+                technical improvements, useful content, and organic performance
+                with your business goals.
               </motion.p>
 
               {/* CTA BUTTONS */}
@@ -3211,7 +3229,7 @@ export default function SeoServicePage() {
                   }}
                   className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_50px_rgba(34,211,238,0.35)] sm:w-auto"
                 >
-                  Start Your SEO Journey
+                  Discuss Your SEO Project
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.a>
 
@@ -3226,7 +3244,7 @@ export default function SeoServicePage() {
                   }}
                   className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/[0.08] sm:w-auto"
                 >
-                  Explore Our SEO Services
+                  Request an SEO Consultation
                 </motion.a>
               </motion.div>
 

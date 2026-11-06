@@ -8,33 +8,38 @@ export default function AboutPage() {
   const stats = [
     {
       label: "EFFICIENCY",
-      value: "40%+",
-      description: "PROCESS OPTIMIZATION",
+      value: "WORKFLOW",
+      description: "PROCESS AUTOMATION",
       color: "#A0D14F",
     },
     {
       label: "INNOVATION",
       value: "AI-FIRST",
-      description: "DIGITAL TRANSFORMATION",
+      description: "DIGITAL SOLUTIONS",
       color: "#FFED00",
     },
     {
       label: "SCALABILITY",
-      value: "GLOBAL",
-      description: "BUSINESS SOLUTIONS",
+      value: "GROWTH-READY",
+      description: "BUSINESS SYSTEMS",
       color: "#A0D14F",
     },
   ];
 
   const locations = [
     {
-      title: "AI Automation",
-      cities: ["Workflow Automation", "AI Assistants", "Process Optimization"],
+      title: "Our Location",
+      cities: ["Wazirabad, Punjab", "Pakistan"],
       borderColor: "#A0D14F",
     },
     {
-      title: "Digital Solutions",
-      cities: ["Web Development", "Mobile Apps", "Growth Marketing"],
+      title: "Businesses We Support",
+      cities: [
+        "Startups",
+        "Small Businesses",
+        "Manufacturers",
+        "eCommerce Businesses",
+      ],
       borderColor: "#FFED00",
     },
   ];
@@ -44,19 +49,19 @@ export default function AboutPage() {
       icon: "/images/innovation.webp",
       title: "Innovation First",
       description:
-        "We embrace emerging technologies and AI-driven thinking to help businesses stay ahead in an evolving digital landscape.",
+        "We explore modern technologies, AI automation, and practical digital strategies to develop solutions that help businesses adapt, improve operations, and meet changing customer needs.",
     },
     {
       icon: "/images/business.webp",
       title: "Business Focused",
       description:
-        "Every solution is designed around measurable outcomes, ensuring technology supports your growth—not the other way around.",
+        "We begin by understanding your business goals and challenges. Every website, application, and automation solution is planned around practical requirements, usability, and long-term business needs.",
     },
     {
       icon: "/images/trust.webp",
       title: "Trusted Partnerships",
       description:
-        "We believe successful projects are built on collaboration, honest communication, and long-term relationships.",
+        "We value transparent communication, collaboration, and reliable project delivery. Our aim is to build lasting business relationships through solutions that address real customer needs.",
     },
   ];
 
@@ -65,7 +70,7 @@ export default function AboutPage() {
       number: "01",
       name: "Habib U. Siddiqui",
       role: "FOUNDER & CEO",
-      specialty: "eCOMMERCE • STRATEGY • GROWTH",
+      specialty: "BUSINESS STRATEGY • eCOMMERCE • GROWTH",
       image: "/images/avatar-img.webp",
       accent: "#A0D14F",
     },
@@ -73,7 +78,7 @@ export default function AboutPage() {
       number: "02",
       name: "Usama Siddiqui",
       role: "LEAD MANAGER",
-      specialty: "OPERATIONS • CLIENTS • PROJECTS",
+      specialty: "PROJECTS • OPERATIONS • CLIENT RELATIONS",
       image: "/images/avatar-img.webp",
       accent: "#FFED00",
     },
@@ -81,7 +86,7 @@ export default function AboutPage() {
       number: "03",
       name: "Ahmad Siddiqui",
       role: "LEAD DEVELOPER",
-      specialty: "WEB • SOFTWARE • AUTOMATION",
+      specialty: "WEB DEVELOPMENT • SOFTWARE • AUTOMATION",
       image: "/images/avatar-img.webp",
       accent: "#A0D14F",
     },
@@ -89,11 +94,12 @@ export default function AboutPage() {
       number: "04",
       name: "Abdur Rehman Siddiqui",
       role: "MARKETING MANAGER",
-      specialty: "LOGISTICS • FLEET • OPERATIONS",
+      specialty: "DIGITAL MARKETING • SEO • CAMPAIGNS",
       image: "/images/avatar-img.webp",
       accent: "#FFED00",
     },
   ];
+
   return (
     <>
       {/* About Hero */}
@@ -103,26 +109,30 @@ export default function AboutPage() {
 
         <div className="relative mx-auto flex flex-col items-center gap-10 md:gap-16 lg:flex-row lg:items-center lg:justify-between">
           {/* Left Content */}
-          <div className="max-w-[620px]">
+          <div className="max-w-[780px]">
             {/* Label */}
             <span className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal tracking-[3.2px] text-[#A0D14F] uppercase">
-              WHO WE ARE
+              ABOUT DIGIGROWTHERZ
             </span>
 
             {/* Heading */}
-            <h1 className="mt-6 font-['Space_Grotesk'] text-[clamp(36px,7vw,60px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
-              BUILDING THE FUTURE OF BUSINESS WITH{" "}
-              {/* <br className="hidden md:block" /> */}
-              <span className="text-[#A0D14F]">AI</span>.
+            <h1 className="mt-6 font-['Space_Grotesk'] text-[clamp(29px,7vw,60px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
+              YOUR PARTNER IN {/* <br className="hidden md:block" /> */}
+              <span className="text-[#A0D14F]">
+                AI & DIGITAL TRANSFORMATION.
+              </span>
             </h1>
 
             {/* Description */}
             <p className="mt-8 font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-              DigiGrowtherz helps businesses unlock growth through AI
-              automation, intelligent software, and modern digital solutions. We
-              combine strategy, technology, and innovation to simplify
-              operations, accelerate productivity, and create scalable digital
-              experiences.
+              DigiGrowtherz is a digital solutions company helping startups,
+              small businesses, and growing organizations improve their
+              operations and online presence through AI automation, custom
+              website development, mobile applications, SEO, digital marketing,
+              and eCommerce solutions. We combine business understanding with
+              modern technology to develop practical solutions that streamline
+              workflows, improve digital experiences, and support sustainable
+              business growth.
             </p>
 
             {/* Buttons */}
@@ -134,7 +144,7 @@ export default function AboutPage() {
               >
                 <Image
                   src="/images/about-btn-1.webp"
-                  alt="Explore Services"
+                  alt="Explore DigiGrowtherz services"
                   width={25}
                   height={25}
                 />
@@ -151,7 +161,7 @@ export default function AboutPage() {
               >
                 <Image
                   src="/images/about-btn-2.webp"
-                  alt="Get in Touch"
+                  alt="Contact DigiGrowtherz"
                   width={25}
                   height={25}
                 />
@@ -169,7 +179,7 @@ export default function AboutPage() {
 
             <Image
               src="/images/about-banner.webp"
-              alt="About"
+              alt="DigiGrowtherz digital solutions and AI automation expertise"
               width={552}
               height={552}
               priority
@@ -193,32 +203,34 @@ export default function AboutPage() {
           {/* Section Header */}
           <div className="mb-8">
             <p className="font-['Space_Grotesk'] text-[16px] leading-6 font-normal text-[#A0D14F]">
-              OUR METHODOLOGY
+              HOW WE WORK
             </p>
 
             <h2 className="mt-2 font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-              AI-Driven Innovation: Our Foundation
+              A Business-First Approach to AI & Digital Solutions
             </h2>
           </div>
 
           {/* Main Grid */}
           <div className="grid gap-6 lg:grid-cols-3">
             {/* Large Card */}
-            <div className="flex min-h-[400px] flex-col justify-between rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-6 backdrop-blur-[20px] lg:col-span-2">
+            <div className="flex min-h-[350px] flex-col justify-between rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-6 backdrop-blur-[20px] lg:col-span-2">
               <div>
                 <p className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#A0D14F]">
                   DISCOVERY
                 </p>
 
                 <h3 className="mt-6 font-['Space_Grotesk'] text-[16px] leading-6 font-normal text-[#DFE2ED]">
-                  Business-First Strategy
+                  Understanding Your Business Goals
                 </h3>
 
-                <p className="mt-6 max-w-[680px] font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-                  Every successful solution starts with understanding your
-                  business. We identify challenges, uncover opportunities, and
-                  design intelligent systems that align technology with
-                  measurable business outcomes.
+                <p className="mt-6 mb-4 font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3] md:mb-0">
+                  Every successful digital project starts with understanding the
+                  business behind it. We explore your goals, existing processes,
+                  technical requirements, and challenges before recommending
+                  suitable technologies and digital solutions. This approach
+                  helps us plan websites, applications, and AI automation
+                  systems around your actual business needs.
                 </p>
               </div>
 
@@ -232,13 +244,13 @@ export default function AboutPage() {
                   }}
                 />
 
-                <div className="mt-4 flex items-center justify-between">
+                <div className="mt-4 items-center justify-between md:flex">
                   <span className="font-['JetBrains_Mono'] text-[10px] leading-[15px] font-normal text-white/40 uppercase">
                     STRATEGY STATUS: ACTIVE
                   </span>
-
+                  <br className="block md:hidden" />
                   <span className="font-['JetBrains_Mono'] text-[10px] leading-[15px] font-normal text-white/40 uppercase">
-                    ANALYZING BUSINESS WORKFLOWS...
+                    UNDERSTANDING BUSINESS REQUIREMENTS...
                   </span>
                 </div>
               </div>
@@ -248,19 +260,20 @@ export default function AboutPage() {
             <div className="rounded-[8px] border border-white/10 bg-[rgba(25,25,25,0.6)] p-6 backdrop-blur-[20px]">
               <Image
                 src="/images/roi.webp"
-                alt="ROI Precision"
+                alt="Business performance and solution planning icon"
                 width={27}
                 height={30}
               />
 
               <h3 className="mt-8 font-['Space_Grotesk'] text-[16px] leading-6 font-normal text-[#DFE2ED]">
-                Intelligent Execution
+                Practical Digital Execution
               </h3>
 
               <p className="mt-6 font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-                From AI automation to custom applications, every solution is
-                engineered with performance, scalability, and long-term growth
-                in mind.
+                We turn business requirements into practical digital solutions,
+                from custom websites and software applications to AI-powered
+                workflows. Our focus is on functionality, usability,
+                scalability, and solutions that serve your business objectives.
               </p>
             </div>
 
@@ -297,7 +310,7 @@ export default function AboutPage() {
           <div className="shrink-0">
             <Image
               src="/images/map.webp"
-              alt="Global Presence"
+              alt="DigiGrowtherz business location in Pakistan"
               width={552}
               height={552}
               className="object-cover opacity-80"
@@ -309,17 +322,18 @@ export default function AboutPage() {
           <div className="w-full max-w-[552px]">
             {/* Heading */}
             <h2 className="font-['JetBrains_Mono'] text-[16px] leading-6 font-normal text-[#DFE2ED]">
-              GLOBAL <span className="text-[#A0D14F]">EXPERTISE.</span> LOCAL
-              IMPACT.
+              BASED IN PAKISTAN.{" "}
+              <span className="text-[#A0D14F]">BUILT FOR BUSINESS.</span>
             </h2>
 
             {/* Description */}
             <p className="mt-8 font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-              We partner with businesses across industries to deliver AI
-              automation, websites, mobile applications, digital marketing, and
-              eCommerce solutions. No matter where your business operates, our
-              focus remains the same—building technology that drives measurable
-              growth.
+              DigiGrowtherz is based in Wazirabad, Punjab, Pakistan, and
+              collaborates with businesses seeking digital development and
+              technology solutions. Through remote collaboration and a
+              business-focused approach, we work to understand different
+              business requirements and deliver solutions suited to each
+              project's goals, regardless of where our clients operate.
             </p>
 
             {/* Locations */}
@@ -375,7 +389,7 @@ export default function AboutPage() {
               <span className="h-px w-12 bg-[#A0D14F]" />
 
               <span className="font-['JetBrains_Mono'] text-[11px] leading-4 font-normal tracking-[2.2px] text-[#A0D14F] uppercase">
-                OUR TEAM
+                MEET OUR TEAM
               </span>
             </div>
 
@@ -383,16 +397,17 @@ export default function AboutPage() {
             <h2 className="mt-6 max-w-[850px] font-['Space_Grotesk'] text-[clamp(40px,6vw,68px)] leading-[1.02] font-bold tracking-[-0.04em] text-[#DFE2ED] uppercase">
               THE PEOPLE BEHIND
               <br />
-              <span className="text-[#A0D14F]">THE SYSTEM.</span>
+              <span className="text-[#A0D14F]">DIGIGROWTHERZ.</span>
             </h2>
 
             {/* Description */}
-            <p className="mt-6 max-w-[720px] font-['Inter'] text-[15px] leading-7 font-normal text-[#C3C9B3] sm:text-[16px] sm:leading-7">
-              Behind every intelligent solution is a team that understands the
-              technology, the business, and the people it serves. Our
-              multidisciplinary team brings strategy, engineering, design, and
-              digital growth together to build solutions that move businesses
-              forward.
+            <p className="mt-6 max-w-[1200px] font-['Inter'] text-[15px] leading-7 font-normal text-[#C3C9B3] sm:text-[16px] sm:leading-7">
+              Our team brings together business strategy, project management,
+              software development, and digital marketing to help businesses
+              address their technology and growth needs. From planning and
+              development to project coordination and marketing, we focus on
+              creating practical digital solutions through collaboration and
+              clear communication.
             </p>
           </motion.div>
 
@@ -432,7 +447,7 @@ export default function AboutPage() {
                     {/* Portrait */}
                     <Image
                       src={member.image}
-                      alt={member.name}
+                      alt={`${member.name}, ${member.role.toLowerCase()} at DigiGrowtherz`}
                       width={600}
                       height={750}
                       className="h-full w-full object-top grayscale-[15%] transition-all duration-700 group-hover:scale-[1.04] group-hover:grayscale-0"
@@ -544,13 +559,14 @@ export default function AboutPage() {
           {/* Header */}
           <div className="mx-auto max-w-[900px] text-center">
             <h2 className="font-['Space_Grotesk'] text-[16px] leading-6 font-normal text-[#DFE2ED] uppercase">
-              THE DIGIGROWTHTERZ PRINCIPLES
+              THE DIGIGROWTHERZ PRINCIPLES
             </h2>
 
             <p className="mx-auto mt-4 max-w-[780px] font-['Inter'] text-[16px] leading-6 font-normal text-[#C3C9B3]">
-              Everything we build is guided by a commitment to innovation,
-              transparency, and delivering real business value through modern
-              technology.
+              Our approach to AI automation, software development, and digital
+              services is guided by innovation, business understanding,
+              transparent communication, and a commitment to delivering
+              practical solutions that support our clients' goals.
             </p>
           </div>
 
@@ -564,7 +580,7 @@ export default function AboutPage() {
                 {/* Icon */}
                 <Image
                   src={protocol.icon}
-                  alt={protocol.title}
+                  alt={`${protocol.title} principle`}
                   width={45}
                   height={45}
                 />
@@ -598,9 +614,9 @@ export default function AboutPage() {
         <div className="relative mx-auto flex max-w-[1280px] flex-col items-center">
           {/* Heading */}
           <h2 className="text-center font-['Space_Grotesk'] text-[clamp(48px,7vw,72px)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED] uppercase">
-            READY TO BUILD
+            LET&apos;S BUILD YOUR
             <br />
-            <span className="text-[#A0D14F]">SMARTER SOLUTIONS?</span>
+            <span className="text-[#A0D14F]">NEXT DIGITAL SOLUTION.</span>
           </h2>
 
           {/* Buttons */}

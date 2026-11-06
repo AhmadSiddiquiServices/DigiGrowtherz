@@ -39,19 +39,23 @@ export default function Hero() {
           </div>
 
           {/* Heading */}
-          <h1 className="font-space text-[clamp(2rem,7vw,3.2rem)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
-            Smarter Automation.
+          <h1 className="font-space text-[clamp(2rem,7vw,3rem)] leading-[1.1] font-bold tracking-[-0.04em] text-[#DFE2ED]">
+            AI Automation & Digital
             <br />
-            <span className="text-[#A0D14F]">Faster Business Growth.</span>
+            <span className="text-[#A0D14F]">
+              Solutions for Business Growth.
+            </span>
           </h1>
 
           {/* Description */}
-          <p className="font-inter mt-8 max-w-[640px] text-[clamp(1rem,2vw,1.125rem)] leading-[29.25px] text-[#DFE2EDB2]">
-            We help businesses streamline operations with{" "}
-            <span className="font-semibold text-[#A0D14F]">AI automation</span>{" "}
-            while delivering high-performance websites, mobile apps, digital
-            marketing, branding, SEO, and eCommerce solutions that drive
-            measurable growth.
+          <p className="font-inter mt-8 max-w-[650px] text-[clamp(1rem,2vw,1.125rem)] leading-[29.25px] text-[#DFE2EDB2]">
+            DigiGrowtherz helps startups, small businesses, and growing
+            companies transform their operations with{" "}
+            <span className="font-semibold text-[#A0D14F]">AI automation</span>,
+            custom website development, and mobile app development. We also
+            provide SEO, digital marketing, and eCommerce solutions to
+            strengthen your online presence, streamline business processes, and
+            support sustainable growth.
           </p>
 
           {/* Buttons */}
@@ -78,25 +82,6 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Right */}
-        {/* <motion.div
-          className="relative w-full max-w-[780px]"
-          initial={{ opacity: 0, x: 60 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.2,
-          }}
-        >
-          <Image
-            src="/images/hero-img.webp"
-            alt="Global Automation Network"
-            width={670}
-            height={499}
-            priority
-            className="h-auto w-full object-contain mix-blend-lighten"
-          />
-        </motion.div> */}
         {/* Right */}
         <motion.div
           className="relative w-full max-w-[720px] lg:-mr-8 xl:-mr-12"

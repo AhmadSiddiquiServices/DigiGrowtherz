@@ -125,12 +125,12 @@ export default function WebDevelopmentServicePage() {
                 transition={{
                   duration: 0.6,
                 }}
-                className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-5 py-2"
+                className="mb-6 inline-flex items-center justify-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-5 py-2"
               >
                 <Globe2 className="h-4 w-4 text-cyan-300" />
 
-                <span className="font-mono text-xs tracking-[0.28em] text-cyan-300 uppercase">
-                  Website Development
+                <span className="font-mono text-[10px] tracking-[0.28em] text-cyan-300 uppercase md:text-xs">
+                  Website Development Services
                 </span>
               </motion.div>
 
@@ -148,11 +148,11 @@ export default function WebDevelopmentServicePage() {
                   duration: 0.8,
                   delay: 0.1,
                 }}
-                className="font-space-grotesk max-w-3xl text-5xl leading-[1.05] font-bold tracking-tight text-white md:text-6xl xl:text-7xl"
+                className="font-space-grotesk text-[38px] leading-[1.05] font-bold tracking-tight text-white md:text-6xl xl:text-[52px]"
               >
-                Websites Built to <br className="hidden md:block" />
+                Website Development <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Grow Your Business
+                  Services Built for Business Growth
                 </span>
               </motion.h1>
 
@@ -170,11 +170,13 @@ export default function WebDevelopmentServicePage() {
                   duration: 0.8,
                   delay: 0.2,
                 }}
-                className="mt-8 max-w-xl text-lg leading-8 text-slate-300"
+                className="mt-8 text-lg leading-8 text-slate-300"
               >
-                We design and develop fast, modern, and conversion-focused
-                websites that turn your digital presence into a powerful
-                business asset.
+                DigiGrowtherz provides website development services for
+                businesses that need a professional online presence. We build
+                responsive WordPress websites, Shopify stores, and custom web
+                applications with thoughtful design, clear user journeys, and
+                performance-conscious development.
               </motion.p>
 
               {/* CTA Buttons */}
@@ -205,7 +207,7 @@ export default function WebDevelopmentServicePage() {
                   }}
                   className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_45px_rgba(34,211,238,0.35)]"
                 >
-                  Start Your Project
+                  Discuss Your Website Project
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.a>
 
@@ -220,7 +222,7 @@ export default function WebDevelopmentServicePage() {
                   }}
                   className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/10"
                 >
-                  Explore Our Services
+                  Explore Website Solutions
                 </motion.a>
               </motion.div>
 
@@ -307,11 +309,11 @@ export default function WebDevelopmentServicePage() {
 
                   <div>
                     <p className="font-mono text-[10px] tracking-[0.2em] text-slate-500 uppercase">
-                      Development
+                      Web Development
                     </p>
 
                     <h5 className="mt-1 font-semibold text-white">
-                      Clean Architecture
+                      Scalable Website Architecture
                     </h5>
                   </div>
                 </div>
@@ -598,12 +600,11 @@ export default function WebDevelopmentServicePage() {
                 duration: 0.8,
                 delay: 0.1,
               }}
-              className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
+              className="font-space-grotesk mt-6 text-[34px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
             >
-              More Than a Website.
-              <br />
+              Website Development That Goes <br className="hidden md:block" />
               <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                A Digital Business Asset.
+                Beyond an Online Presence.
               </span>
             </motion.h2>
 
@@ -627,10 +628,11 @@ export default function WebDevelopmentServicePage() {
               }}
               className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
             >
-              We build modern websites that combine thoughtful design, seamless
-              user experiences, strong performance, and conversion-focused
-              architecture to help your business attract, engage, and convert
-              more customers.
+              Our website development process brings together user-focused
+              design, responsive layouts, accessible navigation, and reliable
+              technology. Whether you need a business website, an eCommerce
+              store, or a custom web application, we plan each build around your
+              audience, content, and business goals.
             </motion.p>
           </div>
 
@@ -671,25 +673,26 @@ export default function WebDevelopmentServicePage() {
                 {/* Content */}
                 <div className="relative mt-6">
                   <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                    01 — Experience
+                    01 — Website Design
                   </p>
 
                   <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white md:text-3xl">
-                    Design & UX
+                    Website Design & User Experience
                   </h3>
 
-                  <p className="mt-3 max-w-lg text-sm leading-7 text-slate-400 sm:text-base">
-                    We create intuitive digital experiences that make it easy
-                    for visitors to understand your brand, navigate your
-                    website, and take meaningful action.
+                  <p className="mt-3 text-sm leading-7 text-slate-400 sm:text-base">
+                    We design clear, user-friendly website experiences that
+                    communicate your value, organize information, and help
+                    visitors find the products, services, or details they need
+                    across desktop, tablet, and mobile devices.
                   </p>
 
                   {/* Capabilities */}
                   <div className="mt-6 flex flex-wrap gap-2">
                     {[
-                      "User Experience",
-                      "Responsive Design",
-                      "Clear Navigation",
+                      "User Experience Design",
+                      "Mobile-Responsive Layouts",
+                      "Clear Site Navigation",
                     ].map((item) => (
                       <span
                         key={item}
@@ -743,13 +746,15 @@ export default function WebDevelopmentServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white md:text-3xl">
-                    Built for Speed
+                    Website Performance Optimization
                   </h3>
 
-                  <p className="mt-3 max-w-lg text-sm leading-7 text-slate-400 sm:text-base">
-                    Your website should feel fast from the first interaction. We
-                    prioritize clean architecture, optimized assets, and
-                    performance-focused development from the ground up.
+                  <p className="mt-3 text-sm leading-7 text-slate-400 sm:text-base">
+                    We build with performance in mind by using maintainable
+                    code, appropriately optimized images and assets, and
+                    efficient page structures. The implementation is reviewed to
+                    help pages load smoothly and work reliably across common
+                    devices.
                   </p>
 
                   {/* Capabilities */}
@@ -757,7 +762,7 @@ export default function WebDevelopmentServicePage() {
                     {[
                       "Fast Loading",
                       "Optimized Assets",
-                      "Clean Architecture",
+                      "Scalable Website Architecture",
                     ].map((item) => (
                       <span
                         key={item}
@@ -811,21 +816,23 @@ export default function WebDevelopmentServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white md:text-3xl">
-                    Designed to Convert
+                    Conversion-Focused Website Design
                   </h3>
 
-                  <p className="mt-3 max-w-lg text-sm leading-7 text-slate-400 sm:text-base">
-                    A beautiful website is only part of the equation. We
-                    structure content, calls-to-action, and user journeys around
-                    the actions that matter most to your business.
+                  <p className="mt-3 text-sm leading-7 text-slate-400 sm:text-base">
+                    A website should guide visitors toward useful next steps. We
+                    organize page content, service and product information,
+                    navigation, and calls to action around the actions that
+                    matter to your business, such as making an enquiry or
+                    completing a purchase.
                   </p>
 
                   {/* Capabilities */}
                   <div className="mt-6 flex flex-wrap gap-2">
                     {[
-                      "Clear CTAs",
-                      "Strategic Layouts",
-                      "Conversion Paths",
+                      "Clear Calls to Action",
+                      "Purposeful Page Layouts",
+                      "User Journey Planning",
                     ].map((item) => (
                       <span
                         key={item}
@@ -879,22 +886,23 @@ export default function WebDevelopmentServicePage() {
                   </p>
 
                   <h3 className="font-space-grotesk mt-3 text-2xl font-semibold text-white md:text-3xl">
-                    Ready to Scale
+                    Scalable Website Architecture
                   </h3>
 
-                  <p className="mt-3 max-w-lg text-sm leading-7 text-slate-400 sm:text-base">
-                    We build with the future in mind, creating flexible
-                    foundations that can evolve as your business grows, your
-                    audience expands, and your digital needs become more
-                    advanced.
+                  <p className="mt-3 text-sm leading-7 text-slate-400 sm:text-base">
+                    We plan website structure and technology around your current
+                    requirements while allowing room for future content,
+                    features, integrations, and business changes. The right
+                    platform and architecture depend on the scope and long-term
+                    needs of each project.
                   </p>
 
                   {/* Capabilities */}
                   <div className="mt-6 flex flex-wrap gap-2">
                     {[
-                      "Modular Structure",
-                      "Future Ready",
-                      "Easy to Extend",
+                      "Flexible Architecture",
+                      "Expandable Features",
+                      "Maintainable Structure",
                     ].map((item) => (
                       <span
                         key={item}
@@ -1029,12 +1037,12 @@ export default function WebDevelopmentServicePage() {
                 duration: 0.8,
                 delay: 0.1,
               }}
-              className="font-space-grotesk mt-6 text-3xl leading-[1.08] font-bold tracking-tight text-white sm:mt-7 sm:text-4xl md:text-5xl lg:mt-8 lg:text-6xl"
+              className="font-space-grotesk mt-6 text-[36px] leading-[1.08] font-bold tracking-tight text-white sm:mt-7 sm:text-4xl md:text-5xl lg:mt-8 lg:text-6xl"
             >
-              Digital Experiences Built
-              <br />
+              Website Solutions for Different
+              <br className="hidden md:block" />
               <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                Around Your Business.
+                Business Requirements.
               </span>
             </motion.h2>
 
@@ -1058,10 +1066,11 @@ export default function WebDevelopmentServicePage() {
               }}
               className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-400 sm:mt-6 sm:text-base sm:leading-8 lg:mt-7 lg:max-w-3xl lg:text-lg"
             >
-              From high-converting business websites to powerful eCommerce
-              platforms and custom web applications, we create digital
-              experiences designed to solve real business problems and support
-              long-term growth.
+              Explore website development for business websites, eCommerce
+              stores, landing pages, corporate websites, custom web
+              applications, and existing website redesigns. We match the
+              structure, platform, and functionality to your content, customers,
+              and project objectives.
             </motion.p>
           </div>
 
@@ -1115,19 +1124,20 @@ export default function WebDevelopmentServicePage() {
                   Business Websites
                 </h3>
 
-                <p className="mt-4 max-w-xl text-sm leading-7 text-slate-300 sm:mt-5 sm:text-base">
-                  Professional websites built around your brand, audience, and
-                  business goals — designed to establish credibility,
-                  communicate your value, and turn visitors into customers.
+                <p className="mt-4 text-sm leading-7 text-slate-300 sm:mt-5 sm:text-base">
+                  We develop professional business websites that present your
+                  company, services, and expertise clearly. Each site is planned
+                  around your brand, target audience, and business goals, with
+                  responsive layouts and clear enquiry paths.
                 </p>
 
                 {/* Capabilities */}
                 <div className="mt-6 grid gap-2.5 sm:mt-8 sm:grid-cols-2 sm:gap-3">
                   {[
-                    "Custom Design",
-                    "Responsive Experience",
-                    "Conversion-Focused",
-                    "Performance Optimized",
+                    "Custom Website Design",
+                    "Responsive Development",
+                    "Service & About Pages",
+                    "Clear Enquiry Paths",
                   ].map((item) => (
                     <div
                       key={item}
@@ -1186,9 +1196,10 @@ export default function WebDevelopmentServicePage() {
                 </h3>
 
                 <p className="mt-3.5 text-sm leading-7 text-slate-400 sm:mt-4 sm:text-base">
-                  Online stores designed around usability, trust, and
-                  conversions, giving customers a smooth path from discovery to
-                  purchase.
+                  We build eCommerce websites and Shopify stores with organized
+                  product pages, clear category navigation, helpful product
+                  information, and a straightforward shopping journey from
+                  browsing to checkout.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-2 sm:mt-7">
@@ -1247,21 +1258,25 @@ export default function WebDevelopmentServicePage() {
                 </h3>
 
                 <p className="mt-3.5 text-sm leading-7 text-slate-400 sm:mt-4 sm:text-base">
-                  Focused landing pages built for campaigns, products, services,
-                  and lead generation with a clear path toward conversion.
+                  We create focused landing pages for specific services,
+                  products, and marketing campaigns. Clear messaging, relevant
+                  content, and prominent calls to action help visitors
+                  understand the offer and take the intended next step.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-2 sm:mt-7">
-                  {["Lead Generation", "Campaign Ready", "Clear CTAs"].map(
-                    (item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[11px] text-slate-300 sm:text-xs"
-                      >
-                        {item}
-                      </span>
-                    )
-                  )}
+                  {[
+                    "Lead Generation Pages",
+                    "Campaign Landing Pages",
+                    "Clear Calls to Action",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[11px] text-slate-300 sm:text-xs"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
             </motion.div>
@@ -1305,16 +1320,17 @@ export default function WebDevelopmentServicePage() {
                 </h3>
 
                 <p className="mt-3.5 text-sm leading-7 text-slate-400 sm:mt-4 sm:text-base">
-                  Scalable digital platforms for established businesses that
-                  need a polished presence, structured content, and room to
-                  evolve.
+                  We develop corporate websites for established organizations
+                  that need to present company information, services, teams, and
+                  resources in a consistent structure. Content sections can be
+                  planned to support future updates and expansion.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-2 sm:mt-7">
                   {[
-                    "Professional Presence",
-                    "Structured Content",
-                    "Scalable Foundation",
+                    "Professional Company Presence",
+                    "Structured Company Content",
+                    "Expandable Website Structure",
                   ].map((item) => (
                     <span
                       key={item}
@@ -1366,21 +1382,25 @@ export default function WebDevelopmentServicePage() {
                 </h3>
 
                 <p className="mt-3.5 text-sm leading-7 text-slate-400 sm:mt-4 sm:text-base">
-                  Functional web applications built around your specific
-                  workflows, users, data, and operational requirements.
+                  We develop custom web applications for business processes that
+                  require functionality beyond a standard website. Project scope
+                  can include user roles, data-driven interfaces, integrations,
+                  and workflows based on your requirements.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-2 sm:mt-7">
-                  {["Custom Workflows", "Modern Stack", "Business Logic"].map(
-                    (item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[11px] text-slate-300 sm:text-xs"
-                      >
-                        {item}
-                      </span>
-                    )
-                  )}
+                  {[
+                    "Custom Business Workflows",
+                    "Next.js & React",
+                    "Application Features",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[11px] text-slate-300 sm:text-xs"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
             </motion.div>
@@ -1424,22 +1444,26 @@ export default function WebDevelopmentServicePage() {
                 </h3>
 
                 <p className="mt-3.5 text-sm leading-7 text-slate-400 sm:mt-4 sm:text-base">
-                  Transform outdated websites into modern, faster, and more
-                  effective digital experiences without losing what already
-                  works.
+                  We redesign and modernize existing websites by reviewing their
+                  layout, content structure, mobile experience, usability, and
+                  technical needs. The work focuses on improving the areas that
+                  matter while retaining useful existing content and
+                  functionality where appropriate.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-2 sm:mt-7">
-                  {["Modern UI", "Performance Improvements", "Better UX"].map(
-                    (item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[11px] text-slate-300 sm:text-xs"
-                      >
-                        {item}
-                      </span>
-                    )
-                  )}
+                  {[
+                    "Modern Website Design",
+                    "Mobile Usability",
+                    "Performance Improvements",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[11px] text-slate-300 sm:text-xs"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
             </motion.div>
@@ -1535,28 +1559,28 @@ export default function WebDevelopmentServicePage() {
             className="text-center"
           >
             {/* Eyebrow */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/[0.07] px-5 py-2 backdrop-blur-xl">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/[0.07] px-4 py-2 backdrop-blur-xl">
               <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
-              <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                Our Process
+              <span className="font-mono text-[9px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
+                Website Design & Development Process
               </span>
             </div>
 
             {/* Heading */}
-            <h2 className="font-space-grotesk mx-auto max-w-4xl text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              From Idea to
-              <br />
+            <h2 className="font-space-grotesk mx-auto max-w-4xl text-[35px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+              From Initial Brief to <br className="hidden md:block" />
               <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                Digital Experience
+                Website Launch
               </span>
             </h2>
 
             {/* Description */}
             <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
-              A structured process keeps every project focused, transparent, and
-              aligned with your business goals — from the first conversation to
-              launch and beyond.
+              Our website design and development process moves from discovery
+              and planning through design, development, testing, and launch.
+              Each stage keeps the project aligned with your requirements,
+              content, and agreed scope.
             </p>
           </motion.div>
 
@@ -1594,7 +1618,7 @@ export default function WebDevelopmentServicePage() {
                   number: "01",
                   title: "Discovery",
                   description:
-                    "We start by understanding your business, audience, goals, and technical requirements.",
+                    "We review your business, audience, website goals, content, existing platform, and technical requirements to define the project scope.",
                   detail: "Understand",
                   icon: Search,
                 },
@@ -1602,7 +1626,7 @@ export default function WebDevelopmentServicePage() {
                   number: "02",
                   title: "Strategy",
                   description:
-                    "We define the website structure, user journey, content direction, and technical approach.",
+                    "We plan the sitemap, page hierarchy, user journeys, content needs, platform, and technical approach for the website.",
                   detail: "Plan",
                   icon: Target,
                 },
@@ -1610,7 +1634,7 @@ export default function WebDevelopmentServicePage() {
                   number: "03",
                   title: "Design",
                   description:
-                    "We create a modern interface that reflects your brand while keeping usability and conversion at the center.",
+                    "We create the website interface and page layouts to reflect your brand, support clear navigation, and make important actions easy to find.",
                   detail: "Create",
                   icon: Palette,
                 },
@@ -1618,7 +1642,7 @@ export default function WebDevelopmentServicePage() {
                   number: "04",
                   title: "Development",
                   description:
-                    "We turn the approved design into a fast, responsive, and scalable website using the right technology.",
+                    "We develop the approved designs using the selected platform or framework, then implement responsive layouts, required functionality, and agreed integrations.",
                   detail: "Build",
                   icon: Code2,
                 },
@@ -1626,7 +1650,7 @@ export default function WebDevelopmentServicePage() {
                   number: "05",
                   title: "Launch",
                   description:
-                    "We test, refine, deploy, and make sure your website is ready to perform in the real world.",
+                    "We review the website across devices, check key links and forms, address identified issues, and deploy the approved website to its hosting environment.",
                   detail: "Deliver",
                   icon: Rocket,
                 },
@@ -1730,7 +1754,7 @@ export default function WebDevelopmentServicePage() {
                   number: "01",
                   title: "Discovery",
                   description:
-                    "We start by understanding your business, audience, goals, and technical requirements.",
+                    "We review your business, audience, website goals, content, existing platform, and technical requirements to define the project scope.",
                   detail: "Understand",
                   icon: Search,
                 },
@@ -1738,7 +1762,7 @@ export default function WebDevelopmentServicePage() {
                   number: "02",
                   title: "Strategy",
                   description:
-                    "We define the website structure, user journey, content direction, and technical approach.",
+                    "We plan the sitemap, page hierarchy, user journeys, content needs, platform, and technical approach for the website.",
                   detail: "Plan",
                   icon: Target,
                 },
@@ -1746,7 +1770,7 @@ export default function WebDevelopmentServicePage() {
                   number: "03",
                   title: "Design",
                   description:
-                    "We create a modern interface that reflects your brand while keeping usability and conversion at the center.",
+                    "We create the website interface and page layouts to reflect your brand, support clear navigation, and make important actions easy to find.",
                   detail: "Create",
                   icon: Palette,
                 },
@@ -1754,7 +1778,7 @@ export default function WebDevelopmentServicePage() {
                   number: "04",
                   title: "Development",
                   description:
-                    "We turn the approved design into a fast, responsive, and scalable website using the right technology.",
+                    "We develop the approved designs using the selected platform or framework, then implement responsive layouts, required functionality, and agreed integrations.",
                   detail: "Build",
                   icon: Code2,
                 },
@@ -1762,7 +1786,7 @@ export default function WebDevelopmentServicePage() {
                   number: "05",
                   title: "Launch",
                   description:
-                    "We test, refine, deploy, and make sure your website is ready to perform in the real world.",
+                    "We review the website across devices, check key links and forms, address identified issues, and deploy the approved website to its hosting environment.",
                   detail: "Deliver",
                   icon: Rocket,
                 },
@@ -1921,7 +1945,7 @@ export default function WebDevelopmentServicePage() {
         {/* CONTENT */}
         <div className="relative z-10">
           {/* INTRO */}
-          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-end">
             {/* LEFT — SECTION INTRO */}
             <motion.div
               initial={{
@@ -1945,16 +1969,15 @@ export default function WebDevelopmentServicePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_10px_rgba(103,232,249,0.8)]" />
 
                 <span className="font-mono text-[10px] tracking-[0.28em] text-cyan-300 uppercase sm:text-[11px]">
-                  Technologies
+                  Website Development Technologies
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                The Right Stack
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[35px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[44px]">
+                Modern Website Technologies <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  For the Right Job.
+                  Chosen for Your Project.
                 </span>
               </h2>
             </motion.div>
@@ -1979,9 +2002,11 @@ export default function WebDevelopmentServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We work across modern frameworks, content platforms, commerce
-              solutions, and design tools — selecting the technology that best
-              fits your project, business goals, and long-term needs.
+              Our website development stack includes Next.js, React, TypeScript,
+              Node.js, WordPress, Shopify, and supporting design and deployment
+              tools. We select the platform and technologies according to your
+              website requirements, content management needs, integrations, and
+              future plans.
             </motion.p>
           </div>
 
@@ -2010,11 +2035,11 @@ export default function WebDevelopmentServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                    01 — Development
+                    01 — Web Development
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Modern Web Technologies
+                    Development Frameworks & Languages
                   </h3>
                 </div>
 
@@ -2116,11 +2141,11 @@ export default function WebDevelopmentServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                    02 — Platforms
+                    02 — CMS & eCommerce Platforms
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    CMS & Commerce
+                    Content Management & eCommerce
                   </h3>
                 </div>
 
@@ -2224,11 +2249,11 @@ export default function WebDevelopmentServicePage() {
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                    03 — Design & Workflow
+                    03 — Design & Deployment Tools
                   </p>
 
                   <h3 className="font-space-grotesk mt-2 text-xl font-semibold text-white sm:text-2xl">
-                    Design, Deployment & Collaboration
+                    Website Design, Deployment & Collaboration
                   </h3>
                 </div>
 
@@ -2325,16 +2350,17 @@ export default function WebDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Technology is a means to an outcome. We choose the tools that
-                make your website faster, easier to manage, and better equipped
-                for what&apos;s next.
+                Technology should serve the website and the business behind it.
+                We choose frameworks, content platforms, and deployment tools
+                based on functionality, maintainability, content management, and
+                the needs of the project.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Built With Purpose
+                  Technology Chosen for Your Needs
                 </span>
               </div>
             </div>
@@ -2441,16 +2467,15 @@ export default function WebDevelopmentServicePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
                 <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                  Why DigiGrowtherz
+                  Why Choose DigiGrowtherz
                 </span>
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                More Than
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-[29px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[44px]">
+                A Website Partner <br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                  Just Development.
+                  Focused on Your Goals.
                 </span>
               </h2>
             </motion.div>
@@ -2475,9 +2500,10 @@ export default function WebDevelopmentServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              We combine strategy, design, development, and technology to create
-              digital experiences that are built around your business — not just
-              another website that looks good.
+              DigiGrowtherz brings website strategy, user-focused design,
+              development, and technology together. We consider your business
+              objectives, audience, content, and day-to-day needs when planning
+              a business website, Shopify store, or custom web application.
             </motion.p>
           </div>
 
@@ -2508,18 +2534,20 @@ export default function WebDevelopmentServicePage() {
                 <div className="absolute top-[-100px] left-[-100px] h-[280px] w-[280px] rounded-full bg-cyan-400/[0.07] blur-[100px]" />
 
                 <div className="relative z-10">
-                  <p className="font-mono text-[10px] tracking-[0.25em] text-cyan-300 uppercase">
-                    01 — Business First
+                  <p className="font-mono text-[9px] tracking-[0.25em] text-cyan-300 uppercase md:text-[10px]">
+                    01 — Business Requirements First
                   </p>
 
-                  <h3 className="font-space-grotesk mt-4 max-w-xl text-2xl leading-tight font-semibold text-white sm:text-3xl">
-                    We build with your business goals in mind.
+                  <h3 className="font-space-grotesk mt-4 text-2xl leading-tight font-semibold text-white sm:text-3xl">
+                    Website Development Aligned With Your Business Goals.
                   </h3>
 
-                  <p className="mt-5 max-w-xl text-sm leading-7 text-slate-400 sm:text-base">
-                    Every design decision, technology choice, and development
-                    decision has a purpose — helping your business attract,
-                    engage, convert, and grow.
+                  <p className="mt-5 text-sm leading-7 text-slate-400 sm:text-base">
+                    We consider your audience, services, content, and desired
+                    customer actions before making design and technology
+                    decisions. This helps create a website structure that
+                    communicates your offer and supports the goals of the
+                    project.
                   </p>
 
                   {/* Mini metrics */}
@@ -2530,7 +2558,7 @@ export default function WebDevelopmentServicePage() {
                       </p>
 
                       <p className="mt-1 text-xs text-slate-500">
-                        Clear Strategy
+                        Clear Project Scope
                       </p>
                     </div>
 
@@ -2540,7 +2568,7 @@ export default function WebDevelopmentServicePage() {
                       </p>
 
                       <p className="mt-1 text-xs text-slate-500">
-                        Smart Technology
+                        Suitable Technology
                       </p>
                     </div>
 
@@ -2550,7 +2578,7 @@ export default function WebDevelopmentServicePage() {
                       </p>
 
                       <p className="mt-1 text-xs text-slate-500">
-                        Measurable Growth
+                        Defined Website Goals
                       </p>
                     </div>
                   </div>
@@ -2653,28 +2681,28 @@ export default function WebDevelopmentServicePage() {
                   number: "01",
                   title: "Strategic Thinking",
                   description:
-                    "We understand the problem before choosing the technology.",
+                    "We clarify the business need, audience, and requirements before selecting a platform or framework.",
                   accent: "cyan",
                 },
                 {
                   number: "02",
                   title: "Premium Execution",
                   description:
-                    "Clean design and quality development come together in every build.",
+                    "We bring together consistent visual design, responsive layouts, and careful implementation.",
                   accent: "lime",
                 },
                 {
                   number: "03",
                   title: "Modern Technology",
                   description:
-                    "We use proven tools and frameworks that keep your project ready for what's next.",
+                    "We select established frameworks and platforms that match the project's functionality and maintenance needs.",
                   accent: "cyan",
                 },
                 {
                   number: "04",
                   title: "Long-Term Value",
                   description:
-                    "We build digital products that are easier to manage, improve, and scale.",
+                    "We plan content and website structures that can be maintained and expanded as requirements change.",
                   accent: "lime",
                 },
               ].map((item, index) => (
@@ -2751,16 +2779,16 @@ export default function WebDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Great digital work is not just about what you build. It is about
-                creating something that continues to create value for your
-                business.
+                A useful website is more than its visual design. It should
+                clearly explain your business, help visitors find information,
+                and provide a reliable foundation for future updates.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-cyan-300 to-lime-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Built To Grow
+                  Built Around Your Business
                 </span>
               </div>
             </div>
@@ -2872,11 +2900,10 @@ export default function WebDevelopmentServicePage() {
               </div>
 
               {/* Heading */}
-              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Questions?
-                <br />
+              <h2 className="font-space-grotesk mt-6 text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-[48px]">
+                Website <br className="hidden md:block" /> Development{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-lime-300 to-cyan-300 bg-clip-text text-transparent">
-                  We Have Answers.
+                  FAQs.
                 </span>
               </h2>
             </motion.div>
@@ -2901,9 +2928,9 @@ export default function WebDevelopmentServicePage() {
               }}
               className="max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8 lg:justify-self-end"
             >
-              From project timelines and technology choices to pricing and
-              ongoing support, here are some of the questions we hear most
-              often.
+              Find answers about website development timelines, WordPress and
+              Shopify, custom web applications, responsive design, SEO-ready
+              website structure, maintenance, and working with our team.
             </motion.p>
           </div>
 
@@ -2934,19 +2961,19 @@ export default function WebDevelopmentServicePage() {
               <div className="relative">
                 {/* Label */}
                 <p className="font-mono text-[10px] tracking-[0.25em] text-lime-300 uppercase">
-                  Need More Clarity?
+                  Need Help Planning Your Website?
                 </p>
 
                 {/* Heading */}
                 <h3 className="font-space-grotesk mt-4 text-2xl leading-tight font-semibold text-white sm:text-3xl">
-                  Let's Talk About Your Project.
+                  Discuss Your Website Requirements.
                 </h3>
 
                 {/* Description */}
                 <p className="mt-5 text-sm leading-7 text-slate-500">
-                  Every project is different. If you don't see your question
-                  here, we're happy to discuss your requirements and recommend
-                  the right approach.
+                  Every website project has different goals and requirements.
+                  Contact our team to discuss your business, content, preferred
+                  platform, and the functionality you need.
                 </p>
 
                 {/* CTA */}
@@ -2960,7 +2987,7 @@ export default function WebDevelopmentServicePage() {
                   }}
                   className="mt-7 inline-flex items-center gap-3 rounded-full border border-cyan-300/20 bg-cyan-300/[0.07] px-5 py-3 text-sm font-medium text-cyan-200 transition-all duration-300 hover:border-cyan-300/40 hover:bg-cyan-300/[0.12]"
                 >
-                  Start a Conversation
+                  Discuss Your Website Project
                   <span className="text-cyan-300">→</span>
                 </motion.a>
 
@@ -2969,7 +2996,7 @@ export default function WebDevelopmentServicePage() {
                   <span className="h-2 w-2 rounded-full bg-lime-300 shadow-[0_0_12px_rgba(163,230,53,0.8)]" />
 
                   <span className="font-mono text-[10px] tracking-[0.18em] text-slate-500 uppercase">
-                    Let's Build Something
+                    Website Project Enquiries
                   </span>
                 </div>
               </div>
@@ -2979,43 +3006,46 @@ export default function WebDevelopmentServicePage() {
             <div className="space-y-3">
               {[
                 {
-                  question: "How long does a typical website project take?",
+                  question: "How long does a website development project take?",
                   answer:
-                    "Project timelines depend on the scope, features, content, and level of customization. A straightforward website can move relatively quickly, while larger projects require more planning, development, and testing.",
+                    "The timeline depends on the website's size, required features, content readiness, integrations, and level of customization. A focused business website usually requires less work than a large eCommerce store or custom web application. We define the scope and proposed timeline during project planning.",
                 },
                 {
                   question:
-                    "Do you build custom websites or use existing platforms?",
+                    "Do you build websites with WordPress, Shopify, and Next.js?",
                   answer:
-                    "Both. We work with modern frameworks such as Next.js and React as well as platforms including WordPress, Shopify, Squarespace, Webflow, and Wix. We choose the platform based on what makes the most sense for your project.",
+                    "Yes. We work with WordPress and Shopify for content-managed and eCommerce websites, and Next.js and React for custom web development. Our broader toolkit also includes platforms such as Squarespace, Webflow, and Wix, plus supporting technologies for deployment and integrations. We recommend an approach based on your functionality, content management, and long-term requirements.",
                 },
                 {
-                  question: "Can you redesign or improve an existing website?",
+                  question: "Can you redesign or improve my existing website?",
                   answer:
-                    "Yes. We can work with an existing website and improve its design, user experience, performance, responsiveness, structure, or technology depending on what needs to be addressed.",
-                },
-                {
-                  question: "Will my website be mobile responsive?",
-                  answer:
-                    "Yes. Responsive behavior is considered throughout the design and development process so your website works smoothly across mobile devices, tablets, laptops, and larger screens.",
+                    "Yes. Website redesign and modernization can address visual design, page structure, mobile usability, navigation, content presentation, and technical requirements. We first review what is working and what needs improvement so the proposed changes fit your goals.",
                 },
                 {
                   question:
-                    "Can you help with website maintenance after launch?",
+                    "Will my website work on mobile phones and tablets?",
                   answer:
-                    "Yes. We can continue supporting your website after launch with updates, improvements, technical fixes, performance work, and additional features as your business evolves.",
+                    "Responsive design is part of the website planning and development process. We build page layouts intended to adapt to mobile phones, tablets, laptops, and desktop screens, and review key pages and interactions across different screen sizes.",
                 },
                 {
-                  question:
-                    "How do you choose the right technology for a project?",
+                  question: "Can you build an SEO-friendly website?",
                   answer:
-                    "We look at your business goals, functionality, content needs, scalability, budget, maintenance requirements, and long-term plans before recommending a technology or platform.",
+                    "We can consider SEO fundamentals during website development, including a crawlable page structure, logical heading hierarchy, descriptive page URLs, editable titles and meta descriptions, responsive layouts, and image optimization. These foundations do not guarantee rankings; search performance also depends on content quality, competition, authority, and ongoing SEO work.",
                 },
                 {
-                  question:
-                    "Do you work with businesses outside your local area?",
+                  question: "Do you provide website maintenance after launch?",
                   answer:
-                    "Yes. Digital projects can be handled remotely, allowing us to work with businesses regardless of their location.",
+                    "Post-launch maintenance and ongoing improvements can be discussed as part of your project requirements. Depending on the agreed scope, support may include content or feature updates, technical fixes, platform updates, and further development.",
+                },
+                {
+                  question: "How do you choose the right website platform?",
+                  answer:
+                    "We consider your business goals, content management needs, required features, integrations, budget, expected maintenance, and plans for future growth. This helps us assess whether a platform such as WordPress or Shopify, or a custom framework such as Next.js and React, is more suitable.",
+                },
+                {
+                  question: "Do you work with businesses outside Pakistan?",
+                  answer:
+                    "Yes. Website projects can be planned and coordinated remotely. We use project discussions and agreed communication methods to understand requirements, review progress, and coordinate design, development, and delivery with clients in different locations.",
                 },
               ].map((faq, index) => (
                 <motion.details
@@ -3092,15 +3122,16 @@ export default function WebDevelopmentServicePage() {
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                Still have questions? The best way to find the right answer is
-                to start a conversation about what you're trying to build.
+                Have another question about website design, development, or
+                platform selection? Contact DigiGrowtherz to discuss your
+                website requirements and the next steps.
               </p>
 
               <div className="flex shrink-0 items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-cyan-300 to-lime-300" />
 
                 <span className="font-mono text-[10px] tracking-[0.22em] text-slate-500 uppercase">
-                  Ask Anything
+                  Ask About Website Development
                 </span>
               </div>
             </div>
@@ -3242,8 +3273,8 @@ export default function WebDevelopmentServicePage() {
                 >
                   <span className="h-1.5 w-1.5 rounded-full bg-lime-300 shadow-[0_0_10px_rgba(163,230,53,0.8)]" />
 
-                  <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px]">
-                    Start Something Great
+                  <span className="font-mono text-[9px] tracking-[0.28em] text-lime-300 uppercase sm:text-[11px] md:text-[10px]">
+                    Start Your Website Project
                   </span>
                 </motion.div>
 
@@ -3264,12 +3295,11 @@ export default function WebDevelopmentServicePage() {
                     duration: 0.7,
                     delay: 0.1,
                   }}
-                  className="font-space-grotesk mt-7 max-w-3xl text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+                  className="font-space-grotesk mt-7 max-w-3xl text-[28px] leading-[1.08] font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
                 >
-                  Ready to Build
-                  <br />
+                  Ready to Build Your <br className="hidden md:block" />
                   <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                    Something Better?
+                    New Website?
                   </span>
                 </motion.h2>
 
@@ -3292,9 +3322,11 @@ export default function WebDevelopmentServicePage() {
                   }}
                   className="mt-7 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
                 >
-                  Whether you need a new website, a better digital experience,
-                  or a scalable platform for your business, we can help turn
-                  your idea into something built to perform.
+                  Whether you need a business website, a Shopify store, a
+                  WordPress website, a landing page, or a custom web
+                  application, tell us about your goals. DigiGrowtherz can help
+                  you plan the right website development approach for your
+                  business.
                 </motion.p>
 
                 {/* CTA BUTTONS */}
@@ -3326,9 +3358,9 @@ export default function WebDevelopmentServicePage() {
                     whileTap={{
                       scale: 0.98,
                     }}
-                    className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-8 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_50px_rgba(34,211,238,0.32)]"
+                    className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-lime-400 to-cyan-400 px-4 py-4 text-sm font-semibold text-[#071018] shadow-[0_0_35px_rgba(34,211,238,0.18)] transition-shadow duration-300 hover:shadow-[0_0_50px_rgba(34,211,238,0.32)] md:px-8"
                   >
-                    Start Your Project
+                    Discuss Your Website Project
                     <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </motion.a>
 
@@ -3510,15 +3542,15 @@ export default function WebDevelopmentServicePage() {
             {/* BOTTOM LINE */}
             <div className="relative z-10 mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/[0.07] pt-6 sm:flex-row">
               <p className="text-center text-sm text-slate-500 sm:text-left">
-                Let&apos;s turn your next idea into a digital experience that
-                works.
+                Let&apos;s turn your website requirements into a clear project
+                plan.
               </p>
 
               <div className="flex items-center gap-3">
                 <span className="h-px w-8 bg-gradient-to-r from-lime-300 to-cyan-300" />
 
                 <span className="font-mono text-[9px] tracking-[0.22em] text-slate-600 uppercase">
-                  Built To Perform
+                  Website Development by DigiGrowtherz
                 </span>
               </div>
             </div>

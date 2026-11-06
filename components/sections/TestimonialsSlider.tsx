@@ -3,49 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-// const testimonials = [
-//   {
-//     icon: "/images/partner-1.webp",
-//     quote:
-//       '"Their AI capabilities, combined with their Nearshore delivery model, has been a game-changer for our software development practice."',
-//     initials: "TO",
-//     name: "Taryn Owen",
-//     designation: "CEO, TRUEBLUE",
-//   },
-//   {
-//     icon: "/images/partner-2.webp",
-//     quote:
-//       '"It is the jumpstart we needed to help us identify and start building POCs for Gen AI use cases across our business."',
-//     initials: "MS",
-//     name: "Matthew Shorts",
-//     designation: "CPTO, COX2M",
-//   },
-//   {
-//     icon: "/images/partner-3.webp",
-//     quote:
-//       '"With DigiGrowtherz AI, we improved our velocity by almost 300% while reducing bugs to near zero."',
-//     initials: "AJ",
-//     name: "AJ Alix",
-//     designation: "HEAD OF PRODUCT, COX",
-//   },
-//   {
-//     icon: "/images/partner-1.webp",
-//     quote:
-//       '"The team delivered beyond expectations and accelerated our entire development process."',
-//     initials: "JD",
-//     name: "John Doe",
-//     designation: "CTO, EXAMPLE",
-//   },
-//   {
-//     icon: "/images/partner-2.webp",
-//     quote:
-//       '"Working with DigiGrowtherz transformed how we approach AI implementation."',
-//     initials: "SK",
-//     name: "Sarah Kim",
-//     designation: "VP ENGINEERING, TECHCO",
-//   },
-// ];
-
 const testimonials = [
   {
     icon: "/images/partner-1.webp",
@@ -108,7 +65,7 @@ export default function TestimonialsSlider() {
     <section className="bg-[#070B12] px-[clamp(1rem,4vw,5rem)] py-20 md:py-24">
       <div className="mx-auto">
         {/* Heading */}
-        <h2 className="mb-20 text-center font-['Space_Grotesk'] text-[clamp(32px,5vw,48px)] leading-[120%] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
+        <h2 className="mb-20 text-center font-['Space_Grotesk'] text-[clamp(28px,5vw,48px)] leading-[120%] font-semibold tracking-[-0.02em] text-[#DFE2ED]">
           Trusted by Businesses. Driven by Results.
         </h2>
 

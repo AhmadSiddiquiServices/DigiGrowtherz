@@ -14,6 +14,10 @@ export const FOOTER_LINKS = {
     { label: "SEO", href: "/services/seo" },
     { label: "Branding", href: "/services/branding" },
     { label: "Ecommerce", href: "/services/ecommerce" },
+    { label: "B2B Export Support", href: "/services/b2b-export-support" },
+    { label: "Cybersecurity", href: "/services/cybersecurity" },
+    { label: "Truck Dispatching", href: "/services/truck-dispatching" },
+    { label: "Medical Billing", href: "/services/medical-billing" },
   ],
 
   company: [

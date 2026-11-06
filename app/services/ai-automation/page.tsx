@@ -71,7 +71,7 @@ export const technologyCategories: TechnologyCategory[] = [
     id: 1,
     title: "AI Models",
     description:
-      "Powerful large language models that enable intelligent assistants, content generation, data analysis, and decision-making workflows.",
+      "AI models selected for practical business use cases such as customer support, content assistance, information extraction, data analysis, and decision-support workflows.",
 
     icon: Bot,
 
@@ -86,7 +86,7 @@ export const technologyCategories: TechnologyCategory[] = [
     id: 2,
     title: "Automation & APIs",
     description:
-      "Reliable automation platforms and API integrations that connect your business systems and eliminate repetitive work.",
+      "Workflow automation platforms, APIs, and webhooks that connect CRMs, websites, forms, email, and other business applications to reduce manual data handling.",
 
     icon: Workflow,
 
@@ -94,14 +94,14 @@ export const technologyCategories: TechnologyCategory[] = [
 
     technologies: ["n8n", "REST APIs", "Webhooks", "Zapier", "Make"],
 
-    badge: "Workflow Automation",
+    badge: "Workflow Integrations",
   },
 
   {
     id: 3,
     title: "Development Stack",
     description:
-      "Modern frameworks and programming languages used to build scalable, secure, and high-performance applications.",
+      "Development frameworks and programming languages used to create custom automation interfaces, integrations, backend services, and scalable web applications.",
 
     icon: Code2,
 
@@ -116,7 +116,7 @@ export const technologyCategories: TechnologyCategory[] = [
     id: 4,
     title: "Cloud & Infrastructure",
     description:
-      "Secure cloud platforms, databases, and deployment tools that keep your automation reliable and scalable.",
+      "Cloud services, databases, and deployment tools that support reliable data storage, application hosting, monitoring, and the growth of business automation systems.",
 
     icon: ServerCog,
 
@@ -334,7 +334,7 @@ const valueCards: ValueCard[] = [
     id: 1,
     title: "Business-First Approach",
     description:
-      "Every automation begins with understanding your business goals, existing workflows, and operational challenges before choosing the right technology.",
+      "We review your business goals, existing processes, and operational challenges before recommending where AI workflow automation can provide a practical benefit.",
 
     icon: BriefcaseBusiness,
 
@@ -347,7 +347,7 @@ const valueCards: ValueCard[] = [
     id: 2,
     title: "Tailored Solutions",
     description:
-      "No templates or one-size-fits-all systems. Every AI workflow is designed around your unique processes, customers, and business requirements.",
+      "We configure AI assistants, integrations, and automated workflows around your processes, customer needs, current systems, and project requirements rather than relying on a generic setup.",
 
     icon: Sparkles,
 
@@ -360,7 +360,7 @@ const valueCards: ValueCard[] = [
     id: 3,
     title: "Scalable Architecture",
     description:
-      "Built with growth in mind, allowing your automation ecosystem to expand effortlessly as your business evolves.",
+      "We plan workflows and integrations so additional processes, users, and connected applications can be introduced as your business requirements change.",
 
     icon: Layers3,
 
@@ -373,7 +373,7 @@ const valueCards: ValueCard[] = [
     id: 4,
     title: "Ongoing Partnership",
     description:
-      "Our relationship doesn't end after deployment. We continuously refine, optimize, and support your automation journey.",
+      "Where included in the agreed scope, post-launch support can cover workflow adjustments, troubleshooting, integrations, and improvements as your business needs evolve.",
 
     icon: Handshake,
 
@@ -456,7 +456,7 @@ const ValueCard = ({ item, index }: ValueCardProps) => {
 
         {/* Title */}
 
-        <h3 className="font-space-grotesk mt-8 text-[1.6rem] font-bold text-white md:text-3xl">
+        <h3 className="font-space-grotesk mt-8 text-[1.5rem] font-bold text-white md:text-3xl">
           {item.title}
         </h3>
 
@@ -502,51 +502,52 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     id: 1,
-    question: "How do I know if my business is ready for AI automation?",
+    question: "Which business processes are suitable for AI automation?",
     answer:
-      "If your team spends time on repetitive tasks, manual data entry, customer inquiries, reporting, or moving information between systems, your business is likely a strong candidate for AI automation. We begin every project by understanding your workflows and identifying the areas where automation can create the greatest impact.",
+      "Processes involving repetitive data entry, lead routing, appointment requests, customer enquiries, document handling, reporting, and updates between business systems may be suitable for AI automation. We first review how the process works, what exceptions need human attention, and whether automation is appropriate for your team.",
   },
   {
     id: 2,
-    question: "Can AI automation integrate with my existing tools?",
+    question:
+      "Can AI workflow automation connect with my existing business tools?",
     answer:
-      "Yes. We build solutions that integrate with the platforms you already use, including CRMs, ERPs, Shopify, WordPress, Google Workspace, Microsoft 365, custom applications, and third-party APIs. Our goal is to improve your existing workflow—not replace it unnecessarily.",
+      "AI automation can connect with supported CRMs, eCommerce platforms such as Shopify, websites, Google Workspace, Microsoft 365, custom applications, and third-party services through available APIs, webhooks, or integration tools. We assess your current systems and access requirements before confirming what can be connected.",
   },
   {
     id: 3,
-    question: "How long does an AI automation project take?",
+    question: "How long does it take to implement AI automation?",
     answer:
-      "Every project is different. Smaller workflow automations can often be delivered within a few weeks, while larger AI systems involving multiple integrations, custom workflows, and advanced logic may require more time. After our discovery phase, we'll provide a clear project roadmap and timeline.",
+      "The timeline depends on workflow complexity, data availability, the number of integrations, testing requirements, and any custom development involved. After reviewing your requirements during discovery, we can outline the proposed scope, milestones, dependencies, and estimated delivery timeline.",
   },
   {
     id: 4,
-    question: "Will AI replace my employees?",
+    question: "Does AI automation replace employees or human decision-making?",
     answer:
-      "No. Our approach is to help your team work more efficiently by automating repetitive, time-consuming tasks. This allows employees to focus on higher-value work such as customer relationships, strategy, and business growth.",
+      "AI automation is intended to support your team by handling suitable repetitive tasks and routing exceptions for human review. Important decisions, sensitive customer situations, and processes that require professional judgement can remain under employee oversight, depending on how the workflow is designed.",
   },
   {
     id: 5,
-    question: "Is my business data secure?",
+    question: "How do you approach data security in AI automation projects?",
     answer:
-      "Security is built into every solution we develop. We follow secure development practices, use trusted platforms and APIs, apply appropriate access controls, and work to ensure your business data remains protected throughout every stage of the automation lifecycle.",
+      "Security requirements depend on the systems, data types, and AI services involved. During planning, we consider access permissions, data handling, integration credentials, retention requirements, and the security controls available in the selected platforms. Specific safeguards should be agreed as part of each project's scope.",
   },
   {
     id: 6,
-    question: "Can my automation grow with my business?",
+    question: "Can AI workflows scale as my business grows?",
     answer:
-      "Absolutely. We design scalable automation architectures that can expand as your business evolves, making it easier to add new workflows, integrations, users, and AI capabilities without rebuilding the entire system.",
+      "Automation can be extended as your requirements change by adding workflows, users, integrations, or processing steps. We consider expected usage, system limits, data flows, and maintenance needs during solution planning so the implementation can be adapted over time.",
   },
   {
     id: 7,
-    question: "Do you provide support after deployment?",
+    question: "Is support available after an AI automation system launches?",
     answer:
-      "Yes. We continue supporting our clients after launch through monitoring, optimization, updates, troubleshooting, and ongoing improvements to ensure your automation continues delivering value as your business grows.",
+      "Post-launch support and maintenance can be arranged according to the project agreement. Depending on the selected support scope, this may include troubleshooting, workflow updates, integration adjustments, monitoring, and improvements as your processes evolve.",
   },
   {
     id: 8,
-    question: "How do we get started?",
+    question: "How can I start an AI automation project with DigiGrowtherz?",
     answer:
-      "It begins with a discovery conversation. We'll learn about your business, understand your goals and current processes, identify automation opportunities, and recommend a solution tailored to your needs before any development begins.",
+      "Start by contacting DigiGrowtherz to discuss the process you want to improve, the tools your team currently uses, and the outcome you need. We can review the requirements, identify suitable automation opportunities, and discuss a potential scope and next steps before development begins.",
   },
 ];
 
@@ -685,10 +686,10 @@ export default function AiAutomationServicePage() {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="mb-6 inline-flex items-center rounded-full border border-lime-400/20 bg-lime-400/10 px-5 py-2"
+                className="mb-6 inline-flex items-center rounded-full border border-lime-400/20 bg-lime-400/10 px-3 py-2"
               >
-                <span className="font-mono text-xs tracking-[0.28em] text-lime-300 uppercase">
-                  AI Automation Solutions
+                <span className="font-mono text-[9px] tracking-[0.28em] text-lime-300 uppercase">
+                  AI Automation Services for Businesses
                 </span>
               </motion.div>
 
@@ -698,13 +699,11 @@ export default function AiAutomationServicePage() {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="font-space-grotesk max-w-3xl text-5xl leading-[1.05] font-bold text-white md:text-6xl xl:text-7xl"
+                className="font-space-grotesk max-w-3xl text-4xl leading-[1.05] font-bold text-white md:text-[55px]"
               >
-                Automate
-                <br />
-                <span className="text-lime-300">Smarter.</span>
-                <br />
-                Grow Faster.
+                AI Automation
+                <span className="text-lime-300"> Services for </span>
+                Smarter Business Operations.
               </motion.h1>
 
               {/* Description */}
@@ -713,11 +712,14 @@ export default function AiAutomationServicePage() {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="mt-8 text-lg leading-8 text-slate-300"
+                className="mt-8 text-[16px] leading-8 text-slate-300 md:text-lg"
               >
-                Transform repetitive business processes into intelligent
-                AI-powered workflows that reduce manual effort, improve
-                efficiency, and help your business scale with confidence.
+                DigiGrowtherz provides AI automation services that help
+                businesses streamline repetitive processes, connect their
+                existing tools, and build intelligent workflows. From AI
+                chatbots and virtual assistants to CRM automation and API
+                integrations, we design practical solutions around your
+                operations and business goals.
               </motion.p>
 
               {/* Buttons */}
@@ -732,7 +734,7 @@ export default function AiAutomationServicePage() {
                   href="/contact"
                   className="group inline-flex items-center justify-center rounded-full bg-lime-400 px-8 py-4 text-sm font-semibold text-black transition-all duration-300 hover:-translate-y-1 hover:bg-lime-300"
                 >
-                  Book a Free Consultation
+                  Discuss Your Automation Project
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
 
@@ -741,7 +743,7 @@ export default function AiAutomationServicePage() {
                   className="group inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all duration-300 hover:border-lime-400/40 hover:bg-white/10"
                 >
                   <PlayCircle className="mr-3 h-5 w-5 text-lime-300" />
-                  Explore Our Process
+                  See Our AI Automation Process
                 </a>
               </motion.div>
 
@@ -751,26 +753,26 @@ export default function AiAutomationServicePage() {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="mt-14 flex flex-wrap gap-8 md:gap-16"
+                className="mt-14 flex flex-wrap gap-8 md:gap-10"
               >
-                <div>
-                  <h4 className="text-2xl font-bold text-white">24/7</h4>
-                  <p className="mt-1 text-sm text-slate-400">
-                    Intelligent Automation
-                  </p>
-                </div>
-
                 <div>
                   <h4 className="text-2xl font-bold text-white">AI</h4>
                   <p className="mt-1 text-sm text-slate-400">
-                    Workflow Optimization
+                    Business Workflow Automation
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-2xl font-bold text-white">∞</h4>
+                  <h4 className="text-2xl font-bold text-white">Connected</h4>
                   <p className="mt-1 text-sm text-slate-400">
-                    Business Scalability
+                    Business System Integrations
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-2xl font-bold text-white">Scalable</h4>
+                  <p className="mt-1 text-sm text-slate-400">
+                    Workflows That Can Evolve
                   </p>
                 </div>
               </motion.div>
@@ -807,11 +809,11 @@ export default function AiAutomationServicePage() {
                 <div className="mb-8 flex items-center justify-between">
                   <div>
                     <p className="font-mono text-xs tracking-[0.25em] text-lime-300 uppercase">
-                      Workflow Control
+                      Illustrative Workflow Preview
                     </p>
 
                     <h3 className="mt-3 text-2xl font-bold text-white">
-                      AI Automation Engine
+                      AI Workflow Automation Preview
                     </h3>
                   </div>
 
@@ -863,11 +865,11 @@ export default function AiAutomationServicePage() {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="font-mono text-[11px] tracking-[0.22em] text-lime-300 uppercase">
-                          AI Workflow
+                          Sample Workflow Data
                         </p>
 
                         <h4 className="mt-2 text-xl font-semibold text-white">
-                          Intelligent Automation
+                          Example Workflow Execution
                         </h4>
                       </div>
 
@@ -875,7 +877,7 @@ export default function AiAutomationServicePage() {
                         <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-lime-400" />
 
                         <span className="text-xs font-medium text-lime-300">
-                          Running
+                          Sample
                         </span>
                       </div>
                     </div>
@@ -884,7 +886,7 @@ export default function AiAutomationServicePage() {
                     <div className="mt-8">
                       <div className="mb-3 flex items-center justify-between">
                         <span className="text-sm text-slate-400">
-                          Automation Efficiency
+                          Illustrative Automation Efficiency
                         </span>
 
                         <span className="text-lg font-bold text-white">
@@ -917,7 +919,7 @@ export default function AiAutomationServicePage() {
                         </h5>
 
                         <p className="mt-1 text-xs text-slate-400">
-                          Completed Today
+                          Example Tasks Completed
                         </p>
                       </div>
 
@@ -931,7 +933,7 @@ export default function AiAutomationServicePage() {
                         </h5>
 
                         <p className="mt-1 text-xs text-slate-400">
-                          Processing
+                          Example Queue
                         </p>
                       </div>
 
@@ -944,7 +946,9 @@ export default function AiAutomationServicePage() {
                           37h
                         </h5>
 
-                        <p className="mt-1 text-xs text-slate-400">This Week</p>
+                        <p className="mt-1 text-xs text-slate-400">
+                          Illustrative Weekly Total
+                        </p>
                       </div>
                     </div>
 
@@ -952,11 +956,11 @@ export default function AiAutomationServicePage() {
                     <div className="mt-8 rounded-2xl border border-white/10 bg-black/20 p-4">
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-slate-300">
-                          Workflow Activity
+                          Sample Workflow Activity
                         </span>
 
                         <span className="text-xs tracking-wider text-lime-300 uppercase">
-                          Live
+                          Preview
                         </span>
                       </div>
 
@@ -1118,17 +1122,23 @@ export default function AiAutomationServicePage() {
                   </div>
 
                   <div>
-                    <h5 className="font-semibold text-white">AI Assistant</h5>
+                    <h5 className="font-semibold text-white">
+                      AI Customer Support
+                    </h5>
 
-                    <p className="text-sm text-slate-400">Online 24/7</p>
+                    <p className="text-sm text-slate-400">
+                      Example Availability
+                    </p>
                   </div>
                 </div>
 
                 <div className="mt-5 flex items-center justify-between">
-                  <span className="text-sm text-slate-400">Response Time</span>
+                  <span className="text-sm text-slate-400">
+                    Example Response Time
+                  </span>
 
                   <span className="font-semibold text-lime-300">
-                    {"<"}1 sec
+                    Configurable
                   </span>
                 </div>
 
@@ -1159,10 +1169,10 @@ export default function AiAutomationServicePage() {
                 className="absolute top-28 -right-10 hidden w-60 rounded-3xl border border-white/10 bg-white/10 p-5 shadow-[0_20px_60px_rgba(0,0,0,.35)] backdrop-blur-2xl xl:block"
               >
                 <div className="flex items-center justify-between">
-                  <h5 className="font-semibold text-white">Automation</h5>
+                  <h5 className="font-semibold text-white">Workflow Example</h5>
 
                   <span className="rounded-full bg-lime-400/15 px-3 py-1 text-xs text-lime-300">
-                    Active
+                    Sample
                   </span>
                 </div>
 
@@ -1182,7 +1192,9 @@ export default function AiAutomationServicePage() {
                 </div>
 
                 <div className="mt-5 flex items-center justify-between text-sm">
-                  <span className="text-slate-400">Success Rate</span>
+                  <span className="text-slate-400">
+                    Illustrative Success Rate
+                  </span>
 
                   <span className="font-semibold text-white">99.2%</span>
                 </div>
@@ -1203,34 +1215,38 @@ export default function AiAutomationServicePage() {
                 className="absolute right-8 bottom-8 hidden w-64 rounded-3xl border border-white/10 bg-white/10 p-5 shadow-[0_20px_60px_rgba(0,0,0,.35)] backdrop-blur-2xl lg:block"
               >
                 <p className="font-mono text-[11px] tracking-[0.22em] text-lime-300 uppercase">
-                  Business Insights
+                  Illustrative Business Metrics
                 </p>
 
                 <div className="mt-5">
                   <h3 className="text-4xl font-bold text-white">+47%</h3>
 
                   <p className="mt-2 text-sm text-slate-400">
-                    Operational Efficiency
+                    Potential Workflow Impact
                   </p>
                 </div>
 
                 <div className="mt-6 space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-slate-400">
-                      Cost Reduction
+                      Example Cost Change
                     </span>
 
                     <span className="text-white">32%</span>
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-slate-400">Time Saved</span>
+                    <span className="text-sm text-slate-400">
+                      Example Time Savings
+                    </span>
 
                     <span className="text-white">120 hrs/mo</span>
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-slate-400">Accuracy</span>
+                    <span className="text-sm text-slate-400">
+                      Example Output Validation
+                    </span>
 
                     <span className="text-white">99.8%</span>
                   </div>
@@ -1271,8 +1287,8 @@ export default function AiAutomationServicePage() {
             <div className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/10 px-5 py-2">
               <Sparkles className="h-4 w-4 text-lime-300" />
 
-              <span className="font-mono text-xs tracking-[0.28em] text-lime-300 uppercase">
-                AI Automation Overview
+              <span className="font-mono text-[10px] tracking-[0.28em] text-lime-300 uppercase">
+                Business AI Automation Overview
               </span>
             </div>
           </motion.div>
@@ -1290,17 +1306,18 @@ export default function AiAutomationServicePage() {
             }}
             className="mx-auto max-w-4xl text-center"
           >
-            <h2 className="font-space-grotesk text-4xl leading-tight font-bold text-white md:text-6xl">
-              Transform Your Business
-              <br />
-              <span className="text-lime-300">With Intelligent Automation</span>
+            <h2 className="font-space-grotesk text-[32px] leading-tight font-bold text-white md:text-6xl">
+              AI Automation Services for
+              <br className="hidden md:block" />
+              <span className="text-lime-300"> Smarter Business Workflows</span>
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-300">
-              Modern businesses shouldn't waste valuable time on repetitive
-              manual work. Our AI Automation solutions streamline operations,
-              automate workflows, enhance customer experiences, and help your
-              team focus on what truly drives growth.
+              Our AI automation solutions help businesses reduce repetitive
+              manual work, connect disconnected applications, and manage routine
+              processes more consistently. We assess your workflows and design
+              AI-powered systems that support customer service, sales, internal
+              operations, and business administration.
             </p>
           </motion.div>
 
@@ -1324,7 +1341,7 @@ export default function AiAutomationServicePage() {
                 <Bot className="h-5 w-5 text-lime-300" />
 
                 <span className="text-sm font-medium text-white">
-                  Why Businesses Choose AI
+                  Business Benefits of AI Automation
                 </span>
               </div>
 
@@ -1335,10 +1352,11 @@ export default function AiAutomationServicePage() {
               </h3>
 
               <p className="mt-8 max-w-xl text-lg leading-8 text-slate-300">
-                Whether you're managing customer support, sales pipelines,
-                operations, marketing, or internal workflows, AI can automate
-                repetitive tasks, reduce human error, and deliver faster results
-                without increasing operational costs.
+                AI workflow automation can support customer service, lead
+                management, sales administration, reporting, and internal
+                operations. The right use cases depend on your existing systems,
+                the quality of available data, and where repeatable tasks can be
+                automated with appropriate human review.
               </p>
 
               {/* =====================================================
@@ -1348,23 +1366,23 @@ export default function AiAutomationServicePage() {
                 {[
                   {
                     icon: CheckCircle2,
-                    title: "Reduce Manual Work",
+                    title: "Automate Repetitive Tasks",
                     description:
-                      "Automate repetitive daily tasks and free your team for high-value work.",
+                      "Use workflow automation to handle routine steps and give your team more time for work that needs human attention.",
                   },
 
                   {
                     icon: Cpu,
-                    title: "Improve Accuracy",
+                    title: "Improve Process Consistency",
                     description:
-                      "Reduce human errors with intelligent AI-driven workflows.",
+                      "Standardize repeatable steps, validate information, and route exceptions for review where needed.",
                   },
 
                   {
                     icon: ArrowRight,
-                    title: "Scale Operations",
+                    title: "Connect Business Systems",
                     description:
-                      "Handle more customers and processes without increasing overhead.",
+                      "Move information between supported applications and reduce manual handoffs across business workflows.",
                   },
                 ].map((item, index) => {
                   const Icon = item.icon;
@@ -1392,7 +1410,7 @@ export default function AiAutomationServicePage() {
                       </div>
 
                       <div>
-                        <h4 className="text-xl font-semibold text-white">
+                        <h4 className="text-[16px] font-semibold text-white md:text-xl">
                           {item.title}
                         </h4>
 
@@ -1623,7 +1641,7 @@ export default function AiAutomationServicePage() {
                 </p>
 
                 <h5 className="mt-3 text-lg font-semibold text-white">
-                  Customer Inquiry
+                  Customer Request
                 </h5>
 
                 <p className="mt-2 text-sm leading-6 text-slate-400">
@@ -1646,7 +1664,7 @@ export default function AiAutomationServicePage() {
                 </p>
 
                 <h5 className="mt-3 text-lg font-semibold text-white">
-                  AI Decision
+                  AI Task Routing
                 </h5>
 
                 <p className="mt-2 text-sm leading-6 text-slate-400">
@@ -1669,7 +1687,7 @@ export default function AiAutomationServicePage() {
                 </p>
 
                 <h5 className="mt-3 text-lg font-semibold text-white">
-                  Smart Workflow
+                  Connected Workflow
                 </h5>
 
                 <p className="mt-2 text-sm leading-6 text-slate-400">
@@ -1692,11 +1710,11 @@ export default function AiAutomationServicePage() {
                 </p>
 
                 <h5 className="mt-3 text-lg font-semibold text-white">
-                  Business Growth
+                  Completed Action
                 </h5>
 
                 <p className="mt-2 text-sm leading-6 text-slate-400">
-                  Faster Response • Better ROI
+                  Response • Task • Notification
                 </p>
               </motion.div>
 
@@ -1760,7 +1778,7 @@ export default function AiAutomationServicePage() {
                     <Sparkles className="h-4 w-4 text-lime-300" />
 
                     <span className="font-mono text-[11px] tracking-[.25em] text-lime-300 uppercase">
-                      AI Workflow
+                      AI Workflow Automation
                     </span>
                   </div>
                 </motion.div>
@@ -1821,9 +1839,9 @@ export default function AiAutomationServicePage() {
                   </h3>
 
                   <p className="mt-3 max-w-xs text-center leading-7 text-slate-400">
-                    Every automation begins here. AI intelligently analyzes
-                    every request, makes decisions, and triggers the right
-                    workflow automatically.
+                    The AI workflow interprets incoming information, applies the
+                    configured rules, and triggers the appropriate next step or
+                    human review.
                   </p>
                 </motion.div>
 
@@ -1867,13 +1885,13 @@ export default function AiAutomationServicePage() {
                   className="mt-10 text-center"
                 >
                   <h4 className="font-space-grotesk text-2xl font-semibold text-white">
-                    How Your Workflow Flows
+                    How AI Workflow Automation Works
                   </h4>
 
                   <p className="mx-auto mt-4 max-w-sm leading-7 text-slate-400">
-                    Every customer interaction passes through intelligent AI,
-                    which understands the request, automates the process, and
-                    delivers faster business outcomes.
+                    A customer request enters through a connected channel, is
+                    interpreted by the configured AI workflow, and is routed to
+                    the right application, team member, or next action.
                   </p>
                 </motion.div>
               </div>
@@ -1901,30 +1919,30 @@ export default function AiAutomationServicePage() {
                 {[
                   {
                     step: "01",
-                    title: "Customer Inquiry",
+                    title: "Customer Request",
                     description:
-                      "Customers connect through your website, WhatsApp, email, or contact forms.",
+                      "A request arrives through a supported website chat, WhatsApp, email, or contact form integration.",
                     color: "lime",
                   },
                   {
                     step: "02",
-                    title: "AI Decision",
+                    title: "AI Task Routing",
                     description:
-                      "AI understands the request, extracts intent, and decides the next action.",
+                      "The workflow interprets the request and applies configured rules to identify the next step.",
                     color: "cyan",
                   },
                   {
                     step: "03",
-                    title: "Smart Workflow",
+                    title: "Connected Workflow",
                     description:
-                      "Automations trigger CRM updates, notifications, tasks, and integrations.",
+                      "Automated actions can update a CRM, create tasks, send notifications, or pass data to connected tools.",
                     color: "lime",
                   },
                   {
                     step: "04",
-                    title: "Business Growth",
+                    title: "Business Action",
                     description:
-                      "Faster responses, improved productivity, and a better customer experience.",
+                      "The process completes, routes an exception, or prompts a team member to take the next action.",
                     color: "cyan",
                   },
                 ].map((item, index) => (
@@ -2067,12 +2085,13 @@ export default function AiAutomationServicePage() {
 
                 <div className="text-center">
                   <h3 className="font-space-grotesk text-2xl font-bold text-white">
-                    Connected Platforms
+                    Business Applications & Connected Platforms
                   </h3>
 
                   <p className="mx-auto mt-3 max-w-sm leading-7 text-slate-400">
-                    AI seamlessly integrates with the tools your business
-                    already relies on every day.
+                    AI automation can connect supported business tools through
+                    APIs, webhooks, and integration platforms, subject to access
+                    permissions and the capabilities of each application.
                   </p>
                 </div>
 
@@ -2175,14 +2194,14 @@ export default function AiAutomationServicePage() {
                 }}
                 className="mt-16 text-center"
               >
-                <h3 className="font-space-grotesk text-3xl font-bold text-white">
-                  Ready to Automate Your Business?
+                <h3 className="font-space-grotesk text-[23px] font-bold text-white md:text-3xl">
+                  Ready to Explore AI Automation for Your Business?
                 </h3>
 
                 <p className="mx-auto mt-4 max-w-sm leading-7 text-slate-400">
-                  Let AI handle repetitive work while your team focuses on
-                  growth, strategy, and delivering exceptional customer
-                  experiences.
+                  Discuss your current processes, integration requirements, and
+                  goals with our team to identify where AI workflow automation
+                  may support your day-to-day operations.
                 </p>
               </motion.div>
 
@@ -2283,8 +2302,8 @@ export default function AiAutomationServicePage() {
             <div className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/10 px-5 py-2">
               <Sparkles className="h-4 w-4 text-lime-300" />
 
-              <span className="font-mono text-[11px] tracking-[.25em] text-lime-300 uppercase">
-                AI Automation Solutions
+              <span className="font-mono text-[9px] tracking-[.25em] text-lime-300 uppercase md:text-[11px]">
+                AI Automation Solutions & Use Cases
               </span>
             </div>
           </motion.div>
@@ -2297,16 +2316,17 @@ export default function AiAutomationServicePage() {
             transition={{ delay: 0.1 }}
             className="mx-auto mt-8 max-w-4xl text-center"
           >
-            <h2 className="font-space-grotesk text-4xl leading-tight font-bold text-white md:text-6xl">
-              Intelligent Solutions
-              <br />
-              Built Around Your Business
+            <h2 className="font-space-grotesk text-[32px] leading-tight font-bold text-white md:text-6xl">
+              AI Automation Solutions
+              <br className="hidden md:block" /> Built Around Your Workflows
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-400">
-              We build AI-powered systems that automate conversations,
-              streamline operations, eliminate repetitive work, and help your
-              business scale faster with less effort.
+              Our AI automation services include AI customer support, sales
+              assistants, workflow automation, CRM integrations, document
+              processing, and email automation. Each solution is planned around
+              your business processes, existing software, and operational
+              requirements.
             </p>
           </motion.div>
 
@@ -2332,32 +2352,34 @@ export default function AiAutomationServicePage() {
                 <div className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/10 px-4 py-2">
                   <MessageSquareMore className="h-4 w-4 text-lime-300" />
 
-                  <span className="text-xs font-semibold tracking-[0.2em] text-lime-300 uppercase">
-                    Featured Solution
+                  <span className="text-[9px] font-semibold tracking-[0.2em] text-lime-300 uppercase md:text-xs">
+                    AI Customer Support Solution
                   </span>
                 </div>
 
-                <h3 className="font-space-grotesk mt-8 text-[1.7rem] font-bold text-white md:text-4xl">
-                  AI Customer <br className="hidden md:block" />
-                  Support
+                <h3 className="font-space-grotesk mt-8 text-[1.6rem] font-bold text-white md:text-4xl">
+                  AI Customer Support <br className="hidden md:block" />
+                  Automation
                 </h3>
 
                 <p className="mt-6 leading-8 text-slate-400">
-                  Deliver instant, intelligent customer support across every
-                  communication channel. AI understands customer questions,
-                  responds naturally, routes complex requests, and keeps your
-                  team focused on what matters most.
+                  AI customer support automation can answer common questions,
+                  collect lead details, route enquiries, and hand complex or
+                  sensitive conversations to your team. Connect supported
+                  channels such as website chat, WhatsApp, Messenger, and email
+                  to organize customer communication around your service
+                  process.
                 </p>
 
                 {/* Features */}
                 <div className="mt-10 grid gap-4 md:grid-cols-2">
                   {[
                     "Website Chat",
-                    "WhatsApp",
-                    "Messenger",
-                    "Email",
+                    "WhatsApp Integration",
+                    "Messenger Integration",
+                    "Email Enquiries",
                     "Lead Capture",
-                    "Smart Routing",
+                    "Human Handoff & Routing",
                   ].map((item) => (
                     <div
                       key={item}
@@ -2390,7 +2412,7 @@ export default function AiAutomationServicePage() {
                   className="absolute top-0 left-4 rounded-2xl border border-white/10 bg-[#111827]/80 px-5 py-4 backdrop-blur-xl md:top-10 md:left-26"
                 >
                   <p className="text-sm text-white">
-                    👋 Hello! How can I help?
+                    👋 Hello! How can I help with your enquiry?
                   </p>
                 </motion.div>
 
@@ -2405,7 +2427,9 @@ export default function AiAutomationServicePage() {
                   }}
                   className="absolute right-12 bottom-16 rounded-2xl border border-white/10 bg-[#111827]/80 px-5 py-4 backdrop-blur-xl md:right-30 md:bottom-12"
                 >
-                  <p className="text-sm text-white">✅ Order confirmed!</p>
+                  <p className="text-sm text-white">
+                    ✅ Your request has been received!
+                  </p>
                 </motion.div>
 
                 {/* Orbit */}
@@ -2439,42 +2463,42 @@ export default function AiAutomationServicePage() {
                 icon: Bot,
                 title: "AI Sales Assistant",
                 description:
-                  "Qualify leads, answer sales questions, schedule meetings, and keep your pipeline moving automatically.",
+                  "An AI sales assistant can respond to common product questions, collect lead details, qualify enquiries using your criteria, and support meeting scheduling.",
                 accent: "lime",
               },
               {
                 icon: Workflow,
                 title: "Workflow Automation",
                 description:
-                  "Automate repetitive business processes, approvals, notifications, and internal operations.",
+                  "Connect repeatable business tasks, approval steps, notifications, and application updates into structured automated workflows.",
                 accent: "cyan",
               },
               {
                 icon: DatabaseZap,
                 title: "CRM Automation",
                 description:
-                  "Sync contacts, update records, assign leads, and automate follow-ups across your CRM.",
+                  "CRM automation can synchronize contact details, update records, assign leads, create follow-up tasks, and connect customer information across supported systems.",
                 accent: "lime",
               },
               {
                 icon: FileText,
                 title: "Document Processing",
                 description:
-                  "Extract information from invoices, forms, contracts, and PDFs using intelligent AI.",
+                  "AI document processing can extract and organize information from invoices, forms, contracts, and PDFs for review and transfer into connected business systems.",
                 accent: "cyan",
               },
               {
                 icon: Mail,
                 title: "Email Automation",
                 description:
-                  "Automate customer replies, nurture sequences, reminders, and support communications.",
+                  "Email automation can organize enquiry acknowledgements, follow-up messages, reminders, and customer communication based on defined triggers and consent requirements.",
                 accent: "lime",
               },
               {
                 icon: BarChart3,
                 title: "Business Intelligence",
                 description:
-                  "Transform business data into dashboards, reports, trends, and AI-powered insights.",
+                  "Connect data sources and prepare dashboards, recurring reports, and AI-assisted summaries to help teams review business information more efficiently.",
                 accent: "cyan",
               },
             ].map((solution, index) => {
@@ -2576,7 +2600,7 @@ export default function AiAutomationServicePage() {
                     <CheckCircle2 className="h-5 w-5 text-lime-300" />
 
                     <span className="text-sm text-slate-400">
-                      Fully Customizable Workflow
+                      Configured Around Your Business Process
                     </span>
                   </div>
                 </motion.div>
@@ -2622,20 +2646,19 @@ export default function AiAutomationServicePage() {
                 <Sparkles className="h-4 w-4 text-lime-300" />
 
                 <span className="font-mono text-[9px] font-bold tracking-[.25em] text-lime-300 uppercase md:text-[11px]">
-                  Tailored For Your Business
+                  Designed Around Your Processes
                 </span>
               </div>
 
-              <h3 className="font-space-grotesk mx-auto mt-8 text-[1.8rem] leading-tight font-bold text-white md:max-w-4xl md:text-4xl lg:text-5xl">
-                Every AI Solution Is Designed Around Your Workflow, Not The
-                Other Way Around.
+              <h3 className="font-space-grotesk mx-auto mt-8 text-[1.6rem] leading-tight font-bold text-white md:max-w-4xl md:text-4xl lg:text-5xl">
+                AI Automation Designed Around Your Business Workflows.
               </h3>
 
               <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-400">
-                We don't believe in one-size-fits-all automation. Every workflow
-                is carefully designed around your business processes, existing
-                tools, and long-term goals to maximize efficiency, reduce manual
-                work, and create measurable business growth.
+                We start by reviewing your processes, current applications, data
+                flows, and operational requirements. From there, we scope AI
+                assistants, integrations, and automation workflows that fit your
+                business rather than forcing your team into a generic system.
               </p>
 
               {/* Stats */}
@@ -2643,16 +2666,16 @@ export default function AiAutomationServicePage() {
               <div className="mt-14 grid gap-6 md:grid-cols-3">
                 {[
                   {
-                    value: "24/7",
-                    title: "Always Available",
+                    value: "AI",
+                    title: "Configured for Your Support Needs",
                   },
                   {
-                    value: "100%",
-                    title: "Custom Workflows",
+                    value: "CUSTOM",
+                    title: "Workflows Matched to Your Processes",
                   },
                   {
-                    value: "∞",
-                    title: "Scalable Automation",
+                    value: "SCALABLE",
+                    title: "Designed to Adapt as Needs Change",
                   },
                 ].map((item) => (
                   <div
@@ -2814,16 +2837,17 @@ export default function AiAutomationServicePage() {
             }}
             className="mx-auto mt-8 max-w-4xl text-center"
           >
-            <h2 className="font-space-grotesk text-4xl leading-tight font-bold text-white md:text-6xl">
-              From Idea <br className="hidden md:block" />
-              To Intelligent Automation
+            <h2 className="font-space-grotesk text-[32px] leading-tight font-bold text-white md:text-6xl">
+              From Business Need <br className="hidden md:block" />
+              To AI Workflow Automation
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-400">
-              Every successful AI solution starts with understanding your
-              business. From discovery to deployment, we follow a structured
-              process that delivers scalable, reliable, and measurable
-              automation.
+              Every AI automation project begins with your business
+              requirements. We review the process, define the scope, plan
+              integrations, develop and test the workflow, and prepare it for
+              deployment with clear attention to reliability, usability, and
+              human oversight.
             </p>
           </motion.div>
 
@@ -2896,7 +2920,7 @@ export default function AiAutomationServicePage() {
                 number: "01",
                 title: "Discovery",
                 description:
-                  "We learn about your business, current workflows, pain points, and automation opportunities.",
+                  "We review your goals, current processes, tools, data flows, and repetitive tasks to identify suitable AI automation opportunities.",
                 items: [
                   "Business Analysis",
                   "Workflow Audit",
@@ -2906,9 +2930,9 @@ export default function AiAutomationServicePage() {
               },
               {
                 number: "02",
-                title: "AI Strategy",
+                title: "Automation Strategy",
                 description:
-                  "We design an automation architecture tailored to your business and technology stack.",
+                  "We define the workflow, integration requirements, AI components, access needs, and implementation plan around your business systems.",
                 items: ["AI Planning", "Integrations", "Architecture"],
                 color: "cyan",
               },
@@ -2916,15 +2940,19 @@ export default function AiAutomationServicePage() {
                 number: "03",
                 title: "Development",
                 description:
-                  "Our engineers build intelligent workflows, AI agents, APIs, and custom automations.",
-                items: ["AI Agents", "Automation", "API Integration"],
+                  "We configure and develop the agreed workflows, AI assistants, API connections, and supporting application logic.",
+                items: [
+                  "AI Assistants & Agents",
+                  "Automation",
+                  "API & App Integrations",
+                ],
                 color: "lime",
               },
               {
                 number: "04",
                 title: "Testing",
                 description:
-                  "Every workflow is tested for reliability, security, and real-world performance.",
+                  "We test workflow steps, data handling, integrations, exceptions, and expected outputs against the agreed requirements.",
                 items: ["QA", "Optimization", "Security"],
                 color: "cyan",
               },
@@ -2932,7 +2960,7 @@ export default function AiAutomationServicePage() {
                 number: "05",
                 title: "Launch",
                 description:
-                  "We deploy, monitor, optimize, and continuously improve your AI automation.",
+                  "We prepare the workflow for launch, support deployment, and arrange monitoring or future improvements according to the project scope.",
                 items: ["Deployment", "Monitoring", "Scaling"],
                 color: "lime",
               },
@@ -3076,15 +3104,15 @@ export default function AiAutomationServicePage() {
               number: "01",
               title: "Discovery",
               description:
-                "We understand your business, workflows, and automation goals.",
+                "We review your business goals, current workflows, tools, and repetitive processes to identify suitable automation opportunities.",
               items: ["Business Analysis", "Workflow Audit", "Goal Definition"],
               color: "lime",
             },
             {
               number: "02",
-              title: "AI Strategy",
+              title: "Automation Strategy",
               description:
-                "We design the right AI architecture and automation roadmap.",
+                "We plan the workflow, integrations, AI components, and implementation steps around your business requirements.",
               items: ["AI Planning", "Integrations", "Architecture"],
               color: "cyan",
             },
@@ -3092,15 +3120,19 @@ export default function AiAutomationServicePage() {
               number: "03",
               title: "Development",
               description:
-                "We build intelligent workflows, AI agents, and custom integrations.",
-              items: ["AI Agents", "Automation", "API Integration"],
+                "We develop the agreed automations, AI assistants, API connections, and workflow logic.",
+              items: [
+                "AI Assistants & Agents",
+                "Automation",
+                "API & App Integrations",
+              ],
               color: "lime",
             },
             {
               number: "04",
               title: "Testing",
               description:
-                "Every automation is optimized for performance, security, and accuracy.",
+                "We test process steps, data handling, integrations, and outputs against the agreed requirements.",
               items: ["QA", "Optimization", "Security"],
               color: "cyan",
             },
@@ -3108,7 +3140,7 @@ export default function AiAutomationServicePage() {
               number: "05",
               title: "Launch",
               description:
-                "We deploy, monitor, and continuously improve your automation.",
+                "We support deployment and discuss monitoring, maintenance, and future workflow improvements based on the agreed support scope.",
               items: ["Deployment", "Monitoring", "Scaling"],
               color: "lime",
             },
@@ -3234,22 +3266,21 @@ export default function AiAutomationServicePage() {
 
             {/* Heading */}
 
-            <h3 className="font-space-grotesk mt-8 text-3xl leading-tight font-bold text-white lg:text-5xl">
-              We Don't Just Build
-              <br />
-              AI Automation.
+            <h3 className="font-space-grotesk mt-8 text-[28px] leading-tight font-bold text-white lg:text-5xl">
+              We Design AI Workflows
+              <br className="hidden md:block" /> Around Real Business Needs.
               <span className="block bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                We Help It Evolve.
+                Ready to Adapt as You Grow.
               </span>
             </h3>
 
             {/* Description */}
 
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-400">
-              From the first discovery session to continuous optimization after
-              launch, we work alongside your team to ensure every automation
-              delivers measurable business value, scales with your growth, and
-              adapts to future opportunities.
+              From discovery and planning through development, testing, and
+              deployment, we keep your requirements at the center of the
+              project. Any ongoing monitoring, maintenance, or optimization is
+              defined in the agreed support arrangement.
             </p>
 
             {/* Highlights */}
@@ -3424,7 +3455,7 @@ export default function AiAutomationServicePage() {
               <Cpu className="h-4 w-4 text-lime-300" />
 
               <span className="font-mono text-[11px] tracking-[.25em] text-lime-300 uppercase">
-                Technology Stack
+                AI Automation Technology Stack
               </span>
             </div>
           </motion.div>
@@ -3440,17 +3471,16 @@ export default function AiAutomationServicePage() {
             }}
             className="mx-auto mt-8 max-w-3xl text-center"
           >
-            <h2 className="font-space-grotesk text-4xl leading-tight font-bold text-white md:text-6xl">
-              The Technology
-              <br />
-              Behind Every Automation
+            <h2 className="font-space-grotesk text-[32px] leading-tight font-bold text-white md:text-6xl">
+              AI Automation Tools and Integration Technologies
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-400">
-              We combine industry-leading AI models, automation platforms,
-              modern development frameworks, and secure cloud infrastructure to
-              build intelligent automation solutions that are reliable,
-              scalable, and tailored to your business.
+              We select AI models, automation platforms, APIs, development
+              frameworks, databases, and cloud services according to each
+              project's needs. The technology stack depends on your existing
+              systems, data requirements, integration options, security
+              considerations, and expected usage.
             </p>
           </motion.div>
 
@@ -3493,72 +3523,11 @@ export default function AiAutomationServicePage() {
             }}
             className="mx-auto mt-20 max-w-3xl text-center text-lg leading-8 text-slate-400"
           >
-            Every solution is powered by proven technologies, carefully selected
-            to deliver secure, scalable, and future-ready AI automation for your
-            business.
+            The tools shown here are examples of technologies that may be used
+            in an AI automation project. Final selections depend on integration
+            compatibility, project scope, security needs, and maintenance
+            requirements.
           </motion.p>
-
-          {/* Closing Statement */}
-          {/* <motion.div
-            initial={{
-              opacity: 0,
-              y: 40,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-            }}
-            transition={{
-              duration: 0.8,
-            }}
-            className="relative mx-auto mt-32 max-w-4xl text-center"
-          >
-            <div className="absolute top-0 left-1/2 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-400/10 blur-[120px]" />
-
-            <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-5 py-2 backdrop-blur-md">
-              <div className="h-2 w-2 rounded-full bg-cyan-300" />
-
-              <span className="text-xs font-medium tracking-[0.25em] text-cyan-300 uppercase md:text-sm">
-                Future Ready Technology
-              </span>
-            </div>
-
-            <h2 className="font-space-grotesk mt-8 text-[2.15rem] leading-tight font-bold text-white md:text-4xl md:text-5xl lg:text-6xl">
-              Built for Today.
-              <br />
-              <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                Ready for Tomorrow.
-              </span>
-            </h2>
-
-            <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-slate-400">
-              Every technology we choose serves a purpose. From intelligent AI
-              models and seamless integrations to modern development frameworks
-              and scalable infrastructure, we build automation solutions
-              designed to evolve with your business today and adapt to
-              tomorrow's opportunities.
-            </p>
-
-            <motion.div
-              initial={{
-                scaleX: 0,
-              }}
-              whileInView={{
-                scaleX: 1,
-              }}
-              viewport={{
-                once: true,
-              }}
-              transition={{
-                duration: 1,
-                delay: 0.3,
-              }}
-              className="mx-auto mt-16 h-px w-72 origin-center bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent"
-            />
-          </motion.div> */}
         </div>
       </section>
 
@@ -3615,7 +3584,7 @@ export default function AiAutomationServicePage() {
             transition={{
               duration: 0.8,
             }}
-            className="mx-auto max-w-4xl text-center"
+            className="mx-auto max-w-5xl text-center"
           >
             {/* Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/10 px-5 py-2 backdrop-blur-md">
@@ -3627,19 +3596,21 @@ export default function AiAutomationServicePage() {
             </div>
 
             {/* Heading */}
-            <h2 className="font-space-grotesk mt-8 text-4xl text-[2rem] leading-tight font-bold text-white md:text-5xl lg:text-6xl">
-              More Than an Agency. <br className="hidden md:block" />
+            <h2 className="font-space-grotesk mt-8 text-[2rem] text-[25px] leading-tight font-bold text-white md:text-5xl lg:text-5xl">
+              AI Automation Built Around Your Business.{" "}
+              <br className="hidden md:block" />
               <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                Your AI Automation Partner.
+                A Practical, Collaborative Approach.
               </span>
             </h2>
 
             {/* Description */}
-            <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-slate-400">
-              We don't just build AI automation solutions—we partner with
-              businesses to understand their workflows, solve operational
-              challenges, and create intelligent systems that deliver lasting
-              value through efficiency, scalability, and continuous innovation.
+            <p className="mx-auto mt-8 max-w-4xl text-lg leading-9 text-slate-400">
+              We begin by understanding how your business works, which systems
+              your team relies on, and where repetitive tasks create friction.
+              This helps us plan AI assistants, workflow automation, and
+              integrations around real operating requirements rather than adding
+              technology without a clear purpose.
             </p>
 
             {/* Divider */}
@@ -3701,28 +3672,28 @@ export default function AiAutomationServicePage() {
             {/* Heading */}
 
             <h3 className="font-space-grotesk mt-8 text-[2.15rem] leading-tight font-bold text-white md:text-4xl lg:text-5xl">
-              Built Around Results,
-              <br />
+              Focused on Business Processes, <br className="hidden md:block" />
               <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                Not Just Technology.
+                Not Just Automation Tools.
               </span>
             </h3>
 
             {/* Description */}
 
             <p className="mt-8 text-lg leading-9 text-slate-400">
-              Many agencies focus on implementing tools. We focus on solving
-              business problems. Every AI assistant, workflow, and integration
-              we build is designed to reduce manual work, improve operational
-              efficiency, and support sustainable business growth—not simply
-              automate tasks.
+              The right AI automation starts with a clearly defined process and
+              a useful outcome. We consider the people involved, current
+              software, data quality, exceptions, and handoffs before
+              recommending an assistant, workflow, or integration. This keeps
+              the solution connected to the way your business actually operates.
             </p>
 
             {/* Quote */}
 
             <div className="mt-10 border-l-2 border-lime-300/40 pl-6">
-              <p className="font-space-grotesk text-[1.3rem] leading-relaxed font-semibold text-white md:text-2xl">
-                "Technology should simplify your business, not complicate it."
+              <p className="font-space-grotesk text-[1.3rem] leading-relaxed font-semibold text-white md:text-[20px]">
+                "Automation should make a well-understood business process
+                easier to manage."
               </p>
             </div>
           </motion.div>
@@ -3801,19 +3772,20 @@ export default function AiAutomationServicePage() {
           {/* Heading */}
 
           <h3 className="font-space-grotesk text-[1.8rem] leading-tight font-bold text-white md:text-4xl md:text-5xl lg:text-6xl">
-            Your Success Is <br className="hidden md:block" />
+            AI Automation Should Support <br className="hidden md:block" />
             <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-              Our Long-Term Commitment.
+              Your Long-Term Business Goals.
             </span>
           </h3>
 
           {/* Description */}
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-slate-400">
-            We believe successful automation isn't defined by deployment—it's
-            measured by the lasting value it creates. That's why we focus on
-            building intelligent systems that continue to improve, adapt, and
-            support your business as it grows.
+            A deployed workflow is only one part of an automation project. Its
+            usefulness also depends on clear ownership, reliable integrations,
+            appropriate human review, and maintenance. We help plan these
+            considerations so your solution can be reviewed and adapted as
+            business requirements change.
           </p>
 
           {/* Trust Highlights */}
@@ -3921,31 +3893,31 @@ export default function AiAutomationServicePage() {
             transition={{
               duration: 0.8,
             }}
-            className="mx-auto max-w-4xl text-center"
+            className="mx-auto max-w-5xl text-center"
           >
             {/* Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-5 py-2 backdrop-blur-md">
               <div className="h-2 w-2 rounded-full bg-cyan-300" />
 
-              <span className="text-xs font-medium tracking-[0.25em] text-cyan-300 uppercase md:text-sm">
+              <span className="text-[10px] font-medium tracking-[0.25em] text-cyan-300 uppercase md:text-sm">
                 Frequently Asked Questions
               </span>
             </div>
 
             {/* Heading */}
-            <h2 className="font-space-grotesk mt-8 text-4xl leading-tight font-bold text-white md:text-[3.5rem]">
-              Everything You Need <br className="hidden md:block" />
+            <h2 className="font-space-grotesk mt-8 text-3xl leading-tight font-bold text-white md:text-[3.3rem]">
+              AI Automation Questions <br className="hidden md:block" />
               <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                To Know Before Getting Started.
+                Services, Integration & Implementation.
               </span>
             </h2>
 
             {/* Description */}
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-slate-400">
-              Whether you're exploring AI automation for the first time or
-              looking to optimize your existing workflows, here are answers to
-              the questions businesses ask us most before starting their
-              automation journey.
+              Find answers about AI workflow automation, business system
+              integrations, implementation timelines, data security,
+              scalability, and post-launch support. If you have a specific
+              process in mind, contact our team to discuss your requirements.
             </p>
 
             {/* Divider */}
@@ -4124,27 +4096,29 @@ export default function AiAutomationServicePage() {
           >
             {/* Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-5 py-2 backdrop-blur-xl">
-              <div className="h-2 w-2 rounded-full bg-cyan-300" />
+              <div className="hidden h-2 w-2 rounded-full bg-cyan-300 md:block" />
 
-              <span className="text-sm font-medium tracking-[0.25em] text-cyan-300 uppercase">
-                Let's Build Together
+              <span className="text-[9px] font-medium tracking-[0.25em] text-cyan-300 uppercase md:text-sm">
+                Discuss Your AI Automation Project
               </span>
             </div>
 
             {/* Heading */}
-            <h2 className="font-space-grotesk mt-8 text-4xl leading-tight font-bold text-white md:text-5xl lg:text-7xl">
-              Ready to Transform <br className="hidden md:block" />
+            <h2 className="font-space-grotesk mt-8 text-3xl leading-tight font-bold text-white md:text-5xl lg:text-6xl">
+              Ready to Improve Your Workflows?{" "}
+              <br className="hidden md:block" />
               <span className="bg-gradient-to-r from-lime-300 via-cyan-300 to-lime-300 bg-clip-text text-transparent">
-                Your Business With AI?
+                Explore AI Automation.
               </span>
             </h2>
 
             {/* Description */}
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-slate-400">
-              Whether you're looking to automate repetitive tasks, streamline
-              operations, or build intelligent AI-powered experiences, we'll
-              help you create a solution tailored to your business goals and
-              future growth.
+              Tell us which business process you want to improve, which
+              applications your team currently uses, and what outcome you need.
+              DigiGrowtherz can help assess suitable AI automation opportunities
+              and discuss an implementation approach that fits your business
+              requirements.
             </p>
           </motion.div>
         </div>
@@ -4189,13 +4163,13 @@ export default function AiAutomationServicePage() {
                 </div>
 
                 <h3 className="font-space-grotesk mt-6 text-xl font-semibold text-white">
-                  Free Discovery Call
+                  AI Automation Discovery Call
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-400">
-                  We'll learn about your business, understand your current
-                  workflows, and identify practical automation opportunities
-                  before recommending a solution.
+                  We'll discuss your business process, current tools, and
+                  project goals to identify where AI workflow automation may be
+                  appropriate.
                 </p>
               </div>
             </motion.div>
@@ -4218,13 +4192,13 @@ export default function AiAutomationServicePage() {
                 </div>
 
                 <h3 className="font-space-grotesk mt-6 text-xl font-semibold text-white">
-                  Tailored AI Strategy
+                  A Workflow Designed for Your Business
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-400">
-                  Every business is different. We design automation strategies
-                  around your goals, processes, and existing technology—not
-                  generic templates.
+                  We plan the AI assistant, workflow, and integrations around
+                  your requirements, existing applications, and the tasks your
+                  team needs to manage.
                 </p>
               </div>
             </motion.div>
@@ -4247,12 +4221,12 @@ export default function AiAutomationServicePage() {
                 </div>
 
                 <h3 className="font-space-grotesk mt-6 text-xl font-semibold text-white">
-                  Long-Term Partnership
+                  Support for Your Automation Journey
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-400">
-                  We continue supporting your automation with optimization,
-                  updates, and improvements as your business evolves.
+                  Support, maintenance, and future workflow improvements can be
+                  arranged according to the agreed project and service scope.
                 </p>
               </div>
             </motion.div>
@@ -4312,8 +4286,8 @@ export default function AiAutomationServicePage() {
                 </h3>
 
                 <p className="mt-6 max-w-md leading-8 text-slate-400">
-                  Tell us about your business, your challenges, or your
-                  automation goals. We'll get back to you with the next steps.
+                  Email our team with your business process, automation
+                  requirements, and the systems you want to connect.
                 </p>
 
                 <div className="mt-8 inline-flex items-center gap-3 font-medium text-white">
@@ -4359,13 +4333,13 @@ export default function AiAutomationServicePage() {
                 </p>
 
                 <h3 className="font-space-grotesk mt-3 text-[1.5rem] font-bold text-white md:text-3xl">
-                  Schedule a Consultation
+                  Discuss an AI Automation Project
                 </h3>
 
                 <p className="mt-6 max-w-md leading-8 text-slate-400">
-                  Book a discovery call with our team to explore how AI
-                  automation can improve your workflows and support your
-                  business growth.
+                  Contact our team to discuss workflow automation, AI
+                  assistants, CRM integrations, or document processing for your
+                  business.
                 </p>
 
                 <div className="mt-8 inline-flex items-center gap-3 font-medium text-white">

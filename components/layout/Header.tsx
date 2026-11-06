@@ -5,7 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import {
+  Menu,
+  Package,
+  ReceiptText,
+  ShieldCheck,
+  Truck,
+  X,
+} from "lucide-react";
 import { NAV_LINKS } from "@/constants/navigation";
 import {
   Bot,
@@ -75,6 +82,34 @@ export default function Header() {
       icon: ShoppingCart,
       color: "#FFED00",
     },
+    {
+      label: "B2B Export Support",
+      description: "Export operations, buyer research & B2B lead generation",
+      href: "/services/b2b-export-support",
+      icon: Package,
+      color: "#A0D14F",
+    },
+    {
+      label: "Cybersecurity Services",
+      description: "Business security, risk assessment & protection",
+      href: "/services/cybersecurity",
+      icon: ShieldCheck,
+      color: "#FFED00",
+    },
+    {
+      label: "Truck Dispatching",
+      description: "Freight dispatch, load research & broker coordination",
+      href: "/services/truck-dispatching",
+      icon: Truck,
+      color: "#A0D14F",
+    },
+    {
+      label: "Medical Billing Services",
+      description: "Medical claims, billing support & revenue cycle management",
+      href: "/services/medical-billing",
+      icon: ReceiptText,
+      color: "#FFED00",
+    },
   ];
 
   useEffect(() => {
@@ -103,40 +138,6 @@ export default function Header() {
           />
         </Link>
 
-        {/* Desktop Navigation */}
-        {/* <nav className="hidden items-center gap-10 lg:flex">
-          {NAV_LINKS.map((link) => {
-            const isActive =
-              pathname === link.href ||
-              (link.href !== "/" && pathname.startsWith(link.href));
-
-            return (
-              <Link key={link.href} href={link.href} className="relative pb-2">
-                <span
-                  className={`font-inter text-[16px] font-semibold tracking-[0.8px] uppercase transition-colors duration-300 ${
-                    isActive
-                      ? "text-[#A0D14F]"
-                      : "text-[#DFE2EDB2] hover:text-white"
-                  }`}
-                >
-                  {link.label}
-                </span>
-
-                {isActive && (
-                  <motion.div
-                    layoutId="navbar-indicator"
-                    className="absolute bottom-0 left-0 h-[2px] w-full bg-[#A0D14F]"
-                    transition={{
-                      type: "spring",
-                      stiffness: 400,
-                      damping: 30,
-                    }}
-                  />
-                )}
-              </Link>
-            );
-          })}
-        </nav> */}
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-10 lg:flex">
           {NAV_LINKS.map((link) => {
