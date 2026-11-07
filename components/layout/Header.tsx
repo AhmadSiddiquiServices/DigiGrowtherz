@@ -220,7 +220,7 @@ export default function Header() {
                           duration: 0.2,
                           ease: [0.22, 1, 0.36, 1],
                         }}
-                        className="absolute top-full left-1/2 z-[100] mt-5 w-[680px] -translate-x-1/2"
+                        className="absolute top-full left-1/2 z-[100] mt-5 w-[900px] max-w-[calc(100vw-2rem)] -translate-x-1/2"
                       >
                         {/* Dropdown Container */}
                         <div className="relative overflow-hidden rounded-2xl border border-white/[0.09] bg-[#0A0F15]/95 p-4 shadow-[0_25px_80px_rgba(0,0,0,0.55)] backdrop-blur-2xl">
@@ -228,7 +228,7 @@ export default function Header() {
                           <div className="pointer-events-none absolute top-[-120px] left-1/2 h-[220px] w-[420px] -translate-x-1/2 rounded-full bg-cyan-400/[0.07] blur-[100px]" />
 
                           {/* Grid */}
-                          <div className="relative grid grid-cols-2 gap-2">
+                          <div className="relative grid grid-cols-3 gap-2">
                             {SERVICE_LINKS.map((service, index) => {
                               const Icon = service.icon;
 
@@ -421,7 +421,7 @@ export default function Header() {
 
             {/* Offcanvas */}
             <motion.div
-              className="fixed top-0 right-0 z-50 flex h-screen w-[85%] max-w-sm flex-col bg-[#070B12] px-8 py-24 shadow-2xl lg:hidden"
+              className="fixed top-0 right-0 z-50 flex h-[100dvh] w-[85%] max-w-sm flex-col overflow-y-auto overscroll-y-contain bg-[#070B12] px-8 py-24 shadow-2xl lg:hidden"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
