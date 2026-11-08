@@ -1,34 +1,33 @@
 "use client";
 
 import "leaflet/dist/leaflet.css";
-
 import Image from "next/image";
 import L from "leaflet";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+// import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const officeLocation: [number, number] = [32.4443, 74.115];
 
-const customIcon = L.divIcon({
-  html: `
-    <div class="map-marker">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="40"
-           height="40"
-           viewBox="0 0 24 24"
-           fill="#A0D14F"
-           stroke="#070B12"
-           stroke-width="2"
-           stroke-linecap="round"
-           stroke-linejoin="round">
-        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/>
-        <circle cx="12" cy="10" r="3"/>
-      </svg>
-    </div>
-  `,
-  className: "",
-  iconSize: [40, 40],
-  iconAnchor: [20, 40],
-});
+// const customIcon = L.divIcon({
+//   html: `
+//     <div class="map-marker">
+//       <svg xmlns="http://www.w3.org/2000/svg"
+//            width="40"
+//            height="40"
+//            viewBox="0 0 24 24"
+//            fill="#A0D14F"
+//            stroke="#070B12"
+//            stroke-width="2"
+//            stroke-linecap="round"
+//            stroke-linejoin="round">
+//         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/>
+//         <circle cx="12" cy="10" r="3"/>
+//       </svg>
+//     </div>
+//   `,
+//   className: "",
+//   iconSize: [40, 40],
+//   iconAnchor: [20, 40],
+// });
 
 export default function OfficeMap() {
   return (
@@ -56,8 +55,50 @@ export default function OfficeMap() {
           </a>
         </div>
 
+        {/* Static Map */}
+        <div className="group relative isolate overflow-hidden rounded-xl border border-white/10 bg-[#0B151A] shadow-[0_25px_80px_rgba(0,0,0,0.3)]">
+          {/* Map Image */}
+          <a
+            href={`https://www.google.com/maps?q=${officeLocation[0]},${officeLocation[1]}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View DigiGrowtherz office location in Google Maps"
+            className="relative block aspect-[4/3] w-full overflow-hidden sm:aspect-[16/9] lg:aspect-[2.28/1]"
+          >
+            <Image
+              src="/images/contact-map.webp"
+              alt="Map showing Wazirabad, Pakistan and the DigiGrowtherz office location near Jinnah Colony"
+              fill
+              priority
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
+              className="object-contain transition-transform duration-700 ease-out motion-safe:group-focus-within:scale-110 motion-safe:group-hover:scale-110"
+            />
+
+            {/* Subtle Hover Overlay */}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070B12]/30 via-transparent to-transparent opacity-40 transition-opacity duration-500 group-hover:opacity-70" />
+
+            {/* Hover Label */}
+            <div className="pointer-events-none absolute right-4 bottom-4 left-4 flex justify-end sm:right-6 sm:bottom-6">
+              <span className="translate-y-2 rounded-full border border-white/10 bg-[#070B12]/80 px-4 py-2 font-['JetBrains_Mono'] text-[9px] tracking-[1.5px] text-white uppercase opacity-0 backdrop-blur-xl transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 sm:text-[10px]">
+                View Location ↗
+              </span>
+            </div>
+          </a>
+        </div>
+
+        {/* Office Address */}
+        <div className="mt-5 flex flex-col gap-2 text-sm text-slate-400 sm:mt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="leading-6">
+            Street No. 3, Mohallah Jinnah Colony, Wazirabad, Pakistan
+          </p>
+
+          <span className="font-['JetBrains_Mono'] text-[10px] tracking-[1.5px] text-[#A0D14F] uppercase">
+            DigiGrowtherz Office
+          </span>
+        </div>
+
         {/* Map */}
-        <div className="overflow-hidden rounded-[12px] border border-white/10">
+        {/* <div className="overflow-hidden rounded-[12px] border border-white/10">
           <MapContainer
             center={officeLocation}
             zoom={15}
@@ -67,7 +108,6 @@ export default function OfficeMap() {
               height: "650px",
             }}
           >
-            {/* Map */}
             <TileLayer
               attribution="&copy; OpenStreetMap contributors &copy; CARTO"
               url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
@@ -88,7 +128,7 @@ export default function OfficeMap() {
               </Popup>
             </Marker>
           </MapContainer>
-        </div>
+        </div> */}
       </div>
     </section>
   );
